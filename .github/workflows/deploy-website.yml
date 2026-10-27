@@ -1,0 +1,101 @@
+name: Publish Tangible Worlds website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'website/**'
+      - '.github/workflows/deploy-website.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: website/package-lock.json
+
+      - name: Install locked dependencies
+        working-directory: website
+        run: npm ci
+
+      - name: Build for GitHub Pages subdirectory
+        working-directory: website
+        run: npm run build -- --base=/tangible-worlds/
+
+      - name: Make public media URLs work under /tangible-worlds/
+        working-directory: website
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          output = Path('dist')
+          prefix = '/tangible-worlds'
+          # Vite rebases its own imports, but cannot rebase media URLs
+          # assembled at runtime by the interactive chapters.
+          bare_media = re.compile(r'(?<!/tangible-worlds)/media/')
+          rewrites = 0
+          for path in output.rglob('*'):
+              if not path.is_file() or path.suffix not in {'.html', '.css', '.js'}:
+                  continue
+              before = path.read_text(encoding='utf-8')
+              after, count = bare_media.subn(prefix + '/media/', before)
+              if count:
+                  path.write_text(after, encoding='utf-8')
+                  rewrites += count
+              if bare_media.search(after):
+                  raise SystemExit(f'unrebased media URL in {path}')
+
+          required = [
+              'index.html',
+              'media/img/hero-poster.jpg',
+              'media/img/hero-poster-mobile.jpg',
+              'media/video/working-prototype.mp4',
+              'media/doc/tangible-worlds-dissertation.pdf',
+              'media/provenance.json',
+              'media/tracker-components.json',
+          ]
+          missing = [name for name in required if not (output / name).is_file()]
+          if missing:
+              raise SystemExit(f'missing built files: {missing}')
+          html = (output / 'index.html').read_text(encoding='utf-8')
+          if '/tangible-worlds/assets/' not in html:
+              raise SystemExit('Vite JS/CSS assets are not using the Pages base path')
+          print(f'Pages build verified: {rewrites} runtime media references rebased')
+          PY
+
+      - name: Disable Jekyll processing
+        run: touch website/dist/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload website only
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: website/dist
+
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
