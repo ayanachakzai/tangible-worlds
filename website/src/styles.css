@@ -1201,6 +1201,7 @@ input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius
 .colophon { margin-top: clamp(96px, 13vh, 150px) !important; padding-top: 28px; border-top: 1px solid var(--line); display: grid; grid-template-columns: 220px minmax(0, 1fr); column-gap: 40px; row-gap: 10px; }
 .colophon p { margin: 0; grid-column: 2; max-width: 68ch; font: 400 14px/1.6 var(--f-text); color: rgba(235,231,222,0.66); }
 .chapter .colophon__title { grid-column: 1; grid-row: 1 / span 3; font: 600 15px/1.4 var(--f-text); color: var(--paper); }
+.colophon__logo { display: block; width: 180px; height: auto; }
 .colophon .colophon__by { color: var(--paper); }
 .colophon .colophon__sys { font: 400 12.5px/1.6 var(--f-mono); }
 .colophon a { color: var(--paper); text-underline-offset: 3px; }
@@ -1222,6 +1223,7 @@ input[type="range"]::-moz-range-thumb { width: 16px; height: 16px; border-radius
   .r-res__more { flex-direction: column; gap: 0; margin-top: 24px; }
   .colophon { grid-template-columns: minmax(0, 1fr); }
   .colophon p, .chapter .colophon__title { grid-column: 1; grid-row: auto; }
+  .colophon__logo { width: 150px; margin-bottom: 14px; }
 }
 
 /* ─────────── Film dialog ─────────── */

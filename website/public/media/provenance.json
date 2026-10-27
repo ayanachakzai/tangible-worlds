@@ -658,5 +658,11 @@
   "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
   "class": "derived",
   "note": "Apple touch icon, 180 x 180: the artwork at 152 px on the link-preview card background, since iOS fills transparency with black. Branding, not project evidence."
+ },
+ {
+  "file": "media/img/tw-logo-dark.webp",
+  "source": "TW Logo 6.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Logo for the dark colophon: the artwork's flat background removed (flood-filled from the edges, so enclosed areas are kept), black and cream ink reversed for a dark ground, colours unchanged, trimmed and scaled to 440 px wide. Branding, not project evidence."
  }
 ]
