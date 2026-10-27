@@ -14,6 +14,9 @@ const esc = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&l
 const cap = (t) => t[0].toUpperCase() + t.slice(1);
 const noun = (m) => m.replace(/^an? /, '');
 const pad2 = (n) => String(n).padStart(2, '0');
+// the props as recorded: crops of the tracker inset in Part 2.mov, in recording pixels.
+// They are shown at one shared scale, so their sizes compare as on the table.
+const PROP_PX = { 1: [171, 223], 2: [179, 173], 3: [216, 213], 4: [134, 179] };
 
 // each stage has its own composition; data-r marks the reveal order:
 // h heading, x supporting copy, m media or evidence
@@ -21,7 +24,7 @@ const VIEWS = {
   1: (a) => `
     <div class="fx-s1">
       <figure class="fx-s1__photo" data-r="m">
-        <img src="/media/img/prop-${a.id}.webp" alt="The ${esc(a.prop)} on the tabletop, as the tracker camera saw it." width="400" height="400" />
+        <img src="/media/img/prop-${a.id}-hd.webp" alt="The ${esc(a.prop)} on the tabletop, as the tracker camera saw it." width="${PROP_PX[a.id][0]}" height="${PROP_PX[a.id][1]}" style="--w: ${PROP_PX[a.id][0]}" />
       </figure>
       <div class="fx-s1__text">
         <p class="fx-kicker" data-r="h">01 · Physical object</p>

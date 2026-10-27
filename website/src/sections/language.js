@@ -36,7 +36,7 @@ export function initLanguage({ reduced }) {
   const current = () => SESSION.find((s) => s.id === id);
 
   // the recorded images are small; fetch the other three so switching is instant
-  SESSION.forEach((o) => { new Image().src = `/media/img/prop-${o.id}.webp`; new Image().src = `/media/img/src-${o.slug}.webp`; });
+  SESSION.forEach((o) => { new Image().src = `/media/img/prop-${o.id}-hd.webp`; new Image().src = `/media/img/src-${o.slug}.webp`; });
 
   function setDone(v) {
     done = v;
@@ -60,7 +60,7 @@ export function initLanguage({ reduced }) {
     const u = UTTERANCES[id];
     cmds.forEach((b) => { const on = +b.dataset.cmd === id; b.setAttribute('aria-checked', String(on)); b.tabIndex = on ? 0 : -1; });
 
-    E.prop.src = `/media/img/prop-${id}.webp`;
+    E.prop.src = `/media/img/prop-${id}-hd.webp`;
     E.prop.alt = `The ${PROP[id]} on the tabletop, as the tracker camera saw it.`;
     E.objName.textContent = `The ${PROP[id]}`;
     E.objId.textContent = String(id);

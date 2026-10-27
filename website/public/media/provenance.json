@@ -604,5 +604,59 @@
   "source": "Part 3.3.mov",
   "class": "production",
   "note": "Poster frame at 12 s of the atmosphere recording."
+ },
+ {
+  "file": "media/img/prop-1-hd.webp",
+  "source": "Part 2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #1, cropped from the tracker RGB inset at 4.0 s of Part 2.mov, the full-resolution screen recording that Part 2.2.mov was exported from (1.57x the pixels of prop-1.webp)."
+ },
+ {
+  "file": "media/img/prop-2-hd.webp",
+  "source": "Part 2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #2, cropped from the tracker RGB inset at 4.0 s of Part 2.mov, the full-resolution screen recording that Part 2.2.mov was exported from (1.57x the pixels of prop-2.webp)."
+ },
+ {
+  "file": "media/img/prop-3-hd.webp",
+  "source": "Part 2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #3, cropped from the tracker RGB inset at 4.0 s of Part 2.mov, the full-resolution screen recording that Part 2.2.mov was exported from (1.57x the pixels of prop-3.webp)."
+ },
+ {
+  "file": "media/img/prop-4-hd.webp",
+  "source": "Part 2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #4, cropped from the tracker RGB inset at 4.0 s of Part 2.mov, the full-resolution screen recording that Part 2.2.mov was exported from (1.57x the pixels of prop-4.webp)."
+ },
+ {
+  "file": "media/img/tw-header.jpg",
+  "source": "TW HEADER.png (supplied branding artwork, 1983 x 793)",
+  "class": "derived",
+  "note": "Link-preview (Open Graph) card, 1200 x 630: the whole artwork scaled to 1200 px wide, its own flat background extended above and below. Branding, not project evidence."
+ },
+ {
+  "file": "media/icon/tw-favicon-16.png",
+  "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Favicon, 16 x 16, resized with transparency kept. Branding, not project evidence."
+ },
+ {
+  "file": "media/icon/tw-favicon-32.png",
+  "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Favicon, 32 x 32, resized with transparency kept. Branding, not project evidence."
+ },
+ {
+  "file": "media/icon/tw-favicon-192.png",
+  "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Favicon, 192 x 192, resized with transparency kept. Branding, not project evidence."
+ },
+ {
+  "file": "media/icon/tw-apple-touch-icon-180.png",
+  "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Apple touch icon, 180 x 180: the artwork at 152 px on the link-preview card background, since iOS fills transparency with black. Branding, not project evidence."
  }
 ]

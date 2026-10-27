@@ -115,6 +115,16 @@ for pid, box in props.items():
         f'Physical prop #{pid}, cropped from the tracker RGB inset at 4.0 s of Part 2.2.mov.', crop=box,
         source='Part 2.2.mov (frame at 4.0 s)')  # P22FRAME is a temporary frame extracted from it
 
+# the same props from the same frame of Part 2.mov, the full-resolution (3024 x 1964)
+# recording Part 2.2.mov was exported from; the boxes above, mapped by the measured
+# export scale (1.570) and offset. Kept losslessly: they are video frames already.
+frame = Path(os.environ['P2FRAME'])  # a temporary frame extracted at 4.0 s
+props = {1: (219, 944, 390, 1167), 2: (450, 1079, 629, 1252), 3: (208, 1271, 424, 1484), 4: (542, 1271, 676, 1450)}
+for pid, box in props.items():
+    img(frame, f'prop-{pid}-hd', 'derived',
+        f'Physical prop #{pid}, cropped from the tracker RGB inset at 4.0 s of Part 2.mov, the full-resolution screen recording that Part 2.2.mov was exported from (1.57x the pixels of prop-{pid}.webp).',
+        crop=box, keep_pixels=True, source='Part 2.mov (frame at 4.0 s)')
+
 # ── generation ────────────────────────────────────────────
 good = ['a-windmill', 'a-fire-truck', 'a-house', 'a-horse', 'a-lighthouse', 'a-castle', 'a-tent',
         'a-dragon', 'a-truck', 'a-stone-cairn', 'a-mountain', 'a-petrol-station', 'a-car', 'a-stone-bridge']
@@ -124,7 +134,9 @@ for slug in good + weak:
     rec(GLB / f'{slug}.glb', GM / f'{slug}.glb', 'generated', 'SPAR3D GLB from the production meaning cache.')
     src = GM / slug / 'source.png'
     if src.exists():
-        img(src, f'src-{slug}', 'generated', 'SDXL Turbo Stage 1 source image from the production meaning cache.', max_side=768)
+        # the four recorded assignments are shown large in chapter 04: encoded closer to the source
+        q = 95 if slug in ('a-house', 'a-windmill', 'a-fire-truck', 'a-horse') else 84
+        img(src, f'src-{slug}', 'generated', 'SDXL Turbo Stage 1 source image from the production meaning cache.', max_side=768, q=q)
 
 B = PF / '04_generation_pipeline'
 battery = {'001': 'acoustic-guitar', '002': 'backpack', '009': 'traffic-cone', '010': 'umbrella',
