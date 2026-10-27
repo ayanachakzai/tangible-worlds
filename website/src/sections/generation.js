@@ -6,9 +6,19 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { loadGLB, normalise, disposeTree } from '../lib/meshes.js';
 import { MODELS_GOOD, MODELS_WEAK } from '../data.js';
 
+// a lighter pixel budget on narrow, short or touch screens
+const light = () => matchMedia('(max-width: 820px), (max-height: 520px), (pointer: coarse)').matches;
+const ratio = () => Math.min(devicePixelRatio, light() ? 1.5 : 2);
+
+// a lost context is announced and redrawn when the browser restores it
+function watchContext(canvas, say, redraw) {
+  canvas.addEventListener('webglcontextlost', (e) => { e.preventDefault(); say('3D view paused by the browser'); });
+  canvas.addEventListener('webglcontextrestored', () => { say(''); redraw(); });
+}
+
 function makeRenderer(canvas) {
   const r = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: false, powerPreference: 'high-performance' });
-  r.setPixelRatio(Math.min(devicePixelRatio, 2));
+  r.setPixelRatio(ratio());
   r.outputColorSpace = THREE.SRGBColorSpace;
   r.toneMapping = THREE.ACESFilmicToneMapping;
   r.toneMappingExposure = 0.95;
@@ -22,11 +32,12 @@ function studio(renderer, bg) {
   scene.background = new THREE.Color(bg);
   const pmrem = new THREE.PMREMGenerator(renderer);
   scene.environment = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+  pmrem.dispose();
   scene.environmentIntensity = 0.55;
   const key = new THREE.DirectionalLight(0xfff4e6, 2.2);
   key.position.set(3, 5, 2.5);
   key.castShadow = true;
-  key.shadow.mapSize.set(1024, 1024);
+  key.shadow.mapSize.setScalar(light() ? 512 : 1024);
   Object.assign(key.shadow.camera, { left: -3, right: 3, top: 3, bottom: -3, near: 0.5, far: 20 });
   key.shadow.bias = -0.0008;
   scene.add(key);
@@ -52,30 +63,71 @@ function sizeTo(renderer, camera, el) {
 }
 
 /* ───────────── Pipeline sequence ───────────── */
+// Pinned (wide screens): one full-stage scene scrubbed by scroll through the five
+// stages. Unpinned (narrow or short screens): the stages read in order and the same
+// scene, in its final state, sits in the SPAR3D stage as a view the visitor turns.
+// Either way there is one renderer, and it draws only when something has changed.
 async function initPipeline(root, reduced, genProgress) {
   const stage = root.querySelector('.gen__stage');
   const canvas = root.querySelector('.gen__canvas');
-  const steps = [...root.querySelectorAll('.gen__steps li')];
+  const view = root.querySelector('.js-gen-view');
+  const status = root.querySelector('.js-gen-status');
+  const steps = [...root.querySelectorAll('.gen__steps > li')];
   const meaningEl = root.querySelector('.js-gen-meaning');
   const rules = [...root.querySelectorAll('.js-gen-rules li')];
-  ['meaning', 'prompt', 'SDXL', 'SPAR3D', 'Three.js'].forEach((s, i) => steps[i].querySelector('.step__k').dataset.short = s);
   const note = document.createElement('p');
   note.className = 'gen__note';
   note.textContent = 'Real source image and GLB · the reveal animation is explanatory';
   stage.appendChild(note);
+  const say = (t) => { status.textContent = t; };
+  const flowMQ = matchMedia(genProgress.flowQuery);
+  let flow = flowMQ.matches;
 
   let apply = () => {};
   let req = () => {};
+  let turn = -1.3; // the visitor's turn of the unpinned view; it opens at three-quarters, like the source image
 
-  const renderer = makeRenderer(canvas);
+  // canvas and status live in the stage when pinned, in the SPAR3D view when not
+  const place = () => {
+    flow = flowMQ.matches;
+    const host = flow ? view : stage;
+    if (canvas.parentElement !== host) host.prepend(canvas);
+    if (status.parentElement !== host) host.appendChild(status);
+    if (flow) {
+      canvas.tabIndex = 0;
+      canvas.setAttribute('aria-label', 'The cached a-windmill.glb mesh. Drag sideways, or use the arrow keys, to turn it.');
+    } else {
+      canvas.removeAttribute('tabindex');
+      canvas.setAttribute('aria-label', "Three.js reconstruction of the generation stages for 'a windmill'");
+    }
+  };
+  place();
+
+  let renderer;
+  try {
+    renderer = makeRenderer(canvas);
+  } catch (e) {
+    say('3D view unavailable: this browser could not start WebGL');
+    console.error(e);
+    return;
+  }
   const { scene } = studio(renderer, 0x090909);
   scene.fog = new THREE.Fog(0x090909, 8, 18);
   const camera = new THREE.PerspectiveCamera(32, 1, 0.1, 100);
   camera.position.set(0, 1.3, 6.2);
   const target = new THREE.Vector3(0, 0.9, 0);
 
+  let tex, model;
+  try {
+    [tex, model] = await Promise.all([new THREE.TextureLoader().loadAsync('/media/img/src-a-windmill.webp'), loadGLB('a-windmill')]);
+  } catch (e) {
+    say('could not load a-windmill.glb');
+    console.error(e);
+    return;
+  }
+  say('');
+
   // Stage 1 image plane
-  const tex = await new THREE.TextureLoader().loadAsync('/media/img/src-a-windmill.webp');
   tex.colorSpace = THREE.SRGBColorSpace;
   const imgMat = new THREE.MeshBasicMaterial({ map: tex, transparent: true, opacity: 0, toneMapped: false, side: THREE.DoubleSide });
   const img = new THREE.Mesh(new THREE.PlaneGeometry(1.9, 1.9), imgMat);
@@ -87,7 +139,7 @@ async function initPipeline(root, reduced, genProgress) {
   // Stage 2 mesh with a rising clip plane
   const clip = new THREE.Plane(new THREE.Vector3(0, -1, 0), 0);
   renderer.localClippingEnabled = true;
-  const mesh = normalise(await loadGLB('a-windmill'), 2.1);
+  const mesh = normalise(model, 2.1);
   mesh.traverse((n) => { if (n.isMesh) { n.material = n.material.clone(); n.material.clippingPlanes = [clip]; n.material.clipShadows = true; } });
   const holder = new THREE.Group();
   holder.add(mesh);
@@ -136,21 +188,61 @@ async function initPipeline(root, reduced, genProgress) {
     camera.lookAt(target);
   };
 
+  // the pose for the current layout: scroll progress when pinned, the finished
+  // mesh turned by the visitor when not
+  const pose = () => {
+    if (!flow) { apply(reduced ? 0.999 : genProgress.p); return; }
+    apply(1);
+    holder.rotation.y += turn;
+  };
+
   let visible = false;
   let raf = 0;
-  const tick = () => { raf = 0; const a = camera.aspect; sizeTo(renderer, camera, stage); if (a !== camera.aspect) apply(genProgress ? genProgress.p : 1); renderer.render(scene, camera); };
+  const tick = () => { raf = 0; const a = camera.aspect; sizeTo(renderer, camera, canvas.parentElement); if (a !== camera.aspect) pose(); renderer.render(scene, camera); };
   // whether the pinned stage is on screen is checked when a frame is wanted: an
   // observer flag could stay false after a jump straight into the pinned range
   // (a hash link or a fast scroll), leaving the stage undrawn while the captions moved
-  const onScreen = () => { const r = stage.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; };
+  const onScreen = () => { const r = canvas.getBoundingClientRect(); return r.bottom > 0 && r.top < innerHeight; };
   req = () => { if (!raf && (visible || onScreen())) raf = requestAnimationFrame(tick); };
-  new IntersectionObserver(([e]) => { visible = e.isIntersecting; req(); }).observe(stage);
+  const io = new IntersectionObserver(([e]) => { visible = e.isIntersecting; req(); });
+  io.observe(canvas);
   addEventListener('resize', req);
+  watchContext(canvas, say, req);
 
-  if (reduced) { apply(0.999); steps.forEach((s) => s.classList.add('is-on')); req(); return; }
+  // the unpinned view turns with a sideways drag or the arrow keys; vertical
+  // swipes keep scrolling the page (touch-action: pan-y)
+  let dragX = null;
+  canvas.addEventListener('pointerdown', (e) => { if (!flow) return; dragX = e.clientX; canvas.setPointerCapture(e.pointerId); });
+  canvas.addEventListener('pointermove', (e) => {
+    if (dragX === null) return;
+    turn += (e.clientX - dragX) * 0.012;
+    dragX = e.clientX;
+    pose(); req();
+  });
+  const release = () => { dragX = null; };
+  canvas.addEventListener('pointerup', release);
+  canvas.addEventListener('pointercancel', release);
+  canvas.addEventListener('keydown', (e) => {
+    if (!flow || (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight')) return;
+    e.preventDefault();
+    turn += e.key === 'ArrowLeft' ? -0.25 : 0.25;
+    pose(); req();
+  });
 
-  genProgress.listener = (p) => { apply(p); req(); };
-  apply(genProgress.p);
+  // a layout change (rotation, a resized window) moves the canvas and its state
+  flowMQ.addEventListener('change', () => {
+    place();
+    renderer.setPixelRatio(ratio());
+    io.disconnect(); io.observe(canvas);
+    pose(); req();
+  });
+
+  if (reduced) steps.forEach((s) => s.classList.add('is-on'));
+  else genProgress.listener = (p) => { if (!flow) { apply(p); req(); } };
+  pose();
+  // compile the shaders now, while the stage is still ahead of the reader, rather
+  // than in the first frame drawn on screen
+  await renderer.compileAsync(scene, camera).catch(() => {});
   req();
 }
 
@@ -164,7 +256,15 @@ function initBench(root, reduced) {
   const good = root.querySelector('.js-bench-good');
   const weak = root.querySelector('.js-bench-weak');
 
-  const renderer = makeRenderer(canvas);
+  let renderer;
+  try {
+    renderer = makeRenderer(canvas);
+  } catch (e) {
+    statusEl.textContent = '3D view unavailable: this browser could not start WebGL';
+    console.error(e);
+    return;
+  }
+  let req = () => {};
   const { scene } = studio(renderer, 0x121211);
   scene.background = null;
   renderer.setClearColor(0x000000, 0);
@@ -177,9 +277,12 @@ function initBench(root, reduced) {
   canvas.style.touchAction = 'pan-y'; // vertical swipes scroll; horizontal swipes orbit
   controls.minDistance = 1.6; controls.maxDistance = 7;
   controls.target.set(0, 0.55, 0);
-  controls.autoRotate = !reduced;
+  // on narrow, short or touch screens the model waits to be turned instead of
+  // spinning, so the view draws nothing while the page scrolls past it
+  controls.autoRotate = !reduced && !light();
   controls.autoRotateSpeed = 0.9;
   controls.addEventListener('start', () => { controls.autoRotate = false; });
+  controls.addEventListener('change', () => req());
 
   let current = null;
   let token = 0;
@@ -214,6 +317,8 @@ function initBench(root, reduced) {
     try {
       const obj = normalise(await loadGLB(slug), 1.25);
       if (my !== token) return;
+      await renderer.compileAsync(obj, camera, scene).catch(() => {});
+      if (my !== token) return;
       view.classList.remove('is-loading');
       grow?.kill();
       if (current) { scene.remove(current); disposeTree(current); }
@@ -224,7 +329,7 @@ function initBench(root, reduced) {
       let tris = 0;
       obj.traverse((n) => { if (n.isMesh) tris += (n.geometry.index ? n.geometry.index.count : n.geometry.attributes.position.count) / 3; });
       statusEl.textContent = `${slug}.glb · ${Math.round(tris).toLocaleString('en-GB')} triangles`;
-      if (!reduced) { const s = obj.scale.x; obj.scale.setScalar(s * 0.6); grow = gsap.to(obj.scale, { x: s, y: s, z: s, duration: 0.28, ease: 'power3.out' }); }
+      if (!reduced) { const s = obj.scale.x; obj.scale.setScalar(s * 0.6); grow = gsap.to(obj.scale, { x: s, y: s, z: s, duration: 0.28, ease: 'power3.out', onUpdate: () => req() }); }
       req();
     } catch (e) {
       if (my !== token) return;
@@ -234,17 +339,21 @@ function initBench(root, reduced) {
     }
   }
 
+  // frames are drawn while the model is turning on its own, and otherwise only
+  // when it has changed (a drag, a new model, a resize)
   let visible = false, raf = 0;
   const loop = () => {
-    raf = 0;
-    if (!visible) return;
+    // raf stays set while drawing, so a change event raised by update() cannot start a second loop
+    if (!visible) { raf = 0; return; }
     sizeTo(renderer, camera, view);
     controls.update();
     renderer.render(scene, camera);
-    raf = requestAnimationFrame(loop);
+    raf = controls.autoRotate ? requestAnimationFrame(loop) : 0;
   };
-  const req = () => { if (!raf && visible) raf = requestAnimationFrame(loop); };
+  req = () => { if (!raf && visible) raf = requestAnimationFrame(loop); };
   new IntersectionObserver(([e]) => { visible = e.isIntersecting; req(); }).observe(view);
+  addEventListener('resize', req);
+  watchContext(canvas, (t) => { statusEl.textContent = t; }, req);
   show('a-lighthouse', 'a lighthouse');
 }
 

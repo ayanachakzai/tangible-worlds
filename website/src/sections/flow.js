@@ -1,10 +1,12 @@
 // Chapter 04: how a word becomes a world. Five stages of the production
 // object-assignment route, one presented at a time. The progression and its
-// controls stay put; only the stage presentation beneath them changes. Every
+// controls stay put; only the stage presentation beneath them changes (below
+// 900 px the controls follow the stage instead; see COMPACT). Every
 // example-specific line comes from the selected recorded assignment. Wording,
 // routes and values are taken from the production index.html, serve.py and the
 // session logs; nothing on this page runs them.
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const STAGES = 5;
 const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)';
@@ -116,18 +118,46 @@ const EVIDENCE = (a) => [
   ['Recorded sessions and source references', 'The four assignments, read-backs and yes answers are session AYANTEST07; assignments.json records all four as cache hits. The five-attempt retry case is session AYANTEST03. Images and models are copied from the production cache unaltered.', 'conversation_log.json; assignments.json; generated_meshes/'],
 ];
 
+// Below 900 px the route is a compact numbered row with the current stage named
+// under it, and the controls follow the stage they act on, so a reader who has
+// scrolled through a stage continues from where they are.
+const COMPACT = '(max-width: 899px)';
+
 export function initFlow(root, { reduced, getAssignment }) {
   const stage = root.querySelector('.js-flow-stage');
+  const bar = root.querySelector('.fx-bar');
+  const ctl = root.querySelector('.fx-ctl');
   const steps = [...root.querySelectorAll('.fx-step')];
   const hits = steps.map((s) => s.querySelector('.fx-step__hit'));
+  const titles = steps.map((s) => s.querySelector('.fx-step__t').textContent);
   const prev = root.querySelector('.js-flow-prev');
   const next = root.querySelector('.js-flow-next');
+  const restart = root.querySelector('.js-flow-restart');
   const evidence = root.querySelector('.js-flow-evidence');
+  const compact = matchMedia(COMPACT);
+  const nextHTML = next.innerHTML;
   const open = { no: false, miss: false };
   let step = 1, tl = null, ticket = 0, guard = 0;
 
   stage.id = 'flow-stage';
+  stage.tabIndex = -1;
   hits.forEach((h) => h.setAttribute('aria-controls', 'flow-stage'));
+
+  // compact only: the current stage in words under the row, and the position
+  // beside the controls at the end of the stage
+  const now = document.createElement('p');
+  now.className = 'fx-now';
+  now.setAttribute('aria-hidden', 'true');
+  bar.querySelector('.fx-steps').after(now);
+  const pos = document.createElement('p');
+  pos.className = 'fx-pos';
+  ctl.insertBefore(pos, restart);
+
+  function layout() {
+    if (compact.matches) stage.after(ctl);
+    else bar.appendChild(ctl);
+    markers();
+  }
 
   function markers() {
     steps.forEach((s, i) => {
@@ -135,8 +165,47 @@ export function initFlow(root, { reduced, getAssignment }) {
       s.classList.toggle('is-done', i + 1 < step);
       hits[i].setAttribute('aria-current', i + 1 === step ? 'step' : 'false');
     });
+    const last = step === STAGES;
+    now.innerHTML = `<span>${pad2(step)} / ${pad2(STAGES)}</span> ${esc(titles[step - 1])}`;
+    pos.textContent = last ? `${pad2(STAGES)} of ${pad2(STAGES)} · end of the recorded route` : `${pad2(step)} of ${pad2(STAGES)}`;
     prev.disabled = step === 1;
-    next.disabled = step === STAGES;
+    // on the last stage the compact layout offers the way back to the start
+    const again = last && compact.matches;
+    next.disabled = last && !again;
+    restart.hidden = again; // Start again does the same
+    if (again !== next.classList.contains('is-again')) {
+      next.classList.toggle('is-again', again);
+      next.innerHTML = again ? '<span>Start again</span><span aria-hidden="true">↑</span>' : nextHTML;
+      next.setAttribute('aria-label', again ? 'Start again from the first step' : 'Next step');
+    }
+  }
+
+  // after Previous, Next or Start again at the end of a stage, bring the start of
+  // the new stage into view and put focus there, so reading and tabbing continue
+  // from the top of what changed
+  const away = () => { const top = bar.getBoundingClientRect().top; return top < 0 || top > innerHeight * 0.4; };
+  const bring = () => bar.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'start' });
+  let aim = null;
+  function follow() {
+    if (!compact.matches) return;
+    if (away()) {
+      bring();
+      // the new stage changes the page height, and the trigger refresh that follows
+      // (main.js) resets the scroll position, stopping a smooth scroll a few pixels
+      // short: if that happens within the next second, settle the rest at once,
+      // after the refresh has finished restoring the position itself
+      if (aim) ScrollTrigger.removeEventListener('refresh', aim);
+      const t0 = performance.now();
+      aim = () => {
+        ScrollTrigger.removeEventListener('refresh', aim);
+        aim = null;
+        if (performance.now() - t0 < 1000) requestAnimationFrame(() => { if (away()) bar.scrollIntoView({ block: 'start' }); });
+      };
+      ScrollTrigger.addEventListener('refresh', aim);
+      const mine = aim;
+      setTimeout(() => { if (aim === mine) { ScrollTrigger.removeEventListener('refresh', aim); aim = null; } }, 1000);
+    }
+    stage.focus({ preventScroll: true });
   }
 
   function content() {
@@ -186,9 +255,9 @@ export function initFlow(root, { reduced, getAssignment }) {
   }
 
   hits.forEach((h, i) => h.addEventListener('click', () => go(i + 1)));
-  prev.addEventListener('click', () => go(step - 1));
-  next.addEventListener('click', () => go(step + 1));
-  root.querySelector('.js-flow-restart').addEventListener('click', () => go(1));
+  prev.addEventListener('click', () => { go(step - 1); follow(); });
+  next.addEventListener('click', () => { go(next.classList.contains('is-again') ? 1 : step + 1); follow(); });
+  restart.addEventListener('click', () => { go(1); follow(); });
   stage.addEventListener('click', (e) => {
     const b = e.target.closest('.js-flow-branch');
     if (!b) return;
@@ -208,7 +277,8 @@ export function initFlow(root, { reduced, getAssignment }) {
     content();
   }
 
-  markers();
+  compact.addEventListener('change', layout);
+  layout();
   content();
   return { refresh };
 }

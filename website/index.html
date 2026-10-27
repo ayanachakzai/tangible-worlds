@@ -503,11 +503,22 @@
             <li>plain studio background</li>
             <li>one photograph, not a sheet</li>
           </ul>
+          <!-- each stage carries its own visual for the narrow, unpinned reading order;
+               on the pinned layout these stay hidden and the overlays above are used -->
           <ol class="gen__steps">
-            <li data-g="0"><p class="step__k">Meaning</p><h3>The stripped meaning is the cache key.</h3><p><code>a windmill scale huge</code> becomes <code>a windmill</code>; scale is kept separately. If <code>a-windmill.glb</code> already exists, nothing is generated.</p></li>
-            <li data-g="1"><p class="step__k">Prompt shaping · Qwen3-8B</p><h3>A local model frames the meaning, without adding to it.</h3><p>One fixed prompt suffix failed across ordinary meanings: <q>tree</q> produced four cropped trees. Qwen now writes a framing prompt per meaning under these constraints. A cliff may get a background; it may not become a cliff wall.</p></li>
-            <li data-g="2"><p class="step__k">Stage 1 · SDXL Turbo</p><h3>An image of the meaning is invented.</h3><p>512 × 512, four inference steps on a rented RTX 4090, about 0.6&nbsp;s once the model is resident. This is the actual cached source image.</p></li>
-            <li data-g="3"><p class="step__k">Stage 2 · SPAR3D</p><h3>The image is reconstructed as geometry.</h3><p>SPAR3D returns a textured GLB. Warm, the laptop-to-pod round trip took about two seconds; eight of nine source-to-mesh intervals in the following battery were two seconds.</p></li>
+            <li data-g="0"><p class="step__k">Meaning</p><h3>The stripped meaning is the cache key.</h3><p><code>a windmill scale huge</code> becomes <code>a windmill</code>; scale is kept separately. If <code>a-windmill.glb</code> already exists, nothing is generated.</p><p class="gen__show gen__show--meaning" aria-hidden="true">a windmill</p></li>
+            <li data-g="1"><p class="step__k">Prompt shaping · Qwen3-8B</p><h3>A local model frames the meaning, without adding to it.</h3><p>One fixed prompt suffix failed across ordinary meanings: <q>tree</q> produced four cropped trees. Qwen now writes a framing prompt per meaning under these constraints. A cliff may get a background; it may not become a cliff wall.</p>
+              <ul class="gen__show gen__show--rules" aria-label="Framing constraints">
+                <li>keep the subject unchanged</li>
+                <li>one fully visible, centred subject</li>
+                <li>three-quarter view, clear margin</li>
+                <li>plain studio background</li>
+                <li>one photograph, not a sheet</li>
+              </ul></li>
+            <li data-g="2"><p class="step__k">Stage 1 · SDXL Turbo</p><h3>An image of the meaning is invented.</h3><p>512 × 512, four inference steps on a rented RTX 4090, about 0.6&nbsp;s once the model is resident. This is the actual cached source image.</p>
+              <figure class="gen__show gen__show--img"><img src="/media/img/src-a-windmill.webp" alt="The cached SDXL Turbo source image for the meaning a windmill." width="512" height="512" loading="lazy" decoding="async" /></figure></li>
+            <li data-g="3"><p class="step__k">Stage 2 · SPAR3D</p><h3>The image is reconstructed as geometry.</h3><p>SPAR3D returns a textured GLB. Warm, the laptop-to-pod round trip took about two seconds; eight of nine source-to-mesh intervals in the following battery were two seconds.</p>
+              <figure class="gen__show gen__show--model"><div class="gen__view js-gen-view"><span class="gen__status js-gen-status">Loading a-windmill.glb…</span></div><figcaption>The cached <code>a-windmill.glb</code>, rendered with Three.js. Drag sideways to turn it.</figcaption></figure></li>
             <li data-g="4"><p class="step__k">Renderer · Three.js</p><h3>The mesh is normalised and set down.</h3><p>The longest bounding-box side is scaled to the target size and the mesh is rested on the table. From here on, moving the prop only moves the mesh.</p></li>
           </ol>
         </div>

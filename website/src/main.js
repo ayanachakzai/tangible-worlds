@@ -307,15 +307,22 @@ function initFilm() {
 /* ───────────── Lazy 3D chapters ───────────── */
 // The generation pin is created up front so the page height never changes
 // when the Three.js module arrives; the module only subscribes to progress.
-const genProgress = { p: 0, listener: null };
+// Narrow or short screens read the five stages in order instead, unpinned (the
+// same query is used in styles.css); the pin is added or removed as it changes.
+const GEN_FLOW = '(max-width: 820px), (max-height: 520px)';
+const genProgress = { p: 0, listener: null, flowQuery: GEN_FLOW };
 function initGenerationPin() {
   if (reduced) return;
-  gsap.to(genProgress, {
-    p: 1, ease: 'none',
-    // 2.5 viewport heights for the five stages (was 4.2), with a short catch-up so
-    // the scene follows the scroll closely (was 0.6 s)
-    scrollTrigger: { trigger: '.gen__stage', start: 'top top', end: '+=250%', pin: true, scrub: 0.2, anticipatePin: 1 },
-    onUpdate: () => genProgress.listener?.(genProgress.p),
+  // 'all' always matches, so this runs in both layouts and again whenever flow changes
+  gsap.matchMedia().add({ flow: GEN_FLOW, all: 'all' }, ({ conditions }) => {
+    if (conditions.flow) return;
+    gsap.to(genProgress, {
+      p: 1, ease: 'none',
+      // 2.5 viewport heights for the five stages (was 4.2), with a short catch-up so
+      // the scene follows the scroll closely (was 0.6 s)
+      scrollTrigger: { trigger: '.gen__stage', start: 'top top', end: '+=250%', pin: true, scrub: 0.2, anticipatePin: 1 },
+      onUpdate: () => genProgress.listener?.(genProgress.p),
+    });
   });
 }
 
