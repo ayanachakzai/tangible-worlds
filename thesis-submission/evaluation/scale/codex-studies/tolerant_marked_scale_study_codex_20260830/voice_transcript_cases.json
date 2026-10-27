@@ -1,0 +1,280 @@
+{
+  "case_count": 8,
+  "case_ids": [
+    "P101",
+    "P102",
+    "B12",
+    "P103",
+    "S01",
+    "S02",
+    "S03",
+    "D07"
+  ],
+  "cases": [
+    {
+      "id": "P101",
+      "category": "valid_scale_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a car, scale tiny",
+      "tags": [
+        "voice_required",
+        "comma"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car, scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car, scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "P102",
+      "category": "valid_scale_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a car scale tiny",
+      "tags": [
+        "voice_required",
+        "no_comma"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B12",
+      "category": "valid_scaled_alias_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a car scaled tiny.",
+      "tags": [
+        "scaled_alias",
+        "voice_required"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scaled tiny",
+          "generation_meaning": "a car scaled tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scaled tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "P103",
+      "category": "valid_scale_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object 4 is a car scale tiny",
+      "tags": [
+        "voice_required",
+        "numeric_id",
+        "no_comma"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "S01",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a tiny scale model car",
+      "tags": [
+        "voice_required",
+        "scale_model"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a tiny scale model car",
+          "generation_meaning": "a tiny scale model car",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a tiny scale model car",
+          "generation_meaning": "a tiny scale model car",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S02",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a scale model car",
+      "tags": [
+        "voice_required",
+        "scale_model"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a scale model car",
+          "generation_meaning": "a scale model car",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a scale model car",
+          "generation_meaning": "a scale model car",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S03",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a large scale map",
+      "tags": [
+        "voice_required",
+        "large_scale"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a large scale map",
+          "generation_meaning": "a large scale map",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a large scale map",
+          "generation_meaning": "a large scale map",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "D07",
+      "category": "semantic_scaled_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a car scaled model",
+      "tags": [
+        "voice_required",
+        "scaled_model"
+      ],
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scaled model",
+          "generation_meaning": "a car scaled model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a car scaled model",
+          "generation_meaning": "a car scaled model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H043",
+  "case_index": 43,
+  "group": "boundary",
+  "meaning": "mobile home",
+  "acceptable": [
+    "room_scale",
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"mobile home\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "mobile home",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.628,
+  "error": ""
+}

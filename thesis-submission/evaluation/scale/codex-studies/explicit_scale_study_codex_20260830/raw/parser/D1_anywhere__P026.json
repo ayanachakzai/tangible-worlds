@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "P026",
+  "category": "unsupported_synonym",
+  "phrase": "puny robot",
+  "expected_intent": "very_small",
+  "expected_generation_meaning": "robot",
+  "participant_phrase": "puny robot",
+  "generation_meaning": "puny robot",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": false,
+  "generation_match": false
+}

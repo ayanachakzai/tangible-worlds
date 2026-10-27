@@ -1,0 +1,9 @@
+{
+  "participant_phrase": "small house",
+  "candidate": "B_strip_scale_adjective",
+  "generation_input": "house",
+  "shaped_prompt": "one low-poly house, front three-quarter hero view, centered silhouette, entire structure visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "raw_output": "\n\none low-poly house, front three-quarter hero view, centered silhouette, entire structure visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "latency_s": 4.307,
+  "scale_token_present_in_input": false
+}

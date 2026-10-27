@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H023",
+  "case_index": 23,
+  "group": "ordinary_building",
+  "meaning": "dairy barn",
+  "acceptable": [
+    "building_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"dairy barn\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "dairy barn",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.67,
+  "error": ""
+}

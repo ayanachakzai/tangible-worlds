@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N016",
+  "category": "neutral_later_word",
+  "phrase": "a big wheel inside a clock",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "a big wheel inside a clock",
+  "participant_phrase": "a big wheel inside a clock",
+  "generation_meaning": "a wheel inside a clock",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "big",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

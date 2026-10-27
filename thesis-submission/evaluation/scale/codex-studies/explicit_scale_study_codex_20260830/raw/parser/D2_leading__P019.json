@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P019",
+  "category": "case_punctuation",
+  "phrase": "LARGE airship.",
+  "expected_intent": "large",
+  "expected_generation_meaning": "airship",
+  "participant_phrase": "LARGE airship.",
+  "generation_meaning": "airship",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "large",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

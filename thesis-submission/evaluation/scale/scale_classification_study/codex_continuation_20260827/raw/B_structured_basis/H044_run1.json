@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H044",
+  "case_index": 44,
+  "group": "boundary",
+  "meaning": "garden pavilion",
+  "acceptable": [
+    "room_scale",
+    "building_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"garden pavilion\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "garden pavilion",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.706,
+  "error": ""
+}

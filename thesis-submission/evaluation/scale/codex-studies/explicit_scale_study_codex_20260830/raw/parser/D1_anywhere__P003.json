@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "P003",
+  "category": "case_punctuation",
+  "phrase": "TINY CAR!",
+  "expected_intent": "very_small",
+  "expected_generation_meaning": "CAR",
+  "participant_phrase": "TINY CAR!",
+  "generation_meaning": "CAR",
+  "explicit_scale_intent": "very_small",
+  "target_size": 0.35,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "tiny",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

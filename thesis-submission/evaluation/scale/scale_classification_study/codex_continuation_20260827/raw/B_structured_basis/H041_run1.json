@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H041",
+  "case_index": 41,
+  "group": "boundary",
+  "meaning": "grandfather clock",
+  "acceptable": [
+    "handheld",
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"clock\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "clock",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.572,
+  "error": ""
+}

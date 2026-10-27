@@ -1,0 +1,121 @@
+design,case_id,category,phrase,expected_intent,expected_generation_meaning,participant_phrase,generation_meaning,explicit_scale_intent,target_size,scale_source,matched_modifier,detected,intent_match,generation_match
+D1_anywhere,P001,supported,tiny castle,very_small,castle,tiny castle,castle,very_small,0.35,participant_explicit,tiny,True,True,True
+D1_anywhere,P002,supported_article,a tiny castle,very_small,a castle,a tiny castle,a castle,very_small,0.35,participant_explicit,tiny,True,True,True
+D1_anywhere,P003,case_punctuation,TINY CAR!,very_small,CAR,TINY CAR!,CAR,very_small,0.35,participant_explicit,tiny,True,True,True
+D1_anywhere,P004,supported_multiword,  tiny   red observatory  ,very_small,red observatory,tiny   red observatory,red observatory,very_small,0.35,participant_explicit,tiny,True,True,True
+D1_anywhere,P005,supported,miniature tram,very_small,tram,miniature tram,tram,very_small,0.35,participant_explicit,miniature,True,True,True
+D1_anywhere,P006,supported_article,a miniature dragon,very_small,a dragon,a miniature dragon,a dragon,very_small,0.35,participant_explicit,miniature,True,True,True
+D1_anywhere,P007,case_punctuation,Miniature lighthouse.,very_small,lighthouse,Miniature lighthouse.,lighthouse,very_small,0.35,participant_explicit,miniature,True,True,True
+D1_anywhere,P008,supported_multiword,miniature toy car,very_small,toy car,miniature toy car,toy car,very_small,0.35,participant_explicit,miniature,True,True,True
+D1_anywhere,P009,supported,small cabin,small,cabin,small cabin,cabin,small,0.65,participant_explicit,small,True,True,True
+D1_anywhere,P010,supported_article,a small red castle,small,a red castle,a small red castle,a red castle,small,0.65,participant_explicit,small,True,True,True
+D1_anywhere,P011,case_punctuation,SMALL boat?,small,boat,SMALL boat?,boat,small,0.65,participant_explicit,small,True,True,True
+D1_anywhere,P012,supported,small mushroom,small,mushroom,small mushroom,mushroom,small,0.65,participant_explicit,small,True,True,True
+D1_anywhere,P013,supported,big car,large,car,big car,car,large,1.8,participant_explicit,big,True,True,True
+D1_anywhere,P014,supported_article,a big blue chair,large,a blue chair,a big blue chair,a blue chair,large,1.8,participant_explicit,big,True,True,True
+D1_anywhere,P015,case_punctuation,BIG dragon!,large,dragon,BIG dragon!,dragon,large,1.8,participant_explicit,big,True,True,True
+D1_anywhere,P016,supported,big mushroom,large,mushroom,big mushroom,mushroom,large,1.8,participant_explicit,big,True,True,True
+D1_anywhere,P017,supported,large house,large,house,large house,house,large,1.8,participant_explicit,large,True,True,True
+D1_anywhere,P018,supported_article,a large stone bridge,large,a stone bridge,a large stone bridge,a stone bridge,large,1.8,participant_explicit,large,True,True,True
+D1_anywhere,P019,case_punctuation,LARGE airship.,large,airship,LARGE airship.,airship,large,1.8,participant_explicit,large,True,True,True
+D1_anywhere,P020,supported_multiword,large coral arch,large,coral arch,large coral arch,coral arch,large,1.8,participant_explicit,large,True,True,True
+D1_anywhere,P021,supported,huge mountain,very_large,mountain,huge mountain,mountain,very_large,3.0,participant_explicit,huge,True,True,True
+D1_anywhere,P022,supported_article,a huge chair,very_large,a chair,a huge chair,a chair,very_large,3.0,participant_explicit,huge,True,True,True
+D1_anywhere,P023,case_punctuation,HUGE castle!,very_large,castle,HUGE castle!,castle,very_large,3.0,participant_explicit,huge,True,True,True
+D1_anywhere,P024,supported_multiword,huge glass whale,very_large,glass whale,huge glass whale,glass whale,very_large,3.0,participant_explicit,huge,True,True,True
+D1_anywhere,P025,unsupported_synonym,teeny castle,very_small,castle,teeny castle,teeny castle,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P026,unsupported_synonym,puny robot,very_small,robot,puny robot,puny robot,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P027,unsupported_synonym,little boat,small,boat,little boat,little boat,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P028,unsupported_hyphenated,modest-sized house,small,house,modest-sized house,modest-sized house,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P029,unsupported_synonym,enormous bridge,very_large,bridge,enormous bridge,enormous bridge,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P030,unsupported_synonym,colossal chair,very_large,chair,colossal chair,colossal chair,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P031,unsupported_trailing,castle is huge,very_large,castle,castle is huge,castle is,very_large,3.0,participant_explicit,huge,True,True,False
+D1_anywhere,P032,unsupported_trailing,"castle, tiny",very_small,castle,"castle, tiny","castle,",very_small,0.35,participant_explicit,tiny,True,True,False
+D1_anywhere,P033,unsupported_trailing,bridge but small,small,bridge,bridge but small,bridge but,small,0.65,participant_explicit,small,True,True,False
+D1_anywhere,P034,unsupported_comparative,somewhat larger car,large,car,somewhat larger car,somewhat larger car,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P035,unsupported_comparative,a little bigger chair,large,a chair,a little bigger chair,a little bigger chair,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,P036,unsupported_comparative,smaller mountain,small,mountain,smaller mountain,smaller mountain,neutral,1.0,neutral_default,,False,False,False
+D1_anywhere,N001,neutral_bare,castle,neutral,castle,castle,castle,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N002,neutral_bare,a castle,neutral,a castle,a castle,a castle,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N003,neutral_bare,the bridge,neutral,the bridge,the bridge,the bridge,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N004,neutral_other_adjective,red car,neutral,red car,red car,red car,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N005,neutral_hyphenated,small-scale model,neutral,small-scale model,small-scale model,-scale model,small,0.65,participant_explicit,small,True,False,False
+D1_anywhere,N006,neutral_hyphenated,large-scale sculpture,neutral,large-scale sculpture,large-scale sculpture,-scale sculpture,large,1.8,participant_explicit,large,True,False,False
+D1_anywhere,N007,neutral_local_component,tiny flag on a castle,neutral,tiny flag on a castle,tiny flag on a castle,flag on a castle,very_small,0.35,participant_explicit,tiny,True,False,False
+D1_anywhere,N008,neutral_later_word,the castle has a small door,neutral,the castle has a small door,the castle has a small door,the castle has a door,small,0.65,participant_explicit,small,True,False,False
+D1_anywhere,N009,neutral_proper_name,Big Ben,neutral,Big Ben,Big Ben,Ben,large,1.8,participant_explicit,big,True,False,False
+D1_anywhere,N010,neutral_proper_name,big ben,neutral,big ben,big ben,ben,large,1.8,participant_explicit,big,True,False,False
+D1_anywhere,N011,neutral_lexicalized,large language model,neutral,large language model,large language model,language model,large,1.8,participant_explicit,large,True,False,False
+D1_anywhere,N012,neutral_lexicalized,small talk,neutral,small talk,small talk,talk,small,0.65,participant_explicit,small,True,False,False
+D1_anywhere,N013,neutral_nonphysical,huge fan of castles,neutral,huge fan of castles,huge fan of castles,fan of castles,very_large,3.0,participant_explicit,huge,True,False,False
+D1_anywhere,N014,neutral_lexicalized,miniature painting,neutral,miniature painting,miniature painting,painting,very_small,0.35,participant_explicit,miniature,True,False,False
+D1_anywhere,N015,neutral_later_word,a model with a tiny window,neutral,a model with a tiny window,a model with a tiny window,a model with a window,very_small,0.35,participant_explicit,tiny,True,False,False
+D1_anywhere,N016,neutral_later_word,a big wheel inside a clock,neutral,a big wheel inside a clock,a big wheel inside a clock,a wheel inside a clock,large,1.8,participant_explicit,big,True,False,False
+D1_anywhere,N017,neutral_later_word,the large door of a house,neutral,the large door of a house,the large door of a house,the door of a house,large,1.8,participant_explicit,large,True,False,False
+D1_anywhere,N018,neutral_later_word,a house with huge windows,neutral,a house with huge windows,a house with huge windows,a house with windows,very_large,3.0,participant_explicit,huge,True,False,False
+D1_anywhere,N019,neutral_later_word,a SMALL detail on the tower,neutral,a SMALL detail on the tower,a SMALL detail on the tower,a detail on the tower,small,0.65,participant_explicit,small,True,False,False
+D1_anywhere,N020,neutral_unstable,bigger than yesterday,neutral,bigger than yesterday,bigger than yesterday,bigger than yesterday,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N021,neutral_prefix,Smallville,neutral,Smallville,Smallville,Smallville,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N022,neutral_prefix,hugely detailed castle,neutral,hugely detailed castle,hugely detailed castle,hugely detailed castle,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N023,neutral_prefix,largesse statue,neutral,largesse statue,largesse statue,largesse statue,neutral,1.0,neutral_default,,False,True,True
+D1_anywhere,N024,neutral_prefix,tinytown diorama,neutral,tinytown diorama,tinytown diorama,tinytown diorama,neutral,1.0,neutral_default,,False,True,True
+D2_leading,P001,supported,tiny castle,very_small,castle,tiny castle,castle,very_small,0.35,participant_explicit,tiny,True,True,True
+D2_leading,P002,supported_article,a tiny castle,very_small,a castle,a tiny castle,a castle,very_small,0.35,participant_explicit,tiny,True,True,True
+D2_leading,P003,case_punctuation,TINY CAR!,very_small,CAR,TINY CAR!,CAR,very_small,0.35,participant_explicit,tiny,True,True,True
+D2_leading,P004,supported_multiword,  tiny   red observatory  ,very_small,red observatory,tiny   red observatory,red observatory,very_small,0.35,participant_explicit,tiny,True,True,True
+D2_leading,P005,supported,miniature tram,very_small,tram,miniature tram,tram,very_small,0.35,participant_explicit,miniature,True,True,True
+D2_leading,P006,supported_article,a miniature dragon,very_small,a dragon,a miniature dragon,a dragon,very_small,0.35,participant_explicit,miniature,True,True,True
+D2_leading,P007,case_punctuation,Miniature lighthouse.,very_small,lighthouse,Miniature lighthouse.,lighthouse,very_small,0.35,participant_explicit,miniature,True,True,True
+D2_leading,P008,supported_multiword,miniature toy car,very_small,toy car,miniature toy car,toy car,very_small,0.35,participant_explicit,miniature,True,True,True
+D2_leading,P009,supported,small cabin,small,cabin,small cabin,cabin,small,0.65,participant_explicit,small,True,True,True
+D2_leading,P010,supported_article,a small red castle,small,a red castle,a small red castle,a red castle,small,0.65,participant_explicit,small,True,True,True
+D2_leading,P011,case_punctuation,SMALL boat?,small,boat,SMALL boat?,boat,small,0.65,participant_explicit,small,True,True,True
+D2_leading,P012,supported,small mushroom,small,mushroom,small mushroom,mushroom,small,0.65,participant_explicit,small,True,True,True
+D2_leading,P013,supported,big car,large,car,big car,car,large,1.8,participant_explicit,big,True,True,True
+D2_leading,P014,supported_article,a big blue chair,large,a blue chair,a big blue chair,a blue chair,large,1.8,participant_explicit,big,True,True,True
+D2_leading,P015,case_punctuation,BIG dragon!,large,dragon,BIG dragon!,dragon,large,1.8,participant_explicit,big,True,True,True
+D2_leading,P016,supported,big mushroom,large,mushroom,big mushroom,mushroom,large,1.8,participant_explicit,big,True,True,True
+D2_leading,P017,supported,large house,large,house,large house,house,large,1.8,participant_explicit,large,True,True,True
+D2_leading,P018,supported_article,a large stone bridge,large,a stone bridge,a large stone bridge,a stone bridge,large,1.8,participant_explicit,large,True,True,True
+D2_leading,P019,case_punctuation,LARGE airship.,large,airship,LARGE airship.,airship,large,1.8,participant_explicit,large,True,True,True
+D2_leading,P020,supported_multiword,large coral arch,large,coral arch,large coral arch,coral arch,large,1.8,participant_explicit,large,True,True,True
+D2_leading,P021,supported,huge mountain,very_large,mountain,huge mountain,mountain,very_large,3.0,participant_explicit,huge,True,True,True
+D2_leading,P022,supported_article,a huge chair,very_large,a chair,a huge chair,a chair,very_large,3.0,participant_explicit,huge,True,True,True
+D2_leading,P023,case_punctuation,HUGE castle!,very_large,castle,HUGE castle!,castle,very_large,3.0,participant_explicit,huge,True,True,True
+D2_leading,P024,supported_multiword,huge glass whale,very_large,glass whale,huge glass whale,glass whale,very_large,3.0,participant_explicit,huge,True,True,True
+D2_leading,P025,unsupported_synonym,teeny castle,very_small,castle,teeny castle,teeny castle,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P026,unsupported_synonym,puny robot,very_small,robot,puny robot,puny robot,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P027,unsupported_synonym,little boat,small,boat,little boat,little boat,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P028,unsupported_hyphenated,modest-sized house,small,house,modest-sized house,modest-sized house,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P029,unsupported_synonym,enormous bridge,very_large,bridge,enormous bridge,enormous bridge,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P030,unsupported_synonym,colossal chair,very_large,chair,colossal chair,colossal chair,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P031,unsupported_trailing,castle is huge,very_large,castle,castle is huge,castle is huge,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P032,unsupported_trailing,"castle, tiny",very_small,castle,"castle, tiny","castle, tiny",neutral,1.0,neutral_default,,False,False,False
+D2_leading,P033,unsupported_trailing,bridge but small,small,bridge,bridge but small,bridge but small,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P034,unsupported_comparative,somewhat larger car,large,car,somewhat larger car,somewhat larger car,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P035,unsupported_comparative,a little bigger chair,large,a chair,a little bigger chair,a little bigger chair,neutral,1.0,neutral_default,,False,False,False
+D2_leading,P036,unsupported_comparative,smaller mountain,small,mountain,smaller mountain,smaller mountain,neutral,1.0,neutral_default,,False,False,False
+D2_leading,N001,neutral_bare,castle,neutral,castle,castle,castle,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N002,neutral_bare,a castle,neutral,a castle,a castle,a castle,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N003,neutral_bare,the bridge,neutral,the bridge,the bridge,the bridge,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N004,neutral_other_adjective,red car,neutral,red car,red car,red car,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N005,neutral_hyphenated,small-scale model,neutral,small-scale model,small-scale model,small-scale model,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N006,neutral_hyphenated,large-scale sculpture,neutral,large-scale sculpture,large-scale sculpture,large-scale sculpture,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N007,neutral_local_component,tiny flag on a castle,neutral,tiny flag on a castle,tiny flag on a castle,flag on a castle,very_small,0.35,participant_explicit,tiny,True,False,False
+D2_leading,N008,neutral_later_word,the castle has a small door,neutral,the castle has a small door,the castle has a small door,the castle has a small door,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N009,neutral_proper_name,Big Ben,neutral,Big Ben,Big Ben,Ben,large,1.8,participant_explicit,big,True,False,False
+D2_leading,N010,neutral_proper_name,big ben,neutral,big ben,big ben,ben,large,1.8,participant_explicit,big,True,False,False
+D2_leading,N011,neutral_lexicalized,large language model,neutral,large language model,large language model,language model,large,1.8,participant_explicit,large,True,False,False
+D2_leading,N012,neutral_lexicalized,small talk,neutral,small talk,small talk,talk,small,0.65,participant_explicit,small,True,False,False
+D2_leading,N013,neutral_nonphysical,huge fan of castles,neutral,huge fan of castles,huge fan of castles,fan of castles,very_large,3.0,participant_explicit,huge,True,False,False
+D2_leading,N014,neutral_lexicalized,miniature painting,neutral,miniature painting,miniature painting,painting,very_small,0.35,participant_explicit,miniature,True,False,False
+D2_leading,N015,neutral_later_word,a model with a tiny window,neutral,a model with a tiny window,a model with a tiny window,a model with a tiny window,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N016,neutral_later_word,a big wheel inside a clock,neutral,a big wheel inside a clock,a big wheel inside a clock,a wheel inside a clock,large,1.8,participant_explicit,big,True,False,False
+D2_leading,N017,neutral_later_word,the large door of a house,neutral,the large door of a house,the large door of a house,the large door of a house,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N018,neutral_later_word,a house with huge windows,neutral,a house with huge windows,a house with huge windows,a house with huge windows,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N019,neutral_later_word,a SMALL detail on the tower,neutral,a SMALL detail on the tower,a SMALL detail on the tower,a detail on the tower,small,0.65,participant_explicit,small,True,False,False
+D2_leading,N020,neutral_unstable,bigger than yesterday,neutral,bigger than yesterday,bigger than yesterday,bigger than yesterday,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N021,neutral_prefix,Smallville,neutral,Smallville,Smallville,Smallville,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N022,neutral_prefix,hugely detailed castle,neutral,hugely detailed castle,hugely detailed castle,hugely detailed castle,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N023,neutral_prefix,largesse statue,neutral,largesse statue,largesse statue,largesse statue,neutral,1.0,neutral_default,,False,True,True
+D2_leading,N024,neutral_prefix,tinytown diorama,neutral,tinytown diorama,tinytown diorama,tinytown diorama,neutral,1.0,neutral_default,,False,True,True

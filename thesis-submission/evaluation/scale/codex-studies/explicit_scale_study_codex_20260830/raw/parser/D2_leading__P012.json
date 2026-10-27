@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P012",
+  "category": "supported",
+  "phrase": "small mushroom",
+  "expected_intent": "small",
+  "expected_generation_meaning": "mushroom",
+  "participant_phrase": "small mushroom",
+  "generation_meaning": "mushroom",
+  "explicit_scale_intent": "small",
+  "target_size": 0.65,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "small",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

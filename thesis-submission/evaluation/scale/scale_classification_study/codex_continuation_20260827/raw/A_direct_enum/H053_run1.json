@@ -1,0 +1,21 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H053",
+  "case_index": 53,
+  "group": "modifier",
+  "meaning": "thimble-sized lighthouse",
+  "acceptable": [
+    "micro",
+    "handheld"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "thimble-sized lighthouse",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.438,
+  "error": ""
+}

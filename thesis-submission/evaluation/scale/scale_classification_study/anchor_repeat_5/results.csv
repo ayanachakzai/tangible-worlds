@@ -1,0 +1,106 @@
+case_index,group,meaning,expected,run,raw_output,parsed_class,valid_enum,expected_match,latency_s,error
+1,anchors,coffee mug,handheld,1,"
+
+handheld",handheld,True,True,1.502,
+1,anchors,coffee mug,handheld,2,"
+
+handheld",handheld,True,True,0.562,
+1,anchors,coffee mug,handheld,3,"
+
+handheld",handheld,True,True,0.615,
+1,anchors,coffee mug,handheld,4,"
+
+handheld",handheld,True,True,0.596,
+1,anchors,coffee mug,handheld,5,"
+
+handheld",handheld,True,True,0.548,
+2,anchors,wooden chair,body_scale,1,"
+
+body_scale",body_scale,True,True,0.758,
+2,anchors,wooden chair,body_scale,2,"
+
+body_scale",body_scale,True,True,0.565,
+2,anchors,wooden chair,body_scale,3,"
+
+body_scale",body_scale,True,True,0.573,
+2,anchors,wooden chair,body_scale,4,"
+
+body_scale",body_scale,True,True,0.596,
+2,anchors,wooden chair,body_scale,5,"
+
+body_scale",body_scale,True,True,0.556,
+3,anchors,small tent,room_scale,1,"
+
+room_scale",room_scale,True,True,0.726,
+3,anchors,small tent,room_scale,2,"
+
+room_scale",room_scale,True,True,0.663,
+3,anchors,small tent,room_scale,3,"
+
+room_scale",room_scale,True,True,0.639,
+3,anchors,small tent,room_scale,4,"
+
+room_scale",room_scale,True,True,0.696,
+3,anchors,small tent,room_scale,5,"
+
+room_scale",room_scale,True,True,0.692,
+4,anchors,car,vehicle_scale,1,"
+
+handheld",handheld,True,False,0.783,
+4,anchors,car,vehicle_scale,2,"
+
+handheld",handheld,True,False,0.658,
+4,anchors,car,vehicle_scale,3,"
+
+handheld",handheld,True,False,0.577,
+4,anchors,car,vehicle_scale,4,"
+
+handheld",handheld,True,False,0.599,
+4,anchors,car,vehicle_scale,5,"
+
+handheld",handheld,True,False,0.561,
+5,anchors,house,building_scale,1,"
+
+building_scale",building_scale,True,True,0.677,
+5,anchors,house,building_scale,2,"
+
+building_scale",building_scale,True,True,0.563,
+5,anchors,house,building_scale,3,"
+
+building_scale",building_scale,True,True,0.565,
+5,anchors,house,building_scale,4,"
+
+building_scale",building_scale,True,True,0.559,
+5,anchors,house,building_scale,5,"
+
+building_scale",building_scale,True,True,0.566,
+6,anchors,castle,infrastructure_scale,1,"
+
+building_scale",building_scale,True,False,0.68,
+6,anchors,castle,infrastructure_scale,2,"
+
+building_scale",building_scale,True,False,0.576,
+6,anchors,castle,infrastructure_scale,3,"
+
+building_scale",building_scale,True,False,0.594,
+6,anchors,castle,infrastructure_scale,4,"
+
+building_scale",building_scale,True,False,0.652,
+6,anchors,castle,infrastructure_scale,5,"
+
+building_scale",building_scale,True,False,0.611,
+7,anchors,mountain,landform_scale,1,"
+
+landform_scale",landform_scale,True,True,0.829,
+7,anchors,mountain,landform_scale,2,"
+
+landform_scale",landform_scale,True,True,0.656,
+7,anchors,mountain,landform_scale,3,"
+
+landform_scale",landform_scale,True,True,0.661,
+7,anchors,mountain,landform_scale,4,"
+
+landform_scale",landform_scale,True,True,0.798,
+7,anchors,mountain,landform_scale,5,"
+
+landform_scale",landform_scale,True,True,0.652,

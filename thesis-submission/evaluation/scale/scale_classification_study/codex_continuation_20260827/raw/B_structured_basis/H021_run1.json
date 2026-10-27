@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H021",
+  "case_index": 21,
+  "group": "ordinary_building",
+  "meaning": "public library building",
+  "acceptable": [
+    "building_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"building\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "building",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.592,
+  "error": ""
+}

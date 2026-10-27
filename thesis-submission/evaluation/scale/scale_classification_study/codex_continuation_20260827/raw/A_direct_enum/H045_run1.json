@@ -1,0 +1,21 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H045",
+  "case_index": 45,
+  "group": "boundary",
+  "meaning": "broadcast tower",
+  "acceptable": [
+    "building_scale",
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbuilding_scale",
+  "parsed_class": "building_scale",
+  "scale_basis": "broadcast tower",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.432,
+  "error": ""
+}

@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "N019",
+  "category": "neutral_later_word",
+  "phrase": "a SMALL detail on the tower",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "a SMALL detail on the tower",
+  "participant_phrase": "a SMALL detail on the tower",
+  "generation_meaning": "a detail on the tower",
+  "explicit_scale_intent": "small",
+  "target_size": 0.65,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "small",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

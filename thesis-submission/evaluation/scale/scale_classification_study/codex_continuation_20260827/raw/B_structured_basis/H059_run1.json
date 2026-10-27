@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H059",
+  "case_index": 59,
+  "group": "modifier",
+  "meaning": "planet-sized snow globe",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"planet\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "planet",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.63,
+  "error": ""
+}

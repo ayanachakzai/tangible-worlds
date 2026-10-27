@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H006",
+  "case_index": 6,
+  "group": "ordinary_handheld",
+  "meaning": "violin",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "violin",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.504,
+  "error": ""
+}

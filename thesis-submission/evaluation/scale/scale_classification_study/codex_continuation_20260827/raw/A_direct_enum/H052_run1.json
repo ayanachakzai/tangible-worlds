@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H052",
+  "case_index": 52,
+  "group": "creative",
+  "meaning": "orbital ring around an alien world",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\ncolossal_scale",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "orbital ring around an alien world",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.529,
+  "error": ""
+}

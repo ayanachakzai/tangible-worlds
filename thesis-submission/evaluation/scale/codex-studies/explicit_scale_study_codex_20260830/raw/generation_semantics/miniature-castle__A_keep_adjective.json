@@ -1,0 +1,9 @@
+{
+  "participant_phrase": "miniature castle",
+  "candidate": "A_keep_adjective",
+  "generation_input": "miniature castle",
+  "shaped_prompt": "one low-poly miniature castle, front three-quarter hero view, centered silhouette, entire structure visible from base to tallest tower, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "raw_output": "\n\none low-poly miniature castle, front three-quarter hero view, centered silhouette, entire structure visible from base to tallest tower, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "latency_s": 4.525,
+  "scale_token_present_in_input": true
+}

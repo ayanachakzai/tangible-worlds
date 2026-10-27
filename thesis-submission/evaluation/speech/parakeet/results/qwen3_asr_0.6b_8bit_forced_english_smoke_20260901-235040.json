@@ -1,0 +1,142 @@
+{
+  "model": "mlx-community/Qwen3-ASR-0.6B-8bit",
+  "runtime": "MLX-Audio",
+  "runtime_version": "0.5.1",
+  "settings": {
+    "language": "English",
+    "prompt": null,
+    "speech_contexts": null,
+    "vad": false,
+    "postprocessing": null
+  },
+  "scope": "smoke",
+  "created_at": "2026-09-01T22:50:40.094328+00:00",
+  "python": "3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]",
+  "summary": {
+    "requested": 13,
+    "completed": 13,
+    "errors": 0,
+    "model_load_s": 1.514607,
+    "median_latency_s": 0.151063,
+    "p95_latency_s": 0.237358
+  },
+  "results": [
+    {
+      "recording_id": "assign_suspension_bridge_huge_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "Object two is a suspension bridge scale huge.",
+      "latency_s": 2.577424,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "assign_coffee_mug_miniature_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "expected_route": "assign",
+      "transcript": "Objective is a coffee mug scale miniature.",
+      "latency_s": 0.172252,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "robust_mm_petrol_station",
+      "category": "assignment_robustness",
+      "reference": "Mm, object two is a petrol station scale small",
+      "expected_route": "assign",
+      "transcript": "Hmm. Objective is a petrol station scale small.",
+      "latency_s": 0.1687,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "robust_hmm_bus_shelter",
+      "category": "assignment_robustness",
+      "reference": "Hmm, object three is a bus shelter scale tiny",
+      "expected_route": "assign",
+      "transcript": "Hmm, objectivity is a buzz shelter scale tiny.",
+      "latency_s": 0.237358,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "robust_quiet_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object two is a garden shed scale tiny",
+      "expected_route": "assign",
+      "transcript": "Object two is a garden shed, scaled tiny.",
+      "latency_s": 0.151063,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "confirm_yes_t1",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "expected_route": "confirm_yes",
+      "transcript": "Yes.",
+      "latency_s": 0.0877,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "confirm_no_t1",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "expected_route": "confirm_no",
+      "transcript": "No.",
+      "latency_s": 0.092922,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "confirm_ambiguous_yes_no",
+      "category": "confirmation_ambiguous",
+      "reference": "yes no",
+      "expected_route": "confirm_unclear",
+      "transcript": "Yes. No.",
+      "latency_s": 0.102431,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "atmosphere_golden_hour",
+      "category": "atmosphere",
+      "reference": "can we try golden hour but colder",
+      "expected_route": "converse",
+      "transcript": "Can we try golden art but colder?",
+      "latency_s": 0.139047,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "adversarial_silence_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "I'm.",
+      "latency_s": 0.099964,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "adversarial_silence_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.174087,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "adversarial_prop_noise_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.183791,
+      "detected_language": "['English']"
+    },
+    {
+      "recording_id": "adversarial_aborted_press_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "Make it.",
+      "latency_s": 0.106306,
+      "detected_language": "['English']"
+    }
+  ]
+}

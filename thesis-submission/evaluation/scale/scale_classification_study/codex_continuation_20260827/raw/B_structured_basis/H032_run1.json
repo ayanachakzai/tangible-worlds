@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H032",
+  "case_index": 32,
+  "group": "ordinary_landform",
+  "meaning": "valley",
+  "acceptable": [
+    "landform_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"valley\",\"semantic_scale_class\":\"landform_scale\"}",
+  "parsed_class": "landform_scale",
+  "scale_basis": "valley",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.667,
+  "error": ""
+}

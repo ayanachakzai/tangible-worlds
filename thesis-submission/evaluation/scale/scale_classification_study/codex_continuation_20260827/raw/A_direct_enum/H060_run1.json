@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H060",
+  "case_index": 60,
+  "group": "modifier",
+  "meaning": "spider as wide as a dinner plate",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "spider as wide as a dinner plate",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.435,
+  "error": ""
+}

@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f36e2]:
+  - heading "C_compact | less aggressive upper range" [level=1] [ref=f36e3]
+  - paragraph [ref=f36e4]: "sizes: 0.35 | 0.65 | 1.00 | 1.35 | 1.80 | 2.35 | 3.00"
+  - paragraph [ref=f36e5]: "edge: edge stress | low_oblique: lower oblique"
+  - paragraph [ref=f36e6]: Loading 0/7 meshes
+  - paragraph [ref=f36e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

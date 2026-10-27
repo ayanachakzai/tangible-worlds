@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N015",
+  "category": "neutral_later_word",
+  "phrase": "a model with a tiny window",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "a model with a tiny window",
+  "participant_phrase": "a model with a tiny window",
+  "generation_meaning": "a model with a tiny window",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

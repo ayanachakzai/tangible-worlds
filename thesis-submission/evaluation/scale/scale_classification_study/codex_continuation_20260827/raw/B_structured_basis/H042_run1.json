@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H042",
+  "case_index": 42,
+  "group": "boundary",
+  "meaning": "industrial oven",
+  "acceptable": [
+    "body_scale",
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"oven\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "oven",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.586,
+  "error": ""
+}

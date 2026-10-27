@@ -1,0 +1,40 @@
+{
+  "production_server_sha256_source": "22089f1f43568a344206a3ab3ee05cb62bea79eaf828be6ffd965491967cc523",
+  "existing_fixture": "~/Documents/UAL/tangible-worlds/phase3-tabletop/rendering/generated_meshes/a-car.glb",
+  "existing_fixture_size_bytes": 1047760,
+  "voice_transcript": "object two is a car scaled tiny",
+  "voice_original_meaning": "a car scaled tiny",
+  "normalized_assignment_meaning": "a car scale tiny",
+  "existing_correct_assignment_meaning": "a car scale tiny",
+  "alias_record": {
+    "meaning": "a car scale tiny",
+    "generation_meaning": "a car",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_marked"
+  },
+  "correct_record": {
+    "meaning": "a car scale tiny",
+    "generation_meaning": "a car",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_marked"
+  },
+  "typed_record": {
+    "meaning": "a car scaled tiny",
+    "generation_meaning": "a car scaled tiny",
+    "explicit_scale_intent": "neutral",
+    "target_size": 1.0,
+    "scale_source": "neutral_default"
+  },
+  "alias_cache_slug": "a-car",
+  "correct_cache_slug": "a-car",
+  "cache_file": "/var/folders/3r/_vlcg61d7j1bptb32wyxwqj00000gn/T/voice-scaled-alias-j32aexsr/generated_meshes/a-car.glb",
+  "cache_file_exists": true,
+  "generator_call_count": 0,
+  "final_assignment_status": "ready",
+  "final_mesh_url": "/generated_meshes/a-car.glb?v=1786824623",
+  "cache_path_stdout": "[local] cache hit for 'a car scale tiny'",
+  "same_object_repeat_is_server_noop": true,
+  "pass": true
+}

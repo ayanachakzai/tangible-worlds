@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N017",
+  "category": "neutral_later_word",
+  "phrase": "the large door of a house",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "the large door of a house",
+  "participant_phrase": "the large door of a house",
+  "generation_meaning": "the large door of a house",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

@@ -1,0 +1,15 @@
+Production file SHA-256 hashes recorded after all study capture and reporting on 27 August 2026
+
+5a8d0b8b4cf81086fbcd3e28c02fc839876d82d6a607fcf138f950b2e416165c  phase3-tabletop/rendering/index.html
+5c00e629ff7723456ee9b946b78de6ba4f83ddfd15eb7e6eecf8e06db4bbbc55  phase3-tabletop/rendering/serve.py
+9dd353ea83ca51c1e392676530294ad0d967953305e189269bd18f49babda05b  phase3-tabletop/tracking/track_tabletop.py
+
+Comparison result: PASS. All three hashes are byte-for-byte identical to file_hashes_before.txt.
+
+Additional final checks
+
+- Production git diff for these three paths: empty.
+- Runtime-state files newer than the before-hash marker: none.
+- Package manifests or lockfiles newer than the marker outside the isolated study directory: none.
+- Study browser session: closed.
+- Study static server: stopped.

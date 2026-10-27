@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H068",
+  "case_index": 68,
+  "group": "modifier",
+  "meaning": "cloud the size of a country",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"country\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "country",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.611,
+  "error": ""
+}

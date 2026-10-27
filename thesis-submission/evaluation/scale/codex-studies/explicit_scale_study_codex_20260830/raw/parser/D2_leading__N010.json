@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N010",
+  "category": "neutral_proper_name",
+  "phrase": "big ben",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "big ben",
+  "participant_phrase": "big ben",
+  "generation_meaning": "ben",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "big",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

@@ -1,0 +1,400 @@
+{
+  "study": "Tangible Worlds semantic relative-scale study",
+  "rendered_at": "2026-08-26T23:28:15.672Z",
+  "table_size": 10,
+  "ladder": {
+    "id": "A_baseline",
+    "name": "common-size baseline",
+    "hypothesis": "A common size should erase the intended semantic hierarchy.",
+    "values": [
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9,
+      0.9
+    ],
+    "adjacent_ratios": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "composition": {
+    "id": "adjacency",
+    "name": "mixed adjacency",
+    "purpose": "relative reading at close range"
+  },
+  "camera": {
+    "id": "topdown",
+    "name": "near top-down",
+    "fov": 50,
+    "position": [
+      0,
+      14,
+      0.01
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ]
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "original_assets": [
+    {
+      "asset": "coffee mug",
+      "class": "handheld",
+      "original_dimensions": {
+        "x": 1.000401,
+        "y": 0.943271,
+        "z": 0.831838
+      },
+      "original_longest_dimension": 1.0004009902477264
+    },
+    {
+      "asset": "wooden chair",
+      "class": "body_scale",
+      "original_dimensions": {
+        "x": 0.722579,
+        "y": 1.004301,
+        "z": 0.759071
+      },
+      "original_longest_dimension": 1.0043007135391235
+    },
+    {
+      "asset": "tent",
+      "class": "room_scale",
+      "original_dimensions": {
+        "x": 1.024207,
+        "y": 0.555463,
+        "z": 1.053034
+      },
+      "original_longest_dimension": 1.0530344247817993
+    },
+    {
+      "asset": "car",
+      "class": "vehicle_scale",
+      "original_dimensions": {
+        "x": 1.016645,
+        "y": 0.510339,
+        "z": 0.980647
+      },
+      "original_longest_dimension": 1.01664537191391
+    },
+    {
+      "asset": "house",
+      "class": "building_scale",
+      "original_dimensions": {
+        "x": 0.998107,
+        "y": 1.010881,
+        "z": 1.034441
+      },
+      "original_longest_dimension": 1.0344406366348267
+    },
+    {
+      "asset": "castle",
+      "class": "infrastructure_scale",
+      "original_dimensions": {
+        "x": 0.978471,
+        "y": 0.861607,
+        "z": 0.885985
+      },
+      "original_longest_dimension": 0.9784712195396423
+    },
+    {
+      "asset": "mountain",
+      "class": "landform_scale",
+      "original_dimensions": {
+        "x": 1.012844,
+        "y": 0.974422,
+        "z": 0.581085
+      },
+      "original_longest_dimension": 1.012844443321228
+    }
+  ],
+  "instances": [
+    {
+      "instance": 0,
+      "asset_index": 0,
+      "asset": "coffee mug",
+      "class": "handheld",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": -2.75,
+        "z": -2.2
+      },
+      "dimensions": {
+        "x": 0.9,
+        "y": 0.848604,
+        "z": 0.748355
+      },
+      "footprint": {
+        "x": 0.9,
+        "z": 0.748355,
+        "area": 0.673519,
+        "table_percent": 0.673519
+      },
+      "bounds": {
+        "min_x": -3.208869,
+        "max_x": -2.308869,
+        "min_y": 0,
+        "max_y": 0.848604,
+        "min_z": -2.556115,
+        "max_z": -1.807761
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 458.401759,
+        "y": 291.575628,
+        "width": 84.786147,
+        "height": 69.981654,
+        "viewport_area_percent": 0.412047
+      }
+    },
+    {
+      "instance": 1,
+      "asset_index": 6,
+      "asset": "mountain",
+      "class": "landform_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": -1.55,
+        "z": -2.2
+      },
+      "dimensions": {
+        "x": 0.9,
+        "y": 0.865858,
+        "z": 0.516344
+      },
+      "footprint": {
+        "x": 0.9,
+        "z": 0.516344,
+        "area": 0.46471,
+        "table_percent": 0.46471
+      },
+      "bounds": {
+        "min_x": -2.002072,
+        "max_x": -1.102072,
+        "min_y": 0,
+        "max_y": 0.865858,
+        "min_z": -2.465366,
+        "max_z": -1.949022
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 556.570921,
+        "y": 298.707508,
+        "width": 79.03252,
+        "height": 52.032764,
+        "viewport_area_percent": 0.285575
+      }
+    },
+    {
+      "instance": 2,
+      "asset_index": 3,
+      "asset": "car",
+      "class": "vehicle_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": 1.65,
+        "z": -1.45
+      },
+      "dimensions": {
+        "x": 0.9,
+        "y": 0.451785,
+        "z": 0.868132
+      },
+      "footprint": {
+        "x": 0.9,
+        "z": 0.868132,
+        "area": 0.781319,
+        "table_percent": 0.781319
+      },
+      "bounds": {
+        "min_x": 1.236935,
+        "max_x": 2.136935,
+        "min_y": 0,
+        "max_y": 0.451785,
+        "min_z": -1.871048,
+        "max_z": -1.002916
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 814.727201,
+        "y": 351.907798,
+        "width": 74.388368,
+        "height": 71.283301,
+        "viewport_area_percent": 0.368239
+      }
+    },
+    {
+      "instance": 3,
+      "asset_index": 4,
+      "asset": "house",
+      "class": "building_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": 2.65,
+        "z": -1.45
+      },
+      "dimensions": {
+        "x": 0.868389,
+        "y": 0.879502,
+        "z": 0.9
+      },
+      "footprint": {
+        "x": 0.868389,
+        "z": 0.9,
+        "area": 0.78155,
+        "table_percent": 0.78155
+      },
+      "bounds": {
+        "min_x": 2.198948,
+        "max_x": 3.067337,
+        "min_y": 0,
+        "max_y": 0.879502,
+        "min_z": -1.892784,
+        "max_z": -0.992784
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 888.400099,
+        "y": 345.279667,
+        "width": 82.259863,
+        "height": 78.687338,
+        "viewport_area_percent": 0.449501
+      }
+    },
+    {
+      "instance": 4,
+      "asset_index": 1,
+      "asset": "wooden chair",
+      "class": "body_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": -2.6,
+        "z": 2.05
+      },
+      "dimensions": {
+        "x": 0.647537,
+        "y": 0.9,
+        "z": 0.680238
+      },
+      "footprint": {
+        "x": 0.647537,
+        "z": 0.680238,
+        "area": 0.440479,
+        "table_percent": 0.440479
+      },
+      "bounds": {
+        "min_x": -2.934847,
+        "max_x": -2.287311,
+        "min_y": 0,
+        "max_y": 0.9,
+        "min_z": 1.706638,
+        "max_z": 2.386876
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 479.747428,
+        "y": 630.721928,
+        "width": 65.053308,
+        "height": 64.619968,
+        "viewport_area_percent": 0.291927
+      }
+    },
+    {
+      "instance": 5,
+      "asset_index": 5,
+      "asset": "castle",
+      "class": "infrastructure_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": -0.8,
+        "z": 2.05
+      },
+      "dimensions": {
+        "x": 0.9,
+        "y": 0.792508,
+        "z": 0.814931
+      },
+      "footprint": {
+        "x": 0.9,
+        "z": 0.814931,
+        "area": 0.733438,
+        "table_percent": 0.733438
+      },
+      "bounds": {
+        "min_x": -1.286412,
+        "max_x": -0.386412,
+        "min_y": 0,
+        "max_y": 0.792508,
+        "min_z": 1.615353,
+        "max_z": 2.430284
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 615.548594,
+        "y": 623.729276,
+        "width": 74.853823,
+        "height": 73.553775,
+        "viewport_area_percent": 0.382346
+      }
+    },
+    {
+      "instance": 6,
+      "asset_index": 2,
+      "asset": "tent",
+      "class": "room_scale",
+      "requested_target_size": 0.9,
+      "position": {
+        "x": 2.65,
+        "z": 2.15
+      },
+      "dimensions": {
+        "x": 0.875362,
+        "y": 0.474739,
+        "z": 0.9
+      },
+      "footprint": {
+        "x": 0.875362,
+        "z": 0.9,
+        "area": 0.787826,
+        "table_percent": 0.787826
+      },
+      "bounds": {
+        "min_x": 2.245778,
+        "max_x": 3.12114,
+        "min_y": 0,
+        "max_y": 0.474739,
+        "min_z": 1.746797,
+        "max_z": 2.646797
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 892.01835,
+        "y": 633.798217,
+        "width": 75.453394,
+        "height": 76.036458,
+        "viewport_area_percent": 0.398417
+      }
+    }
+  ],
+  "composition_metrics": {
+    "summed_axis_aligned_footprint_area": 4.662841,
+    "summed_footprint_table_percent": 4.662841,
+    "overlaps": [],
+    "overlap_count": 0,
+    "out_of_bounds_instances": [],
+    "out_of_bounds_count": 0,
+    "all_grounded": true
+  }
+}

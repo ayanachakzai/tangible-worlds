@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H061",
+  "case_index": 61,
+  "group": "modifier",
+  "meaning": "rabbit as tall as a doorway",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nroom_scale",
+  "parsed_class": "room_scale",
+  "scale_basis": "rabbit as tall as a doorway",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.43,
+  "error": ""
+}

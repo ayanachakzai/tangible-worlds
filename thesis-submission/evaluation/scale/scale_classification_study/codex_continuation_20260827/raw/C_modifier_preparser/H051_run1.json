@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H051",
+  "case_index": 51,
+  "group": "creative",
+  "meaning": "endless staircase",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nambiguous",
+  "parsed_class": "ambiguous",
+  "scale_basis": "endless staircase",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.535,
+  "error": ""
+}

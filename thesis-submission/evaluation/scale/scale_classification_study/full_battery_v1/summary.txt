@@ -1,0 +1,19 @@
+calls: 98
+valid enum: 98/98 (100.0%)
+consistent cases: 98/98 (100.0%)
+expected-match cases: 85/98 (86.7%)
+
+questionable cases:
+- shirt button | expected=['micro'] | outputs=['handheld'] | consistent=True
+- market stall | expected=['room_scale'] | outputs=['body_scale'] | consistent=True
+- gazebo | expected=['room_scale'] | outputs=['body_scale'] | consistent=True
+- small greenhouse | expected=['room_scale'] | outputs=['body_scale'] | consistent=True
+- cottage | expected=['building_scale'] | outputs=['body_scale'] | consistent=True
+- continent | expected=['colossal_scale'] | outputs=['landform_scale'] | consistent=True
+- miniature castle model | expected=['handheld'] | outputs=['infrastructure_scale'] | consistent=True
+- pocket-sized mountain | expected=['handheld'] | outputs=['colossal_scale'] | consistent=True
+- tiny house | expected=['building_scale', 'room_scale'] | outputs=['body_scale'] | consistent=True
+- giant mushroom | expected=['room_scale', 'building_scale'] | outputs=['colossal_scale'] | consistent=True
+- giant ant as tall as a person | expected=['body_scale'] | outputs=['colossal_scale'] | consistent=True
+- life-sized model car | expected=['vehicle_scale'] | outputs=['body_scale'] | consistent=True
+- battlefield | expected=['ambiguous', 'landform_scale'] | outputs=['room_scale'] | consistent=True

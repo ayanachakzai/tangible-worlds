@@ -1,0 +1,9 @@
+- generic [ref=f1e2]:
+  - heading "Explicit scale renderer qualification" [level=1] [ref=f1e3]
+  - paragraph [ref=f1e4]: Same GLB cloned at 0.35, 0.65, 1.00, 1.80, and 3.00. Parent movement is applied after normalization without reloading or rescaling.
+  - generic [ref=f1e5]:
+    - button "castle" [ref=f1e6]
+    - button "car" [active] [ref=f1e7]
+    - button "umbrella (irregular)" [ref=f1e8]
+  - paragraph [ref=f1e9]: "car: mechanics pass"
+  - generic [ref=f1e11]: "{ \"ready\": true, \"asset\": \"car\", \"levels\": [ { \"intent\": \"very_small\", \"targetSize\": 0.35, \"measuredMaxDimension\": 0.35, \"groundedMinY\": 0, \"targetApplied\": true, \"grounded\": true, \"movementScaleUnchanged\": true, \"insideTenUnitPlane\": true }, { \"intent\": \"small\", \"targetSize\": 0.65, \"measuredMaxDimension\": 0.65, \"groundedMinY\": 0, \"targetApplied\": true, \"grounded\": true, \"movementScaleUnchanged\": true, \"insideTenUnitPlane\": true }, { \"intent\": \"neutral\", \"targetSize\": 1, \"measuredMaxDimension\": 1, \"groundedMinY\": 0, \"targetApplied\": true, \"grounded\": true, \"movementScaleUnchanged\": true, \"insideTenUnitPlane\": true }, { \"intent\": \"large\", \"targetSize\": 1.8, \"measuredMaxDimension\": 1.8, \"groundedMinY\": 0, \"targetApplied\": true, \"grounded\": true, \"movementScaleUnchanged\": true, \"insideTenUnitPlane\": true }, { \"intent\": \"very_large\", \"targetSize\": 3, \"measuredMaxDimension\": 3, \"groundedMinY\": 0, \"targetApplied\": true, \"grounded\": true, \"movementScaleUnchanged\": true, \"insideTenUnitPlane\": true } ], \"counters\": { \"assetLoads\": 1, \"scaleApplications\": 5, \"movementRegenerations\": 0 }, \"targetValues\": [ 0.35, 0.65, 1, 1.8, 3 ], \"neutralDefault\": 1, \"allTargetsApplied\": true, \"allGrounded\": true, \"movementIndependent\": true, \"allInsideTenUnitPlane\": true }"

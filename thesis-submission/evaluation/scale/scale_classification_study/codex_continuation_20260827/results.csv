@@ -1,0 +1,673 @@
+candidate,case_id,case_index,group,meaning,acceptable,repeat_preregistered,run,raw_output,parsed_class,scale_basis,preparser_rule,valid_contract,acceptable_match,latency_s,error
+A_direct_enum,H001,1,ordinary_micro,sesame seed,micro,True,1,"
+
+micro",micro,sesame seed,model_direct,True,True,1.657,
+A_direct_enum,H001,1,ordinary_micro,sesame seed,micro,True,2,"
+
+micro",micro,sesame seed,model_direct,True,True,0.854,
+A_direct_enum,H001,1,ordinary_micro,sesame seed,micro,True,3,"
+
+micro",micro,sesame seed,model_direct,True,True,0.881,
+A_direct_enum,H002,2,ordinary_micro,mosquito,micro,False,1,"
+
+handheld",handheld,mosquito,model_direct,True,False,1.525,
+A_direct_enum,H003,3,ordinary_micro,speck of gravel,micro,False,1,"
+
+micro",micro,speck of gravel,model_direct,True,True,1.476,
+A_direct_enum,H004,4,ordinary_micro,eyelash,micro,False,1,"
+
+micro",micro,eyelash,model_direct,True,True,1.414,
+A_direct_enum,H005,5,ordinary_handheld,thermos flask,handheld,False,1,"
+
+handheld",handheld,thermos flask,model_direct,True,True,1.559,
+A_direct_enum,H006,6,ordinary_handheld,violin,handheld,False,1,"
+
+handheld",handheld,violin,model_direct,True,True,1.504,
+A_direct_enum,H007,7,ordinary_handheld,cordless hand drill,handheld,False,1,"
+
+handheld",handheld,cordless hand drill,model_direct,True,True,1.552,
+A_direct_enum,H008,8,ordinary_handheld,rolled sleeping bag,handheld,False,1,"
+
+handheld",handheld,rolled sleeping bag,model_direct,True,True,1.559,
+A_direct_enum,H009,9,ordinary_body,alpaca,body_scale,False,1,"
+
+body_scale",body_scale,alpaca,model_direct,True,True,1.527,
+A_direct_enum,H010,10,ordinary_body,wardrobe,body_scale,False,1,"
+
+body_scale",body_scale,wardrobe,model_direct,True,True,1.57,
+A_direct_enum,H011,11,ordinary_body,wheelbarrow,body_scale,False,1,"
+
+handheld",handheld,wheelbarrow,model_direct,True,False,1.539,
+A_direct_enum,H012,12,ordinary_body,arcade cabinet,body_scale,False,1,"
+
+handheld",handheld,arcade cabinet,model_direct,True,False,1.509,
+A_direct_enum,H013,13,ordinary_room,portable toilet cubicle,room_scale,False,1,"
+
+handheld",handheld,portable toilet cubicle,model_direct,True,False,1.591,
+A_direct_enum,H014,14,ordinary_room,ticket booth,room_scale,False,1,"
+
+handheld",handheld,ticket booth,model_direct,True,False,1.539,
+A_direct_enum,H015,15,ordinary_room,sauna cabin,room_scale,False,1,"
+
+body_scale",body_scale,sauna cabin,model_direct,True,False,1.532,
+A_direct_enum,H016,16,ordinary_room,walk-in freezer,room_scale,False,1,"
+
+building_scale",building_scale,walk-in freezer,model_direct,True,False,1.604,
+A_direct_enum,H017,17,ordinary_vehicle,ambulance,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,ambulance,model_direct,True,True,1.535,
+A_direct_enum,H018,18,ordinary_vehicle,commuter tram,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,commuter tram,model_direct,True,True,1.618,
+A_direct_enum,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,1,"
+
+vehicle_scale",vehicle_scale,small submarine,model_direct,True,True,1.593,
+A_direct_enum,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,2,"
+
+vehicle_scale",vehicle_scale,small submarine,model_direct,True,True,0.99,
+A_direct_enum,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,3,"
+
+vehicle_scale",vehicle_scale,small submarine,model_direct,True,True,1.028,
+A_direct_enum,H020,20,ordinary_vehicle,river barge,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,river barge,model_direct,True,True,1.613,
+A_direct_enum,H021,21,ordinary_building,public library building,building_scale,False,1,"
+
+building_scale",building_scale,public library building,model_direct,True,True,1.608,
+A_direct_enum,H022,22,ordinary_building,apartment tower,building_scale,False,1,"
+
+building_scale",building_scale,apartment tower,model_direct,True,True,1.556,
+A_direct_enum,H023,23,ordinary_building,dairy barn,building_scale,False,1,"
+
+body_scale",body_scale,dairy barn,model_direct,True,False,1.565,
+A_direct_enum,H024,24,ordinary_building,Buddhist temple,building_scale,False,1,"
+
+body_scale",body_scale,Buddhist temple,model_direct,True,False,1.586,
+A_direct_enum,H025,25,ordinary_infrastructure,container port,infrastructure_scale,False,1,"
+
+building_scale",building_scale,container port,model_direct,True,False,1.616,
+A_direct_enum,H026,26,ordinary_infrastructure,thermal power station,infrastructure_scale,False,1,"
+
+building_scale",building_scale,thermal power station,model_direct,True,False,1.6,
+A_direct_enum,H027,27,ordinary_infrastructure,motorway interchange,infrastructure_scale,False,1,"
+
+room_scale",room_scale,motorway interchange,model_direct,True,False,1.82,
+A_direct_enum,H028,28,ordinary_infrastructure,coastal flood barrier,infrastructure_scale,False,1,"
+
+building_scale",building_scale,coastal flood barrier,model_direct,True,False,1.781,
+A_direct_enum,H029,29,ordinary_landform,river delta,landform_scale,False,1,"
+
+landform_scale",landform_scale,river delta,model_direct,True,True,1.65,
+A_direct_enum,H030,30,ordinary_landform,mesa,landform_scale,False,1,"
+
+landform_scale",landform_scale,mesa,model_direct,True,True,1.76,
+A_direct_enum,H031,31,ordinary_landform,coral reef,landform_scale,False,1,"
+
+landform_scale",landform_scale,coral reef,model_direct,True,True,1.622,
+A_direct_enum,H032,32,ordinary_landform,valley,landform_scale,False,1,"
+
+landform_scale",landform_scale,valley,model_direct,True,True,1.5,
+A_direct_enum,H033,33,ordinary_colossal,metropolis,colossal_scale,False,1,"
+
+building_scale",building_scale,metropolis,model_direct,True,False,1.412,
+A_direct_enum,H034,34,ordinary_colossal,country,colossal_scale,False,1,"
+
+ambiguous",ambiguous,country,model_direct,True,False,1.254,
+A_direct_enum,H035,35,ordinary_colossal,gas giant,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,gas giant,model_direct,True,True,1.407,
+A_direct_enum,H036,36,ordinary_colossal,solar system,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,solar system,model_direct,True,True,1.53,
+A_direct_enum,H037,37,ambiguous,justice,ambiguous,True,1,"
+
+ambiguous",ambiguous,justice,model_direct,True,True,1.254,
+A_direct_enum,H037,37,ambiguous,justice,ambiguous,True,2,"
+
+ambiguous",ambiguous,justice,model_direct,True,True,0.9,
+A_direct_enum,H037,37,ambiguous,justice,ambiguous,True,3,"
+
+ambiguous",ambiguous,justice,model_direct,True,True,0.78,
+A_direct_enum,H038,38,ambiguous,traffic,ambiguous,False,1,"
+
+handheld",handheld,traffic,model_direct,True,False,1.41,
+A_direct_enum,H039,39,ambiguous,earthquake,ambiguous,False,1,"
+
+ambiguous",ambiguous,earthquake,model_direct,True,True,1.311,
+A_direct_enum,H040,40,ambiguous,a dream,ambiguous,False,1,"
+
+ambiguous",ambiguous,a dream,model_direct,True,True,1.269,
+A_direct_enum,H041,41,boundary,grandfather clock,handheld|body_scale,False,1,"
+
+body_scale",body_scale,grandfather clock,model_direct,True,True,1.384,
+A_direct_enum,H042,42,boundary,industrial oven,body_scale|room_scale,False,1,"
+
+building_scale",building_scale,industrial oven,model_direct,True,False,1.387,
+A_direct_enum,H043,43,boundary,mobile home,room_scale|vehicle_scale,False,1,"
+
+handheld",handheld,mobile home,model_direct,True,False,1.435,
+A_direct_enum,H044,44,boundary,garden pavilion,room_scale|building_scale,True,1,"
+
+body_scale",body_scale,garden pavilion,model_direct,True,False,1.409,
+A_direct_enum,H044,44,boundary,garden pavilion,room_scale|building_scale,True,2,"
+
+body_scale",body_scale,garden pavilion,model_direct,True,False,0.934,
+A_direct_enum,H044,44,boundary,garden pavilion,room_scale|building_scale,True,3,"
+
+body_scale",body_scale,garden pavilion,model_direct,True,False,0.894,
+A_direct_enum,H045,45,boundary,broadcast tower,building_scale|infrastructure_scale,False,1,"
+
+building_scale",building_scale,broadcast tower,model_direct,True,True,1.432,
+A_direct_enum,H046,46,boundary,large iceberg,landform_scale|colossal_scale,False,1,"
+
+landform_scale",landform_scale,large iceberg,model_direct,True,True,1.495,
+A_direct_enum,H047,47,creative,floating steampunk airship,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,floating steampunk airship,model_direct,True,True,1.48,
+A_direct_enum,H048,48,creative,doorway into another dimension,body_scale|room_scale,False,1,"
+
+ambiguous",ambiguous,doorway into another dimension,model_direct,True,False,1.376,
+A_direct_enum,H049,49,creative,city-consuming shadow monster,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,city-consuming shadow monster,model_direct,True,True,1.525,
+A_direct_enum,H050,50,creative,levitating crystal whale,vehicle_scale,False,1,"
+
+ambiguous",ambiguous,levitating crystal whale,model_direct,True,False,1.342,
+A_direct_enum,H051,51,creative,endless staircase,ambiguous,False,1,"
+
+ambiguous",ambiguous,endless staircase,model_direct,True,True,1.332,
+A_direct_enum,H052,52,creative,orbital ring around an alien world,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,orbital ring around an alien world,model_direct,True,True,1.529,
+A_direct_enum,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,1,"
+
+handheld",handheld,thimble-sized lighthouse,model_direct,True,True,1.438,
+A_direct_enum,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,2,"
+
+handheld",handheld,thimble-sized lighthouse,model_direct,True,True,0.948,
+A_direct_enum,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,3,"
+
+handheld",handheld,thimble-sized lighthouse,model_direct,True,True,0.918,
+A_direct_enum,H054,54,modifier,bicycle-sized elephant,body_scale,False,1,"
+
+body_scale",body_scale,bicycle-sized elephant,model_direct,True,True,1.393,
+A_direct_enum,H055,55,modifier,van-sized tortoise,vehicle_scale,True,1,"
+
+vehicle_scale",vehicle_scale,van-sized tortoise,model_direct,True,True,1.474,
+A_direct_enum,H055,55,modifier,van-sized tortoise,vehicle_scale,True,2,"
+
+vehicle_scale",vehicle_scale,van-sized tortoise,model_direct,True,True,0.959,
+A_direct_enum,H055,55,modifier,van-sized tortoise,vehicle_scale,True,3,"
+
+vehicle_scale",vehicle_scale,van-sized tortoise,model_direct,True,True,0.929,
+A_direct_enum,H056,56,modifier,hotel-sized birdcage,building_scale,False,1,"
+
+room_scale",room_scale,hotel-sized birdcage,model_direct,True,False,1.454,
+A_direct_enum,H057,57,modifier,suspension-bridge-sized serpent,infrastructure_scale,False,1,"
+
+building_scale",building_scale,suspension-bridge-sized serpent,model_direct,True,False,1.458,
+A_direct_enum,H058,58,modifier,mountain-sized robot,landform_scale,True,1,"
+
+colossal_scale",colossal_scale,mountain-sized robot,model_direct,True,False,1.571,
+A_direct_enum,H058,58,modifier,mountain-sized robot,landform_scale,True,2,"
+
+colossal_scale",colossal_scale,mountain-sized robot,model_direct,True,False,1.069,
+A_direct_enum,H058,58,modifier,mountain-sized robot,landform_scale,True,3,"
+
+colossal_scale",colossal_scale,mountain-sized robot,model_direct,True,False,0.955,
+A_direct_enum,H059,59,modifier,planet-sized snow globe,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,planet-sized snow globe,model_direct,True,True,1.59,
+A_direct_enum,H060,60,modifier,spider as wide as a dinner plate,handheld,False,1,"
+
+handheld",handheld,spider as wide as a dinner plate,model_direct,True,True,1.435,
+A_direct_enum,H061,61,modifier,rabbit as tall as a doorway,body_scale,False,1,"
+
+room_scale",room_scale,rabbit as tall as a doorway,model_direct,True,False,1.43,
+A_direct_enum,H062,62,modifier,tree as tall as an office tower,building_scale,True,1,"
+
+colossal_scale",colossal_scale,tree as tall as an office tower,model_direct,True,False,1.565,
+A_direct_enum,H062,62,modifier,tree as tall as an office tower,building_scale,True,2,"
+
+colossal_scale",colossal_scale,tree as tall as an office tower,model_direct,True,False,0.889,
+A_direct_enum,H062,62,modifier,tree as tall as an office tower,building_scale,True,3,"
+
+colossal_scale",colossal_scale,tree as tall as an office tower,model_direct,True,False,1.054,
+A_direct_enum,H063,63,modifier,whale as long as a passenger train,vehicle_scale,False,1,"
+
+room_scale",room_scale,whale as long as a passenger train,model_direct,True,False,1.703,
+A_direct_enum,H064,64,modifier,sculpture as large as an airport terminal,building_scale|infrastructure_scale,False,1,"
+
+building_scale",building_scale,sculpture as large as an airport terminal,model_direct,True,True,1.773,
+A_direct_enum,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,1,"
+
+handheld",handheld,robot the size of a suitcase,model_direct,True,True,1.734,
+A_direct_enum,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,2,"
+
+handheld",handheld,robot the size of a suitcase,model_direct,True,True,1.167,
+A_direct_enum,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,3,"
+
+handheld",handheld,robot the size of a suitcase,model_direct,True,True,1.161,
+A_direct_enum,H066,66,modifier,fortress the size of a garden shed,room_scale,False,1,"
+
+body_scale",body_scale,fortress the size of a garden shed,model_direct,True,False,1.731,
+A_direct_enum,H067,67,modifier,seed the size of a sofa,body_scale,False,1,"
+
+body_scale",body_scale,seed the size of a sofa,model_direct,True,True,1.752,
+A_direct_enum,H068,68,modifier,cloud the size of a country,colossal_scale,True,1,"
+
+colossal_scale",colossal_scale,cloud the size of a country,model_direct,True,True,1.862,
+A_direct_enum,H068,68,modifier,cloud the size of a country,colossal_scale,True,2,"
+
+colossal_scale",colossal_scale,cloud the size of a country,model_direct,True,True,1.248,
+A_direct_enum,H068,68,modifier,cloud the size of a country,colossal_scale,True,3,"
+
+colossal_scale",colossal_scale,cloud the size of a country,model_direct,True,True,1.304,
+A_direct_enum,H069,69,modifier,full-size replica of a delivery truck,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,full-size replica of a delivery truck,model_direct,True,True,1.776,
+A_direct_enum,H070,70,modifier,life-size model of a giraffe,body_scale,True,1,"
+
+body_scale",body_scale,life-size model of a giraffe,model_direct,True,True,1.747,
+A_direct_enum,H070,70,modifier,life-size model of a giraffe,body_scale,True,2,"
+
+body_scale",body_scale,life-size model of a giraffe,model_direct,True,True,1.148,
+A_direct_enum,H070,70,modifier,life-size model of a giraffe,body_scale,True,3,"
+
+body_scale",body_scale,life-size model of a giraffe,model_direct,True,True,1.198,
+A_direct_enum,H071,71,modifier,palm-sized model of a volcano,handheld,True,1,"
+
+handheld",handheld,palm-sized model of a volcano,model_direct,True,True,1.741,
+A_direct_enum,H071,71,modifier,palm-sized model of a volcano,handheld,True,2,"
+
+handheld",handheld,palm-sized model of a volcano,model_direct,True,True,1.164,
+A_direct_enum,H071,71,modifier,palm-sized model of a volcano,handheld,True,3,"
+
+handheld",handheld,palm-sized model of a volcano,model_direct,True,True,1.145,
+A_direct_enum,H072,72,modifier,miniature model of a space station,handheld,False,1,"
+
+building_scale",building_scale,miniature model of a space station,model_direct,True,False,1.697,
+B_structured_basis,H001,1,ordinary_micro,sesame seed,micro,True,1,"{""scale_basis"":""sesame seed"",""semantic_scale_class"":""micro""}",micro,sesame seed,model_structured,True,True,5.034,
+B_structured_basis,H001,1,ordinary_micro,sesame seed,micro,True,2,"{""scale_basis"":""sesame seed"",""semantic_scale_class"":""micro""}",micro,sesame seed,model_structured,True,True,3.148,
+B_structured_basis,H001,1,ordinary_micro,sesame seed,micro,True,3,"{""scale_basis"":""sesame seed"",""semantic_scale_class"":""micro""}",micro,sesame seed,model_structured,True,True,3.104,
+B_structured_basis,H002,2,ordinary_micro,mosquito,micro,False,1,"{""scale_basis"":""insect"",""semantic_scale_class"":""micro""}",micro,insect,model_structured,True,True,3.659,
+B_structured_basis,H003,3,ordinary_micro,speck of gravel,micro,False,1,"{""scale_basis"":""gravel grain"",""semantic_scale_class"":""micro""}",micro,gravel grain,model_structured,True,True,3.981,
+B_structured_basis,H004,4,ordinary_micro,eyelash,micro,False,1,"{""scale_basis"":""eyelash"",""semantic_scale_class"":""micro""}",micro,eyelash,model_structured,True,True,4.471,
+B_structured_basis,H005,5,ordinary_handheld,thermos flask,handheld,False,1,"{""scale_basis"":""thermos flask"",""semantic_scale_class"":""handheld""}",handheld,thermos flask,model_structured,True,True,4.49,
+B_structured_basis,H006,6,ordinary_handheld,violin,handheld,False,1,"{""scale_basis"":""musical instrument"",""semantic_scale_class"":""handheld""}",handheld,musical instrument,model_structured,True,True,4.132,
+B_structured_basis,H007,7,ordinary_handheld,cordless hand drill,handheld,False,1,"{""scale_basis"":""hand drill"",""semantic_scale_class"":""handheld""}",handheld,hand drill,model_structured,True,True,3.847,
+B_structured_basis,H008,8,ordinary_handheld,rolled sleeping bag,handheld,False,1,"{""scale_basis"":""sleeping bag"",""semantic_scale_class"":""handheld""}",handheld,sleeping bag,model_structured,True,True,3.958,
+B_structured_basis,H009,9,ordinary_body,alpaca,body_scale,False,1,"{""scale_basis"":""alpaca"",""semantic_scale_class"":""body_scale""}",body_scale,alpaca,model_structured,True,True,3.787,
+B_structured_basis,H010,10,ordinary_body,wardrobe,body_scale,False,1,"{""scale_basis"":""wardrobe"",""semantic_scale_class"":""body_scale""}",body_scale,wardrobe,model_structured,True,True,3.934,
+B_structured_basis,H011,11,ordinary_body,wheelbarrow,body_scale,False,1,"{""scale_basis"":""wheelbarrow"",""semantic_scale_class"":""handheld""}",handheld,wheelbarrow,model_structured,True,False,3.634,
+B_structured_basis,H012,12,ordinary_body,arcade cabinet,body_scale,False,1,"{""scale_basis"":""arcade cabinet"",""semantic_scale_class"":""handheld""}",handheld,arcade cabinet,model_structured,True,False,1.826,
+B_structured_basis,H013,13,ordinary_room,portable toilet cubicle,room_scale,False,1,"{""scale_basis"":""portable toilet cubicle"",""semantic_scale_class"":""handheld""}",handheld,portable toilet cubicle,model_structured,True,False,1.795,
+B_structured_basis,H014,14,ordinary_room,ticket booth,room_scale,False,1,"{""scale_basis"":""ticket booth"",""semantic_scale_class"":""handheld""}",handheld,ticket booth,model_structured,True,False,1.669,
+B_structured_basis,H015,15,ordinary_room,sauna cabin,room_scale,False,1,"{""scale_basis"":""sauna cabin"",""semantic_scale_class"":""room_scale""}",room_scale,sauna cabin,model_structured,True,True,1.706,
+B_structured_basis,H016,16,ordinary_room,walk-in freezer,room_scale,False,1,"{""scale_basis"":""room"",""semantic_scale_class"":""room_scale""}",room_scale,room,model_structured,True,True,1.612,
+B_structured_basis,H017,17,ordinary_vehicle,ambulance,vehicle_scale,False,1,"{""scale_basis"":""ambulance"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,ambulance,model_structured,True,True,1.65,
+B_structured_basis,H018,18,ordinary_vehicle,commuter tram,vehicle_scale,False,1,"{""scale_basis"":""commuter tram"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,commuter tram,model_structured,True,True,1.678,
+B_structured_basis,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,1,"{""scale_basis"":""submarine"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,submarine,model_structured,True,True,1.631,
+B_structured_basis,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,2,"{""scale_basis"":""submarine"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,submarine,model_structured,True,True,1.409,
+B_structured_basis,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,3,"{""scale_basis"":""submarine"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,submarine,model_structured,True,True,1.412,
+B_structured_basis,H020,20,ordinary_vehicle,river barge,vehicle_scale,False,1,"{""scale_basis"":""ship"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,ship,model_structured,True,True,1.572,
+B_structured_basis,H021,21,ordinary_building,public library building,building_scale,False,1,"{""scale_basis"":""building"",""semantic_scale_class"":""building_scale""}",building_scale,building,model_structured,True,True,1.592,
+B_structured_basis,H022,22,ordinary_building,apartment tower,building_scale,False,1,"{""scale_basis"":""apartment tower"",""semantic_scale_class"":""building_scale""}",building_scale,apartment tower,model_structured,True,True,1.68,
+B_structured_basis,H023,23,ordinary_building,dairy barn,building_scale,False,1,"{""scale_basis"":""dairy barn"",""semantic_scale_class"":""building_scale""}",building_scale,dairy barn,model_structured,True,True,1.67,
+B_structured_basis,H024,24,ordinary_building,Buddhist temple,building_scale,False,1,"{""scale_basis"":""temple structure"",""semantic_scale_class"":""building_scale""}",building_scale,temple structure,model_structured,True,True,1.822,
+B_structured_basis,H025,25,ordinary_infrastructure,container port,infrastructure_scale,False,1,"{""scale_basis"":""container port"",""semantic_scale_class"":""infrastructure_scale""}",infrastructure_scale,container port,model_structured,True,True,1.651,
+B_structured_basis,H026,26,ordinary_infrastructure,thermal power station,infrastructure_scale,False,1,"{""scale_basis"":""power station"",""semantic_scale_class"":""building_scale""}",building_scale,power station,model_structured,True,False,1.616,
+B_structured_basis,H027,27,ordinary_infrastructure,motorway interchange,infrastructure_scale,False,1,"{""scale_basis"":""road intersection"",""semantic_scale_class"":""room_scale""}",room_scale,road intersection,model_structured,True,False,1.637,
+B_structured_basis,H028,28,ordinary_infrastructure,coastal flood barrier,infrastructure_scale,False,1,"{""scale_basis"":""coastal flood barrier"",""semantic_scale_class"":""building_scale""}",building_scale,coastal flood barrier,model_structured,True,False,1.77,
+B_structured_basis,H029,29,ordinary_landform,river delta,landform_scale,False,1,"{""scale_basis"":""river delta"",""semantic_scale_class"":""landform_scale""}",landform_scale,river delta,model_structured,True,True,1.665,
+B_structured_basis,H030,30,ordinary_landform,mesa,landform_scale,False,1,"{""scale_basis"":""landform"",""semantic_scale_class"":""landform_scale""}",landform_scale,landform,model_structured,True,True,1.706,
+B_structured_basis,H031,31,ordinary_landform,coral reef,landform_scale,False,1,"{""scale_basis"":""coral reef"",""semantic_scale_class"":""landform_scale""}",landform_scale,coral reef,model_structured,True,True,1.715,
+B_structured_basis,H032,32,ordinary_landform,valley,landform_scale,False,1,"{""scale_basis"":""valley"",""semantic_scale_class"":""landform_scale""}",landform_scale,valley,model_structured,True,True,1.667,
+B_structured_basis,H033,33,ordinary_colossal,metropolis,colossal_scale,False,1,"{""scale_basis"":""city"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,city,model_structured,True,True,1.644,
+B_structured_basis,H034,34,ordinary_colossal,country,colossal_scale,False,1,"{""scale_basis"":""country"",""semantic_scale_class"":""landform_scale""}",landform_scale,country,model_structured,True,False,1.655,
+B_structured_basis,H035,35,ordinary_colossal,gas giant,colossal_scale,False,1,"{""scale_basis"":""planet"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,planet,model_structured,True,True,1.654,
+B_structured_basis,H036,36,ordinary_colossal,solar system,colossal_scale,False,1,"{""scale_basis"":""solar system"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,solar system,model_structured,True,True,1.716,
+B_structured_basis,H037,37,ambiguous,justice,ambiguous,True,1,"{""scale_basis"":""abstract concept"",""semantic_scale_class"":""ambiguous""}",ambiguous,abstract concept,model_structured,True,True,1.582,
+B_structured_basis,H037,37,ambiguous,justice,ambiguous,True,2,"{""scale_basis"":""abstract concept"",""semantic_scale_class"":""ambiguous""}",ambiguous,abstract concept,model_structured,True,True,1.381,
+B_structured_basis,H037,37,ambiguous,justice,ambiguous,True,3,"{""scale_basis"":""abstract concept"",""semantic_scale_class"":""ambiguous""}",ambiguous,abstract concept,model_structured,True,True,1.374,
+B_structured_basis,H038,38,ambiguous,traffic,ambiguous,False,1,"{""scale_basis"":""road network"",""semantic_scale_class"":""room_scale""}",room_scale,road network,model_structured,True,False,1.614,
+B_structured_basis,H039,39,ambiguous,earthquake,ambiguous,False,1,"{""scale_basis"":""earthquake"",""semantic_scale_class"":""landform_scale""}",landform_scale,earthquake,model_structured,True,False,1.661,
+B_structured_basis,H040,40,ambiguous,a dream,ambiguous,False,1,"{""scale_basis"":""dream"",""semantic_scale_class"":""ambiguous""}",ambiguous,dream,model_structured,True,True,1.536,
+B_structured_basis,H041,41,boundary,grandfather clock,handheld|body_scale,False,1,"{""scale_basis"":""clock"",""semantic_scale_class"":""building_scale""}",building_scale,clock,model_structured,True,False,1.572,
+B_structured_basis,H042,42,boundary,industrial oven,body_scale|room_scale,False,1,"{""scale_basis"":""oven"",""semantic_scale_class"":""building_scale""}",building_scale,oven,model_structured,True,False,1.586,
+B_structured_basis,H043,43,boundary,mobile home,room_scale|vehicle_scale,False,1,"{""scale_basis"":""mobile home"",""semantic_scale_class"":""building_scale""}",building_scale,mobile home,model_structured,True,False,1.628,
+B_structured_basis,H044,44,boundary,garden pavilion,room_scale|building_scale,True,1,"{""scale_basis"":""garden pavilion"",""semantic_scale_class"":""building_scale""}",building_scale,garden pavilion,model_structured,True,True,1.706,
+B_structured_basis,H044,44,boundary,garden pavilion,room_scale|building_scale,True,2,"{""scale_basis"":""garden pavilion"",""semantic_scale_class"":""building_scale""}",building_scale,garden pavilion,model_structured,True,True,1.496,
+B_structured_basis,H044,44,boundary,garden pavilion,room_scale|building_scale,True,3,"{""scale_basis"":""garden pavilion"",""semantic_scale_class"":""building_scale""}",building_scale,garden pavilion,model_structured,True,True,1.495,
+B_structured_basis,H045,45,boundary,broadcast tower,building_scale|infrastructure_scale,False,1,"{""scale_basis"":""broadcast tower"",""semantic_scale_class"":""building_scale""}",building_scale,broadcast tower,model_structured,True,True,1.616,
+B_structured_basis,H046,46,boundary,large iceberg,landform_scale|colossal_scale,False,1,"{""scale_basis"":""iceberg"",""semantic_scale_class"":""landform_scale""}",landform_scale,iceberg,model_structured,True,True,1.704,
+B_structured_basis,H047,47,creative,floating steampunk airship,vehicle_scale,False,1,"{""scale_basis"":""airship"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,airship,model_structured,True,True,1.668,
+B_structured_basis,H048,48,creative,doorway into another dimension,body_scale|room_scale,False,1,"{""scale_basis"":""doorway"",""semantic_scale_class"":""ambiguous""}",ambiguous,doorway,model_structured,True,False,1.607,
+B_structured_basis,H049,49,creative,city-consuming shadow monster,colossal_scale,False,1,"{""scale_basis"":""city"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,city,model_structured,True,True,1.635,
+B_structured_basis,H050,50,creative,levitating crystal whale,vehicle_scale,False,1,"{""scale_basis"":""whale"",""semantic_scale_class"":""body_scale""}",body_scale,whale,model_structured,True,False,1.623,
+B_structured_basis,H051,51,creative,endless staircase,ambiguous,False,1,"{""scale_basis"":""staircase"",""semantic_scale_class"":""ambiguous""}",ambiguous,staircase,model_structured,True,True,1.635,
+B_structured_basis,H052,52,creative,orbital ring around an alien world,colossal_scale,False,1,"{""scale_basis"":""alien world orbit"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,alien world orbit,model_structured,True,True,1.713,
+B_structured_basis,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,1,"{""scale_basis"":""lighthouse"",""semantic_scale_class"":""handheld""}",handheld,lighthouse,model_structured,True,True,1.638,
+B_structured_basis,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,2,"{""scale_basis"":""lighthouse"",""semantic_scale_class"":""handheld""}",handheld,lighthouse,model_structured,True,True,1.441,
+B_structured_basis,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,3,"{""scale_basis"":""lighthouse"",""semantic_scale_class"":""handheld""}",handheld,lighthouse,model_structured,True,True,1.416,
+B_structured_basis,H054,54,modifier,bicycle-sized elephant,body_scale,False,1,"{""scale_basis"":""bicycle"",""semantic_scale_class"":""body_scale""}",body_scale,bicycle,model_structured,True,True,1.634,
+B_structured_basis,H055,55,modifier,van-sized tortoise,vehicle_scale,True,1,"{""scale_basis"":""van"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,van,model_structured,True,True,1.591,
+B_structured_basis,H055,55,modifier,van-sized tortoise,vehicle_scale,True,2,"{""scale_basis"":""van"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,van,model_structured,True,True,1.374,
+B_structured_basis,H055,55,modifier,van-sized tortoise,vehicle_scale,True,3,"{""scale_basis"":""van"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,van,model_structured,True,True,1.373,
+B_structured_basis,H056,56,modifier,hotel-sized birdcage,building_scale,False,1,"{""scale_basis"":""hotel"",""semantic_scale_class"":""building_scale""}",building_scale,hotel,model_structured,True,True,1.591,
+B_structured_basis,H057,57,modifier,suspension-bridge-sized serpent,infrastructure_scale,False,1,"{""scale_basis"":""suspension bridge"",""semantic_scale_class"":""building_scale""}",building_scale,suspension bridge,model_structured,True,False,1.755,
+B_structured_basis,H058,58,modifier,mountain-sized robot,landform_scale,True,1,"{""scale_basis"":""mountain"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,mountain,model_structured,True,False,1.646,
+B_structured_basis,H058,58,modifier,mountain-sized robot,landform_scale,True,2,"{""scale_basis"":""mountain"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,mountain,model_structured,True,False,1.46,
+B_structured_basis,H058,58,modifier,mountain-sized robot,landform_scale,True,3,"{""scale_basis"":""mountain"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,mountain,model_structured,True,False,1.47,
+B_structured_basis,H059,59,modifier,planet-sized snow globe,colossal_scale,False,1,"{""scale_basis"":""planet"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,planet,model_structured,True,True,1.63,
+B_structured_basis,H060,60,modifier,spider as wide as a dinner plate,handheld,False,1,"{""scale_basis"":""dinner plate"",""semantic_scale_class"":""handheld""}",handheld,dinner plate,model_structured,True,True,1.694,
+B_structured_basis,H061,61,modifier,rabbit as tall as a doorway,body_scale,False,1,"{""scale_basis"":""doorway height"",""semantic_scale_class"":""room_scale""}",room_scale,doorway height,model_structured,True,False,1.693,
+B_structured_basis,H062,62,modifier,tree as tall as an office tower,building_scale,True,1,"{""scale_basis"":""office tower height"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,office tower height,model_structured,True,False,1.711,
+B_structured_basis,H062,62,modifier,tree as tall as an office tower,building_scale,True,2,"{""scale_basis"":""office tower height"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,office tower height,model_structured,True,False,1.497,
+B_structured_basis,H062,62,modifier,tree as tall as an office tower,building_scale,True,3,"{""scale_basis"":""office tower height"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,office tower height,model_structured,True,False,1.489,
+B_structured_basis,H063,63,modifier,whale as long as a passenger train,vehicle_scale,False,1,"{""scale_basis"":""passenger train length"",""semantic_scale_class"":""room_scale""}",room_scale,passenger train length,model_structured,True,False,1.705,
+B_structured_basis,H064,64,modifier,sculpture as large as an airport terminal,building_scale|infrastructure_scale,False,1,"{""scale_basis"":""airport terminal"",""semantic_scale_class"":""building_scale""}",building_scale,airport terminal,model_structured,True,True,1.615,
+B_structured_basis,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,1,"{""scale_basis"":""suitcase"",""semantic_scale_class"":""handheld""}",handheld,suitcase,model_structured,True,True,1.614,
+B_structured_basis,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,2,"{""scale_basis"":""suitcase"",""semantic_scale_class"":""handheld""}",handheld,suitcase,model_structured,True,True,1.428,
+B_structured_basis,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,3,"{""scale_basis"":""suitcase"",""semantic_scale_class"":""handheld""}",handheld,suitcase,model_structured,True,True,1.43,
+B_structured_basis,H066,66,modifier,fortress the size of a garden shed,room_scale,False,1,"{""scale_basis"":""garden shed"",""semantic_scale_class"":""building_scale""}",building_scale,garden shed,model_structured,True,False,1.663,
+B_structured_basis,H067,67,modifier,seed the size of a sofa,body_scale,False,1,"{""scale_basis"":""sofa"",""semantic_scale_class"":""body_scale""}",body_scale,sofa,model_structured,True,True,1.615,
+B_structured_basis,H068,68,modifier,cloud the size of a country,colossal_scale,True,1,"{""scale_basis"":""country"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,country,model_structured,True,True,1.611,
+B_structured_basis,H068,68,modifier,cloud the size of a country,colossal_scale,True,2,"{""scale_basis"":""country"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,country,model_structured,True,True,1.398,
+B_structured_basis,H068,68,modifier,cloud the size of a country,colossal_scale,True,3,"{""scale_basis"":""country"",""semantic_scale_class"":""colossal_scale""}",colossal_scale,country,model_structured,True,True,1.425,
+B_structured_basis,H069,69,modifier,full-size replica of a delivery truck,vehicle_scale,False,1,"{""scale_basis"":""delivery truck"",""semantic_scale_class"":""vehicle_scale""}",vehicle_scale,delivery truck,model_structured,True,True,1.615,
+B_structured_basis,H070,70,modifier,life-size model of a giraffe,body_scale,True,1,"{""scale_basis"":""giraffe"",""semantic_scale_class"":""body_scale""}",body_scale,giraffe,model_structured,True,True,1.68,
+B_structured_basis,H070,70,modifier,life-size model of a giraffe,body_scale,True,2,"{""scale_basis"":""giraffe"",""semantic_scale_class"":""body_scale""}",body_scale,giraffe,model_structured,True,True,1.471,
+B_structured_basis,H070,70,modifier,life-size model of a giraffe,body_scale,True,3,"{""scale_basis"":""giraffe"",""semantic_scale_class"":""body_scale""}",body_scale,giraffe,model_structured,True,True,1.502,
+B_structured_basis,H071,71,modifier,palm-sized model of a volcano,handheld,True,1,"{""scale_basis"":""palm-sized model"",""semantic_scale_class"":""handheld""}",handheld,palm-sized model,model_structured,True,True,1.729,
+B_structured_basis,H071,71,modifier,palm-sized model of a volcano,handheld,True,2,"{""scale_basis"":""palm-sized model"",""semantic_scale_class"":""handheld""}",handheld,palm-sized model,model_structured,True,True,1.552,
+B_structured_basis,H071,71,modifier,palm-sized model of a volcano,handheld,True,3,"{""scale_basis"":""palm-sized model"",""semantic_scale_class"":""handheld""}",handheld,palm-sized model,model_structured,True,True,1.5,
+B_structured_basis,H072,72,modifier,miniature model of a space station,handheld,False,1,"{""scale_basis"":""space station"",""semantic_scale_class"":""building_scale""}",building_scale,space station,model_structured,True,False,1.635,
+C_modifier_preparser,H001,1,ordinary_micro,sesame seed,micro,True,1,"
+
+micro",micro,sesame seed,ordinary_unmodified,True,True,0.583,
+C_modifier_preparser,H001,1,ordinary_micro,sesame seed,micro,True,2,"
+
+micro",micro,sesame seed,ordinary_unmodified,True,True,0.322,
+C_modifier_preparser,H001,1,ordinary_micro,sesame seed,micro,True,3,"
+
+micro",micro,sesame seed,ordinary_unmodified,True,True,0.332,
+C_modifier_preparser,H002,2,ordinary_micro,mosquito,micro,False,1,"
+
+handheld",handheld,mosquito,ordinary_unmodified,True,False,0.568,
+C_modifier_preparser,H003,3,ordinary_micro,speck of gravel,micro,False,1,"
+
+micro",micro,speck of gravel,ordinary_unmodified,True,True,0.53,
+C_modifier_preparser,H004,4,ordinary_micro,eyelash,micro,False,1,"
+
+micro",micro,eyelash,ordinary_unmodified,True,True,0.538,
+C_modifier_preparser,H005,5,ordinary_handheld,thermos flask,handheld,False,1,"
+
+handheld",handheld,thermos flask,ordinary_unmodified,True,True,0.573,
+C_modifier_preparser,H006,6,ordinary_handheld,violin,handheld,False,1,"
+
+handheld",handheld,violin,ordinary_unmodified,True,True,0.562,
+C_modifier_preparser,H007,7,ordinary_handheld,cordless hand drill,handheld,False,1,"
+
+handheld",handheld,cordless hand drill,ordinary_unmodified,True,True,0.575,
+C_modifier_preparser,H008,8,ordinary_handheld,rolled sleeping bag,handheld,False,1,"
+
+handheld",handheld,rolled sleeping bag,ordinary_unmodified,True,True,0.571,
+C_modifier_preparser,H009,9,ordinary_body,alpaca,body_scale,False,1,"
+
+body_scale",body_scale,alpaca,ordinary_unmodified,True,True,0.562,
+C_modifier_preparser,H010,10,ordinary_body,wardrobe,body_scale,False,1,"
+
+body_scale",body_scale,wardrobe,ordinary_unmodified,True,True,0.571,
+C_modifier_preparser,H011,11,ordinary_body,wheelbarrow,body_scale,False,1,"
+
+handheld",handheld,wheelbarrow,ordinary_unmodified,True,False,0.569,
+C_modifier_preparser,H012,12,ordinary_body,arcade cabinet,body_scale,False,1,"
+
+handheld",handheld,arcade cabinet,ordinary_unmodified,True,False,0.562,
+C_modifier_preparser,H013,13,ordinary_room,portable toilet cubicle,room_scale,False,1,"
+
+handheld",handheld,portable toilet cubicle,ordinary_unmodified,True,False,0.573,
+C_modifier_preparser,H014,14,ordinary_room,ticket booth,room_scale,False,1,"
+
+handheld",handheld,ticket booth,ordinary_unmodified,True,False,0.56,
+C_modifier_preparser,H015,15,ordinary_room,sauna cabin,room_scale,False,1,"
+
+body_scale",body_scale,sauna cabin,ordinary_unmodified,True,False,0.575,
+C_modifier_preparser,H016,16,ordinary_room,walk-in freezer,room_scale,False,1,"
+
+room_scale",room_scale,walk-in freezer,ordinary_unmodified,True,True,0.573,
+C_modifier_preparser,H017,17,ordinary_vehicle,ambulance,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,ambulance,ordinary_unmodified,True,True,0.591,
+C_modifier_preparser,H018,18,ordinary_vehicle,commuter tram,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,commuter tram,ordinary_unmodified,True,True,0.57,
+C_modifier_preparser,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,1,"
+
+vehicle_scale",vehicle_scale,small submarine,ordinary_unmodified,True,True,0.57,
+C_modifier_preparser,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,2,"
+
+vehicle_scale",vehicle_scale,small submarine,ordinary_unmodified,True,True,0.361,
+C_modifier_preparser,H019,19,ordinary_vehicle,small submarine,vehicle_scale,True,3,"
+
+vehicle_scale",vehicle_scale,small submarine,ordinary_unmodified,True,True,0.358,
+C_modifier_preparser,H020,20,ordinary_vehicle,river barge,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,river barge,ordinary_unmodified,True,True,0.572,
+C_modifier_preparser,H021,21,ordinary_building,public library building,building_scale,False,1,"
+
+building_scale",building_scale,public library building,ordinary_unmodified,True,True,0.567,
+C_modifier_preparser,H022,22,ordinary_building,apartment tower,building_scale,False,1,"
+
+building_scale",building_scale,apartment tower,ordinary_unmodified,True,True,0.568,
+C_modifier_preparser,H023,23,ordinary_building,dairy barn,building_scale,False,1,"
+
+building_scale",building_scale,dairy barn,ordinary_unmodified,True,True,0.561,
+C_modifier_preparser,H024,24,ordinary_building,Buddhist temple,building_scale,False,1,"
+
+body_scale",body_scale,Buddhist temple,ordinary_unmodified,True,False,0.566,
+C_modifier_preparser,H025,25,ordinary_infrastructure,container port,infrastructure_scale,False,1,"
+
+building_scale",building_scale,container port,ordinary_unmodified,True,False,0.559,
+C_modifier_preparser,H026,26,ordinary_infrastructure,thermal power station,infrastructure_scale,False,1,"
+
+building_scale",building_scale,thermal power station,ordinary_unmodified,True,False,0.562,
+C_modifier_preparser,H027,27,ordinary_infrastructure,motorway interchange,infrastructure_scale,False,1,"
+
+room_scale",room_scale,motorway interchange,ordinary_unmodified,True,False,0.575,
+C_modifier_preparser,H028,28,ordinary_infrastructure,coastal flood barrier,infrastructure_scale,False,1,"
+
+building_scale",building_scale,coastal flood barrier,ordinary_unmodified,True,False,0.565,
+C_modifier_preparser,H029,29,ordinary_landform,river delta,landform_scale,False,1,"
+
+landform_scale",landform_scale,river delta,ordinary_unmodified,True,True,0.608,
+C_modifier_preparser,H030,30,ordinary_landform,mesa,landform_scale,False,1,"
+
+landform_scale",landform_scale,mesa,ordinary_unmodified,True,True,0.612,
+C_modifier_preparser,H031,31,ordinary_landform,coral reef,landform_scale,False,1,"
+
+landform_scale",landform_scale,coral reef,ordinary_unmodified,True,True,0.595,
+C_modifier_preparser,H032,32,ordinary_landform,valley,landform_scale,False,1,"
+
+landform_scale",landform_scale,valley,ordinary_unmodified,True,True,0.609,
+C_modifier_preparser,H033,33,ordinary_colossal,metropolis,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,metropolis,ordinary_unmodified,True,True,0.613,
+C_modifier_preparser,H034,34,ordinary_colossal,country,colossal_scale,False,1,"
+
+landform_scale",landform_scale,country,ordinary_unmodified,True,False,0.602,
+C_modifier_preparser,H035,35,ordinary_colossal,gas giant,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,gas giant,ordinary_unmodified,True,True,0.598,
+C_modifier_preparser,H036,36,ordinary_colossal,solar system,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,solar system,ordinary_unmodified,True,True,0.613,
+C_modifier_preparser,H037,37,ambiguous,justice,ambiguous,True,1,"
+
+ambiguous",ambiguous,justice,ordinary_unmodified,True,True,0.523,
+C_modifier_preparser,H037,37,ambiguous,justice,ambiguous,True,2,"
+
+ambiguous",ambiguous,justice,ordinary_unmodified,True,True,0.322,
+C_modifier_preparser,H037,37,ambiguous,justice,ambiguous,True,3,"
+
+ambiguous",ambiguous,justice,ordinary_unmodified,True,True,0.333,
+C_modifier_preparser,H038,38,ambiguous,traffic,ambiguous,False,1,"
+
+ambiguous",ambiguous,traffic,ordinary_unmodified,True,True,0.534,
+C_modifier_preparser,H039,39,ambiguous,earthquake,ambiguous,False,1,"
+
+ambiguous",ambiguous,earthquake,ordinary_unmodified,True,True,0.529,
+C_modifier_preparser,H040,40,ambiguous,a dream,ambiguous,False,1,"
+
+ambiguous",ambiguous,a dream,ordinary_unmodified,True,True,0.536,
+C_modifier_preparser,H041,41,boundary,grandfather clock,handheld|body_scale,False,1,"
+
+body_scale",body_scale,grandfather clock,ordinary_unmodified,True,True,0.568,
+C_modifier_preparser,H042,42,boundary,industrial oven,body_scale|room_scale,False,1,"
+
+building_scale",building_scale,industrial oven,ordinary_unmodified,True,False,0.562,
+C_modifier_preparser,H043,43,boundary,mobile home,room_scale|vehicle_scale,False,1,"
+
+handheld",handheld,mobile home,ordinary_unmodified,True,False,0.571,
+C_modifier_preparser,H044,44,boundary,garden pavilion,room_scale|building_scale,True,1,"
+
+body_scale",body_scale,garden pavilion,ordinary_unmodified,True,False,0.578,
+C_modifier_preparser,H044,44,boundary,garden pavilion,room_scale|building_scale,True,2,"
+
+body_scale",body_scale,garden pavilion,ordinary_unmodified,True,False,0.356,
+C_modifier_preparser,H044,44,boundary,garden pavilion,room_scale|building_scale,True,3,"
+
+body_scale",body_scale,garden pavilion,ordinary_unmodified,True,False,0.359,
+C_modifier_preparser,H045,45,boundary,broadcast tower,building_scale|infrastructure_scale,False,1,"
+
+building_scale",building_scale,broadcast tower,ordinary_unmodified,True,True,0.563,
+C_modifier_preparser,H046,46,boundary,large iceberg,landform_scale|colossal_scale,False,1,"
+
+landform_scale",landform_scale,large iceberg,ordinary_unmodified,True,True,0.603,
+C_modifier_preparser,H047,47,creative,floating steampunk airship,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,floating steampunk airship,ordinary_unmodified,True,True,0.569,
+C_modifier_preparser,H048,48,creative,doorway into another dimension,body_scale|room_scale,False,1,"
+
+ambiguous",ambiguous,doorway into another dimension,ordinary_unmodified,True,False,0.537,
+C_modifier_preparser,H049,49,creative,city-consuming shadow monster,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,city-consuming shadow monster,ordinary_unmodified,True,True,0.596,
+C_modifier_preparser,H050,50,creative,levitating crystal whale,vehicle_scale,False,1,"
+
+ambiguous",ambiguous,levitating crystal whale,ordinary_unmodified,True,False,0.531,
+C_modifier_preparser,H051,51,creative,endless staircase,ambiguous,False,1,"
+
+ambiguous",ambiguous,endless staircase,ordinary_unmodified,True,True,0.535,
+C_modifier_preparser,H052,52,creative,orbital ring around an alien world,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,orbital ring around an alien world,ordinary_unmodified,True,True,0.661,
+C_modifier_preparser,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,1,"
+
+handheld",handheld,thimble,reference_sized,True,True,0.56,
+C_modifier_preparser,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,2,"
+
+handheld",handheld,thimble,reference_sized,True,True,0.357,
+C_modifier_preparser,H053,53,modifier,thimble-sized lighthouse,micro|handheld,True,3,"
+
+handheld",handheld,thimble,reference_sized,True,True,0.364,
+C_modifier_preparser,H054,54,modifier,bicycle-sized elephant,body_scale,False,1,"
+
+vehicle_scale",vehicle_scale,bicycle,reference_sized,True,False,0.56,
+C_modifier_preparser,H055,55,modifier,van-sized tortoise,vehicle_scale,True,1,"
+
+vehicle_scale",vehicle_scale,van,reference_sized,True,True,0.561,
+C_modifier_preparser,H055,55,modifier,van-sized tortoise,vehicle_scale,True,2,"
+
+vehicle_scale",vehicle_scale,van,reference_sized,True,True,0.367,
+C_modifier_preparser,H055,55,modifier,van-sized tortoise,vehicle_scale,True,3,"
+
+vehicle_scale",vehicle_scale,van,reference_sized,True,True,0.361,
+C_modifier_preparser,H056,56,modifier,hotel-sized birdcage,building_scale,False,1,"
+
+building_scale",building_scale,hotel,reference_sized,True,True,0.581,
+C_modifier_preparser,H057,57,modifier,suspension-bridge-sized serpent,infrastructure_scale,False,1,"
+
+room_scale",room_scale,suspension-bridge,reference_sized,True,False,0.564,
+C_modifier_preparser,H058,58,modifier,mountain-sized robot,landform_scale,True,1,"
+
+landform_scale",landform_scale,mountain,reference_sized,True,True,0.598,
+C_modifier_preparser,H058,58,modifier,mountain-sized robot,landform_scale,True,2,"
+
+landform_scale",landform_scale,mountain,reference_sized,True,True,0.396,
+C_modifier_preparser,H058,58,modifier,mountain-sized robot,landform_scale,True,3,"
+
+landform_scale",landform_scale,mountain,reference_sized,True,True,0.389,
+C_modifier_preparser,H059,59,modifier,planet-sized snow globe,colossal_scale,False,1,"
+
+colossal_scale",colossal_scale,planet,reference_sized,True,True,0.604,
+C_modifier_preparser,H060,60,modifier,spider as wide as a dinner plate,handheld,False,1,"
+
+handheld",handheld,a dinner plate,comparison_as,True,True,0.567,
+C_modifier_preparser,H061,61,modifier,rabbit as tall as a doorway,body_scale,False,1,"
+
+room_scale",room_scale,a doorway,comparison_as,True,False,0.562,
+C_modifier_preparser,H062,62,modifier,tree as tall as an office tower,building_scale,True,1,"
+
+colossal_scale",colossal_scale,an office tower,comparison_as,True,False,0.611,
+C_modifier_preparser,H062,62,modifier,tree as tall as an office tower,building_scale,True,2,"
+
+colossal_scale",colossal_scale,an office tower,comparison_as,True,False,0.395,
+C_modifier_preparser,H062,62,modifier,tree as tall as an office tower,building_scale,True,3,"
+
+colossal_scale",colossal_scale,an office tower,comparison_as,True,False,0.397,
+C_modifier_preparser,H063,63,modifier,whale as long as a passenger train,vehicle_scale,False,1,"
+
+room_scale",room_scale,a passenger train,comparison_as,True,False,0.563,
+C_modifier_preparser,H064,64,modifier,sculpture as large as an airport terminal,building_scale|infrastructure_scale,False,1,"
+
+room_scale",room_scale,an airport terminal,comparison_as,True,False,0.575,
+C_modifier_preparser,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,1,"
+
+handheld",handheld,a suitcase,comparison_size_of,True,True,0.57,
+C_modifier_preparser,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,2,"
+
+handheld",handheld,a suitcase,comparison_size_of,True,True,0.359,
+C_modifier_preparser,H065,65,modifier,robot the size of a suitcase,handheld|body_scale,True,3,"
+
+handheld",handheld,a suitcase,comparison_size_of,True,True,0.368,
+C_modifier_preparser,H066,66,modifier,fortress the size of a garden shed,room_scale,False,1,"
+
+body_scale",body_scale,a garden shed,comparison_size_of,True,False,0.568,
+C_modifier_preparser,H067,67,modifier,seed the size of a sofa,body_scale,False,1,"
+
+body_scale",body_scale,a sofa,comparison_size_of,True,True,0.573,
+C_modifier_preparser,H068,68,modifier,cloud the size of a country,colossal_scale,True,1,"
+
+colossal_scale",colossal_scale,a country,comparison_size_of,True,True,0.607,
+C_modifier_preparser,H068,68,modifier,cloud the size of a country,colossal_scale,True,2,"
+
+colossal_scale",colossal_scale,a country,comparison_size_of,True,True,0.393,
+C_modifier_preparser,H068,68,modifier,cloud the size of a country,colossal_scale,True,3,"
+
+colossal_scale",colossal_scale,a country,comparison_size_of,True,True,0.396,
+C_modifier_preparser,H069,69,modifier,full-size replica of a delivery truck,vehicle_scale,False,1,"
+
+vehicle_scale",vehicle_scale,an ordinary full-size a delivery truck,full_scale_representation,True,True,0.63,
+C_modifier_preparser,H070,70,modifier,life-size model of a giraffe,body_scale,True,1,"
+
+body_scale",body_scale,an ordinary full-size a giraffe,full_scale_representation,True,True,0.626,
+C_modifier_preparser,H070,70,modifier,life-size model of a giraffe,body_scale,True,2,"
+
+body_scale",body_scale,an ordinary full-size a giraffe,full_scale_representation,True,True,0.359,
+C_modifier_preparser,H070,70,modifier,life-size model of a giraffe,body_scale,True,3,"
+
+body_scale",body_scale,an ordinary full-size a giraffe,full_scale_representation,True,True,0.358,
+C_modifier_preparser,H071,71,modifier,palm-sized model of a volcano,handheld,True,1,"
+
+handheld",handheld,an object that fits in one hand,reference_sized,True,True,0.632,
+C_modifier_preparser,H071,71,modifier,palm-sized model of a volcano,handheld,True,2,"
+
+handheld",handheld,an object that fits in one hand,reference_sized,True,True,0.356,
+C_modifier_preparser,H071,71,modifier,palm-sized model of a volcano,handheld,True,3,"
+
+handheld",handheld,an object that fits in one hand,reference_sized,True,True,0.353,
+C_modifier_preparser,H072,72,modifier,miniature model of a space station,handheld,False,1,"
+
+handheld",handheld,a small portable toy or miniature model,small_representation,True,True,0.64,

@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H071",
+  "case_index": 71,
+  "group": "modifier",
+  "meaning": "palm-sized model of a volcano",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "{\"scale_basis\":\"palm-sized model\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "palm-sized model",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.552,
+  "error": ""
+}

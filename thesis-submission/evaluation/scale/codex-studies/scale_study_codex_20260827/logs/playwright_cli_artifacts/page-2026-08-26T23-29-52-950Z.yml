@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f60e2]:
+  - heading "E_balanced | Codex derived balanced candidate" [level=1] [ref=f60e3]
+  - paragraph [ref=f60e4]: "sizes: 0.32 | 0.62 | 1.00 | 1.42 | 1.95 | 2.50 | 3.10"
+  - paragraph [ref=f60e5]: "edge: edge stress | low_oblique: lower oblique"
+  - paragraph [ref=f60e6]: Loading 0/7 meshes
+  - paragraph [ref=f60e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

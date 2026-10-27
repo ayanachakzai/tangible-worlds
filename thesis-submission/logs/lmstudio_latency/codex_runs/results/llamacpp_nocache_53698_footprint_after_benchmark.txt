@@ -1,0 +1,40 @@
+==========================================================================================
+llama-server [53698]: 64-bit    Footprint: 1252 MB (16384 bytes per page)
+==========================================================================================
+
+  Dirty  (Swapped)      Clean  Reclaimable    (Wired)    Regions    Category
+    ---        ---        ---          ---        ---        ---    ---
+1172 MB     343 MB        0 B          0 B        0 B         30    untagged (VM_ALLOCATE)
+  40 MB      35 MB        0 B          0 B        0 B         16    MALLOC_SMALL
+  32 MB      29 MB        0 B          0 B        0 B          8    MALLOC_LARGE
+3509 KB        0 B        0 B          0 B        0 B          1    page table
+ 874 KB     683 KB        0 B          0 B        0 B        466    __DATA
+ 800 KB     320 KB        0 B        16 KB        0 B        148    IOAccelerator (graphics)
+ 624 KB     336 KB        0 B          0 B        0 B          8    MALLOC metadata
+ 577 KB     399 KB        0 B          0 B        0 B        431    __DATA_DIRTY
+ 496 KB     352 KB        0 B          0 B        0 B         30    stack
+ 240 KB      80 KB        0 B          0 B        0 B          1    MALLOC_TINY
+ 181 KB     151 KB        0 B          0 B        0 B       1332    unused dyld shared cache area
+ 128 KB      80 KB        0 B          0 B        0 B          1    libdispatch
+ 112 KB      96 KB        0 B          0 B        0 B        503    __AUTH_CONST
+  96 KB      48 KB     224 KB          0 B        0 B        514    __DATA_CONST
+  80 KB      48 KB        0 B          0 B        0 B          2    __TPRO_CONST
+  64 KB        0 B        0 B          0 B        0 B          2    IOAccelerator
+  64 KB        0 B        0 B          0 B        0 B          4    IOKit
+  32 KB      32 KB        0 B          0 B        0 B          1    Activity Tracing
+  32 KB        0 B        0 B          0 B        0 B          1    tag 22
+  16 KB        0 B        0 B          0 B        0 B        259    __AUTH
+  16 KB        0 B        0 B          0 B        0 B          1    os_alloc_once
+    0 B        0 B    3859 MB          0 B        0 B          9    mapped file
+    0 B        0 B    6256 KB          0 B        0 B        529    __TEXT
+    0 B        0 B        0 B          0 B        0 B          1    __CTF
+    0 B        0 B        0 B          0 B        0 B          1    __FONT_DATA
+    0 B        0 B        0 B          0 B        0 B          1    IOSurface
+    0 B        0 B        0 B          0 B        0 B         13    __LINKEDIT
+    ---        ---        ---          ---        ---        ---    ---
+1252 MB     410 MB    3866 MB        16 KB        0 B       4315    TOTAL
+
+Auxiliary data:
+    phys_footprint: 1252 MB
+    phys_footprint_peak: 1293 MB
+

@@ -1,0 +1,589 @@
+{
+  "holdout_case_count": 148,
+  "category_counts": {
+    "valid_candidate_a": 24,
+    "valid_candidate_b": 24,
+    "valid_candidate_c": 24,
+    "bare_assignment": 10,
+    "atmosphere_command": 10,
+    "semantic_size_phrase": 20,
+    "semantic_scale_phrase": 12,
+    "malformed_marker": 10,
+    "conflicting_marker": 8,
+    "unsupported_synonym": 6
+  },
+  "candidate_results": {
+    "A": {
+      "TP": 24,
+      "FP": 3,
+      "FN": 0,
+      "TN": 121,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "exact_intent_accuracy": 0.9797297297297297,
+      "generation_meaning_accuracy": 0.9797297297297297,
+      "false_positive_ids": [
+        "S17",
+        "S18",
+        "S19"
+      ],
+      "false_negative_ids": [],
+      "case_count": 148
+    },
+    "B": {
+      "TP": 24,
+      "FP": 6,
+      "FN": 0,
+      "TN": 118,
+      "precision": 0.8,
+      "recall": 1.0,
+      "exact_intent_accuracy": 0.9594594594594594,
+      "generation_meaning_accuracy": 0.9594594594594594,
+      "false_positive_ids": [
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16"
+      ],
+      "false_negative_ids": [],
+      "case_count": 148
+    },
+    "C": {
+      "TP": 24,
+      "FP": 0,
+      "FN": 0,
+      "TN": 124,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_intent_accuracy": 1.0,
+      "generation_meaning_accuracy": 1.0,
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "case_count": 148
+    }
+  },
+  "false_positives": {
+    "A": [
+      {
+        "id": "S17",
+        "text": "a T-shirt size small",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a T-shirt size small",
+          "generation_meaning": "a T-shirt",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S18",
+        "text": "a costume size large",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a costume size large",
+          "generation_meaning": "a costume",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S19",
+        "text": "a prop label reading size tiny",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a prop label reading size tiny",
+          "generation_meaning": "a prop label reading",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    ],
+    "B": [
+      {
+        "id": "S11",
+        "text": "a house whose size is tiny",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a house whose size is tiny",
+          "generation_meaning": "a house whose",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S12",
+        "text": "a model whose size is miniature",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a model whose size is miniature",
+          "generation_meaning": "a model whose",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S13",
+        "text": "a VFX proxy whose size is small",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a VFX proxy whose size is small",
+          "generation_meaning": "a VFX proxy whose",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S14",
+        "text": "a wheel whose size is big",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a wheel whose size is big",
+          "generation_meaning": "a wheel whose",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S15",
+        "text": "a prop whose size is large",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a prop whose size is large",
+          "generation_meaning": "a prop whose",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "S16",
+        "text": "a backdrop whose size is huge",
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a backdrop whose size is huge",
+          "generation_meaning": "a backdrop whose",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    ],
+    "C": []
+  },
+  "typed_voice_contract": [
+    {
+      "candidate": "A",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car size tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car size tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car size is tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car size is tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "C",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    }
+  ],
+  "synthetic_stt": {
+    "available": true,
+    "evidence_type": "synthetic Pocket TTS Alba audio transcribed by the live local Moonshine service",
+    "limitations": "Not equivalent to Ayan's speech, microphone, room, pacing, or repeated live interaction.",
+    "results": [
+      {
+        "candidate": "A",
+        "value": "tiny",
+        "reference": "object two is a car size tiny",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.338,
+        "roundtrip_stt_s": 1.127,
+        "moonshine_stt_s": 1.11,
+        "heard": "Object 2 is a car-sized tiny.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car-sized tiny",
+          "generation_meaning": "a car-sized tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "marker_contract_recognised": false
+      },
+      {
+        "candidate": "A",
+        "value": "small",
+        "reference": "object two is a car size small",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.334,
+        "roundtrip_stt_s": 0.194,
+        "moonshine_stt_s": 0.192,
+        "heard": "Object 2 is a car size small.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size small",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "A",
+        "value": "big",
+        "reference": "object two is a car size big",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.267,
+        "roundtrip_stt_s": 0.213,
+        "moonshine_stt_s": 0.211,
+        "heard": "Object 2 is a car size big.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size big",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "A",
+        "value": "huge",
+        "reference": "object two is a car size huge",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.287,
+        "roundtrip_stt_s": 0.179,
+        "moonshine_stt_s": 0.178,
+        "heard": "Object two is a car size huge.",
+        "exact_casefold": true,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size huge",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "B",
+        "value": "tiny",
+        "reference": "object two is a car size is tiny",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.309,
+        "roundtrip_stt_s": 0.192,
+        "moonshine_stt_s": 0.191,
+        "heard": "Object 2 is a car size is tiny.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size is tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "B",
+        "value": "small",
+        "reference": "object two is a car size is small",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.389,
+        "roundtrip_stt_s": 0.215,
+        "moonshine_stt_s": 0.212,
+        "heard": "Object 2 is a car size is small",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size is small",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "B",
+        "value": "big",
+        "reference": "object two is a car size is big",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.406,
+        "roundtrip_stt_s": 0.182,
+        "moonshine_stt_s": 0.181,
+        "heard": "Object 2 is a car size is big",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size is big",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "B",
+        "value": "huge",
+        "reference": "object two is a car size is huge",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.464,
+        "roundtrip_stt_s": 0.262,
+        "moonshine_stt_s": 0.26,
+        "heard": "Object 2 is a car size is huge.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car size is huge",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "C",
+        "value": "tiny",
+        "reference": "object two is a car scale tiny",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.308,
+        "roundtrip_stt_s": 0.173,
+        "moonshine_stt_s": 0.172,
+        "heard": "Object 2 is a car scale tiny.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car scale tiny",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "C",
+        "value": "small",
+        "reference": "object two is a car scale small",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.377,
+        "roundtrip_stt_s": 0.186,
+        "moonshine_stt_s": 0.184,
+        "heard": "Object 2 is a car scale small.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car scale small",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "C",
+        "value": "big",
+        "reference": "object two is a car scale big",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.361,
+        "roundtrip_stt_s": 0.192,
+        "moonshine_stt_s": 0.191,
+        "heard": "Object 2 is a car scale big.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car scale big",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      },
+      {
+        "candidate": "C",
+        "value": "huge",
+        "reference": "object two is a car scale huge",
+        "synthetic_voice": "Pocket TTS Alba",
+        "status": "ok",
+        "tts_s": 0.435,
+        "roundtrip_stt_s": 0.201,
+        "moonshine_stt_s": 0.199,
+        "heard": "Object 2 is a car scale huge.",
+        "exact_casefold": false,
+        "parsed": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a car scale huge",
+          "generation_meaning": "a car",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_contract_recognised": true
+      }
+    ],
+    "recognised_by_candidate": {
+      "A": 3,
+      "B": 4,
+      "C": 4
+    },
+    "attempted_by_candidate": {
+      "A": 4,
+      "B": 4,
+      "C": 4
+    }
+  },
+  "observed_real_user_evidence": {
+    "spoken": "object two is a car scale tiny",
+    "heard": "Object 2 is a car scaled tiny",
+    "candidate_C_marker_recognised": false,
+    "source": "user-reported repeated live observation in the study brief"
+  },
+  "assignment_cache_renderer_movement_contract": {
+    "original_preserved": true,
+    "generation_stripped": true,
+    "intent_correct": true,
+    "target_correct": true,
+    "source_unchanged": true,
+    "cache_uses_generation_meaning": true,
+    "renderer_uses_target_size": true,
+    "movement_does_not_regenerate": true,
+    "all_pass": true
+  },
+  "qualification": {
+    "A_semantic": false,
+    "B_semantic": false,
+    "C_semantic": true
+  }
+}

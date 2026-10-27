@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N013",
+  "category": "neutral_nonphysical",
+  "phrase": "huge fan of castles",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "huge fan of castles",
+  "participant_phrase": "huge fan of castles",
+  "generation_meaning": "fan of castles",
+  "explicit_scale_intent": "very_large",
+  "target_size": 3.0,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "huge",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

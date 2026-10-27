@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H046",
+  "case_index": 46,
+  "group": "boundary",
+  "meaning": "large iceberg",
+  "acceptable": [
+    "landform_scale",
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"iceberg\",\"semantic_scale_class\":\"landform_scale\"}",
+  "parsed_class": "landform_scale",
+  "scale_basis": "iceberg",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.704,
+  "error": ""
+}

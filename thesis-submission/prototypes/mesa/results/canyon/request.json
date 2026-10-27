@@ -1,0 +1,7 @@
+{
+  "original_description": "a deep rocky canyon in Arizona",
+  "mesa_prompt": "A Sentinel-2 image of rocky canyon and arid terrain in Arizona",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

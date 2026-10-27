@@ -1,0 +1,9 @@
+{
+  "participant_phrase": "tiny toy car",
+  "candidate": "B_strip_scale_adjective",
+  "generation_input": "toy car",
+  "shaped_prompt": "one low-poly toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "raw_output": "\n\none low-poly toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "latency_s": 4.677,
+  "scale_token_present_in_input": false
+}

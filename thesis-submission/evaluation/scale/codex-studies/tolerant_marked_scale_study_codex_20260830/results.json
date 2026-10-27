@@ -1,0 +1,742 @@
+{
+  "holdout_case_count": 120,
+  "category_counts": {
+    "valid_scale_marker": 36,
+    "valid_scaled_alias_b": 12,
+    "bare_assignment": 12,
+    "atmosphere_command": 10,
+    "semantic_scale_phrase": 14,
+    "semantic_scaled_phrase": 12,
+    "malformed_marker": 10,
+    "conflicting_marker": 8,
+    "unsupported_synonym": 6
+  },
+  "candidate_results": {
+    "A": {
+      "TP": 36,
+      "FP": 0,
+      "FN": 0,
+      "TN": 84,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_intent_accuracy": 1.0,
+      "generation_meaning_accuracy": 1.0,
+      "exact_record_accuracy": 1.0,
+      "exact_record_count": 120,
+      "case_count": 120,
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "mismatch_ids": []
+    },
+    "B": {
+      "TP": 48,
+      "FP": 6,
+      "FN": 0,
+      "TN": 66,
+      "precision": 0.8888888888888888,
+      "recall": 1.0,
+      "exact_intent_accuracy": 0.95,
+      "generation_meaning_accuracy": 0.95,
+      "exact_record_accuracy": 0.95,
+      "exact_record_count": 114,
+      "case_count": 120,
+      "false_positive_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06"
+      ],
+      "false_negative_ids": [],
+      "mismatch_ids": [
+        "D01",
+        "D02",
+        "D03",
+        "D04",
+        "D05",
+        "D06"
+      ]
+    }
+  },
+  "false_positives": {
+    "A": [],
+    "B": [
+      {
+        "id": "D01",
+        "text": "a VFX asset already scaled tiny",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a VFX asset already scaled tiny",
+          "generation_meaning": "a VFX asset already scaled tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a VFX asset already scaled tiny",
+          "generation_meaning": "a VFX asset already",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "D02",
+        "text": "object four is a forced-perspective castle scaled small",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a forced-perspective castle scaled small",
+          "generation_meaning": "a forced-perspective castle scaled small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a forced-perspective castle scaled small",
+          "generation_meaning": "a forced-perspective castle",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "D03",
+        "text": "a source mesh uniformly scaled big",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a source mesh uniformly scaled big",
+          "generation_meaning": "a source mesh uniformly scaled big",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a source mesh uniformly scaled big",
+          "generation_meaning": "a source mesh uniformly",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "D04",
+        "text": "object six is a background house intentionally scaled large",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a background house intentionally scaled large",
+          "generation_meaning": "a background house intentionally scaled large",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "a background house intentionally scaled large",
+          "generation_meaning": "a background house intentionally",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "D05",
+        "text": "a toy car prop scaled miniature",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a toy car prop scaled miniature",
+          "generation_meaning": "a toy car prop scaled miniature",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a toy car prop scaled miniature",
+          "generation_meaning": "a toy car prop",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      },
+      {
+        "id": "D06",
+        "text": "object eight is a bridge proxy scaled huge",
+        "category": "semantic_scaled_phrase",
+        "expected": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a bridge proxy scaled huge",
+          "generation_meaning": "a bridge proxy scaled huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "actual": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a bridge proxy scaled huge",
+          "generation_meaning": "a bridge proxy",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    ]
+  },
+  "false_negatives": {
+    "A": [],
+    "B": []
+  },
+  "voice_transcript_results": [
+    {
+      "candidate": "A",
+      "id": "P101",
+      "text": "object four is a car, scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "P101",
+      "text": "object four is a car, scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "P102",
+      "text": "object four is a car scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "P102",
+      "text": "object four is a car scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "B12",
+      "text": "object four is a car scaled tiny.",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car scaled tiny",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car scaled tiny",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "B12",
+      "text": "object four is a car scaled tiny.",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "P103",
+      "text": "object 4 is a car scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "P103",
+      "text": "object 4 is a car scale tiny",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "S01",
+      "text": "object four is a tiny scale model car",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a tiny scale model car",
+        "generation_meaning": "a tiny scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a tiny scale model car",
+        "generation_meaning": "a tiny scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "S01",
+      "text": "object four is a tiny scale model car",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a tiny scale model car",
+        "generation_meaning": "a tiny scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a tiny scale model car",
+        "generation_meaning": "a tiny scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "S02",
+      "text": "object four is a scale model car",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a scale model car",
+        "generation_meaning": "a scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a scale model car",
+        "generation_meaning": "a scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "S02",
+      "text": "object four is a scale model car",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a scale model car",
+        "generation_meaning": "a scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a scale model car",
+        "generation_meaning": "a scale model car",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "S03",
+      "text": "object four is a large scale map",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a large scale map",
+        "generation_meaning": "a large scale map",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a large scale map",
+        "generation_meaning": "a large scale map",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "S03",
+      "text": "object four is a large scale map",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a large scale map",
+        "generation_meaning": "a large scale map",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a large scale map",
+        "generation_meaning": "a large scale map",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "A",
+      "id": "D07",
+      "text": "object four is a car scaled model",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled model",
+        "generation_meaning": "a car scaled model",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled model",
+        "generation_meaning": "a car scaled model",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    },
+    {
+      "candidate": "B",
+      "id": "D07",
+      "text": "object four is a car scaled model",
+      "expected": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled model",
+        "generation_meaning": "a car scaled model",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "actual": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled model",
+        "generation_meaning": "a car scaled model",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "pass": true
+    }
+  ],
+  "typed_voice_parity": [
+    {
+      "name": "A_no_comma",
+      "candidate": "A",
+      "typed": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "semantic_fields_equal": true,
+      "pass": true
+    },
+    {
+      "name": "A_comma_backward_compatible",
+      "candidate": "A",
+      "typed": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car, scale tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "semantic_fields_equal": true,
+      "pass": true
+    },
+    {
+      "name": "B_scaled_alias",
+      "candidate": "B",
+      "typed": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "4",
+        "meaning": "a car scaled tiny",
+        "generation_meaning": "a car",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "semantic_fields_equal": true,
+      "pass": true
+    }
+  ],
+  "cross_candidate_variant_coverage": {
+    "intended_marker_or_transcript_cases": 48,
+    "A_detected": 36,
+    "A_coverage": 0.75,
+    "B_detected": 48,
+    "B_coverage": 1.0,
+    "note": "Grammar-specific recall treats unsupported scaled aliases as neutral; this separate measure exposes the usability tradeoff."
+  },
+  "preregistration_audit": {
+    "object_key_annotation_mismatch_ids": [
+      "C07",
+      "D04",
+      "D06",
+      "M09",
+      "S14"
+    ],
+    "scale_oracle_modified": false,
+    "impact": "none on detection, intent, generation meaning, or candidate decision"
+  },
+  "qualification": {
+    "A": true,
+    "B": false
+  }
+}

@@ -1,0 +1,8 @@
+git_apply_check=PASS
+isolated_copy_apply=PASS
+patched_module_syntax=PASS
+patched_assignment_regression=94/94
+full_route_and_assignment_contract=104/104
+git_diff_check=PASS
+patch_scope=phase3-tabletop/rendering/index.html only
+patch_numstat=29 insertions, 1 deletion

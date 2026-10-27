@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N006",
+  "category": "neutral_hyphenated",
+  "phrase": "large-scale sculpture",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "large-scale sculpture",
+  "participant_phrase": "large-scale sculpture",
+  "generation_meaning": "large-scale sculpture",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

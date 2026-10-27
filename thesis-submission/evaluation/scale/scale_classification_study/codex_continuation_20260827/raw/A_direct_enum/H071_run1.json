@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H071",
+  "case_index": 71,
+  "group": "modifier",
+  "meaning": "palm-sized model of a volcano",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "palm-sized model of a volcano",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.741,
+  "error": ""
+}

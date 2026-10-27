@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H072",
+  "case_index": 72,
+  "group": "modifier",
+  "meaning": "miniature model of a space station",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbuilding_scale",
+  "parsed_class": "building_scale",
+  "scale_basis": "miniature model of a space station",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.697,
+  "error": ""
+}

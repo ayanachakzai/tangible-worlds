@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H048",
+  "case_index": 48,
+  "group": "creative",
+  "meaning": "doorway into another dimension",
+  "acceptable": [
+    "body_scale",
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"doorway\",\"semantic_scale_class\":\"ambiguous\"}",
+  "parsed_class": "ambiguous",
+  "scale_basis": "doorway",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.607,
+  "error": ""
+}

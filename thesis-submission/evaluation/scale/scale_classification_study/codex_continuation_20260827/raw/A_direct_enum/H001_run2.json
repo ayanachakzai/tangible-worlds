@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H001",
+  "case_index": 1,
+  "group": "ordinary_micro",
+  "meaning": "sesame seed",
+  "acceptable": [
+    "micro"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "\n\nmicro",
+  "parsed_class": "micro",
+  "scale_basis": "sesame seed",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.854,
+  "error": ""
+}

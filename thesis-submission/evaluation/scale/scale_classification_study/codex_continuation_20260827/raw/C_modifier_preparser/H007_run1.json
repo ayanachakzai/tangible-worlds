@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H007",
+  "case_index": 7,
+  "group": "ordinary_handheld",
+  "meaning": "cordless hand drill",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "cordless hand drill",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.575,
+  "error": ""
+}

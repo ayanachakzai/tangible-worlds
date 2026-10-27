@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H039",
+  "case_index": 39,
+  "group": "ambiguous",
+  "meaning": "earthquake",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"earthquake\",\"semantic_scale_class\":\"landform_scale\"}",
+  "parsed_class": "landform_scale",
+  "scale_basis": "earthquake",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.661,
+  "error": ""
+}

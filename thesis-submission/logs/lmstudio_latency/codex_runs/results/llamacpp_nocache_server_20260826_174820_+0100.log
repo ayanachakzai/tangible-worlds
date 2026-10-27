@@ -1,0 +1,39 @@
+0.00.056.435 E ggml_metal_library_init_from_source: error compiling source
+0.00.056.439 W ggml_metal_device_init: - the tensor API is not supported in this environment - disabling
+0.00.066.571 W Setting 'enable_thinking' via --chat-template-kwargs is deprecated. Use --reasoning on / --reasoning off instead.
+0.00.066.696 I srv          init: The UI is disabled
+0.00.066.697 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.066.767 W srv  llama_server: -----------------
+0.00.066.767 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.066.768 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.066.768 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.066.768 W srv  llama_server: -----------------
+0.00.068.158 I srv    load_model: loading model '~/.lmstudio/models/Qwen/Qwen3-8B-GGUF/Qwen3-8B-Q4_K_M.gguf'
+0.00.254.695 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.279.340 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.01.288.023 I srv  llama_server: model loaded
+0.01.288.030 I srv  llama_server: listening on http://127.0.0.1:1235
+0.39.304.040 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.39.304.067 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+1.00.369.493 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =  10.08 t/s, tg_3s =  10.08 t/s
+1.02.451.562 I slot print_timing: id  0 | task 0 | prompt eval time =   11140.89 ms /  1773 tokens (    6.28 ms per token,   159.14 tokens per second)
+1.02.451.565 I slot print_timing: id  0 | task 0 |        eval time =   12006.58 ms /   121 tokens (   99.23 ms per token,    10.08 tokens per second)
+1.02.451.571 I slot print_timing: id  0 | task 0 |       total time =   23147.47 ms /  1894 tokens
+1.02.451.574 I slot print_timing: id  0 | task 0 |    graphs reused =        119
+1.02.451.967 I slot      release: id  0 | task 0 | stop processing: n_tokens = 1893, truncated = 0
+1.02.504.360 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.937
+1.02.504.386 I slot launch_slot_: id  0 | task 122 | processing task, is_child = 0
+1.23.264.073 I slot print_timing: id  0 | task 122 | n_decoded =    100, tg =  10.48 t/s, tg_3s =  10.48 t/s
+1.25.282.084 I slot print_timing: id  0 | task 122 | prompt eval time =   11220.22 ms /  1773 tokens (    6.33 ms per token,   158.02 tokens per second)
+1.25.282.087 I slot print_timing: id  0 | task 122 |        eval time =   11557.47 ms /   121 tokens (   95.52 ms per token,    10.47 tokens per second)
+1.25.282.087 I slot print_timing: id  0 | task 122 |       total time =   22777.69 ms /  1894 tokens
+1.25.282.088 I slot print_timing: id  0 | task 122 |    graphs reused =        237
+1.25.282.130 I slot      release: id  0 | task 122 | stop processing: n_tokens = 1893, truncated = 0
+1.25.329.645 I slot get_availabl: id  0 | task -1 | selected slot by LCP similarity, f_sim_best = 1.000 (> 0.100 thold), f_keep = 0.937
+1.25.329.667 I slot launch_slot_: id  0 | task 244 | processing task, is_child = 0
+1.46.485.816 I slot print_timing: id  0 | task 244 | n_decoded =    100, tg =  10.27 t/s, tg_3s =  10.27 t/s
+1.48.527.728 I slot print_timing: id  0 | task 244 | prompt eval time =   11419.04 ms /  1773 tokens (    6.44 ms per token,   155.27 tokens per second)
+1.48.527.731 I slot print_timing: id  0 | task 244 |        eval time =   11779.00 ms /   121 tokens (   97.35 ms per token,    10.27 tokens per second)
+1.48.527.731 I slot print_timing: id  0 | task 244 |       total time =   23198.04 ms /  1894 tokens
+1.48.527.731 I slot print_timing: id  0 | task 244 |    graphs reused =        355
+1.48.528.244 I slot      release: id  0 | task 244 | stop processing: n_tokens = 1893, truncated = 0

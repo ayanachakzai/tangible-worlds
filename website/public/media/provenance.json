@@ -1,0 +1,608 @@
+[
+ {
+  "file": "media/img/s01-overhead-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/lidar_recognition/003_1.webp",
+  "class": "diagnostic",
+  "note": "Overhead iPhone RGB of the tabletop during the move to depth-blob detection, 12 Aug 2026 (02-LID-003)."
+ },
+ {
+  "file": "media/img/s01-depth-probe.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/lidar_recognition/005_2-1.webp",
+  "class": "diagnostic",
+  "note": "depth_probe.py (read-only diagnostic): connected components above the fitted table plane, noise 1.7 mm (02-LID-005, cf. Fig 5.2)."
+ },
+ {
+  "file": "media/img/s01-depth-probe-2.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/lidar_recognition/006_2-2.webp",
+  "class": "diagnostic",
+  "note": "depth_probe.py second capture, 12 Aug 2026 (02-LID-006)."
+ },
+ {
+  "file": "media/img/s01-tracker-final.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/live_qualification/001_image71.png",
+  "class": "production",
+  "note": "Frozen study tracker window, 20 Aug 2026: threshold 6 mm, RGB 1440x1920, depth 192x256, LEARNING LOCKED / ROSTER LOCKED (02-LIV-001)."
+ },
+ {
+  "file": "media/img/s08-terrain-live.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/live_qualification/002_image72.jpg",
+  "class": "experiment",
+  "note": "terrain_live.html object-anchored terrain test, 20 Aug 2026 (02-LIV-002). Prototype only, not integrated."
+ },
+ {
+  "file": "media/img/trk-a-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/061_anomaly_003_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (061_anomaly_003_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-a-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/062_anomaly_003_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (062_anomaly_003_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/img/trk-h1-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/021_anomaly_001_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (021_anomaly_001_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-h1-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/022_anomaly_001_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (022_anomaly_001_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/img/trk-h2-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/023_anomaly_002_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (023_anomaly_002_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-h2-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/024_anomaly_002_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (024_anomaly_002_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/img/trk-h3-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/025_anomaly_003_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (025_anomaly_003_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-h3-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/026_anomaly_003_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (026_anomaly_003_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/img/trk-h4-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/100_anomaly_001_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (100_anomaly_001_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-h4-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/101_anomaly_001_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (101_anomaly_001_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/img/trk-h5-mask.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/102_anomaly_002_candidate_start_mask.png",
+  "class": "production",
+  "note": "Frozen tracker debug mask, 192x256 depth grid (102_anomaly_002_candidate_start_mask.png)."
+ },
+ {
+  "file": "media/img/trk-h5-rgb.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02/103_anomaly_002_candidate_start_preview.png",
+  "class": "production",
+  "note": "Frozen tracker debug preview at depth-grid resolution (103_anomaly_002_candidate_start_preview.png)."
+ },
+ {
+  "file": "media/tracker-components.json",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/02_tracking_and_identity/debug_runs_aug20_sep02",
+  "class": "derived",
+  "note": "Connected components computed here from the tracker debug masks (bounding boxes only)."
+ },
+ {
+  "file": "media/img/prop-1.webp",
+  "source": "Part 2.2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #1, cropped from the tracker RGB inset at 4.0 s of Part 2.2.mov."
+ },
+ {
+  "file": "media/img/prop-2.webp",
+  "source": "Part 2.2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #2, cropped from the tracker RGB inset at 4.0 s of Part 2.2.mov."
+ },
+ {
+  "file": "media/img/prop-3.webp",
+  "source": "Part 2.2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #3, cropped from the tracker RGB inset at 4.0 s of Part 2.2.mov."
+ },
+ {
+  "file": "media/img/prop-4.webp",
+  "source": "Part 2.2.mov (frame at 4.0 s)",
+  "class": "derived",
+  "note": "Physical prop #4, cropped from the tracker RGB inset at 4.0 s of Part 2.2.mov."
+ },
+ {
+  "file": "media/glb/a-windmill.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-windmill.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-windmill.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-windmill/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-fire-truck.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-fire-truck.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-fire-truck.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-fire-truck/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-house.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-house.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-house.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-house/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-horse.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-horse.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-horse.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-horse/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-lighthouse.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-lighthouse.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-lighthouse.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-lighthouse/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-castle.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-castle.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-castle.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-castle/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-tent.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-tent.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-tent.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-tent/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-dragon.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-dragon.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-dragon.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-dragon/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-truck.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-truck.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-truck.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-truck/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-stone-cairn.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-cairn.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-stone-cairn.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-cairn/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-mountain.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-mountain.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-mountain.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-mountain/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-petrol-station.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-petrol-station.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-petrol-station.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-petrol-station/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-car.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-car.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-car.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-car/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-stone-bridge.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-bridge.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-stone-bridge.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-bridge/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-gravel-driveway.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-gravel-driveway.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-gravel-driveway.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-gravel-driveway/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-stone-foundation.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-foundation.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-stone-foundation.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-foundation/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-cliff.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-cliff.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-cliff.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-cliff/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-stone-pathway.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-pathway.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-stone-pathway.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-pathway/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/glb/a-stone-retaining-wall.glb",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-retaining-wall.glb",
+  "class": "generated",
+  "note": "SPAR3D GLB from the production meaning cache."
+ },
+ {
+  "file": "media/img/src-a-stone-retaining-wall.webp",
+  "source": "phase3-tabletop/rendering/generated_meshes/a-stone-retaining-wall/source.png",
+  "class": "generated",
+  "note": "SDXL Turbo Stage 1 source image from the production meaning cache."
+ },
+ {
+  "file": "media/img/bat-acoustic-guitar.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/001_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (acoustic-guitar); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/bat-backpack.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/002_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (backpack); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/bat-traffic-cone.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/009_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (traffic-cone); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/bat-umbrella.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/010_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (umbrella); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/bat-vintage-motorcycle.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/011_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (vintage-motorcycle); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/bat-wine-glass.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/09_thirteen_word_battery/012_source.png",
+  "class": "experiment",
+  "note": "Thirteen-meaning battery Stage 1 source, 29 Jul 2026 (wine-glass); a retained failure case (Figs 5.11/5.12)."
+ },
+ {
+  "file": "media/img/tree-sf3d.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/05_spar3d_vs_sf3d/012_comparison_tree_shard_1.jpeg",
+  "class": "experiment",
+  "note": "SF3D reconstruction of the tree source; canopy collapses to a shard (04-05-012, Fig 5.10)."
+ },
+ {
+  "file": "media/img/tree-spar3d.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/04_generation_pipeline/05_spar3d_vs_sf3d/015_comparison_tree_fixed.jpeg",
+  "class": "experiment",
+  "note": "SPAR3D reconstruction of the same tree source (04-05-015, Fig 5.10)."
+ },
+ {
+  "file": "media/img/voice-moonshine-2.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/01_moonshine/moonshine-2-object_2_is_a_car_scale_tiny.png",
+  "class": "production",
+  "note": "Moonshine-era voice interface capture: moonshine-2-object_2_is_a_car_scale_tiny (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-moonshine-3.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/01_moonshine/moonshine-3-object_2_is_a_car_scale_tiny.png",
+  "class": "production",
+  "note": "Moonshine-era voice interface capture: moonshine-3-object_2_is_a_car_scale_tiny (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-moonshine-4.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/01_moonshine/moonshine-4-object_2_is_a_car_scale_tiny.png",
+  "class": "production",
+  "note": "Moonshine-era voice interface capture: moonshine-4-object_2_is_a_car_scale_tiny (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-moonshine-5.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/01_moonshine/moonshine-5-object_2_is_a_car_scale_tiny.png",
+  "class": "production",
+  "note": "Moonshine-era voice interface capture: moonshine-5-object_2_is_a_car_scale_tiny (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-moonshine-6.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/01_moonshine/moonshine-6-object_2_is_a_car_scale_tiny-WORKED.png",
+  "class": "production",
+  "note": "Moonshine-era voice interface capture: moonshine-6-object_2_is_a_car_scale_tiny-WORKED (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-parakeet-1.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/02_parakeet/parakeet-1.png",
+  "class": "production",
+  "note": "Parakeet voice interface capture: parakeet-1 (Fig 5.20)."
+ },
+ {
+  "file": "media/img/voice-parakeet-5.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/06_voice_and_input/02_parakeet/parakeet-5-environment.png",
+  "class": "production",
+  "note": "Parakeet voice interface capture: parakeet-5-environment (Fig 5.20)."
+ },
+ {
+  "file": "media/img/atmo-seq-1.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/04_battery_sequences/001_sunset_to_misty_night_step_01_make_it_a_warm_sunset.png",
+  "class": "diagnostic",
+  "note": "Phase 5E qualification harness, sequence step 1: 001_sunset_to_misty_night_step_01_make_it_a_warm_sunset."
+ },
+ {
+  "file": "media/img/atmo-seq-2.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/04_battery_sequences/002_sunset_to_misty_night_step_02_add_thick_mist_but_keep_the_li.png",
+  "class": "diagnostic",
+  "note": "Phase 5E qualification harness, sequence step 2: 002_sunset_to_misty_night_step_02_add_thick_mist_but_keep_the_li."
+ },
+ {
+  "file": "media/img/atmo-seq-3.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/04_battery_sequences/003_sunset_to_misty_night_step_03_make_the_mist_almost_completel.png",
+  "class": "diagnostic",
+  "note": "Phase 5E qualification harness, sequence step 3: 003_sunset_to_misty_night_step_03_make_the_mist_almost_completel."
+ },
+ {
+  "file": "media/img/atmo-seq-4.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/04_battery_sequences/004_sunset_to_misty_night_step_04_turn_it_into_night_but_keep_th.png",
+  "class": "diagnostic",
+  "note": "Phase 5E qualification harness, sequence step 4: 004_sunset_to_misty_night_step_04_turn_it_into_night_but_keep_th."
+ },
+ {
+  "file": "media/img/atmo-seq-5.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/04_battery_sequences/005_sunset_to_misty_night_step_05_remove_the_mist_only.png",
+  "class": "diagnostic",
+  "note": "Phase 5E qualification harness, sequence step 5: 005_sunset_to_misty_night_step_05_remove_the_mist_only."
+ },
+ {
+  "file": "media/img/atmo-july-failure.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/07_atmosphere/01_july_failure/001_image4.png",
+  "class": "experiment",
+  "note": "First atmosphere implementation, 20 Jul 2026: golden hour and midday failed (Fig 5.21 context)."
+ },
+ {
+  "file": "media/img/inter-horse-stable.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/08_terrain_and_interstitials/05_interstitials/014_image41.jpeg",
+  "class": "production",
+  "note": "14 Aug 2026: horse + stable produce a hitching post whose scale and placement fail (Fig 5.24a)."
+ },
+ {
+  "file": "media/img/inter-mountain-tent.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/08_terrain_and_interstitials/05_interstitials/016_image51.jpeg",
+  "class": "production",
+  "note": "15 Aug 2026: mountain + tent produce a bounded stone cairn after the prompt was revised (Fig 5.24b)."
+ },
+ {
+  "file": "media/img/terrain-procedural.webp",
+  "source": "Tangible-Worlds-Thesis/PORTFOLIO_1020/08_terrain_and_interstitials/04_procedural/005_image66.png",
+  "class": "experiment",
+  "note": "Object-anchored procedural terrain fields, 16 Aug 2026. Prototype only."
+ },
+ {
+  "file": "media/img/fig-4-1.webp",
+  "source": "figure_4_1_system_overview.png",
+  "class": "diagnostic",
+  "note": "Dissertation Figure 4.1, system architecture."
+ },
+ {
+  "file": "media/doc/tangible-worlds-dissertation.pdf",
+  "source": "Muhammad Ayan Achakzai Thesis Submission/1. Tangible World Paper.pdf",
+  "class": "production",
+  "note": "Submitted dissertation, September 2026."
+ },
+ {
+  "file": "media/video/hero-split.mp4",
+  "source": "Part 2.2.mov",
+  "class": "production",
+  "note": "Edited: tracker RGB inset (left) and production renderer (right) cropped from one screen recording and placed side by side. No other alteration."
+ },
+ {
+  "file": "media/video/hero-split-mobile.mp4",
+  "source": "Part 2.2.mov",
+  "class": "production",
+  "note": "As hero-split, stacked vertically for portrait screens."
+ },
+ {
+  "file": "media/video/part-2-2-full.mp4",
+  "source": "Part 2.2.mov",
+  "class": "production",
+  "note": "Unedited frame, re-encoded."
+ },
+ {
+  "file": "media/video/voice-assignment.mp4",
+  "source": "part 1.1.mov",
+  "class": "production",
+  "note": "Voice assignment session, re-encoded."
+ },
+ {
+  "file": "media/video/atmosphere-voice.mp4",
+  "source": "Part 3.3.mov",
+  "class": "production",
+  "note": "Spoken atmosphere commands, re-encoded."
+ },
+ {
+  "file": "media/video/working-prototype.mp4",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Full working prototype demonstration, re-encoded to 1280px."
+ },
+ {
+  "file": "public/media/img/proto-160.webp",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Still from the working prototype recording, cropped to the browser window."
+ },
+ {
+  "file": "public/media/img/proto-186.webp",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Still from the working prototype recording: low camera in the production renderer."
+ },
+ {
+  "file": "public/media/img/proto-196.webp",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Still from the working prototype recording."
+ },
+ {
+  "file": "public/media/img/proto-208.webp",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Still from the working prototype recording: misty night."
+ },
+ {
+  "file": "public/media/img/proto-222.webp",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Still from the working prototype recording: golden hour after \"stop the thunderstorm\"."
+ },
+ {
+  "file": "public/media/img/hero-poster.jpg",
+  "source": "Part 2.2.mov",
+  "class": "production",
+  "note": "Frame at 4.0 s of the edited split hero cut."
+ },
+ {
+  "file": "public/media/img/hero-poster-mobile.jpg",
+  "source": "Part 2.2.mov",
+  "class": "production",
+  "note": "Frame at 4.0 s of the stacked mobile hero cut."
+ },
+ {
+  "file": "public/media/img/prototype-poster.jpg",
+  "source": "Tangible-Worlds-Thesis/Tangible World Working Prototype.mov",
+  "class": "production",
+  "note": "Poster frame for the full demonstration."
+ },
+ {
+  "file": "public/media/img/atmosphere-voice-poster.jpg",
+  "source": "Part 3.3.mov",
+  "class": "production",
+  "note": "Poster frame at 12 s of the atmosphere recording."
+ }
+]

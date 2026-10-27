@@ -1,0 +1,200 @@
+--- a/phase3-tabletop/rendering/serve.py
++++ b/phase3-tabletop/rendering/serve.py
+@@ -251,7 +251,57 @@
+ # persists assignments across server restarts during testing.
+ ASSIGNMENTS_PATH = "assignments.json"
+ _assignments_lock = threading.Lock()
++
++# Participant-authored visual scale uses one reserved terminal suffix:
++#   <meaning>, scale <tiny|miniature|small|big|large|huge>
++# Parse it once when both typed and voice routes meet at /api/assign. The
++# renderer receives a cached numeric target; qwen never selects scale.
++# ref: https://docs.python.org/3/library/re.html
++MARKED_SCALE_TARGETS = {
++    "tiny": ("very_small", 0.35),
++    "miniature": ("very_small", 0.35),
++    "small": ("small", 0.65),
++    "big": ("large", 1.80),
++    "large": ("large", 1.80),
++    "huge": ("very_large", 3.00),
++}
++MARKED_SCALE_RE = re.compile(
++    r"^(?P<generation>.+?)\s*,\s*scale\s+"
++    r"(?P<modifier>tiny|miniature|small|big|large|huge)\s*[.!?]*\s*$",
++    re.IGNORECASE,
++)
++MARKED_SCALE_FRAGMENT_RE = re.compile(
++    r",\s*(?:scale|make\s+it)\s+\S+",
++    re.IGNORECASE,
++)
++
++
++def parse_marked_scale(meaning):
++    """Return cached scale fields; ambiguous/unsupported syntax is neutral."""
++    neutral = {
++        "meaning": meaning,
++        "generation_meaning": meaning,
++        "explicit_scale_intent": "neutral",
++        "target_size": 1.0,
++        "scale_source": "neutral_default",
++    }
++    match = MARKED_SCALE_RE.fullmatch(meaning)
++    if not match:
++        return neutral
++
++    generation_meaning = match.group("generation").strip()
++    if not generation_meaning or MARKED_SCALE_FRAGMENT_RE.search(generation_meaning):
++        return neutral
+ 
++    intent, target = MARKED_SCALE_TARGETS[match.group("modifier").lower()]
++    return {
++        "meaning": meaning,
++        "generation_meaning": generation_meaning,
++        "explicit_scale_intent": intent,
++        "target_size": target,
++        "scale_source": "participant_marked",
++    }
++
+ # Step 1 proved the assignment/caching/render-swap mechanics using a
+ # fake 3-second delay. This selects the real backend for regular
+ # object generation. "pod": runpod, needs the pod up, fast (~seconds).
+@@ -411,7 +461,7 @@
+             _save_assignments(_assignments)
+ 
+ 
+-def _fake_generate(object_key, meaning):
++def _fake_generate(object_key, meaning, generation_meaning=None):
+     """STUBBED generation. Kept for fast frontend iteration, see
+     GENERATION_BACKEND above."""
+     time.sleep(3)
+@@ -727,7 +777,7 @@
+             _save_relations(_relations)
+ 
+ 
+-def _real_generate(object_key, meaning):
++def _real_generate(object_key, meaning, generation_meaning=None):
+     """
+     Runs the real two-stage pipeline, both stages now pod calls:
+     text-to-image (sdxl turbo, pod port 7862) then image-to-3D
+@@ -735,7 +785,8 @@
+     two different objects assigned the same meaning share one generated
+     asset instead of generating it twice.
+     """
+-    slug = _slugify(meaning)
++    generation_meaning = generation_meaning or meaning
++    slug = _slugify(generation_meaning)
+     cached = GENERATED_MESH_DIR / f"{slug}.glb"
+ 
+     if cached.exists():
+@@ -759,7 +810,7 @@
+ 
+     print(f"[generate] stage 1: POSTing to pod for '{meaning}'")
+     t0 = time.time()
+-    shaped = shape_prompt(meaning)   # ref: 26 july, phase 3.4. llm-shaped, not raw.
++    shaped = shape_prompt(generation_meaning)  # control suffix never reaches generation.
+     print(f"[generate] shape_prompt took {time.time() - t0:.1f}s")
+     # ref: 27 july, phase4.1. stage 1 moved off local cpu subprocess to
+     # the same runpod 4090, sdxl turbo resident on port 7862 (7861 was
+@@ -829,7 +880,7 @@
+     print(f"[generate] done: '{meaning}' -> {mesh_url}")
+ 
+ 
+-def _local_generate_object(object_key, meaning):
++def _local_generate_object(object_key, meaning, generation_meaning=None):
+     """
+     Local backend for regular per-object generation. 14 aug, added
+     alongside the interstitial local path, after discovering assigning
+@@ -840,7 +891,8 @@
+     itself is completely untouched, this is a fully separate function,
+     zero risk to the proven pod path.
+     """
+-    slug = _slugify(meaning)
++    generation_meaning = generation_meaning or meaning
++    slug = _slugify(generation_meaning)
+     cached = GENERATED_MESH_DIR / f"{slug}.glb"
+ 
+     if cached.exists():
+@@ -851,7 +903,7 @@
+         return
+ 
+     work_dir = GENERATED_MESH_DIR / slug
+-    if not _generate_mesh_local(meaning, work_dir):
++    if not _generate_mesh_local(generation_meaning, work_dir):
+         _mark(object_key, meaning, status="failed")
+         return
+ 
+@@ -1262,7 +1314,7 @@
+                 else:
+                     # New assignment, or a changed one: (re)generate.
+                     record = {
+-                        "meaning": meaning,
++                        **parse_marked_scale(meaning),
+                         "status": "generating",
+                         "rotation": {"x": 0, "y": 0, "z": 0},
+                     }
+@@ -1276,7 +1328,7 @@
+                         target = _real_generate
+                     threading.Thread(
+                         target=target,
+-                        args=(object_key, meaning),
++                        args=(object_key, meaning, record["generation_meaning"]),
+                         daemon=True,
+                     ).start()
+ 
+@@ -1316,7 +1368,7 @@
+                     # store too, so the NEXT object assigned this same
+                     # meaning inherits the correction instead of
+                     # starting back at zero.
+-                    slug = _slugify(record["meaning"])
++                    slug = _slugify(record.get("generation_meaning", record["meaning"]))
+                     _mesh_rotations[slug] = dict(record["rotation"])
+                     _save_mesh_rotations(_mesh_rotations)
+ 
+@@ -1359,7 +1411,9 @@
+                     self.wfile.write(json.dumps({"ok": False, "reason": "not both ready"}).encode())
+                     return
+ 
+-                pair_slug = _pair_slug(rec_a["meaning"], rec_b["meaning"])
++                meaning_a = rec_a.get("generation_meaning", rec_a["meaning"])
++                meaning_b = rec_b.get("generation_meaning", rec_b["meaning"])
++                pair_slug = _pair_slug(meaning_a, meaning_b)
+                 existing = _relations.get(pair_slug)
+                 if existing:
+                     record = existing
+@@ -1369,7 +1423,7 @@
+                     _save_relations(_relations)
+                     threading.Thread(
+                         target=_generate_relation,
+-                        args=(pair_slug, rec_a["meaning"], rec_b["meaning"]),
++                        args=(pair_slug, meaning_a, meaning_b),
+                         daemon=True,
+                     ).start()
+ 
+--- a/phase3-tabletop/rendering/index.html
++++ b/phase3-tabletop/rendering/index.html
+@@ -1010,7 +1010,12 @@
+         group.add(placeholder);
+ 
+         if (assignment.mesh_url) {
+-            loadGeneratedMesh(group, assignment.mesh_url, placeholder, assignment.rotation);
++            // Old records predate participant scale and therefore stay neutral.
++            // ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isFinite
++            const targetSize = Number.isFinite(assignment.target_size)
++                ? assignment.target_size
++                : 1.0;
++            loadGeneratedMesh(group, assignment.mesh_url, placeholder, assignment.rotation, targetSize);
+         }
+ 
+         group.add(makeLabelSprite(assignment.meaning));
+@@ -2110,7 +2115,10 @@
+         }
+ 
+         if (bothReady) {
+-            const pSlug = pairSlug(assignA.meaning, assignB.meaning);
++            const pSlug = pairSlug(
++                assignA.generation_meaning || assignA.meaning,
++                assignB.generation_meaning || assignB.meaning
++            );
+             const relRecord = relations[pSlug];
+             if (relRecord && relRecord.status === 'ready') {
+                 if (!interstitialMeshes[pairKey]) {

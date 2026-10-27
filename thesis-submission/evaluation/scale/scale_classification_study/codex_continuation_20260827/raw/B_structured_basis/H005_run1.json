@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H005",
+  "case_index": 5,
+  "group": "ordinary_handheld",
+  "meaning": "thermos flask",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"thermos flask\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "thermos flask",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 4.49,
+  "error": ""
+}

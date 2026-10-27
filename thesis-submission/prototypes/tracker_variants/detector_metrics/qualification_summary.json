@@ -1,0 +1,39 @@
+{
+  "run_label": "high_quality_on",
+  "close_kernel": 5,
+  "criteria": {
+    "trial_seconds": 20.0,
+    "detection_rate_min": 0.95,
+    "single_component_rate_min": 0.95,
+    "area_cv_max": 0.15,
+    "positions_required": 5
+  },
+  "calibration": {
+    "noise_mm": 0.6798193790018559,
+    "threshold_mm": 6.0,
+    "roi_depth": [
+      4,
+      36,
+      160,
+      200
+    ],
+    "intrinsics_depth": [
+      180.32887369791666,
+      180.32887369791666,
+      95.89746907552083,
+      127.37867838541666
+    ],
+    "rgb_resolution": [
+      1440,
+      1920
+    ],
+    "depth_resolution": [
+      192,
+      256
+    ],
+    "close_kernel": 5,
+    "run_label": "high_quality_on"
+  },
+  "trials": [],
+  "props": {}
+}

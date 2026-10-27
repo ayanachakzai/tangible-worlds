@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H023",
+  "case_index": 23,
+  "group": "ordinary_building",
+  "meaning": "dairy barn",
+  "acceptable": [
+    "building_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbuilding_scale",
+  "parsed_class": "building_scale",
+  "scale_basis": "dairy barn",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.561,
+  "error": ""
+}

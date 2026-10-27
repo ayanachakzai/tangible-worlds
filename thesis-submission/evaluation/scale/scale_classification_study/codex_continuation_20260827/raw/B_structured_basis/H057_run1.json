@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H057",
+  "case_index": 57,
+  "group": "modifier",
+  "meaning": "suspension-bridge-sized serpent",
+  "acceptable": [
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"suspension bridge\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "suspension bridge",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.755,
+  "error": ""
+}

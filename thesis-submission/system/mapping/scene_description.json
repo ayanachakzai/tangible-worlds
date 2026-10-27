@@ -1,0 +1,44 @@
+{
+  "timestamp": 1789227242.8189042,
+  "objects": [
+    {
+      "id": 1,
+      "label": "object 1",
+      "x": 0.4,
+      "y": 0.5,
+      "area_cm2": 50,
+      "height_mm": 40
+    },
+    {
+      "id": 2,
+      "label": "object 2",
+      "x": 0.45,
+      "y": 0.52,
+      "area_cm2": 60,
+      "height_mm": 35
+    }
+  ],
+  "relationships": [
+    {
+      "from": "object 1",
+      "from_id": 1,
+      "to": "object 2",
+      "to_id": 2,
+      "distance": 0.0539,
+      "proximity": "near",
+      "direction": "same position"
+    }
+  ],
+  "clusters": [
+    [
+      "object 1",
+      "object 2"
+    ]
+  ],
+  "layout": {
+    "centre_x": 0.425,
+    "centre_y": 0.51,
+    "spread": 0.0269,
+    "count": 2
+  }
+}

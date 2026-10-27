@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H040",
+  "case_index": 40,
+  "group": "ambiguous",
+  "meaning": "a dream",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nambiguous",
+  "parsed_class": "ambiguous",
+  "scale_basis": "a dream",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.269,
+  "error": ""
+}

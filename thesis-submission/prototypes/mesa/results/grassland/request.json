@@ -1,0 +1,7 @@
+{
+  "original_description": "a broad flat grassland plain",
+  "mesa_prompt": "A Sentinel-2 image of grassland plain and flat terrain",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

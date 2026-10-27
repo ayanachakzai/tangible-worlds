@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Explicit scale renderer qualification</title>
+<style>
+  html, body { margin: 0; width: 100%; height: 100%; overflow: hidden; background: #17191c; color: #e6e6e6; font-family: monospace; }
+  #panel { position: fixed; z-index: 10; top: 12px; left: 12px; width: 390px; padding: 12px; background: rgba(10,12,15,.88); border: 1px solid #59616c; }
+  h1 { margin: 0 0 8px; font-size: 15px; }
+  p { margin: 6px 0; font-size: 12px; line-height: 1.35; }
+  button { margin: 3px 4px 3px 0; padding: 5px 8px; color: #eee; background: #303640; border: 1px solid #697383; font-family: inherit; }
+  button.active { background: #52657c; }
+  #status { color: #aee7bb; }
+  #results { max-height: 210px; overflow: auto; font-size: 10px; white-space: pre-wrap; color: #b8c5d6; }
+</style>
+</head>
+<body>
+<div id="panel">
+  <h1>Explicit scale renderer qualification</h1>
+  <p>Same GLB cloned at 0.35, 0.65, 1.00, 1.80, and 3.00. Parent movement is applied after normalization without reloading or rescaling.</p>
+  <div>
+    <button data-asset="castle" class="active">castle</button>
+    <button data-asset="car">car</button>
+    <button data-asset="umbrella">umbrella (irregular)</button>
+  </div>
+  <p id="status">loading…</p>
+  <pre id="results"></pre>
+</div>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+
+// Isolated evaluator only; no production state or API writes.
+// ref: https://threejs.org/docs/#api/en/math/Box3.setFromObject
+// ref: https://threejs.org/docs/#api/en/core/Object3D.updateMatrixWorld
+// ref: https://threejs.org/docs/#examples/en/loaders/GLTFLoader
+// project tuning: the five target sizes come from the accepted 28 Aug same-mesh test.
+const TABLE_SIZE = 10;
+const LEVELS = [
+  { intent: 'very_small', label: 'tiny', size: 0.35, x: -4.0 },
+  { intent: 'small', label: 'small', size: 0.65, x: -2.3 },
+  { intent: 'neutral', label: 'neutral', size: 1.00, x: -0.5 },
+  { intent: 'large', label: 'big', size: 1.80, x: 1.1 },
+  { intent: 'very_large', label: 'huge', size: 3.00, x: 3.0 },
+];
+const ASSETS = {
+  castle: '../scale_test_assets/a-castle.glb',
+  car: '../scale_test_assets/a-car.glb',
+  umbrella: '../test_pipeline/umbrella.glb',
+};
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x17191c);
+const camera = new THREE.PerspectiveCamera(50, innerWidth / innerHeight, 0.1, 100);
+camera.position.set(0, 12, 5);
+camera.lookAt(0, 0, 0);
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(innerWidth, innerHeight);
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.target.set(0, 0, 0);
+controls.update();
+
+const table = new THREE.Mesh(
+  new THREE.PlaneGeometry(TABLE_SIZE, TABLE_SIZE),
+  new THREE.MeshStandardMaterial({ color: 0x73777c, roughness: 0.85 })
+);
+table.rotation.x = -Math.PI / 2;
+table.receiveShadow = true;
+scene.add(table);
+const grid = new THREE.GridHelper(TABLE_SIZE, 10, 0x53606d, 0x343b43);
+grid.position.y = 0.01;
+scene.add(grid);
+const key = new THREE.DirectionalLight(0xffffff, 1.4);
+key.position.set(5, 10, 5);
+key.castShadow = true;
+scene.add(key, new THREE.HemisphereLight(0xffffff, 0x38404a, 1.0));
+
+const loader = new GLTFLoader();
+const status = document.getElementById('status');
+const resultsNode = document.getElementById('results');
+let currentGroups = [];
+let requestSerial = 0;
+
+function clearCurrent() {
+  currentGroups.forEach(group => scene.remove(group));
+  currentGroups = [];
+}
+
+function localBounds(object) {
+  object.updateMatrixWorld(true);
+  const box = new THREE.Box3().setFromObject(object);
+  const size = box.getSize(new THREE.Vector3());
+  return { box, size, maxDim: Math.max(size.x, size.y, size.z) };
+}
+
+function applyTargetOnce(object, targetSize, counters) {
+  counters.scaleApplications += 1;
+  object.position.y = 0;
+  object.scale.setScalar(1);
+  let measurement = localBounds(object);
+  object.scale.setScalar(targetSize / (measurement.maxDim || 1));
+  measurement = localBounds(object);
+  object.position.y -= measurement.box.min.y;
+  object.updateMatrixWorld(true);
+}
+
+function makeLabel(text) {
+  const canvas = document.createElement('canvas');
+  canvas.width = 512; canvas.height = 128;
+  const context = canvas.getContext('2d');
+  context.fillStyle = 'rgba(0,0,0,.72)'; context.fillRect(0, 0, 512, 128);
+  context.fillStyle = '#fff'; context.font = '34px monospace'; context.textAlign = 'center';
+  context.fillText(text, 256, 78);
+  const sprite = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(canvas), transparent: true }));
+  sprite.scale.set(1.7, 0.42, 1);
+  sprite.position.y = 1.8;
+  return sprite;
+}
+
+function loadAsset(assetName) {
+  const serial = ++requestSerial;
+  clearCurrent();
+  status.textContent = `loading ${assetName}…`;
+  const counters = { assetLoads: 0, scaleApplications: 0, movementRegenerations: 0 };
+  loader.load(ASSETS[assetName], (gltf) => {
+    if (serial !== requestSerial) return;
+    counters.assetLoads += 1;
+    const levelResults = [];
+    for (const level of LEVELS) {
+      const group = new THREE.Group();
+      group.position.set(level.x, 0, 0);
+      const object = gltf.scene.clone(true);
+      object.traverse(node => {
+        if (!node.isMesh) return;
+        node.castShadow = true;
+        node.receiveShadow = true;
+      });
+      applyTargetOnce(object, level.size, counters);
+      group.add(object, makeLabel(`${level.label} ${level.size.toFixed(2)}`));
+      scene.add(group);
+      currentGroups.push(group);
+
+      const beforeMove = localBounds(object);
+      const scaleBefore = object.scale.clone();
+      group.position.z = 0.55;
+      group.updateMatrixWorld(true);
+      const afterMove = localBounds(object);
+      const scaleUnchanged = object.scale.distanceTo(scaleBefore) < 1e-9;
+      const sizeUnchanged = Math.abs(afterMove.maxDim - beforeMove.maxDim) < 1e-6;
+      group.position.z = 0;
+      group.updateMatrixWorld(true);
+      const worldBox = new THREE.Box3().setFromObject(object);
+      levelResults.push({
+        intent: level.intent,
+        targetSize: level.size,
+        measuredMaxDimension: Number(beforeMove.maxDim.toFixed(6)),
+        groundedMinY: Number(beforeMove.box.min.y.toFixed(6)),
+        targetApplied: Math.abs(beforeMove.maxDim - level.size) < 1e-5,
+        grounded: Math.abs(beforeMove.box.min.y) < 1e-5,
+        movementScaleUnchanged: scaleUnchanged && sizeUnchanged,
+        insideTenUnitPlane: worldBox.min.x >= -5.0001 && worldBox.max.x <= 5.0001 && worldBox.min.z >= -5.0001 && worldBox.max.z <= 5.0001,
+      });
+    }
+    const result = {
+      ready: true,
+      asset: assetName,
+      levels: levelResults,
+      counters,
+      targetValues: LEVELS.map(level => level.size),
+      neutralDefault: 1.00,
+      allTargetsApplied: levelResults.every(item => item.targetApplied),
+      allGrounded: levelResults.every(item => item.grounded),
+      movementIndependent: levelResults.every(item => item.movementScaleUnchanged) && counters.assetLoads === 1 && counters.scaleApplications === 5,
+      allInsideTenUnitPlane: levelResults.every(item => item.insideTenUnitPlane),
+    };
+    window.__qualification = result;
+    resultsNode.textContent = JSON.stringify(result, null, 2);
+    status.textContent = `${assetName}: ${result.allTargetsApplied && result.allGrounded && result.movementIndependent ? 'mechanics pass' : 'review'}`;
+  }, undefined, error => {
+    console.error(error);
+    window.__qualification = { ready: false, asset: assetName, error: String(error) };
+    status.textContent = `${assetName}: load failed`;
+  });
+}
+
+document.querySelectorAll('button[data-asset]').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelectorAll('button[data-asset]').forEach(item => item.classList.toggle('active', item === button));
+    loadAsset(button.dataset.asset);
+  });
+});
+addEventListener('resize', () => {
+  camera.aspect = innerWidth / innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(innerWidth, innerHeight);
+});
+function animate() { requestAnimationFrame(animate); controls.update(); renderer.render(scene, camera); }
+animate();
+loadAsset('castle');
+</script>
+</body>
+</html>

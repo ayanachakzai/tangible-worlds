@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H008",
+  "case_index": 8,
+  "group": "ordinary_handheld",
+  "meaning": "rolled sleeping bag",
+  "acceptable": [
+    "handheld"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"sleeping bag\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "sleeping bag",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 3.958,
+  "error": ""
+}

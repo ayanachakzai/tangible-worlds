@@ -1,0 +1,6 @@
+calls: 7
+valid enum: 7/7 (100.0%)
+consistent cases: 7/7 (100.0%)
+expected-match cases: 7/7 (100.0%)
+
+questionable cases:

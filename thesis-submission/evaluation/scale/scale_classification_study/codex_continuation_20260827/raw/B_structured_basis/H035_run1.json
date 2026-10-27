@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H035",
+  "case_index": 35,
+  "group": "ordinary_colossal",
+  "meaning": "gas giant",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"planet\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "planet",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.654,
+  "error": ""
+}

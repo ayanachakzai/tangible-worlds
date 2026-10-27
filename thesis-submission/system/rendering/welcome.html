@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tangible Worlds</title>
+
+<!-- ref: https://fonts.google.com/specimen/VT323 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=VT323&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --paper: #f1eee2;
+  --ink: #10110f;
+  --muted: #5b5c56;
+  --rule: #c8c2b3;
+  --soft: #e6e1d3;
+  --accent: #ed481c;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  min-height: 100vh;
+  font-family: Inter, Arial, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.site-header,
+.site-footer,
+.screen {
+  width: min(1328px, calc(100vw - 64px));
+  margin: 0 auto;
+}
+
+.site-header {
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--ink);
+}
+
+.brand,
+.header-meta,
+.slide-count,
+.kicker,
+.label,
+.option,
+.button,
+.footer-meta,
+.footer-credit,
+.setup-note {
+  font-family: "VT323", monospace;
+}
+
+.brand {
+  font-size: 22px;
+  letter-spacing: .02em;
+}
+
+.header-meta,
+.slide-count {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.main {
+  width: 100%;
+  min-height: 0;
+}
+
+.screen {
+  display: none;
+  min-height: calc(100vh - 160px);
+  padding: 42px 0 34px;
+}
+
+.screen.active {
+  display: flex;
+  flex-direction: column;
+}
+
+.kicker {
+  font-size: 21px;
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+h1 {
+  margin: 0;
+  font-family: "VT323", monospace;
+  font-size: clamp(58px, 6vw, 78px);
+  font-weight: 400;
+  line-height: .95;
+  letter-spacing: .01em;
+}
+
+.lead {
+  margin: 24px 0 0;
+  max-width: 780px;
+  font-size: clamp(25px, 2.3vw, 33px);
+  line-height: 1.26;
+}
+
+.body-copy {
+  font-size: clamp(21px, 1.75vw, 27px);
+  line-height: 1.42;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.rule {
+  width: 100%;
+  height: 1px;
+  background: var(--rule);
+}
+
+.setup-intro {
+  max-width: 610px;
+  margin-top: 24px;
+  font-size: 26px;
+  line-height: 1.25;
+  color: var(--muted);
+}
+
+.setup-form {
+  margin-top: 34px;
+  padding: 36px 0 0;
+  border-top: 1px solid var(--rule);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+}
+
+.field {
+  min-width: 0;
+}
+
+.label {
+  display: block;
+  margin-bottom: 14px;
+  font-size: 21px;
+  color: var(--muted);
+}
+
+.participant-input {
+  width: 100%;
+  height: 58px;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  outline: 0;
+  background: transparent;
+  color: var(--ink);
+  font-family: "VT323", monospace;
+  font-size: 40px;
+  padding: 0 4px;
+}
+
+.participant-input::placeholder {
+  color: #99958a;
+}
+
+.setup-note {
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.condition-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.option {
+  height: 58px;
+  padding: 0 18px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.option:not(.active) {
+  border-color: #a6a094;
+  color: #77746d;
+  background: var(--soft);
+}
+
+.option-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+.option.active .option-dot {
+  background: var(--accent);
+}
+
+.setup-bottom {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.setup-bottom-note {
+  font-family: "VT323", monospace;
+  font-size: 22px;
+  color: var(--muted);
+}
+
+.button {
+  min-width: 184px;
+  height: 58px;
+  padding: 0 24px;
+  border: 1px solid var(--ink);
+  background: transparent;
+  color: var(--ink);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.button.primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.button:disabled {
+  opacity: .35;
+  cursor: default;
+}
+
+.slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.statement-stack {
+  margin-top: 32px;
+  border-top: 1px solid var(--rule);
+}
+
+.statement {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 18px;
+  padding: 26px 4px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.statement-number {
+  font-family: "VT323", monospace;
+  font-size: 21px;
+  color: var(--accent);
+  padding-top: 2px;
+}
+
+.statement-text {
+  font-size: clamp(21px, 1.75vw, 27px);
+  line-height: 1.42;
+}
+
+.final-line {
+  margin-top: 26px;
+  font-size: clamp(21px, 1.75vw, 27px);
+  line-height: 1.42;
+  font-weight: 500;
+}
+
+.step-stack {
+  margin-top: 30px;
+  border-top: 1px solid var(--rule);
+}
+
+.step {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 32px;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.step-label {
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.step-text {
+  font-size: clamp(19px, 1.55vw, 24px);
+  line-height: 1.38;
+}
+
+.recovery {
+  margin-top: 22px;
+  padding-top: 22px;
+  font-size: clamp(19px, 1.55vw, 24px);
+  line-height: 1.38;
+}
+
+.language-intro {
+  margin-top: 23px;
+  max-width: 980px;
+  font-size: clamp(21px, 1.75vw, 27px);
+  line-height: 1.42;
+}
+
+.language-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 26px 46px;
+}
+
+.language-item {
+  border-top: 1px solid var(--rule);
+  padding-top: 18px;
+}
+
+.language-item-title {
+  font-family: "VT323", monospace;
+  font-size: 25px;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+
+.language-item p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.example {
+  margin-top: 13px;
+  border: 1px solid #9d988d;
+  background: rgba(255,255,255,.16);
+  padding: 12px 14px;
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  line-height: 1.2;
+  white-space: pre-wrap;
+}
+
+.scale-row {
+  margin-top: 25px;
+  padding: 20px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.scale-values {
+  font-family: "VT323", monospace;
+  font-size: 24px;
+  color: var(--accent);
+}
+
+.voice-confirm {
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.45;
+}
+
+.expect-grid {
+  margin-top: 34px;
+  border-top: 1px solid var(--rule);
+}
+
+.expect-row {
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  gap: 18px;
+  padding: 20px 4px;
+  border-bottom: 1px solid var(--rule);
+}
+
+.task-body {
+  margin-top: 30px;
+  max-width: 960px;
+}
+
+.task-body p {
+  margin: 0 0 20px;
+  font-size: clamp(22px, 1.9vw, 29px);
+  line-height: 1.4;
+}
+
+.task-time {
+  margin-top: 26px;
+  padding: 22px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  font-family: "VT323", monospace;
+  font-size: 31px;
+}
+
+.slide-nav {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.progress {
+  display: flex;
+  gap: 7px;
+}
+
+.progress-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #b9b3a6;
+}
+
+.progress-dot.active {
+  background: var(--accent);
+}
+
+.site-footer {
+  min-height: 76px;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.footer-credit {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.footer-meta {
+  font-size: 17px;
+  color: var(--muted);
+}
+
+@media (max-width: 820px) {
+  .site-header,
+  .site-footer,
+  .screen {
+    width: min(100% - 32px, 1328px);
+  }
+
+  .setup-form,
+  .language-grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .step {
+    grid-template-columns: 100px 1fr;
+  }
+
+  .site-header {
+    height: 70px;
+  }
+
+  .screen {
+    padding-top: 28px;
+  }
+
+  .footer-meta {
+    display: none;
+  }
+}
+
+/* Compact participant UI
+   The onboarding is a web interface, not a presentation deck.
+   These overrides keep standard laptop viewports mostly scroll-free
+   and reserve space for navigation so controls never cover copy. */
+:root {
+  --content-width: 1160px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+.app {
+  height: 100dvh;
+  min-height: 0;
+  grid-template-rows: 54px minmax(0, 1fr) 38px;
+}
+
+.site-header,
+.site-footer,
+.screen {
+  width: min(var(--content-width), calc(100vw - 48px));
+}
+
+.site-header {
+  height: 54px;
+}
+
+.brand {
+  font-size: 18px;
+}
+
+.header-meta,
+.slide-count {
+  font-size: 15px;
+}
+
+.main {
+  min-height: 0;
+  overflow: hidden;
+}
+
+.screen {
+  min-height: 0;
+  height: 100%;
+  padding: 20px 0 68px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #bcb6aa transparent;
+}
+
+.screen::-webkit-scrollbar {
+  width: 6px;
+}
+
+.screen::-webkit-scrollbar-thumb {
+  background: #bcb6aa;
+  border-radius: 10px;
+}
+
+.kicker {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: clamp(38px, 4vw, 50px);
+  line-height: .96;
+}
+
+.lead {
+  margin-top: 14px;
+  max-width: 720px;
+  font-size: clamp(18px, 1.65vw, 22px);
+  line-height: 1.32;
+}
+
+.body-copy,
+.statement-text,
+.final-line {
+  font-size: clamp(16px, 1.25vw, 18px);
+  line-height: 1.42;
+}
+
+.setup-intro {
+  margin-top: 14px;
+  max-width: 540px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.setup-form {
+  margin-top: 24px;
+  padding-top: 24px;
+  gap: 72px;
+}
+
+.label {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.participant-input {
+  height: 44px;
+  font-size: 30px;
+}
+
+.setup-note {
+  margin-top: 7px;
+  font-size: 14px;
+}
+
+.condition-options {
+  gap: 10px;
+}
+
+.option {
+  height: 44px;
+  padding: 0 14px;
+  font-size: 23px;
+}
+
+.option-dot {
+  width: 11px;
+  height: 11px;
+}
+
+.setup-bottom {
+  margin-top: 30px;
+  padding-top: 20px;
+}
+
+.setup-bottom-note {
+  font-size: 17px;
+}
+
+.button {
+  min-width: 112px;
+  height: 42px;
+  padding: 0 17px;
+  font-size: 20px;
+}
+
+.statement-stack {
+  margin-top: 20px;
+}
+
+.statement {
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  padding: 15px 2px;
+}
+
+.statement-number {
+  font-size: 16px;
+}
+
+.final-line {
+  margin-top: 18px;
+}
+
+.step-stack {
+  margin-top: 20px;
+}
+
+.step {
+  grid-template-columns: 118px 1fr;
+  gap: 22px;
+  padding: 13px 2px;
+}
+
+.step-label {
+  font-size: 18px;
+}
+
+.step-text,
+.recovery {
+  font-size: clamp(15px, 1.16vw, 17px);
+  line-height: 1.38;
+}
+
+.recovery {
+  margin-top: 14px;
+  padding-top: 12px;
+}
+
+.language-intro {
+  margin-top: 14px;
+  max-width: 840px;
+  font-size: 18px;
+  line-height: 1.38;
+}
+
+.language-grid {
+  margin-top: 17px;
+  gap: 16px 34px;
+}
+
+.language-item {
+  padding-top: 11px;
+}
+
+.language-item p {
+  font-size: 15px;
+  line-height: 1.38;
+}
+
+.example {
+  margin-top: 8px;
+  padding: 8px 10px;
+  font-size: 18px;
+  line-height: 1.12;
+}
+
+.scale-row {
+  margin-top: 15px;
+  padding: 11px 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.scale-values {
+  font-size: 18px;
+}
+
+.voice-confirm {
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.expect-grid {
+  margin-top: 20px;
+}
+
+.expect-row {
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
+  padding: 11px 2px;
+}
+
+.task-body {
+  margin-top: 20px;
+  max-width: 820px;
+}
+
+.task-body p {
+  margin: 0 0 12px;
+  font-size: clamp(17px, 1.4vw, 20px);
+  line-height: 1.4;
+}
+
+.task-time {
+  display: none;
+}
+
+/* Navigation is compact and visually detached from the reading area.
+   The screen bottom padding above keeps it from ever covering content. */
+#floatingNav {
+  bottom: 46px !important;
+}
+
+.slide-nav {
+  width: min(var(--content-width), calc(100vw - 48px)) !important;
+}
+
+.nav-right {
+  gap: 14px;
+}
+
+.progress {
+  gap: 5px;
+}
+
+.progress-dot {
+  width: 5px;
+  height: 5px;
+}
+
+.site-footer {
+  min-height: 38px;
+  height: 38px;
+}
+
+.footer-credit,
+.footer-meta {
+  font-size: 13px;
+}
+
+.footer-credit {
+  gap: 16px;
+}
+
+@media (max-height: 760px) and (min-width: 821px) {
+  .screen {
+    padding-top: 14px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .lead {
+    font-size: 18px;
+  }
+
+  .statement {
+    padding-top: 11px;
+    padding-bottom: 11px;
+  }
+
+  .step {
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+
+  .expect-row {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .language-grid {
+    margin-top: 12px;
+    gap: 12px 28px;
+  }
+
+  .language-item p {
+    font-size: 14px;
+  }
+
+  .example {
+    font-size: 16px;
+    padding: 6px 8px;
+  }
+}
+
+@media (max-width: 820px) {
+  body {
+    overflow: auto;
+  }
+
+  .app {
+    min-height: 100dvh;
+    height: auto;
+    grid-template-rows: 50px auto 42px;
+  }
+
+  .main {
+    overflow: visible;
+  }
+
+  .site-header,
+  .site-footer,
+  .screen {
+    width: min(100% - 28px, var(--content-width));
+  }
+
+  .screen {
+    height: auto;
+    overflow: visible;
+    padding-bottom: 84px;
+  }
+
+  .setup-form,
+  .language-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .step {
+    grid-template-columns: 88px 1fr;
+  }
+
+  #floatingNav {
+    bottom: 48px !important;
+  }
+
+  .slide-nav {
+    width: min(100% - 28px, var(--content-width)) !important;
+  }
+
+  .footer-meta {
+    display: none;
+  }
+}
+
+
+/* Language-screen hierarchy:
+   action instructions are intentionally separated from explanatory copy. */
+.language-mode {
+  margin-top: 12px;
+  font-family: "VT323", monospace;
+  font-size: 16px;
+  color: var(--accent);
+  letter-spacing: .02em;
+}
+
+.instruction {
+  color: #9f3e28;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.language-intro.instruction {
+  max-width: 760px;
+  margin-top: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+}
+
+.voice-confirm.instruction {
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+}
+
+@media (max-height: 760px) and (min-width: 821px) {
+  .language-mode {
+    margin-top: 8px;
+    font-size: 15px;
+  }
+
+  .language-intro.instruction,
+  .voice-confirm.instruction {
+    padding-left: 9px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+<div class="app">
+  <header class="site-header">
+    <div class="brand">TANGIBLE WORLDS</div>
+    <div class="header-meta" id="headerMeta">STUDY SESSION / SETUP</div>
+  </header>
+
+  <main class="main">
+
+    <section class="screen active" id="setupScreen">
+      <div class="kicker">00</div>
+      <h1>SESSION SETUP</h1>
+
+      <div class="setup-intro">
+        Choose a participant ID and the language input for this run.
+      </div>
+
+      <div class="setup-form">
+        <div class="field">
+          <label class="label" for="participantInput">PARTICIPANT ID</label>
+          <input id="participantInput" class="participant-input" type="text" autocomplete="off" spellcheck="false" placeholder="P01">
+          <div class="setup-note">participant code</div>
+        </div>
+
+        <div class="field">
+          <div class="label">INPUT CONDITION</div>
+          <div class="condition-options">
+            <button type="button" class="option active" data-mode="text">
+              <span>TEXT</span>
+              <span class="option-dot"></span>
+            </button>
+            <button type="button" class="option" data-mode="voice">
+              <span>VOICE</span>
+              <span class="option-dot"></span>
+            </button>
+          </div>
+          <div class="setup-note">select one condition</div>
+        </div>
+      </div>
+
+      <div class="setup-bottom">
+        <div class="setup-bottom-note">SAME PHYSICAL SYSTEM / TWO LANGUAGE INPUTS</div>
+        <button type="button" class="button primary" id="continueButton" disabled>CONTINUE →</button>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="1">
+      <div class="slide-content">
+        <div class="kicker">01</div>
+        <h1>WHAT THIS IS</h1>
+
+        <div class="lead">Thank you for taking part.</div>
+
+        <div class="body-copy" style="margin-top:24px; max-width:800px;">
+          This system turns a physical arrangement on a table into a 3D scene.
+        </div>
+
+        <div class="statement-stack">
+          <div class="statement">
+            <div class="statement-number">01</div>
+            <div class="statement-text">The objects on the table are tracked. Each one can be linked to a generated 3D element.</div>
+          </div>
+          <div class="statement">
+            <div class="statement-number">02</div>
+            <div class="statement-text">Language is used to say what each object represents, and to change the scene as a whole.</div>
+          </div>
+        </div>
+
+        <div class="final-line">
+          You will use it twice today, once with each way of entering language.
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="2">
+      <div class="slide-content">
+        <div class="kicker">02</div>
+        <h1>SETTING UP</h1>
+
+        <div class="lead" style="max-width:1000px;">
+          Before you start, the system has to learn your objects. This takes a couple of minutes and I will run it.
+        </div>
+
+        <div class="step-stack">
+          <div class="step">
+            <div class="step-label">FIRST</div>
+            <div class="step-text">I set up the table with nothing on it. The system measures the surface so it knows what is flat and what is an object.</div>
+          </div>
+          <div class="step">
+            <div class="step-label">THEN</div>
+            <div class="step-text">You place the objects you want to use on the table. Spread them out so they are not touching.</div>
+          </div>
+          <div class="step">
+            <div class="step-label">THEN</div>
+            <div class="step-text">Keep your hands away from the table for about half a minute. The system watches each object from different angles and learns its shape, so it can tell them apart later.</div>
+          </div>
+          <div class="step">
+            <div class="step-label">ONCE THAT IS DONE</div>
+            <div class="step-text">You can pick objects up, move them, and put them back down. The system will keep track of which is which.</div>
+          </div>
+        </div>
+
+        <div class="recovery">
+          If it ever loses track of an object, push the objects apart and separate them again, and tell me.
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="3">
+      <div class="slide-content">
+        <div class="kicker">03</div>
+        <h1>THE PHYSICAL OBJECTS</h1>
+
+        <div class="statement-stack" style="margin-top:42px;">
+          <div class="statement">
+            <div class="statement-number">01</div>
+            <div class="statement-text">Where you place an object on the table is where its linked element appears in the scene.</div>
+          </div>
+          <div class="statement">
+            <div class="statement-number">02</div>
+            <div class="statement-text">Move the object and the element moves with it.</div>
+          </div>
+          <div class="statement">
+            <div class="statement-number">03</div>
+            <div class="statement-text">When two assigned objects are close together, the system may respond to that relationship.</div>
+          </div>
+          <div class="statement">
+            <div class="statement-number">04</div>
+            <div class="statement-text">The physical size of an object does not set the size of the element it represents. A small object can become a large thing in the scene.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="4">
+      <div class="slide-content">
+        <div class="kicker">04</div>
+        <h1>LANGUAGE</h1>
+
+        <div id="typedLanguage">
+          <div class="language-mode">TEXT INPUT</div>
+          <div class="language-intro">
+            Language does two jobs. It says what an object represents, and it changes the scene as a whole.
+          </div>
+
+          <div class="language-grid">
+            <div class="language-item">
+              <p class="instruction"><strong>To say what an object represents</strong>, put its number in the first box and what it represents in the second, then press Assign.</p>
+              <div class="example">object number:  1
+meaning:        a car</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction"><strong>To set how big it appears</strong>, end the meaning with the word <strong>scale</strong> and a size.</p>
+              <div class="example">meaning:  a car scale large</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction"><strong>To change the scene</strong>, type an instruction into the scene box and press enter.</p>
+              <div class="example">make it darker
+add mist</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction">You can change anything at any point. Assigning object 1 again gives it a new meaning.</p>
+            </div>
+          </div>
+
+          <div class="scale-row">
+            The sizes are: <span class="scale-values">tiny, miniature, small, big, large, huge</span>. Without one, a default size is used.<br>
+            The size you choose has nothing to do with the physical object on the table. A small object can be <span class="scale-values">scale huge</span>.
+          </div>
+        </div>
+
+        <div id="voiceLanguage" hidden>
+          <div class="language-mode">VOICE INPUT</div>
+          <div class="language-intro">
+            Language does two jobs. It says what an object represents, and it changes the scene as a whole.
+          </div>
+
+          <div class="language-intro instruction">
+            Hold the touchpad on the controller while you speak. Release it when you finish.
+          </div>
+
+          <div class="language-grid">
+            <div class="language-item">
+              <p class="instruction"><strong>To say what an object represents</strong>, say the word <strong>object</strong>, then its number, then <strong>is</strong>, then what it represents.</p>
+              <div class="example">"object 1 is a car"</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction"><strong>To set how big it appears</strong>, end with the word <strong>scale</strong> and a size.</p>
+              <div class="example">"object 1 is a car scale large"</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction"><strong>To change the scene</strong>, just say the instruction.</p>
+              <div class="example">"make it darker"
+"add mist"</div>
+            </div>
+
+            <div class="language-item">
+              <p class="instruction">You can change anything at any point. Saying <strong>object 1 is</strong> something else gives it a new meaning.</p>
+            </div>
+          </div>
+
+          <div class="scale-row">
+            The sizes are: <span class="scale-values">tiny, miniature, small, big, large, huge</span>. Without one, a default size is used.<br>
+            The size you choose has nothing to do with the physical object on the table. A small object can be <span class="scale-values">scale huge</span>.
+          </div>
+
+          <div class="voice-confirm instruction">
+            After you speak, the transcript appears on screen and is read back to you. Hold the touchpad again and say <strong>yes</strong> to accept it, or <strong>no</strong> to try again.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="5">
+      <div class="slide-content">
+        <div class="kicker">05</div>
+        <h1>WHAT TO EXPECT</h1>
+
+        <div class="expect-grid">
+          <div class="expect-row">
+            <div class="statement-number">01</div>
+            <div class="statement-text">Some actions finish immediately. Others take longer.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">02</div>
+            <div class="statement-text">Making a new 3D element can take a while. The screen shows which stage it has reached.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">03</div>
+            <div class="statement-text">Results vary. What appears may not be exactly what you pictured.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">04</div>
+            <div class="statement-text">Wait for the current action to finish before starting another.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">05</div>
+            <div class="statement-text">If an input is not accepted, try it again.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">06</div>
+            <div class="statement-text">If something is not as you wanted, change it or adjust it with the controls.</div>
+          </div>
+          <div class="expect-row">
+            <div class="statement-number">07</div>
+            <div class="statement-text">These behaviours are part of the system you are looking at today.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" data-slide="6">
+      <div class="slide-content">
+        <div class="kicker">06</div>
+        <h1>THE TASK</h1>
+
+        <div class="task-body">
+          <p>Use the system to build a 3D scene of your choosing.</p>
+          <p>There is no target scene and no preferred outcome.</p>
+          <p>Work in whatever order makes sense to you. Change direction whenever you want.</p>
+          <p>Please use language as part of your process. What you say or type is up to you.</p>
+          <p style="margin-top:22px;">We are looking at how you work with the system, not at your artistic ability.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="screen" id="navContainer" style="display:none; min-height:0; padding:0;"></div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-credit">
+      <span>MUHAMMAD AYAN ACHAKZAI</span>
+      <span>m.achakzai0320251@arts.ac.uk</span>
+    </div>
+    <div class="footer-meta">UAL CCI</div>
+  </footer>
+</div>
+
+<div id="floatingNav" style="display:none; position:fixed; left:0; right:0; bottom:76px; pointer-events:none;">
+  <div class="slide-nav" style="width:min(1328px, calc(100vw - 64px)); margin:0 auto; pointer-events:auto;">
+    <button class="button" id="backButton" type="button">BACK</button>
+    <div class="nav-right">
+      <div class="progress" id="progress"></div>
+      <button class="button primary" id="nextButton" type="button">NEXT →</button>
+    </div>
+  </div>
+</div>
+
+<script>
+const setupScreen = document.getElementById('setupScreen');
+const participantInput = document.getElementById('participantInput');
+const continueButton = document.getElementById('continueButton');
+const optionButtons = [...document.querySelectorAll('.option')];
+const slides = [...document.querySelectorAll('[data-slide]')];
+const typedLanguage = document.getElementById('typedLanguage');
+const voiceLanguage = document.getElementById('voiceLanguage');
+const headerMeta = document.getElementById('headerMeta');
+const floatingNav = document.getElementById('floatingNav');
+const backButton = document.getElementById('backButton');
+const nextButton = document.getElementById('nextButton');
+const progress = document.getElementById('progress');
+
+
+let selectedMode = 'text';
+let currentSlide = 0;
+
+
+function setMode(mode) {
+  selectedMode = mode;
+
+  optionButtons.forEach(button => {
+    button.classList.toggle('active', button.dataset.mode === mode);
+  });
+
+  const voice = mode === 'voice';
+  typedLanguage.hidden = voice;
+  voiceLanguage.hidden = !voice;
+}
+
+function buildProgress() {
+  progress.innerHTML = '';
+
+  slides.forEach((_, index) => {
+    const dot = document.createElement('span');
+    dot.className = 'progress-dot';
+    dot.dataset.index = String(index);
+    progress.appendChild(dot);
+  });
+}
+
+function updateProgress() {
+  [...progress.children].forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentSlide);
+  });
+}
+
+function showSlide(index) {
+  currentSlide = Math.max(0, Math.min(index, slides.length - 1));
+
+  setupScreen.classList.remove('active');
+
+  slides.forEach((slide, slideIndex) => {
+    slide.classList.toggle('active', slideIndex === currentSlide);
+  });
+
+  headerMeta.textContent =
+    String(currentSlide + 1).padStart(2, '0') +
+    ' / ' +
+    String(slides.length).padStart(2, '0') +
+    (currentSlide === 3 ? ' · ' + selectedMode.toUpperCase() + ' INPUT' : '');
+
+  backButton.textContent = currentSlide === 0 ? 'SETUP' : 'BACK';
+  nextButton.textContent =
+    currentSlide === slides.length - 1 ? 'START CONDITION →' : 'NEXT →';
+
+  floatingNav.style.display = 'block';
+  updateProgress();
+  window.scrollTo(0, 0);
+}
+
+function showSetup() {
+  slides.forEach(slide => slide.classList.remove('active'));
+  setupScreen.classList.add('active');
+  floatingNav.style.display = 'none';
+  headerMeta.textContent = 'STUDY SESSION / SETUP';
+  window.scrollTo(0, 0);
+}
+
+function openCondition() {
+  const participant = participantInput.value.trim();
+  if (!participant) return;
+
+  const params = new URLSearchParams({
+    input: selectedMode,
+    participant: participant
+  });
+
+  window.location.href = 'index.html?' + params.toString();
+}
+
+participantInput.addEventListener('input', () => {
+  continueButton.disabled = participantInput.value.trim().length === 0;
+});
+
+optionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    setMode(button.dataset.mode);
+  });
+});
+
+continueButton.addEventListener('click', () => {
+  if (!participantInput.value.trim()) return;
+  showSlide(0);
+});
+
+backButton.addEventListener('click', () => {
+  if (currentSlide === 0) {
+    showSetup();
+    return;
+  }
+
+  showSlide(currentSlide - 1);
+});
+
+nextButton.addEventListener('click', () => {
+  if (currentSlide === slides.length - 1) {
+    openCondition();
+    return;
+  }
+
+  showSlide(currentSlide + 1);
+});
+
+document.addEventListener('keydown', event => {
+  if (setupScreen.classList.contains('active')) {
+    if (event.key === 'Enter' && !continueButton.disabled) {
+      continueButton.click();
+    }
+    return;
+  }
+
+  if (event.key === 'ArrowRight') {
+    nextButton.click();
+  }
+
+  if (event.key === 'ArrowLeft') {
+    backButton.click();
+  }
+});
+
+buildProgress();
+setMode('text');
+</script>
+</body>
+</html>

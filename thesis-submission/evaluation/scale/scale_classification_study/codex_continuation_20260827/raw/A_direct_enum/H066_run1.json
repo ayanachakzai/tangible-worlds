@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H066",
+  "case_index": 66,
+  "group": "modifier",
+  "meaning": "fortress the size of a garden shed",
+  "acceptable": [
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbody_scale",
+  "parsed_class": "body_scale",
+  "scale_basis": "fortress the size of a garden shed",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.731,
+  "error": ""
+}

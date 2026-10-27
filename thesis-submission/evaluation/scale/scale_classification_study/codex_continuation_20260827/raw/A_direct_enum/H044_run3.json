@@ -1,0 +1,21 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H044",
+  "case_index": 44,
+  "group": "boundary",
+  "meaning": "garden pavilion",
+  "acceptable": [
+    "room_scale",
+    "building_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "\n\nbody_scale",
+  "parsed_class": "body_scale",
+  "scale_basis": "garden pavilion",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.894,
+  "error": ""
+}

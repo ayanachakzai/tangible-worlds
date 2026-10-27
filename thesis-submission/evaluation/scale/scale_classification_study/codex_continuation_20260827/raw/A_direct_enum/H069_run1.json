@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H069",
+  "case_index": 69,
+  "group": "modifier",
+  "meaning": "full-size replica of a delivery truck",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nvehicle_scale",
+  "parsed_class": "vehicle_scale",
+  "scale_basis": "full-size replica of a delivery truck",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.776,
+  "error": ""
+}

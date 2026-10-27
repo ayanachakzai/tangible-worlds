@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H049",
+  "case_index": 49,
+  "group": "creative",
+  "meaning": "city-consuming shadow monster",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"city\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "city",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.635,
+  "error": ""
+}

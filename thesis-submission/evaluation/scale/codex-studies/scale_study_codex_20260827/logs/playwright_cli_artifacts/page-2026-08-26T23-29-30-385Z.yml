@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f48e2]:
+  - heading "D_expanded | stronger middle and upper separation" [level=1] [ref=f48e3]
+  - paragraph [ref=f48e4]: "sizes: 0.25 | 0.55 | 1.00 | 1.55 | 2.20 | 3.00 | 3.80"
+  - paragraph [ref=f48e5]: "edge: edge stress | low_oblique: lower oblique"
+  - paragraph [ref=f48e6]: Loading 0/7 meshes
+  - paragraph [ref=f48e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

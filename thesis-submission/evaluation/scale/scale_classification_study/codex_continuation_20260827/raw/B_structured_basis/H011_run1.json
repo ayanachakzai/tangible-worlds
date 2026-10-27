@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H011",
+  "case_index": 11,
+  "group": "ordinary_body",
+  "meaning": "wheelbarrow",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"wheelbarrow\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "wheelbarrow",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 3.634,
+  "error": ""
+}

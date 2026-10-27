@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H002",
+  "case_index": 2,
+  "group": "ordinary_micro",
+  "meaning": "mosquito",
+  "acceptable": [
+    "micro"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"insect\",\"semantic_scale_class\":\"micro\"}",
+  "parsed_class": "micro",
+  "scale_basis": "insect",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 3.659,
+  "error": ""
+}

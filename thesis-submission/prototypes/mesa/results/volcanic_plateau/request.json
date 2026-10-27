@@ -1,0 +1,7 @@
+{
+  "original_description": "a high volcanic plateau with broad flat uplands",
+  "mesa_prompt": "A Sentinel-2 image of volcanic plateau and broad flat uplands",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

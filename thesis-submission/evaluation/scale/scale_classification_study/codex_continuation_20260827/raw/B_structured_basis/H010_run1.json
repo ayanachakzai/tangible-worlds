@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H010",
+  "case_index": 10,
+  "group": "ordinary_body",
+  "meaning": "wardrobe",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"wardrobe\",\"semantic_scale_class\":\"body_scale\"}",
+  "parsed_class": "body_scale",
+  "scale_basis": "wardrobe",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 3.934,
+  "error": ""
+}

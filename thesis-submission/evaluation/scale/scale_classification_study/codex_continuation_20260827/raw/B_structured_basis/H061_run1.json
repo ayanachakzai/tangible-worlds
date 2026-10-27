@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H061",
+  "case_index": 61,
+  "group": "modifier",
+  "meaning": "rabbit as tall as a doorway",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"doorway height\",\"semantic_scale_class\":\"room_scale\"}",
+  "parsed_class": "room_scale",
+  "scale_basis": "doorway height",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.693,
+  "error": ""
+}

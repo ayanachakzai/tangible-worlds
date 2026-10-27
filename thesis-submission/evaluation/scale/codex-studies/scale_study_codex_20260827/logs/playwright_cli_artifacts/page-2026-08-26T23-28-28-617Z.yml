@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f15e2]:
+  - heading "B_current | current manual candidate" [level=1] [ref=f15e3]
+  - paragraph [ref=f15e4]: "sizes: 0.30 | 0.60 | 1.00 | 1.40 | 2.00 | 2.70 | 3.40"
+  - paragraph [ref=f15e5]: "reference: one-per-class reference | low_oblique: lower oblique"
+  - paragraph [ref=f15e6]: Loading 0/7 meshes
+  - paragraph [ref=f15e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P010",
+  "category": "supported_article",
+  "phrase": "a small red castle",
+  "expected_intent": "small",
+  "expected_generation_meaning": "a red castle",
+  "participant_phrase": "a small red castle",
+  "generation_meaning": "a red castle",
+  "explicit_scale_intent": "small",
+  "target_size": 0.65,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "small",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

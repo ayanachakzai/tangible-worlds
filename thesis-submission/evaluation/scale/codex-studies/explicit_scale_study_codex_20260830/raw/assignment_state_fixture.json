@@ -1,0 +1,12 @@
+{
+  "2": {
+    "object_key": "2",
+    "meaning": "a tiny castle",
+    "generation_meaning": "a castle",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_explicit",
+    "status": "ready",
+    "mesh_url": "/fixture/a-castle.glb"
+  }
+}

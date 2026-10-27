@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H027",
+  "case_index": 27,
+  "group": "ordinary_infrastructure",
+  "meaning": "motorway interchange",
+  "acceptable": [
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nroom_scale",
+  "parsed_class": "room_scale",
+  "scale_basis": "motorway interchange",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.82,
+  "error": ""
+}

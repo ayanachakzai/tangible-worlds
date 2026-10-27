@@ -1,0 +1,25 @@
+{
+  "proposed_parser_holdout": {
+    "pass_count": 80,
+    "total": 80,
+    "all_pass": true,
+    "failed_ids": []
+  },
+  "cache_generation_separation": {
+    "cache_file": "castle.glb",
+    "meaning": "castle, scale tiny",
+    "generation_meaning": "castle",
+    "target_size": 0.35,
+    "status": "ready",
+    "mesh_url_uses_generation_slug": true,
+    "pass": true
+  },
+  "renderer_wiring": {
+    "target_size_passed": true,
+    "old_record_neutral_fallback": true,
+    "relation_uses_generation_meaning": true
+  },
+  "voice_route_byte_identical": true,
+  "qwen_scale_calls": 0,
+  "all_pass": true
+}

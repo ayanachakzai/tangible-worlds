@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H037",
+  "case_index": 37,
+  "group": "ambiguous",
+  "meaning": "justice",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "{\"scale_basis\":\"abstract concept\",\"semantic_scale_class\":\"ambiguous\"}",
+  "parsed_class": "ambiguous",
+  "scale_basis": "abstract concept",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.374,
+  "error": ""
+}

@@ -1,0 +1,163 @@
+2026-08-26T18:26:27+0100
+--- lms load --help kv/cache/quant scan ---
+   --gpu <offload-ratio>                                                 GPU offload ratio. Valid values: "off" (disable GPU), "max" (full offload), or a number between 0 and 1 (e.g., "0.5" for 50% offload). By default, LM Studio automatically determines the optimal offload ratio.
+   -c, --context-length <length>                                         The number of tokens to consider as context when generating text. If not provided, the default value will be used.
+   --parallel <count>                                                    Maximum number of predictions the model can run at a given time. The speed of each individual prediction may decrease with concurrency, but each prediction will start faster and higher total throughput can be achieved.
+   --ttl <seconds>                                                       TTL: If provided, when the model is not used for this number of seconds, it will be unloaded.
+   --identifier <identifier>                                             The identifier to assign to the loaded model. The identifier can be used to refer to the model in the API.
+--- lms load --help full ---
+Usage: lms load [options] [model-key]
+
+Load a model
+
+Arguments:
+   model-key                                                             The model key to load. If not provided, enters an interactive mode to select a model.
+
+Options:
+   --gpu <offload-ratio>                                                 GPU offload ratio. Valid values: "off" (disable GPU), "max" (full offload), or a number between 0 and 1 (e.g., "0.5" for 50% offload). By default, LM Studio automatically determines the optimal offload ratio.
+   -c, --context-length <length>                                         The number of tokens to consider as context when generating text. If not provided, the default value will be used.
+   --parallel <count>                                                    Maximum number of predictions the model can run at a given time. The speed of each individual prediction may decrease with concurrency, but each prediction will start faster and higher total throughput can be achieved.
+   --ttl <seconds>                                                       TTL: If provided, when the model is not used for this number of seconds, it will be unloaded.
+   --speculative-draft-mtp                                               Enable load-time Draft MTP speculative decoding when supported by the model.
+   --no-speculative-draft-mtp                                            Disable load-time Draft MTP speculative decoding.
+   --speculative-draft-simple                                            Enable load-time Draft Simple speculative decoding using --speculative-draft-model.
+   --speculative-draft-model <model>                                     Draft model resource to use with --speculative-draft-simple.
+   --speculative-draft-max-tokens <count>                                Maximum number of draft tokens to generate per speculative decoding step. Requires --speculative-draft-simple or --speculative-draft-mtp.
+   --speculative-draft-min-tokens <count>                                Minimum draft length to consider for speculative decoding. Requires --speculative-draft-simple or --speculative-draft-mtp.
+   --speculative-draft-min-continue-probability <probability>            Continue drafting while token probability is at or above this threshold. Requires --speculative-draft-simple or --speculative-draft-mtp.
+   --identifier <identifier>                                             The identifier to assign to the loaded model. The identifier can be used to refer to the model in the API.
+   --estimate-only                                                       Calculate an estimate of the resources required to load the model. Does not load the model.
+   -y, --yes                                                             Automatically approve all prompts. Useful for scripting. If there are multiple models matching the model key, the model will be loaded on the preferred device (if set), or the first matching model will be loaded.
+--- lms ps --json ---
+[{"type":"llm","modelKey":"qwen/qwen3-8b","format":"safetensors","displayName":"Qwen3 8B","publisher":"qwen","path":"qwen/qwen3-8b","sizeBytes":4623961222,"indexedModelIdentifier":"qwen/qwen3-8b","deviceIdentifier":null,"paramsString":"8B","architecture":"qwen3","quantization":{"name":"4bit","bits":4},"variants":["qwen/qwen3-8b@4bit"],"selectedVariant":"qwen/qwen3-8b@4bit","identifier":"qwen/qwen3-8b","ttlMs":null,"lastUsedTime":1787765139988,"vision":false,"trainedForToolUse":true,"maxContextLength":40960,"contextLength":4096,"status":"idle","queued":0,"parallel":1}]
+--- lms runtime ls ---
+LLM ENGINE                                          SELECTED    MODEL FORMAT
+llama.cpp-mac-arm64-apple-metal-advsimd@2.28.2         ✓            GGUF    
+llama.cpp-mac-arm64-apple-metal-advsimd@2.27.1                      GGUF    
+llama.cpp-mac-arm64-apple-metal-advsimd@2.25.2                      GGUF    
+llama.cpp-mac-arm64-apple-metal-advsimd@2.24.0                      GGUF    
+llama.cpp-mac-arm64-apple-metal-advsimd@2.23.1                      GGUF    
+mlx-llm-mac-arm64-apple-metal-advsimd@1.6.0                         MLX     
+mlx-llm-mac-arm64-apple-metal-nax-advsimd@1.11.0       ✓            MLX     
+mlx-llm-mac-arm64-apple-metal-nax-advsimd@1.10.1                    MLX     
+mlx-llm-mac-arm64-apple-metal-nax-advsimd@1.10.0                    MLX     
+mlx-llm-mac-arm64-apple-metal-nax-advsimd@1.9.1                     MLX     
+mlx-llm-mac-arm64-apple-metal-nax-advsimd@1.8.5                     MLX     
+--- REST /api/v1/models ---
+{
+  "models": [
+    {
+      "type": "llm",
+      "publisher": "Qwen",
+      "key": "qwen3-8b",
+      "display_name": "Qwen3 8B",
+      "architecture": "qwen3",
+      "quantization": {
+        "name": "Q4_K_M",
+        "bits_per_weight": 4
+      },
+      "size_bytes": 5027783488,
+      "params_string": "8B",
+      "loaded_instances": [],
+      "max_context_length": 40960,
+      "format": "gguf",
+      "capabilities": {
+        "vision": false,
+        "trained_for_tool_use": true,
+        "reasoning": {
+          "allowed_options": [
+            "off",
+            "on"
+          ],
+          "default": "on"
+        }
+      },
+      "description": null
+    },
+    {
+      "type": "llm",
+      "publisher": "qwen",
+      "key": "qwen/qwen3-8b",
+      "display_name": "Qwen3 8B",
+      "architecture": "qwen3",
+      "quantization": {
+        "name": "4bit",
+        "bits_per_weight": 4
+      },
+      "size_bytes": 4623961222,
+      "params_string": "8B",
+      "loaded_instances": [
+        {
+          "id": "qwen/qwen3-8b",
+          "config": {
+            "context_length": 4096,
+            "parallel": 1,
+            "reasoning_budget_message": ""
+          }
+        }
+      ],
+      "max_context_length": 40960,
+      "format": "mlx",
+      "capabilities": {
+        "vision": false,
+        "trained_for_tool_use": true,
+        "reasoning": {
+          "allowed_options": [
+            "off",
+            "on"
+          ],
+          "default": "on"
+        }
+      },
+      "description": null,
+      "variants": [
+        "qwen/qwen3-8b@4bit"
+      ],
+      "selected_variant": "qwen/qwen3-8b@4bit"
+    },
+    {
+      "type": "embedding",
+      "publisher": "tensorblock",
+      "key": "text-embedding-gte-qwen2-7b-instruct",
+      "display_name": "Gte Qwen2 7B Instruct",
+      "quantization": {
+        "name": "Q3_K_M",
+        "bits_per_weight": 3
+      },
+      "size_bytes": 3806506688,
+      "params_string": "7B",
+      "loaded_instances": [],
+      "max_context_length": 131072,
+      "format": "gguf"
+    },
+    {
+      "type": "embedding",
+      "publisher": "AlaminI",
+      "key": "text-embedding-nllb-200-distilled-600m-unsloth",
+      "display_name": "Ggml Vocab Bert Bge",
+      "quantization": null,
+      "size_bytes": 627549,
+      "params_string": "33M",
+      "loaded_instances": [],
+      "max_context_length": 512,
+      "format": "gguf"
+    },
+    {
+      "type": "embedding",
+      "publisher": "nomic-ai",
+      "key": "text-embedding-nomic-embed-text-v1.5",
+      "display_name": "Nomic Embed Text v1.5",
+      "quantization": {
+        "name": "Q4_K_M",
+        "bits_per_weight": 4
+      },
+      "size_bytes": 84106624,
+      "params_string": null,
+      "loaded_instances": [],
+      "max_context_length": 2048,
+      "format": "gguf"
+    }
+  ]
+}
+--- REST load docs locally exposed OpenAPI? ---
+{"error":"Unexpected endpoint or method. (GET /api/v1/models/load)"}

@@ -1,0 +1,9 @@
+{
+  "participant_phrase": "large bridge",
+  "candidate": "B_strip_scale_adjective",
+  "generation_input": "bridge",
+  "shaped_prompt": "one low-poly bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "raw_output": "\n\none low-poly bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "latency_s": 4.382,
+  "scale_token_present_in_input": false
+}

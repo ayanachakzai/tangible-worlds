@@ -1,0 +1,21 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H041",
+  "case_index": 41,
+  "group": "boundary",
+  "meaning": "grandfather clock",
+  "acceptable": [
+    "handheld",
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbody_scale",
+  "parsed_class": "body_scale",
+  "scale_basis": "grandfather clock",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.384,
+  "error": ""
+}

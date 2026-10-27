@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "P029",
+  "category": "unsupported_synonym",
+  "phrase": "enormous bridge",
+  "expected_intent": "very_large",
+  "expected_generation_meaning": "bridge",
+  "participant_phrase": "enormous bridge",
+  "generation_meaning": "enormous bridge",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": false,
+  "generation_match": false
+}

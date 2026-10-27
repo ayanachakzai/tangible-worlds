@@ -1,0 +1,2622 @@
+{
+  "study": "Tangible Worlds marked single-utterance scale grammar qualification",
+  "frozen_on": "2026-08-30",
+  "case_count": 90,
+  "candidate_grammars": [
+    "A",
+    "B"
+  ],
+  "oracle_note": "Expected records were frozen before candidate parser execution.",
+  "cases": [
+    {
+      "id": "A01",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is a castle, scale tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle, scale tiny",
+          "generation_meaning": "a castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle, scale tiny",
+          "generation_meaning": "a castle, scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A02",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "7",
+      "text": "castle, scale miniature",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, scale miniature",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, scale miniature",
+          "generation_meaning": "castle, scale miniature",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A03",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "Object 003 is toy car, scale tiny.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "toy car, scale tiny",
+          "generation_meaning": "toy car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "toy car, scale tiny",
+          "generation_meaning": "toy car, scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A04",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "10",
+      "text": "  a red mushroom, scale miniature  ",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a red mushroom, scale miniature",
+          "generation_meaning": "a red mushroom",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a red mushroom, scale miniature",
+          "generation_meaning": "a red mushroom, scale miniature",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A05",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "OBJECT NUMBER FOUR IS THE HOUSE, SCALE TINY!!!",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "THE HOUSE, SCALE TINY",
+          "generation_meaning": "THE HOUSE",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "THE HOUSE, SCALE TINY",
+          "generation_meaning": "THE HOUSE, SCALE TINY",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A06",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "bridge, scale small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "bridge, scale small",
+          "generation_meaning": "bridge",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "bridge, scale small",
+          "generation_meaning": "bridge, scale small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A07",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object five is a narrow stone bridge, scale small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a narrow stone bridge, scale small",
+          "generation_meaning": "a narrow stone bridge",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a narrow stone bridge, scale small",
+          "generation_meaning": "a narrow stone bridge, scale small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A08",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "8",
+      "text": "the house with three chimneys, scale small?",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the house with three chimneys, scale small?",
+          "generation_meaning": "the house with three chimneys",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the house with three chimneys, scale small?",
+          "generation_meaning": "the house with three chimneys, scale small?",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A09",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "  object six is mushroom,   scale   small.  ",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "mushroom,   scale   small",
+          "generation_meaning": "mushroom",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "mushroom,   scale   small",
+          "generation_meaning": "mushroom,   scale   small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A10",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "9",
+      "text": "a tower, with a clock, scale small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a tower, with a clock, scale small",
+          "generation_meaning": "a tower, with a clock",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a tower, with a clock, scale small",
+          "generation_meaning": "a tower, with a clock, scale small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A11",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object seven is Big Ben, scale big",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "Big Ben, scale big",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "Big Ben, scale big",
+          "generation_meaning": "Big Ben, scale big",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A12",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "11",
+      "text": "a castle on a rocky island, scale large",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "a castle on a rocky island, scale large",
+          "generation_meaning": "a castle on a rocky island",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "a castle on a rocky island, scale large",
+          "generation_meaning": "a castle on a rocky island, scale large",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A13",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object 8 is a blue, two-door toy car, scale LARGE.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a blue, two-door toy car, scale LARGE",
+          "generation_meaning": "a blue, two-door toy car",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a blue, two-door toy car, scale LARGE",
+          "generation_meaning": "a blue, two-door toy car, scale LARGE",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A14",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "12",
+      "text": "mushroom-shaped observatory,scale big!",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "12",
+          "meaning": "mushroom-shaped observatory,scale big!",
+          "generation_meaning": "mushroom-shaped observatory",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "12",
+          "meaning": "mushroom-shaped observatory,scale big!",
+          "generation_meaning": "mushroom-shaped observatory,scale big!",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A15",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object nine is the house that Jack built, scale large",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "the house that Jack built, scale large",
+          "generation_meaning": "the house that Jack built",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "the house that Jack built, scale large",
+          "generation_meaning": "the house that Jack built, scale large",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A16",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "2",
+      "text": "castle, scale huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, scale huge",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, scale huge",
+          "generation_meaning": "castle, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A17",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object ten is an old wooden bridge, scale huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "an old wooden bridge, scale huge",
+          "generation_meaning": "an old wooden bridge",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "an old wooden bridge, scale huge",
+          "generation_meaning": "an old wooden bridge, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A18",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "13",
+      "text": "a house, a garden, and a gate, scale huge.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "13",
+          "meaning": "a house, a garden, and a gate, scale huge.",
+          "generation_meaning": "a house, a garden, and a gate",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "13",
+          "meaning": "a house, a garden, and a gate, scale huge.",
+          "generation_meaning": "a house, a garden, and a gate, scale huge.",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A19",
+      "category": "valid_grammar_a",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object 14 is mushroom with a tiny door, SCALE HUGE?",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "14",
+          "meaning": "mushroom with a tiny door, SCALE HUGE",
+          "generation_meaning": "mushroom with a tiny door",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "14",
+          "meaning": "mushroom with a tiny door, SCALE HUGE",
+          "generation_meaning": "mushroom with a tiny door, SCALE HUGE",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "A20",
+      "category": "valid_grammar_a",
+      "input_mode": "typed",
+      "typed_object_key": "15",
+      "text": "Toy Car,   ScAlE   HuGe",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "15",
+          "meaning": "Toy Car,   ScAlE   HuGe",
+          "generation_meaning": "Toy Car",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "15",
+          "meaning": "Toy Car,   ScAlE   HuGe",
+          "generation_meaning": "Toy Car,   ScAlE   HuGe",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "B01",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is a castle, make it tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle, make it tiny",
+          "generation_meaning": "a castle, make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle, make it tiny",
+          "generation_meaning": "a castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B02",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "7",
+      "text": "castle, make it miniature",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, make it miniature",
+          "generation_meaning": "castle, make it miniature",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, make it miniature",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B03",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "Object 003 is toy car, make it tiny.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "toy car, make it tiny",
+          "generation_meaning": "toy car, make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "toy car, make it tiny",
+          "generation_meaning": "toy car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B04",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "10",
+      "text": "  a red mushroom, make it miniature  ",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a red mushroom, make it miniature",
+          "generation_meaning": "a red mushroom, make it miniature",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a red mushroom, make it miniature",
+          "generation_meaning": "a red mushroom",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B05",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "OBJECT NUMBER FOUR IS THE HOUSE, MAKE IT TINY!!!",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "THE HOUSE, MAKE IT TINY",
+          "generation_meaning": "THE HOUSE, MAKE IT TINY",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "THE HOUSE, MAKE IT TINY",
+          "generation_meaning": "THE HOUSE",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B06",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "bridge, make it small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "bridge, make it small",
+          "generation_meaning": "bridge, make it small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "bridge, make it small",
+          "generation_meaning": "bridge",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B07",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object five is a narrow stone bridge, make it small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a narrow stone bridge, make it small",
+          "generation_meaning": "a narrow stone bridge, make it small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a narrow stone bridge, make it small",
+          "generation_meaning": "a narrow stone bridge",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B08",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "8",
+      "text": "the house with three chimneys, make it small?",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the house with three chimneys, make it small?",
+          "generation_meaning": "the house with three chimneys, make it small?",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the house with three chimneys, make it small?",
+          "generation_meaning": "the house with three chimneys",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B09",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "  object six is mushroom,   make   it   small.  ",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "mushroom,   make   it   small",
+          "generation_meaning": "mushroom,   make   it   small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "mushroom,   make   it   small",
+          "generation_meaning": "mushroom",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B10",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "9",
+      "text": "a tower, with a clock, make it small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a tower, with a clock, make it small",
+          "generation_meaning": "a tower, with a clock, make it small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a tower, with a clock, make it small",
+          "generation_meaning": "a tower, with a clock",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B11",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object seven is Big Ben, make it big",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "Big Ben, make it big",
+          "generation_meaning": "Big Ben, make it big",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "Big Ben, make it big",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B12",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "11",
+      "text": "a castle on a rocky island, make it large",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "a castle on a rocky island, make it large",
+          "generation_meaning": "a castle on a rocky island, make it large",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "a castle on a rocky island, make it large",
+          "generation_meaning": "a castle on a rocky island",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B13",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object 8 is a blue, two-door toy car, make it LARGE.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a blue, two-door toy car, make it LARGE",
+          "generation_meaning": "a blue, two-door toy car, make it LARGE",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a blue, two-door toy car, make it LARGE",
+          "generation_meaning": "a blue, two-door toy car",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B14",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "12",
+      "text": "mushroom-shaped observatory,make it big!",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "12",
+          "meaning": "mushroom-shaped observatory,make it big!",
+          "generation_meaning": "mushroom-shaped observatory,make it big!",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "12",
+          "meaning": "mushroom-shaped observatory,make it big!",
+          "generation_meaning": "mushroom-shaped observatory",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B15",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object nine is the house that Jack built, make it large",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "the house that Jack built, make it large",
+          "generation_meaning": "the house that Jack built, make it large",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "the house that Jack built, make it large",
+          "generation_meaning": "the house that Jack built",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B16",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "2",
+      "text": "castle, make it huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, make it huge",
+          "generation_meaning": "castle, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, make it huge",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B17",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object ten is an old wooden bridge, make it huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "an old wooden bridge, make it huge",
+          "generation_meaning": "an old wooden bridge, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "an old wooden bridge, make it huge",
+          "generation_meaning": "an old wooden bridge",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B18",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "13",
+      "text": "a house, a garden, and a gate, make it huge.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "13",
+          "meaning": "a house, a garden, and a gate, make it huge.",
+          "generation_meaning": "a house, a garden, and a gate, make it huge.",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "13",
+          "meaning": "a house, a garden, and a gate, make it huge.",
+          "generation_meaning": "a house, a garden, and a gate",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B19",
+      "category": "valid_grammar_b",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object 14 is mushroom with a tiny door, MAKE IT HUGE?",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "14",
+          "meaning": "mushroom with a tiny door, MAKE IT HUGE",
+          "generation_meaning": "mushroom with a tiny door, MAKE IT HUGE",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "14",
+          "meaning": "mushroom with a tiny door, MAKE IT HUGE",
+          "generation_meaning": "mushroom with a tiny door",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "B20",
+      "category": "valid_grammar_b",
+      "input_mode": "typed",
+      "typed_object_key": "15",
+      "text": "Toy Car,   MaKe   It   HuGe",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "15",
+          "meaning": "Toy Car,   MaKe   It   HuGe",
+          "generation_meaning": "Toy Car,   MaKe   It   HuGe",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "15",
+          "meaning": "Toy Car,   MaKe   It   HuGe",
+          "generation_meaning": "Toy Car",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        }
+      }
+    },
+    {
+      "id": "N01",
+      "category": "bare_assignment",
+      "input_mode": "typed",
+      "typed_object_key": "2",
+      "text": "castle",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N02",
+      "category": "bare_assignment",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is a castle",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle",
+          "generation_meaning": "a castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a castle",
+          "generation_meaning": "a castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N03",
+      "category": "bare_assignment",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "Object 04 is Big Ben.",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "Big Ben",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "Big Ben",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N04",
+      "category": "bare_assignment",
+      "input_mode": "typed",
+      "typed_object_key": "5",
+      "text": "a small-scale model",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a small-scale model",
+          "generation_meaning": "a small-scale model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a small-scale model",
+          "generation_meaning": "a small-scale model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N05",
+      "category": "bare_assignment",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object six is a large scale map",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "a large scale map",
+          "generation_meaning": "a large scale map",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "a large scale map",
+          "generation_meaning": "a large scale map",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N06",
+      "category": "bare_assignment",
+      "input_mode": "typed",
+      "typed_object_key": "7",
+      "text": "a scale model of a bridge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "a scale model of a bridge",
+          "generation_meaning": "a scale model of a bridge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "a scale model of a bridge",
+          "generation_meaning": "a scale model of a bridge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N07",
+      "category": "bare_assignment",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object eight is a house with a tiny window",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a house with a tiny window",
+          "generation_meaning": "a house with a tiny window",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "a house with a tiny window",
+          "generation_meaning": "a house with a tiny window",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N08",
+      "category": "bare_assignment",
+      "input_mode": "typed",
+      "typed_object_key": "9",
+      "text": "mushroom, bridge, house",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "mushroom, bridge, house",
+          "generation_meaning": "mushroom, bridge, house",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "mushroom, bridge, house",
+          "generation_meaning": "mushroom, bridge, house",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N09",
+      "category": "bare_assignment",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object number ten is the Make It Right workshop",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "the Make It Right workshop",
+          "generation_meaning": "the Make It Right workshop",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "the Make It Right workshop",
+          "generation_meaning": "the Make It Right workshop",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "N10",
+      "category": "bare_assignment",
+      "input_mode": "typed",
+      "typed_object_key": "11",
+      "text": "  an ordinary toy car.  ",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "an ordinary toy car.",
+          "generation_meaning": "an ordinary toy car.",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "11",
+          "meaning": "an ordinary toy car.",
+          "generation_meaning": "an ordinary toy car.",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S01",
+      "category": "semantic_scale_phrase",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "Big Ben",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "Big Ben",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "Big Ben",
+          "generation_meaning": "Big Ben",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S02",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is a miniature painting",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a miniature painting",
+          "generation_meaning": "a miniature painting",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "a miniature painting",
+          "generation_meaning": "a miniature painting",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S03",
+      "category": "semantic_scale_phrase",
+      "input_mode": "typed",
+      "typed_object_key": "3",
+      "text": "a large language model",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "a large language model",
+          "generation_meaning": "a large language model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "a large language model",
+          "generation_meaning": "a large language model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S04",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is a scale model",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a scale model",
+          "generation_meaning": "a scale model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "a scale model",
+          "generation_meaning": "a scale model",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S05",
+      "category": "semantic_scale_phrase",
+      "input_mode": "typed",
+      "typed_object_key": "5",
+      "text": "a sign that reads scale tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a sign that reads scale tiny",
+          "generation_meaning": "a sign that reads scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "a sign that reads scale tiny",
+          "generation_meaning": "a sign that reads scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S06",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object six is a map at large scale",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "a map at large scale",
+          "generation_meaning": "a map at large scale",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "a map at large scale",
+          "generation_meaning": "a map at large scale",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S07",
+      "category": "semantic_make_it_phrase",
+      "input_mode": "typed",
+      "typed_object_key": "7",
+      "text": "a note saying make it tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "a note saying make it tiny",
+          "generation_meaning": "a note saying make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "a note saying make it tiny",
+          "generation_meaning": "a note saying make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S08",
+      "category": "semantic_make_it_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object eight is the Make It Big theatre",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the Make It Big theatre",
+          "generation_meaning": "the Make It Big theatre",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "the Make It Big theatre",
+          "generation_meaning": "the Make It Big theatre",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S09",
+      "category": "semantic_make_it_phrase",
+      "input_mode": "typed",
+      "typed_object_key": "9",
+      "text": "a director shouting make it huge at a castle",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a director shouting make it huge at a castle",
+          "generation_meaning": "a director shouting make it huge at a castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "9",
+          "meaning": "a director shouting make it huge at a castle",
+          "generation_meaning": "a director shouting make it huge at a castle",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "S10",
+      "category": "semantic_scale_phrase",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object ten is a small talk stage",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a small talk stage",
+          "generation_meaning": "a small talk stage",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "10",
+          "meaning": "a small talk stage",
+          "generation_meaning": "a small talk stage",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M01",
+      "category": "malformed_marker",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "castle scale tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle scale tiny",
+          "generation_meaning": "castle scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle scale tiny",
+          "generation_meaning": "castle scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M02",
+      "category": "malformed_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is castle; scale tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle; scale tiny",
+          "generation_meaning": "castle; scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle; scale tiny",
+          "generation_meaning": "castle; scale tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M03",
+      "category": "malformed_marker",
+      "input_mode": "typed",
+      "typed_object_key": "3",
+      "text": "castle, scale",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, scale",
+          "generation_meaning": "castle, scale",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, scale",
+          "generation_meaning": "castle, scale",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M04",
+      "category": "malformed_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is castle, make tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make tiny",
+          "generation_meaning": "castle, make tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make tiny",
+          "generation_meaning": "castle, make tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M05",
+      "category": "malformed_marker",
+      "input_mode": "typed",
+      "typed_object_key": "5",
+      "text": "castle, scale tiny please",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale tiny please",
+          "generation_meaning": "castle, scale tiny please",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale tiny please",
+          "generation_meaning": "castle, scale tiny please",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M06",
+      "category": "malformed_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object six is castle, please make it huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, please make it huge",
+          "generation_meaning": "castle, please make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, please make it huge",
+          "generation_meaning": "castle, please make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M07",
+      "category": "malformed_marker",
+      "input_mode": "typed",
+      "typed_object_key": "7",
+      "text": "castle, scale very small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, scale very small",
+          "generation_meaning": "castle, scale very small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "7",
+          "meaning": "castle, scale very small",
+          "generation_meaning": "castle, scale very small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "M08",
+      "category": "malformed_marker",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object eight is castle, make it",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "castle, make it",
+          "generation_meaning": "castle, make it",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "8",
+          "meaning": "castle, make it",
+          "generation_meaning": "castle, make it",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C01",
+      "category": "multiple_markers",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "castle, scale tiny, scale huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle, scale tiny, scale huge",
+          "generation_meaning": "castle, scale tiny, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle, scale tiny, scale huge",
+          "generation_meaning": "castle, scale tiny, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C02",
+      "category": "multiple_markers",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is castle, make it small, make it huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, make it small, make it huge",
+          "generation_meaning": "castle, make it small, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, make it small, make it huge",
+          "generation_meaning": "castle, make it small, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C03",
+      "category": "conflicting_markers",
+      "input_mode": "typed",
+      "typed_object_key": "3",
+      "text": "castle, scale tiny, make it huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, scale tiny, make it huge",
+          "generation_meaning": "castle, scale tiny, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, scale tiny, make it huge",
+          "generation_meaning": "castle, scale tiny, make it huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C04",
+      "category": "conflicting_markers",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is castle, make it tiny, scale huge",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make it tiny, scale huge",
+          "generation_meaning": "castle, make it tiny, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make it tiny, scale huge",
+          "generation_meaning": "castle, make it tiny, scale huge",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C05",
+      "category": "multiple_markers",
+      "input_mode": "typed",
+      "typed_object_key": "5",
+      "text": "castle, scale small, scale small",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale small, scale small",
+          "generation_meaning": "castle, scale small, scale small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale small, scale small",
+          "generation_meaning": "castle, scale small, scale small",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "C06",
+      "category": "conflicting_markers",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object six is castle, scale huge, make it tiny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, scale huge, make it tiny",
+          "generation_meaning": "castle, scale huge, make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, scale huge, make it tiny",
+          "generation_meaning": "castle, scale huge, make it tiny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U01",
+      "category": "unsupported_synonym",
+      "input_mode": "typed",
+      "typed_object_key": "1",
+      "text": "castle, scale teeny",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle, scale teeny",
+          "generation_meaning": "castle, scale teeny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "1",
+          "meaning": "castle, scale teeny",
+          "generation_meaning": "castle, scale teeny",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U02",
+      "category": "unsupported_synonym",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two is castle, scale enormous",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, scale enormous",
+          "generation_meaning": "castle, scale enormous",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "2",
+          "meaning": "castle, scale enormous",
+          "generation_meaning": "castle, scale enormous",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U03",
+      "category": "unsupported_synonym",
+      "input_mode": "typed",
+      "typed_object_key": "3",
+      "text": "castle, make it little",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, make it little",
+          "generation_meaning": "castle, make it little",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "3",
+          "meaning": "castle, make it little",
+          "generation_meaning": "castle, make it little",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U04",
+      "category": "unsupported_synonym",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object four is castle, make it colossal",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make it colossal",
+          "generation_meaning": "castle, make it colossal",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "4",
+          "meaning": "castle, make it colossal",
+          "generation_meaning": "castle, make it colossal",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U05",
+      "category": "unsupported_synonym",
+      "input_mode": "typed",
+      "typed_object_key": "5",
+      "text": "castle, scale bigger",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale bigger",
+          "generation_meaning": "castle, scale bigger",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "5",
+          "meaning": "castle, scale bigger",
+          "generation_meaning": "castle, scale bigger",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "U06",
+      "category": "unsupported_synonym",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object six is castle, make it smaller",
+      "expected": {
+        "A": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, make it smaller",
+          "generation_meaning": "castle, make it smaller",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "assignment",
+          "object_key": "6",
+          "meaning": "castle, make it smaller",
+          "generation_meaning": "castle, make it smaller",
+          "explicit_scale_intent": "neutral",
+          "target_size": 1.0,
+          "scale_source": "neutral_default",
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T01",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "make it foggy",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T02",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "make it tiny and misty",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "scale the rain down",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T04",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "add huge lightning",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T05",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "make the world feel small",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T06",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "object two moves near object three",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T07",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "turn the sky orange",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T08",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "make it a large storm",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T09",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "scale tiny",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    },
+    {
+      "id": "T10",
+      "category": "atmosphere_command",
+      "input_mode": "voice",
+      "typed_object_key": null,
+      "text": "a castle, scale tiny",
+      "expected": {
+        "A": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        },
+        "B": {
+          "route": "atmosphere",
+          "object_key": null,
+          "meaning": null,
+          "generation_meaning": null,
+          "explicit_scale_intent": null,
+          "target_size": null,
+          "scale_source": null,
+          "explicit_detected": false
+        }
+      }
+    }
+  ]
+}

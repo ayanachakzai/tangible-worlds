@@ -1,0 +1,132 @@
+{
+  "model": "nvidia/parakeet-tdt-0.6b-v3",
+  "runtime": "NVIDIA NeMo-Speech.cpp",
+  "settings": {
+    "language": "en",
+    "automatic_punctuation": false,
+    "prompt": null,
+    "speech_contexts": null
+  },
+  "scope": "smoke",
+  "created_at": "2026-09-01T22:29:26.747537+00:00",
+  "server_readiness": {
+    "capabilities": [
+      "asr"
+    ],
+    "device": "auto",
+    "ready": true
+  },
+  "summary": {
+    "requested": 13,
+    "completed": 13,
+    "errors": 0,
+    "median_latency_s": 0.048294,
+    "p95_latency_s": 0.054236
+  },
+  "results": [
+    {
+      "recording_id": "assign_suspension_bridge_huge_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "object two is a suspension bridge scale huge",
+      "latency_s": 0.112743
+    },
+    {
+      "recording_id": "assign_coffee_mug_miniature_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "expected_route": "assign",
+      "transcript": "object three is a coffee mug scale miniature",
+      "latency_s": 0.05023
+    },
+    {
+      "recording_id": "robust_mm_petrol_station",
+      "category": "assignment_robustness",
+      "reference": "Mm, object two is a petrol station scale small",
+      "expected_route": "assign",
+      "transcript": "mm object two is a petrol station scale small",
+      "latency_s": 0.049729
+    },
+    {
+      "recording_id": "robust_hmm_bus_shelter",
+      "category": "assignment_robustness",
+      "reference": "Hmm, object three is a bus shelter scale tiny",
+      "expected_route": "assign",
+      "transcript": "mm object three is a bus shelter scale tiny",
+      "latency_s": 0.054236
+    },
+    {
+      "recording_id": "robust_quiet_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object two is a garden shed scale tiny",
+      "expected_route": "assign",
+      "transcript": "object two is a garden shed scale tiny",
+      "latency_s": 0.047732
+    },
+    {
+      "recording_id": "confirm_yes_t1",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "expected_route": "confirm_yes",
+      "transcript": "yes",
+      "latency_s": 0.053716
+    },
+    {
+      "recording_id": "confirm_no_t1",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "expected_route": "confirm_no",
+      "transcript": "no",
+      "latency_s": 0.035381
+    },
+    {
+      "recording_id": "confirm_ambiguous_yes_no",
+      "category": "confirmation_ambiguous",
+      "reference": "yes no",
+      "expected_route": "confirm_unclear",
+      "transcript": "yes no",
+      "latency_s": 0.036245
+    },
+    {
+      "recording_id": "atmosphere_golden_hour",
+      "category": "atmosphere",
+      "reference": "can we try golden hour but colder",
+      "expected_route": "converse",
+      "transcript": "can we try golden hour but colder",
+      "latency_s": 0.048294
+    },
+    {
+      "recording_id": "adversarial_silence_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.041643
+    },
+    {
+      "recording_id": "adversarial_silence_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "oh",
+      "latency_s": 0.04485
+    },
+    {
+      "recording_id": "adversarial_prop_noise_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.050954
+    },
+    {
+      "recording_id": "adversarial_aborted_press_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "make it",
+      "latency_s": 0.046091
+    }
+  ]
+}

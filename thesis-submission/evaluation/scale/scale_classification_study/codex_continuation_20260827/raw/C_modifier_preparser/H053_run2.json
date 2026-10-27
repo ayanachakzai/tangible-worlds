@@ -1,0 +1,21 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H053",
+  "case_index": 53,
+  "group": "modifier",
+  "meaning": "thimble-sized lighthouse",
+  "acceptable": [
+    "micro",
+    "handheld"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "thimble",
+  "preparser_rule": "reference_sized",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.357,
+  "error": ""
+}

@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H064",
+  "case_index": 64,
+  "group": "modifier",
+  "meaning": "sculpture as large as an airport terminal",
+  "acceptable": [
+    "building_scale",
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"airport terminal\",\"semantic_scale_class\":\"building_scale\"}",
+  "parsed_class": "building_scale",
+  "scale_basis": "airport terminal",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.615,
+  "error": ""
+}

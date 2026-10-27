@@ -1,0 +1,2 @@
+{"timestamp": 1789227283.731, "event": "appear", "object_key": "1", "x": 0.4, "y": 0.5, "label": "object 1", "meaning": null, "participant_id": "Test", "condition": "text"}
+{"timestamp": 1789227283.731, "event": "appear", "object_key": "2", "x": 0.45, "y": 0.52, "label": "object 2", "meaning": null, "participant_id": "Test", "condition": "text"}

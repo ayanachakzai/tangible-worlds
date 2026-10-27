@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H067",
+  "case_index": 67,
+  "group": "modifier",
+  "meaning": "seed the size of a sofa",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"sofa\",\"semantic_scale_class\":\"body_scale\"}",
+  "parsed_class": "body_scale",
+  "scale_basis": "sofa",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.615,
+  "error": ""
+}

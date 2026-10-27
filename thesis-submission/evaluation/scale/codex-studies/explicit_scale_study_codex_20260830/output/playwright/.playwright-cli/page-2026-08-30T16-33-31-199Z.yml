@@ -1,0 +1,8 @@
+- generic [ref=f1e2]:
+  - heading "Explicit scale renderer qualification" [level=1] [ref=f1e3]
+  - paragraph [ref=f1e4]: Same GLB cloned at 0.35, 0.65, 1.00, 1.80, and 3.00. Parent movement is applied after normalization without reloading or rescaling.
+  - generic [ref=f1e5]:
+    - button "castle" [ref=f1e6]
+    - button "car" [ref=f1e7]
+    - button "umbrella (irregular)" [ref=f1e8]
+  - paragraph [ref=f1e9]: loading castle…

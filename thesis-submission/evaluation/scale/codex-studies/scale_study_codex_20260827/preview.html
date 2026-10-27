@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tangible Worlds scale study evidence gallery</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 28px; background: #10151b; color: #edf2f6; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  h1 { margin: 0 0 8px; font-size: 28px; }
+  h2 { margin: 34px 0 14px; font-size: 20px; color: #bfe1f4; }
+  p { max-width: 1000px; line-height: 1.5; color: #bdc8d0; }
+  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+  figure { margin: 0; background: #18212a; border: 1px solid #536473; padding: 8px; }
+  img { display: block; width: 100%; height: auto; background: #0d1116; }
+  figcaption { padding: 7px 2px 1px; font-size: 11px; color: #d5dde3; overflow-wrap: anywhere; }
+  @media (max-width: 1000px) { .grid { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<h1>Tangible Worlds semantic relative-scale study</h1>
+<p>All 60 deterministic screenshots are shown below. Each frame contains its ladder values, composition, camera, load status, overlap count, and boundary count. Nothing is filtered for attractiveness.</p>
+<div id="gallery"></div>
+<script>
+// Project-specific evidence gallery written from scratch for this isolated study.
+const ladders = ['A_baseline', 'B_current', 'C_compact', 'D_expanded', 'E_balanced'];
+const compositions = ['reference', 'crowding', 'adjacency', 'edge'];
+const cameras = ['production', 'topdown', 'low_oblique'];
+const gallery = document.getElementById('gallery');
+for (const ladder of ladders) {
+  const heading = document.createElement('h2');
+  heading.textContent = ladder;
+  gallery.appendChild(heading);
+  const grid = document.createElement('section');
+  grid.className = 'grid';
+  for (const composition of compositions) {
+    for (const camera of cameras) {
+      const filename = `${ladder}__${composition}__${camera}.png`;
+      const figure = document.createElement('figure');
+      const image = document.createElement('img');
+      image.src = `screenshots/${filename}`;
+      image.alt = `${ladder}, ${composition}, ${camera}`;
+      image.loading = 'lazy';
+      const caption = document.createElement('figcaption');
+      caption.textContent = filename;
+      figure.append(image, caption);
+      grid.appendChild(figure);
+    }
+  }
+  gallery.appendChild(grid);
+}
+</script>
+</body>
+</html>

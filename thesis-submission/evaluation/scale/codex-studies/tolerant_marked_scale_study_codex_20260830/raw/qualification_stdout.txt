@@ -1,0 +1,58 @@
+{
+  "holdout": 120,
+  "A": {
+    "TP": 36,
+    "FP": 0,
+    "FN": 0,
+    "TN": 84,
+    "precision": 1.0,
+    "recall": 1.0,
+    "exact_intent_accuracy": 1.0,
+    "generation_meaning_accuracy": 1.0,
+    "exact_record_accuracy": 1.0,
+    "exact_record_count": 120,
+    "case_count": 120,
+    "false_positive_ids": [],
+    "false_negative_ids": [],
+    "mismatch_ids": []
+  },
+  "B": {
+    "TP": 48,
+    "FP": 6,
+    "FN": 0,
+    "TN": 66,
+    "precision": 0.8888888888888888,
+    "recall": 1.0,
+    "exact_intent_accuracy": 0.95,
+    "generation_meaning_accuracy": 0.95,
+    "exact_record_accuracy": 0.95,
+    "exact_record_count": 114,
+    "case_count": 120,
+    "false_positive_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06"
+    ],
+    "false_negative_ids": [],
+    "mismatch_ids": [
+      "D01",
+      "D02",
+      "D03",
+      "D04",
+      "D05",
+      "D06"
+    ]
+  },
+  "parity": {
+    "A_no_comma": true,
+    "A_comma_backward_compatible": true,
+    "B_scaled_alias": true
+  },
+  "qualification": {
+    "A": true,
+    "B": false
+  }
+}

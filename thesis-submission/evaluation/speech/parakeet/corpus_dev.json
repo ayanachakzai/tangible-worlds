@@ -1,0 +1,637 @@
+{
+  "name": "Tangible Worlds ASR bake-off v2 development corpus",
+  "version": 1,
+  "sample_rate": 16000,
+  "templates": [
+    {
+      "id": "assign_truck_huge",
+      "category": "assignment_core",
+      "reference": "Object one is a truck scale huge",
+      "instruction": "Say normally: Object one is a truck scale huge",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a truck",
+      "scale": "huge",
+      "critical_tokens": ["object", "one", "truck", "scale", "huge"]
+    },
+    {
+      "id": "assign_car_tiny",
+      "category": "assignment_core",
+      "reference": "Object two is a car scale tiny",
+      "instruction": "Say normally: Object two is a car scale tiny",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a car",
+      "scale": "tiny",
+      "critical_tokens": ["object", "two", "car", "scale", "tiny"]
+    },
+    {
+      "id": "assign_petrol_station_large",
+      "category": "assignment_core",
+      "reference": "Object three is a petrol station scale large",
+      "instruction": "Say normally: Object three is a petrol station scale large",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a petrol station",
+      "scale": "large",
+      "critical_tokens": ["object", "three", "petrol", "station", "scale", "large"]
+    },
+    {
+      "id": "assign_lighthouse_small",
+      "category": "assignment_core",
+      "reference": "Object one is a lighthouse scale small",
+      "instruction": "Say normally: Object one is a lighthouse scale small",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a lighthouse",
+      "scale": "small",
+      "critical_tokens": ["object", "one", "lighthouse", "scale", "small"]
+    },
+    {
+      "id": "assign_suspension_bridge_huge",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "instruction": "Say normally: Object two is a suspension bridge scale huge",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a suspension bridge",
+      "scale": "huge",
+      "critical_tokens": ["object", "two", "suspension", "bridge", "scale", "huge"]
+    },
+    {
+      "id": "assign_coffee_mug_miniature",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "instruction": "Say normally: Object three is a coffee mug scale miniature",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a coffee mug",
+      "scale": "miniature",
+      "critical_tokens": ["object", "three", "coffee", "mug", "scale", "miniature"]
+    },
+    {
+      "id": "assign_railway_station_unmarked",
+      "category": "assignment_core",
+      "reference": "Object one is a railway station",
+      "instruction": "Say normally: Object one is a railway station",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a railway station",
+      "scale": null,
+      "critical_tokens": ["object", "one", "railway", "station"]
+    },
+    {
+      "id": "assign_market_stall_big",
+      "category": "assignment_core",
+      "reference": "Object two is a market stall scale big",
+      "instruction": "Say normally: Object two is a market stall scale big",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a market stall",
+      "scale": "big",
+      "critical_tokens": ["object", "two", "market", "stall", "scale", "big"]
+    },
+    {
+      "id": "assign_wind_turbine_large",
+      "category": "assignment_core",
+      "reference": "Object three is a wind turbine scale large",
+      "instruction": "Say normally: Object three is a wind turbine scale large",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a wind turbine",
+      "scale": "large",
+      "critical_tokens": ["object", "three", "wind", "turbine", "scale", "large"]
+    },
+    {
+      "id": "assign_ambulance_small",
+      "category": "assignment_core",
+      "reference": "Object one is an ambulance scale small",
+      "instruction": "Say normally: Object one is an ambulance scale small",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "an ambulance",
+      "scale": "small",
+      "critical_tokens": ["object", "one", "ambulance", "scale", "small"]
+    },
+    {
+      "id": "assign_stone_cottage_unmarked",
+      "category": "assignment_core",
+      "reference": "Object two is a stone cottage",
+      "instruction": "Say normally: Object two is a stone cottage",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a stone cottage",
+      "scale": null,
+      "critical_tokens": ["object", "two", "stone", "cottage"]
+    },
+    {
+      "id": "assign_water_tower_huge",
+      "category": "assignment_core",
+      "reference": "Object three is a water tower scale huge",
+      "instruction": "Say normally: Object three is a water tower scale huge",
+      "takes": 3,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a water tower",
+      "scale": "huge",
+      "critical_tokens": ["object", "three", "water", "tower", "scale", "huge"]
+    },
+
+    {
+      "id": "robust_um_fire_station",
+      "category": "assignment_robustness",
+      "reference": "Um, object one is a fire station scale large",
+      "instruction": "Include the filler naturally: Um, object one is a fire station scale large",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a fire station",
+      "scale": "large",
+      "critical_tokens": ["object", "one", "fire", "station", "scale", "large"]
+    },
+    {
+      "id": "robust_mm_petrol_station",
+      "category": "assignment_robustness",
+      "reference": "Mm, object two is a petrol station scale small",
+      "instruction": "Include the filler naturally: Mm, object two is a petrol station scale small",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a petrol station",
+      "scale": "small",
+      "critical_tokens": ["object", "two", "petrol", "station", "scale", "small"]
+    },
+    {
+      "id": "robust_hmm_bus_shelter",
+      "category": "assignment_robustness",
+      "reference": "Hmm, object three is a bus shelter scale tiny",
+      "instruction": "Include the filler naturally: Hmm, object three is a bus shelter scale tiny",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a bus shelter",
+      "scale": "tiny",
+      "critical_tokens": ["object", "three", "bus", "shelter", "scale", "tiny"]
+    },
+    {
+      "id": "robust_okay_radio_tower",
+      "category": "assignment_robustness",
+      "reference": "Okay, object one is a radio tower scale huge",
+      "instruction": "Include the opening naturally: Okay, object one is a radio tower scale huge",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a radio tower",
+      "scale": "huge",
+      "critical_tokens": ["object", "one", "radio", "tower", "scale", "huge"]
+    },
+    {
+      "id": "robust_so_wooden_bench",
+      "category": "assignment_robustness",
+      "reference": "So, object two is a wooden bench",
+      "instruction": "Include the opening naturally: So, object two is a wooden bench",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a wooden bench",
+      "scale": null,
+      "critical_tokens": ["object", "two", "wooden", "bench"]
+    },
+    {
+      "id": "robust_and_bicycle_rack",
+      "category": "assignment_robustness",
+      "reference": "And object three is a bicycle rack scale small",
+      "instruction": "Include the opening naturally: And object three is a bicycle rack scale small",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a bicycle rack",
+      "scale": "small",
+      "critical_tokens": ["object", "three", "bicycle", "rack", "scale", "small"]
+    },
+    {
+      "id": "robust_pause_after_object",
+      "category": "assignment_robustness",
+      "reference": "Object one is a clock tower scale large",
+      "instruction": "Say Object one, pause for two seconds, then say is a clock tower scale large",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a clock tower",
+      "scale": "large",
+      "critical_tokens": ["object", "one", "clock", "tower", "scale", "large"]
+    },
+    {
+      "id": "robust_pause_before_meaning",
+      "category": "assignment_robustness",
+      "reference": "Object two is a telephone box scale small",
+      "instruction": "Say Object two is, pause for two seconds, then say a telephone box scale small",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a telephone box",
+      "scale": "small",
+      "critical_tokens": ["object", "two", "telephone", "box", "scale", "small"]
+    },
+    {
+      "id": "robust_pause_before_scale",
+      "category": "assignment_robustness",
+      "reference": "Object three is a stone bridge scale huge",
+      "instruction": "Say Object three is a stone bridge, pause for two seconds, then say scale huge",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a stone bridge",
+      "scale": "huge",
+      "critical_tokens": ["object", "three", "stone", "bridge", "scale", "huge"]
+    },
+    {
+      "id": "robust_fast_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object one is a delivery van scale small",
+      "instruction": "Say quickly but clearly: Object one is a delivery van scale small",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "1",
+      "meaning": "a delivery van",
+      "scale": "small",
+      "critical_tokens": ["object", "one", "delivery", "van", "scale", "small"]
+    },
+    {
+      "id": "robust_quiet_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object two is a garden shed scale tiny",
+      "instruction": "Say more quietly than usual: Object two is a garden shed scale tiny",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "2",
+      "meaning": "a garden shed",
+      "scale": "tiny",
+      "critical_tokens": ["object", "two", "garden", "shed", "scale", "tiny"]
+    },
+    {
+      "id": "robust_object_number",
+      "category": "assignment_robustness",
+      "reference": "Object number three is a traffic signal scale large",
+      "instruction": "Say normally: Object number three is a traffic signal scale large",
+      "takes": 1,
+      "expected_route": "assign",
+      "object_key": "3",
+      "meaning": "a traffic signal",
+      "scale": "large",
+      "critical_tokens": ["object", "number", "three", "traffic", "signal", "scale", "large"]
+    },
+
+    {
+      "id": "confirm_yes",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "instruction": "Say one confirmation word only: yes",
+      "takes": 3,
+      "expected_route": "confirm_yes",
+      "confirmation": "yes",
+      "critical_tokens": ["yes"]
+    },
+    {
+      "id": "confirm_yeah",
+      "category": "confirmation_clear",
+      "reference": "yeah",
+      "instruction": "Say one confirmation word only: yeah",
+      "takes": 2,
+      "expected_route": "confirm_yes",
+      "confirmation": "yes",
+      "critical_tokens": ["yeah"]
+    },
+    {
+      "id": "confirm_yep",
+      "category": "confirmation_clear",
+      "reference": "yep",
+      "instruction": "Say one confirmation word only: yep",
+      "takes": 1,
+      "expected_route": "confirm_yes",
+      "confirmation": "yes",
+      "critical_tokens": ["yep"]
+    },
+    {
+      "id": "confirm_correct",
+      "category": "confirmation_clear",
+      "reference": "correct",
+      "instruction": "Say one confirmation word only: correct",
+      "takes": 2,
+      "expected_route": "confirm_yes",
+      "confirmation": "yes",
+      "critical_tokens": ["correct"]
+    },
+    {
+      "id": "confirm_right",
+      "category": "confirmation_clear",
+      "reference": "right",
+      "instruction": "Say one confirmation word only: right",
+      "takes": 2,
+      "expected_route": "confirm_yes",
+      "confirmation": "yes",
+      "critical_tokens": ["right"]
+    },
+    {
+      "id": "confirm_no",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "instruction": "Say one confirmation word only: no",
+      "takes": 3,
+      "expected_route": "confirm_no",
+      "confirmation": "no",
+      "critical_tokens": ["no"]
+    },
+    {
+      "id": "confirm_nope",
+      "category": "confirmation_clear",
+      "reference": "nope",
+      "instruction": "Say one confirmation word only: nope",
+      "takes": 2,
+      "expected_route": "confirm_no",
+      "confirmation": "no",
+      "critical_tokens": ["nope"]
+    },
+    {
+      "id": "confirm_nah",
+      "category": "confirmation_clear",
+      "reference": "nah",
+      "instruction": "Say one confirmation word only: nah",
+      "takes": 1,
+      "expected_route": "confirm_no",
+      "confirmation": "no",
+      "critical_tokens": ["nah"]
+    },
+    {
+      "id": "confirm_incorrect",
+      "category": "confirmation_clear",
+      "reference": "incorrect",
+      "instruction": "Say one confirmation word only: incorrect",
+      "takes": 2,
+      "expected_route": "confirm_no",
+      "confirmation": "no",
+      "critical_tokens": ["incorrect"]
+    },
+    {
+      "id": "confirm_wrong",
+      "category": "confirmation_clear",
+      "reference": "wrong",
+      "instruction": "Say one confirmation word only: wrong",
+      "takes": 2,
+      "expected_route": "confirm_no",
+      "confirmation": "no",
+      "critical_tokens": ["wrong"]
+    },
+    {
+      "id": "confirm_ambiguous_yes_no",
+      "category": "confirmation_ambiguous",
+      "reference": "yes no",
+      "instruction": "Say exactly: yes no",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["yes", "no"]
+    },
+    {
+      "id": "confirm_ambiguous_no_yes",
+      "category": "confirmation_ambiguous",
+      "reference": "no yes",
+      "instruction": "Say exactly: no yes",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["no", "yes"]
+    },
+    {
+      "id": "confirm_ambiguous_not_sure",
+      "category": "confirmation_ambiguous",
+      "reference": "not sure",
+      "instruction": "Say exactly: not sure",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["not", "sure"]
+    },
+    {
+      "id": "confirm_ambiguous_maybe",
+      "category": "confirmation_ambiguous",
+      "reference": "maybe",
+      "instruction": "Say exactly: maybe",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["maybe"]
+    },
+    {
+      "id": "confirm_ambiguous_yes_wrong",
+      "category": "confirmation_ambiguous",
+      "reference": "yes wrong",
+      "instruction": "Say exactly: yes wrong",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["yes", "wrong"]
+    },
+    {
+      "id": "confirm_ambiguous_no_correct",
+      "category": "confirmation_ambiguous",
+      "reference": "no correct",
+      "instruction": "Say exactly: no correct",
+      "takes": 1,
+      "expected_route": "confirm_unclear",
+      "critical_tokens": ["no", "correct"]
+    },
+
+    {
+      "id": "atmosphere_brighter",
+      "category": "atmosphere",
+      "reference": "make it brighter",
+      "instruction": "Say normally: make it brighter",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["brighter"]
+    },
+    {
+      "id": "atmosphere_dimmer",
+      "category": "atmosphere",
+      "reference": "make it dimmer",
+      "instruction": "Say normally: make it dimmer",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["dimmer"]
+    },
+    {
+      "id": "atmosphere_warmer",
+      "category": "atmosphere",
+      "reference": "make it warmer",
+      "instruction": "Say normally: make it warmer",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["warmer"]
+    },
+    {
+      "id": "atmosphere_cooler",
+      "category": "atmosphere",
+      "reference": "make it cooler",
+      "instruction": "Say normally: make it cooler",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["cooler"]
+    },
+    {
+      "id": "atmosphere_misty",
+      "category": "atmosphere",
+      "reference": "make it misty",
+      "instruction": "Say normally: make it misty",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["misty"]
+    },
+    {
+      "id": "atmosphere_foggy",
+      "category": "atmosphere",
+      "reference": "make it foggy",
+      "instruction": "Say normally: make it foggy",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["foggy"]
+    },
+    {
+      "id": "atmosphere_hazy",
+      "category": "atmosphere",
+      "reference": "make it hazy",
+      "instruction": "Say normally: make it hazy",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["hazy"]
+    },
+    {
+      "id": "atmosphere_dusk",
+      "category": "atmosphere",
+      "reference": "make it dusk",
+      "instruction": "Say normally: make it dusk",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["dusk"]
+    },
+    {
+      "id": "atmosphere_dawn",
+      "category": "atmosphere",
+      "reference": "make it dawn",
+      "instruction": "Say normally: make it dawn",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["dawn"]
+    },
+    {
+      "id": "atmosphere_overcast",
+      "category": "atmosphere",
+      "reference": "make it overcast",
+      "instruction": "Say normally: make it overcast",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["overcast"]
+    },
+    {
+      "id": "atmosphere_stormy_one",
+      "category": "atmosphere",
+      "reference": "make it stormy",
+      "instruction": "Say normally: make it stormy",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["stormy"]
+    },
+    {
+      "id": "atmosphere_stormy_two",
+      "category": "atmosphere",
+      "reference": "make it stormy",
+      "instruction": "Say normally: make it stormy",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["stormy"]
+    },
+    {
+      "id": "atmosphere_lightning_one",
+      "category": "atmosphere",
+      "reference": "add lightning",
+      "instruction": "Say normally: add lightning",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["lightning"]
+    },
+    {
+      "id": "atmosphere_lightning_two",
+      "category": "atmosphere",
+      "reference": "add lightning",
+      "instruction": "Say normally: add lightning",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["lightning"]
+    },
+    {
+      "id": "atmosphere_golden_hour",
+      "category": "atmosphere",
+      "reference": "can we try golden hour but colder",
+      "instruction": "Say normally: can we try golden hour but colder",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["golden", "hour", "colder"]
+    },
+    {
+      "id": "atmosphere_light_direction",
+      "category": "atmosphere",
+      "reference": "I want the light coming from behind",
+      "instruction": "Say normally: I want the light coming from behind",
+      "takes": 1,
+      "expected_route": "converse",
+      "critical_tokens": ["light", "behind"]
+    },
+
+    {
+      "id": "adversarial_silence",
+      "category": "adversarial",
+      "reference": "",
+      "instruction": "Hold the trigger for three seconds and say nothing",
+      "takes": 3,
+      "expected_route": "empty",
+      "adversarial_type": "silence",
+      "critical_tokens": []
+    },
+    {
+      "id": "adversarial_prop_noise",
+      "category": "adversarial",
+      "reference": "",
+      "instruction": "Hold the trigger and handle the tabletop props for four seconds. Do not speak",
+      "takes": 3,
+      "expected_route": "empty",
+      "adversarial_type": "prop_noise",
+      "critical_tokens": []
+    },
+    {
+      "id": "adversarial_aborted_press",
+      "category": "adversarial",
+      "reference": "",
+      "instruction": "Begin saying make it f, then release the trigger in the middle of the sound",
+      "takes": 3,
+      "expected_route": "empty",
+      "adversarial_type": "aborted_speech",
+      "critical_tokens": []
+    },
+    {
+      "id": "adversarial_cough_noise",
+      "category": "adversarial",
+      "reference": "",
+      "instruction": "Hold the trigger and make one cough or throat-clearing sound. Do not speak",
+      "takes": 3,
+      "expected_route": "empty",
+      "adversarial_type": "human_nonspeech",
+      "critical_tokens": []
+    }
+  ]
+}

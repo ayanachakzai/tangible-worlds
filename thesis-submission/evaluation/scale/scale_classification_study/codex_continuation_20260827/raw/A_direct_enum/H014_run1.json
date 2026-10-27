@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H014",
+  "case_index": 14,
+  "group": "ordinary_room",
+  "meaning": "ticket booth",
+  "acceptable": [
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "ticket booth",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.539,
+  "error": ""
+}

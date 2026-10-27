@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N020",
+  "category": "neutral_unstable",
+  "phrase": "bigger than yesterday",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "bigger than yesterday",
+  "participant_phrase": "bigger than yesterday",
+  "generation_meaning": "bigger than yesterday",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

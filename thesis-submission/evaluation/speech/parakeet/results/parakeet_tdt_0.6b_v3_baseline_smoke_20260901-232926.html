@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Parakeet bake-off results</title>
+<style>
+body { font-family: system-ui, sans-serif; margin: 24px; color: #1d1d1f; }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { border-bottom: 1px solid #ddd; padding: 9px; text-align: left; vertical-align: top; }
+th { position: sticky; top: 0; background: #fff; }
+.empty { color: #666; }
+.error { color: #b00020; }
+audio { width: 190px; height: 32px; }
+.summary { display: flex; gap: 22px; margin: 18px 0; flex-wrap: wrap; }
+.summary div { background: #f4f4f5; border-radius: 8px; padding: 10px 14px; }
+</style>
+</head>
+<body>
+<h1>Parakeet TDT 0.6B v3 baseline</h1>
+<p>Raw output, English selected, punctuation disabled, no prompt or vocabulary boost.</p>
+<div class="summary">
+<div>Files: 13/13</div>
+<div>Median latency: 0.048 s</div>
+<div>P95 latency: 0.054 s</div>
+<div>Errors: 0</div>
+</div>
+<table>
+<thead><tr><th>ID</th><th>Category</th><th>Reference</th><th>Transcript</th><th>Seconds</th><th>Audio</th></tr></thead>
+<tbody><tr><td>assign_suspension_bridge_huge_t1</td><td>assignment_core</td><td>Object two is a suspension bridge scale huge</td><td class='result'>object two is a suspension bridge scale huge</td><td>0.113</td><td><audio controls preload='none' src='../audio_dev/assign_suspension_bridge_huge_t1.wav'></audio></td></tr><tr><td>assign_coffee_mug_miniature_t1</td><td>assignment_core</td><td>Object three is a coffee mug scale miniature</td><td class='result'>object three is a coffee mug scale miniature</td><td>0.050</td><td><audio controls preload='none' src='../audio_dev/assign_coffee_mug_miniature_t1.wav'></audio></td></tr><tr><td>robust_mm_petrol_station</td><td>assignment_robustness</td><td>Mm, object two is a petrol station scale small</td><td class='result'>mm object two is a petrol station scale small</td><td>0.050</td><td><audio controls preload='none' src='../audio_dev/robust_mm_petrol_station.wav'></audio></td></tr><tr><td>robust_hmm_bus_shelter</td><td>assignment_robustness</td><td>Hmm, object three is a bus shelter scale tiny</td><td class='result'>mm object three is a bus shelter scale tiny</td><td>0.054</td><td><audio controls preload='none' src='../audio_dev/robust_hmm_bus_shelter.wav'></audio></td></tr><tr><td>robust_quiet_delivery</td><td>assignment_robustness</td><td>Object two is a garden shed scale tiny</td><td class='result'>object two is a garden shed scale tiny</td><td>0.048</td><td><audio controls preload='none' src='../audio_dev/robust_quiet_delivery.wav'></audio></td></tr><tr><td>confirm_yes_t1</td><td>confirmation_clear</td><td>yes</td><td class='result'>yes</td><td>0.054</td><td><audio controls preload='none' src='../audio_dev/confirm_yes_t1.wav'></audio></td></tr><tr><td>confirm_no_t1</td><td>confirmation_clear</td><td>no</td><td class='result'>no</td><td>0.035</td><td><audio controls preload='none' src='../audio_dev/confirm_no_t1.wav'></audio></td></tr><tr><td>confirm_ambiguous_yes_no</td><td>confirmation_ambiguous</td><td>yes no</td><td class='result'>yes no</td><td>0.036</td><td><audio controls preload='none' src='../audio_dev/confirm_ambiguous_yes_no.wav'></audio></td></tr><tr><td>atmosphere_golden_hour</td><td>atmosphere</td><td>can we try golden hour but colder</td><td class='result'>can we try golden hour but colder</td><td>0.048</td><td><audio controls preload='none' src='../audio_dev/atmosphere_golden_hour.wav'></audio></td></tr><tr><td>adversarial_silence_t1</td><td>adversarial</td><td>[EMPTY]</td><td class='empty'>[EMPTY]</td><td>0.042</td><td><audio controls preload='none' src='../audio_dev/adversarial_silence_t1.wav'></audio></td></tr><tr><td>adversarial_silence_t2</td><td>adversarial</td><td>[EMPTY]</td><td class='result'>oh</td><td>0.045</td><td><audio controls preload='none' src='../audio_dev/adversarial_silence_t2.wav'></audio></td></tr><tr><td>adversarial_prop_noise_t1</td><td>adversarial</td><td>[EMPTY]</td><td class='empty'>[EMPTY]</td><td>0.051</td><td><audio controls preload='none' src='../audio_dev/adversarial_prop_noise_t1.wav'></audio></td></tr><tr><td>adversarial_aborted_press_t1</td><td>adversarial</td><td>[EMPTY]</td><td class='result'>make it</td><td>0.046</td><td><audio controls preload='none' src='../audio_dev/adversarial_aborted_press_t1.wav'></audio></td></tr></tbody>
+</table>
+</body>
+</html>

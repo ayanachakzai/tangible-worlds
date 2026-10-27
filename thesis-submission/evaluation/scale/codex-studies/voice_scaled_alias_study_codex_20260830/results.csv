@@ -1,0 +1,105 @@
+id,category,transcript,human_intended_alias,reserved_grammar_alias,route,object_key,original_meaning,alias_detected,sent_meaning,generation_meaning,explicit_scale_intent,target_size,scale_source,contract_pass
+V001,intended_stt_alias,object two is a car scaled tiny,true,true,assignment,2,a car scaled tiny,true,a car scale tiny,a car,very_small,0.35,participant_marked,true
+V002,intended_stt_alias,Object 2 is castle scaled tiny.,true,true,assignment,2,castle scaled tiny,true,castle scale tiny,castle,very_small,0.35,participant_marked,true
+V003,intended_stt_alias,OBJECT number two IS the bridge scaled tiny!,true,true,assignment,2,the bridge scaled tiny,true,the bridge scale tiny,the bridge,very_small,0.35,participant_marked,true
+V004,intended_stt_alias, object  four  is  a mushroom scaled tiny ?,true,true,assignment,4,a mushroom scaled tiny,true,a mushroom scale tiny,a mushroom,very_small,0.35,participant_marked,true
+V005,intended_stt_alias,Object 2 is a car scaled miniature.,true,true,assignment,2,a car scaled miniature,true,a car scale miniature,a car,very_small,0.35,participant_marked,true
+V006,intended_stt_alias,OBJECT number two IS castle scaled miniature!,true,true,assignment,2,castle scaled miniature,true,castle scale miniature,castle,very_small,0.35,participant_marked,true
+V007,intended_stt_alias, object  four  is  the bridge scaled miniature ?,true,true,assignment,4,the bridge scaled miniature,true,the bridge scale miniature,the bridge,very_small,0.35,participant_marked,true
+V008,intended_stt_alias,object 4 is a toy car scaled miniature,true,true,assignment,4,a toy car scaled miniature,true,a toy car scale miniature,a toy car,very_small,0.35,participant_marked,true
+V009,intended_stt_alias,OBJECT number two IS a car scaled small!,true,true,assignment,2,a car scaled small,true,a car scale small,a car,small,0.65,participant_marked,true
+V010,intended_stt_alias, object  four  is  castle scaled small ?,true,true,assignment,4,castle scaled small,true,castle scale small,castle,small,0.65,participant_marked,true
+V011,intended_stt_alias,object 4 is the bridge scaled small,true,true,assignment,4,the bridge scaled small,true,the bridge scale small,the bridge,small,0.65,participant_marked,true
+V012,intended_stt_alias,Object ten is a mushroom scaled small.,true,true,assignment,10,a mushroom scaled small,true,a mushroom scale small,a mushroom,small,0.65,participant_marked,true
+V013,intended_stt_alias, object  four  is  a car scaled big ?,true,true,assignment,4,a car scaled big,true,a car scale big,a car,large,1.8,participant_marked,true
+V014,intended_stt_alias,object 4 is castle scaled big,true,true,assignment,4,castle scaled big,true,castle scale big,castle,large,1.8,participant_marked,true
+V015,intended_stt_alias,Object ten is the bridge scaled big.,true,true,assignment,10,the bridge scaled big,true,the bridge scale big,the bridge,large,1.8,participant_marked,true
+V016,intended_stt_alias,OBJECT two IS a mushroom scaled big!,true,true,assignment,2,a mushroom scaled big,true,a mushroom scale big,a mushroom,large,1.8,participant_marked,true
+V017,intended_stt_alias,object 4 is a car scaled large,true,true,assignment,4,a car scaled large,true,a car scale large,a car,large,1.8,participant_marked,true
+V018,intended_stt_alias,Object ten is castle scaled large.,true,true,assignment,10,castle scaled large,true,castle scale large,castle,large,1.8,participant_marked,true
+V019,intended_stt_alias,OBJECT two IS the bridge scaled large!,true,true,assignment,2,the bridge scaled large,true,the bridge scale large,the bridge,large,1.8,participant_marked,true
+V020,intended_stt_alias, object  2  is  a mushroom scaled large ?,true,true,assignment,2,a mushroom scaled large,true,a mushroom scale large,a mushroom,large,1.8,participant_marked,true
+V021,intended_stt_alias,Object ten is a car scaled huge.,true,true,assignment,10,a car scaled huge,true,a car scale huge,a car,very_large,3,participant_marked,true
+V022,intended_stt_alias,OBJECT two IS castle scaled huge!,true,true,assignment,2,castle scaled huge,true,castle scale huge,castle,very_large,3,participant_marked,true
+V023,intended_stt_alias, object  2  is  the bridge scaled huge ?,true,true,assignment,2,the bridge scaled huge,true,the bridge scale huge,the bridge,very_large,3,participant_marked,true
+V024,intended_stt_alias,object number two is a mushroom scaled huge,true,true,assignment,2,a mushroom scaled huge,true,a mushroom scale huge,a mushroom,very_large,3,participant_marked,true
+V025,existing_scale_form,object two is a car scale tiny,false,false,assignment,2,a car scale tiny,false,a car scale tiny,a car,very_small,0.35,participant_marked,true
+V026,existing_scale_form,"Object 2 is a car, scale tiny.",false,false,assignment,2,"a car, scale tiny",false,"a car, scale tiny",a car,very_small,0.35,participant_marked,true
+V027,existing_scale_form,Object number two is an intricate VFX portal scale miniature.,false,false,assignment,2,an intricate VFX portal scale miniature,false,an intricate VFX portal scale miniature,an intricate VFX portal,very_small,0.35,participant_marked,true
+V028,existing_scale_form,"OBJECT four IS an intricate VFX portal, scale miniature!",false,false,assignment,4,"an intricate VFX portal, scale miniature",false,"an intricate VFX portal, scale miniature",an intricate VFX portal,very_small,0.35,participant_marked,true
+V029,existing_scale_form,OBJECT 4 IS a car scale small!,false,false,assignment,4,a car scale small,false,a car scale small,a car,small,0.65,participant_marked,true
+V030,existing_scale_form," object  ten  is  a car, scale small ?",false,false,assignment,10,"a car, scale small",false,"a car, scale small",a car,small,0.65,participant_marked,true
+V031,existing_scale_form, object  two  is  an intricate VFX portal scale big ?,false,false,assignment,2,an intricate VFX portal scale big,false,an intricate VFX portal scale big,an intricate VFX portal,large,1.8,participant_marked,true
+V032,existing_scale_form,"object 2 is an intricate VFX portal, scale big",false,false,assignment,2,"an intricate VFX portal, scale big",false,"an intricate VFX portal, scale big",an intricate VFX portal,large,1.8,participant_marked,true
+V033,existing_scale_form,object number two is a car scale large,false,false,assignment,2,a car scale large,false,a car scale large,a car,large,1.8,participant_marked,true
+V034,existing_scale_form,"Object four is a car, scale large.",false,false,assignment,4,"a car, scale large",false,"a car, scale large",a car,large,1.8,participant_marked,true
+V035,existing_scale_form,Object 4 is an intricate VFX portal scale huge.,false,false,assignment,4,an intricate VFX portal scale huge,false,an intricate VFX portal scale huge,an intricate VFX portal,very_large,3,participant_marked,true
+V036,existing_scale_form,"OBJECT ten IS an intricate VFX portal, scale huge!",false,false,assignment,10,"an intricate VFX portal, scale huge",false,"an intricate VFX portal, scale huge",an intricate VFX portal,very_large,3,participant_marked,true
+V037,literal_semantic_collision,object two is a VFX asset already scaled tiny,false,true,assignment,2,a VFX asset already scaled tiny,true,a VFX asset already scale tiny,a VFX asset already,very_small,0.35,participant_marked,true
+V038,literal_semantic_collision,Object 2 is a source mesh uniformly scaled big.,false,true,assignment,2,a source mesh uniformly scaled big,true,a source mesh uniformly scale big,a source mesh uniformly,large,1.8,participant_marked,true
+V039,literal_semantic_collision,OBJECT number two IS a toy car prop scaled miniature!,false,true,assignment,2,a toy car prop scaled miniature,true,a toy car prop scale miniature,a toy car prop,very_small,0.35,participant_marked,true
+V040,literal_semantic_collision, object  four  is  a background house intentionally scaled large ?,false,true,assignment,4,a background house intentionally scaled large,true,a background house intentionally scale large,a background house intentionally,large,1.8,participant_marked,true
+V041,literal_semantic_collision,object 4 is a bridge proxy scaled huge,false,true,assignment,4,a bridge proxy scaled huge,true,a bridge proxy scale huge,a bridge proxy,very_large,3,participant_marked,true
+V042,literal_semantic_collision,Object ten is a foreground mushroom manually scaled small.,false,true,assignment,10,a foreground mushroom manually scaled small,true,a foreground mushroom manually scale small,a foreground mushroom manually,small,0.65,participant_marked,true
+V043,literal_semantic_collision,OBJECT two IS a photogrammetry scan already scaled small!,false,true,assignment,2,a photogrammetry scan already scaled small,true,a photogrammetry scan already scale small,a photogrammetry scan already,small,0.65,participant_marked,true
+V044,literal_semantic_collision, object  2  is  a compositing plate uniformly scaled large ?,false,true,assignment,2,a compositing plate uniformly scaled large,true,a compositing plate uniformly scale large,a compositing plate uniformly,large,1.8,participant_marked,true
+V045,literal_semantic_collision,object number two is a practical model carefully scaled tiny,false,true,assignment,2,a practical model carefully scaled tiny,true,a practical model carefully scale tiny,a practical model carefully,very_small,0.35,participant_marked,true
+V046,literal_semantic_collision,Object four is a castle asset deliberately scaled huge.,false,true,assignment,4,a castle asset deliberately scaled huge,true,a castle asset deliberately scale huge,a castle asset deliberately,very_large,3,participant_marked,true
+V047,literal_semantic_collision,OBJECT 4 IS a vehicle mesh previously scaled big!,false,true,assignment,4,a vehicle mesh previously scaled big,true,a vehicle mesh previously scale big,a vehicle mesh previously,large,1.8,participant_marked,true
+V048,literal_semantic_collision, object  ten  is  a miniature set prop scaled miniature ?,false,true,assignment,10,a miniature set prop scaled miniature,true,a miniature set prop scale miniature,a miniature set prop,very_small,0.35,participant_marked,true
+V049,nonterminal_scaled_language,object two is a VFX asset scaled tiny for the foreground,false,false,assignment,2,a VFX asset scaled tiny for the foreground,false,a VFX asset scaled tiny for the foreground,a VFX asset scaled tiny for the foreground,neutral,1,neutral_default,true
+V050,nonterminal_scaled_language,Object 2 is a source mesh scaled big before export.,false,false,assignment,2,a source mesh scaled big before export,false,a source mesh scaled big before export,a source mesh scaled big before export,neutral,1,neutral_default,true
+V051,nonterminal_scaled_language,OBJECT number two IS a toy car scaled miniature with red paint!,false,false,assignment,2,a toy car scaled miniature with red paint,false,a toy car scaled miniature with red paint,a toy car scaled miniature with red paint,neutral,1,neutral_default,true
+V052,nonterminal_scaled_language, object  four  is  a bridge scaled huge in the previs file ?,false,false,assignment,4,a bridge scaled huge in the previs file,false,a bridge scaled huge in the previs file,a bridge scaled huge in the previs file,neutral,1,neutral_default,true
+V053,nonterminal_scaled_language,object 4 is a house scaled large beside the actor,false,false,assignment,4,a house scaled large beside the actor,false,a house scaled large beside the actor,a house scaled large beside the actor,neutral,1,neutral_default,true
+V054,nonterminal_scaled_language,Object ten is a mushroom scaled small then duplicated.,false,false,assignment,10,a mushroom scaled small then duplicated,false,a mushroom scaled small then duplicated,a mushroom scaled small then duplicated,neutral,1,neutral_default,true
+V055,nonterminal_scaled_language,OBJECT two IS a tiny scaled model car!,false,false,assignment,2,a tiny scaled model car,false,a tiny scaled model car,a tiny scaled model car,neutral,1,neutral_default,true
+V056,nonterminal_scaled_language, object  2  is  a scaled tiny label on a crate ?,false,false,assignment,2,a scaled tiny label on a crate,false,a scaled tiny label on a crate,a scaled tiny label on a crate,neutral,1,neutral_default,true
+V057,nonterminal_scaled_language,object number two is a note saying scaled huge on the prop,false,false,assignment,2,a note saying scaled huge on the prop,false,a note saying scaled huge on the prop,a note saying scaled huge on the prop,neutral,1,neutral_default,true
+V058,nonterminal_scaled_language,Object four is a character named Scaled Tiny Returns.,false,false,assignment,4,a character named Scaled Tiny Returns,false,a character named Scaled Tiny Returns,a character named Scaled Tiny Returns,neutral,1,neutral_default,true
+V059,malformed_alias,object two is a car scaled,false,false,assignment,2,a car scaled,false,a car scaled,a car scaled,neutral,1,neutral_default,true
+V060,malformed_alias,Object 2 is a car scaled tiny please.,false,false,assignment,2,a car scaled tiny please,false,a car scaled tiny please,a car scaled tiny please,neutral,1,neutral_default,true
+V061,malformed_alias,OBJECT number two IS scaled tiny!,false,false,assignment,2,scaled tiny,false,scaled tiny,scaled tiny,neutral,1,neutral_default,true
+V062,malformed_alias, object  four  is  a car was scaled to tiny ?,false,false,assignment,4,a car was scaled to tiny,false,a car was scaled to tiny,a car was scaled to tiny,neutral,1,neutral_default,true
+V063,malformed_alias,"object 4 is a car, scaled: tiny",false,false,assignment,4,"a car, scaled: tiny",false,"a car, scaled: tiny","a car, scaled: tiny",neutral,1,neutral_default,true
+V064,malformed_alias,Object ten is a car scaled very tiny.,false,false,assignment,10,a car scaled very tiny,false,a car scaled very tiny,a car scaled very tiny,neutral,1,neutral_default,true
+V065,malformed_alias,OBJECT two IS a car scaled tiny twice!,false,false,assignment,2,a car scaled tiny twice,false,a car scaled tiny twice,a car scaled tiny twice,neutral,1,neutral_default,true
+V066,malformed_alias, object  2  is  a car scaled-tiny ?,false,false,assignment,2,a car scaled-tiny,false,a car scaled-tiny,a car scaled-tiny,neutral,1,neutral_default,true
+V067,malformed_alias,object number two is a car scaled tiny-ish,false,false,assignment,2,a car scaled tiny-ish,false,a car scaled tiny-ish,a car scaled tiny-ish,neutral,1,neutral_default,true
+V068,malformed_alias,Object four is a car scaled tiny and.,false,false,assignment,4,a car scaled tiny and,false,a car scaled tiny and,a car scaled tiny and,neutral,1,neutral_default,true
+V069,unsupported_synonym,object two is a car scaled enormous,false,false,assignment,2,a car scaled enormous,false,a car scaled enormous,a car scaled enormous,neutral,1,neutral_default,true
+V070,unsupported_synonym,Object 2 is a car scaled gigantic.,false,false,assignment,2,a car scaled gigantic,false,a car scaled gigantic,a car scaled gigantic,neutral,1,neutral_default,true
+V071,unsupported_synonym,OBJECT number two IS a car scaled little!,false,false,assignment,2,a car scaled little,false,a car scaled little,a car scaled little,neutral,1,neutral_default,true
+V072,unsupported_synonym, object  four  is  a car scaled microscopic ?,false,false,assignment,4,a car scaled microscopic,false,a car scaled microscopic,a car scaled microscopic,neutral,1,neutral_default,true
+V073,unsupported_synonym,object 4 is a car scaled massive,false,false,assignment,4,a car scaled massive,false,a car scaled massive,a car scaled massive,neutral,1,neutral_default,true
+V074,unsupported_synonym,Object ten is a car scaled medium.,false,false,assignment,10,a car scaled medium,false,a car scaled medium,a car scaled medium,neutral,1,neutral_default,true
+V075,unsupported_synonym,OBJECT two IS a car scaled normal!,false,false,assignment,2,a car scaled normal,false,a car scaled normal,a car scaled normal,neutral,1,neutral_default,true
+V076,unsupported_synonym, object  2  is  a car scaled teeny ?,false,false,assignment,2,a car scaled teeny,false,a car scaled teeny,a car scaled teeny,neutral,1,neutral_default,true
+V077,multiple_or_conflicting,object two is a car scale small scaled huge,false,false,assignment,2,a car scale small scaled huge,false,a car scale small scaled huge,a car scale small scaled huge,neutral,1,neutral_default,true
+V078,multiple_or_conflicting,Object 2 is a car scaled small scaled huge.,false,false,assignment,2,a car scaled small scaled huge,false,a car scaled small scaled huge,a car scaled small scaled huge,neutral,1,neutral_default,true
+V079,multiple_or_conflicting,OBJECT number two IS a car scaled tiny scale huge!,false,false,assignment,2,a car scaled tiny scale huge,false,a car scaled tiny scale huge,a car scaled tiny scale huge,neutral,1,neutral_default,true
+V080,multiple_or_conflicting, object  four  is  a car scale huge scaled tiny ?,false,false,assignment,4,a car scale huge scaled tiny,false,a car scale huge scaled tiny,a car scale huge scaled tiny,neutral,1,neutral_default,true
+V081,multiple_or_conflicting,"object 4 is a car, scale small, scaled large",false,false,assignment,4,"a car, scale small, scaled large",false,"a car, scale small, scaled large","a car, scale small, scaled large",neutral,1,neutral_default,true
+V082,multiple_or_conflicting,Object ten is a car scaled miniature scaled big.,false,false,assignment,10,a car scaled miniature scaled big,false,a car scaled miniature scaled big,a car scaled miniature scaled big,neutral,1,neutral_default,true
+V083,multiple_or_conflicting,OBJECT two IS a car scaled huge scaled small!,false,false,assignment,2,a car scaled huge scaled small,false,a car scaled huge scaled small,a car scaled huge scaled small,neutral,1,neutral_default,true
+V084,multiple_or_conflicting, object  2  is  a car scale tiny and scaled huge ?,false,false,assignment,2,a car scale tiny and scaled huge,false,a car scale tiny and scaled huge,a car scale tiny and scaled huge,neutral,1,neutral_default,true
+V085,atmosphere_or_nonassignment,make it foggy,false,false,converse,,,false,,,,,,true
+V086,atmosphere_or_nonassignment,make the world huge,false,false,converse,,,false,,,,,,true
+V087,atmosphere_or_nonassignment,scale the sunlight down,false,false,converse,,,false,,,,,,true
+V088,atmosphere_or_nonassignment,add tiny points of light,false,false,converse,,,false,,,,,,true
+V089,atmosphere_or_nonassignment,the atmosphere is large scale,false,false,converse,,,false,,,,,,true
+V090,atmosphere_or_nonassignment,make it sunset,false,false,converse,,,false,,,,,,true
+V091,atmosphere_or_nonassignment,object two should glow,false,false,converse,,,false,,,,,,true
+V092,atmosphere_or_nonassignment,turn the sky red,false,false,converse,,,false,,,,,,true
+V093,atmosphere_or_nonassignment,add lightning,false,false,converse,,,false,,,,,,true
+V094,atmosphere_or_nonassignment,make the fog miniature,false,false,converse,,,false,,,,,,true
+V095,ordinary_assignment,object two is Big Ben,false,false,assignment,2,Big Ben,false,Big Ben,Big Ben,neutral,1,neutral_default,true
+V096,ordinary_assignment,Object 2 is Small Scale Industries.,false,false,assignment,2,Small Scale Industries,false,Small Scale Industries,Small Scale Industries,neutral,1,neutral_default,true
+V097,ordinary_assignment,OBJECT number two IS a life size statue!,false,false,assignment,2,a life size statue,false,a life size statue,a life size statue,neutral,1,neutral_default,true
+V098,ordinary_assignment, object  four  is  a full size car ?,false,false,assignment,4,a full size car,false,a full size car,a full size car,neutral,1,neutral_default,true
+V099,ordinary_assignment,object 4 is a size comparison chart,false,false,assignment,4,a size comparison chart,false,a size comparison chart,a size comparison chart,neutral,1,neutral_default,true
+V100,ordinary_assignment,Object ten is a scale model car.,false,false,assignment,10,a scale model car,false,a scale model car,a scale model car,neutral,1,neutral_default,true
+V101,ordinary_assignment,OBJECT two IS a large scale map!,false,false,assignment,2,a large scale map,false,a large scale map,a large scale map,neutral,1,neutral_default,true
+V102,ordinary_assignment, object  2  is  a small-scale city ?,false,false,assignment,2,a small-scale city,false,a small-scale city,a small-scale city,neutral,1,neutral_default,true
+V103,ordinary_assignment,object number two is a scaled mesh,false,false,assignment,2,a scaled mesh,false,a scaled mesh,a scaled mesh,neutral,1,neutral_default,true
+V104,ordinary_assignment,Object four is a film called Scaled Huge Returns.,false,false,assignment,4,a film called Scaled Huge Returns,false,a film called Scaled Huge Returns,a film called Scaled Huge Returns,neutral,1,neutral_default,true

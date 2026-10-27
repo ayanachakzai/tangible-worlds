@@ -1,0 +1,15 @@
+Production file SHA-256 hashes recorded before creation of study files on 27 August 2026
+
+5a8d0b8b4cf81086fbcd3e28c02fc839876d82d6a607fcf138f950b2e416165c  phase3-tabletop/rendering/index.html
+5c00e629ff7723456ee9b946b78de6ba4f83ddfd15eb7e6eecf8e06db4bbbc55  phase3-tabletop/rendering/serve.py
+9dd353ea83ca51c1e392676530294ad0d967953305e189269bd18f49babda05b  phase3-tabletop/tracking/track_tabletop.py
+
+Calibration stimulus SHA-256 hashes and file sizes
+
+d23bb955cf4e1d34b3d412f1a71d03eb7993965effd56bf2bc0133527e92bb33  a-car.glb  1047760 bytes
+8c297214bdf6727824080045d65f9e1fb0926628865a3cf72149e8ab2791ec21  a-castle.glb  2563340 bytes
+8a6b003411b7f0d7a9b3b58878eeb60014f3e5654ded7c27dd0ab8ca954376ad  a-house.glb  2212300 bytes
+2752845b34b0aa2d7b19b326ce11902f684cccd29dccb9bfeb80b5441a4bb45f  a-mountain.glb  1524456 bytes
+5f66ce8111abaecb5e226a09bb18b4d53d3650718a278225fd48dc6210196689  a-tent.glb  1542988 bytes
+a1a1075f13bb270d0ba4a017347ccafc3ccce5b5301c32e25d0e2716c496edd4  coffee-mug.glb  1913764 bytes
+ce596f444c1c5552e9c8a034b999bffa809b95459ec8957c365cf25318f4ed82  wooden-chair.glb  947868 bytes

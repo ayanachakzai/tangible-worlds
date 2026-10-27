@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H030",
+  "case_index": 30,
+  "group": "ordinary_landform",
+  "meaning": "mesa",
+  "acceptable": [
+    "landform_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nlandform_scale",
+  "parsed_class": "landform_scale",
+  "scale_basis": "mesa",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.76,
+  "error": ""
+}

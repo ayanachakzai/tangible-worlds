@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H016",
+  "case_index": 16,
+  "group": "ordinary_room",
+  "meaning": "walk-in freezer",
+  "acceptable": [
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbuilding_scale",
+  "parsed_class": "building_scale",
+  "scale_basis": "walk-in freezer",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.604,
+  "error": ""
+}

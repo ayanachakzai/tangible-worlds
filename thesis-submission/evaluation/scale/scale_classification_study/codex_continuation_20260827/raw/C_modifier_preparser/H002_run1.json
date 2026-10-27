@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H002",
+  "case_index": 2,
+  "group": "ordinary_micro",
+  "meaning": "mosquito",
+  "acceptable": [
+    "micro"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "mosquito",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.568,
+  "error": ""
+}

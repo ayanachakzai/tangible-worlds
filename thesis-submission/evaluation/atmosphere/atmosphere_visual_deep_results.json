@@ -1,0 +1,4225 @@
+{
+  "model": "qwen/qwen3-8b",
+  "total_qwen_calls": 106,
+  "strict": [
+    {
+      "category": "time",
+      "name": "deep_midnight",
+      "request": "deep midnight, clear and dry",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "clear dry midnight"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/001_time_deep_midnight/deep_midnight.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "moonlit_night",
+      "request": "a clear moonlit night",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 22.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "clear moonlit night"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/002_time_moonlit_night/moonlit_night.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "predawn",
+      "request": "the blue hour just before dawn",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 4.0,
+        "light_elevation": 6.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.55,
+        "light_warmth": -0.1,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "blue hour before dawn"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/003_time_predawn/predawn.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "dawn",
+      "request": "soft dawn light",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "soft dawn light"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/004_time_dawn/dawn.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "sunrise",
+      "request": "warm sunrise",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.75,
+        "light_warmth": 0.85,
+        "sky_haze": 0.15,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "warm sunrise"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/005_time_sunrise/sunrise.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "early_morning",
+      "request": "clear early morning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 6.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.7,
+        "light_warmth": 0.1,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "clear early morning"
+      },
+      "errors": [
+        "expected light_elevation in 8..45, got 6.0"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/006_time_early_morning/early_morning.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "noon",
+      "request": "bright clear noon",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 85.0,
+        "light_elevation": 85.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.9,
+        "light_warmth": 0.0,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "bright clear noon"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/007_time_noon/noon.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "afternoon",
+      "request": "bright afternoon sunlight",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 75.0,
+        "light_elevation": 65.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.1,
+        "sky_haze": 0.15,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "bright afternoon sunlight"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/008_time_afternoon/afternoon.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "golden_hour",
+      "request": "golden hour, warm and clear",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 6.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.82,
+        "light_warmth": 0.75,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "golden hour, warm and clear"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/009_time_golden_hour/golden_hour.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "sunset",
+      "request": "a warm sunset",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.85,
+        "sky_haze": 0.4,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "warm sunset"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/010_time_sunset/sunset.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "dusk",
+      "request": "cool dusk after the sun has gone down",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -2.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.55,
+        "light_warmth": -0.35,
+        "sky_haze": 0.15,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "cool dusk"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/011_time_dusk/dusk.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "time",
+      "name": "evening",
+      "request": "a calm evening just before night",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 12.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.1,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "calm evening"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/012_time_evening/evening.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "cold_light",
+      "request": "make the light distinctly colder, keep everything else exactly the same",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.45,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.45,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/013_lighting_cold_light/cold_light.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "warm_light",
+      "request": "make the light much warmer, keep everything else exactly the same",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.4,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.8,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/014_lighting_warm_light/warm_light.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "long_shadows",
+      "request": "give me much longer raking shadows, keep the time of day and all weather unchanged",
+      "current": {
+        "sky_elevation": 45,
+        "light_elevation": 65,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.3,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.3,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/015_lighting_long_shadows/long_shadows.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "overhead_light",
+      "request": "move the key light high overhead, keep everything else unchanged",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 12,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 85.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/016_lighting_overhead_light/overhead_light.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "dim_readable",
+      "request": "make the lighting dimmer but keep the scene readable, change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.9,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/017_lighting_dim_readable/dim_readable.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "brighter",
+      "request": "make the key light clearly brighter, change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.35,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/018_lighting_brighter/brighter.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "opposite_side",
+      "request": "move the key light to the opposite side of the table, change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 30,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 210.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/019_lighting_opposite_side/opposite_side.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "lighting",
+      "name": "neutral_overcast",
+      "request": "neutral overcast daylight, no rain",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 1.0,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral overcast daylight"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/020_lighting_neutral_overcast/neutral_overcast.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "thin_ground_mist",
+      "request": "a thin layer of ground-hugging mist",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.1,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [
+        "expected mist_height in 0..0.3, got 0.35"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/021_mist_thin_ground_mist/thin_ground_mist.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "thick_high_mist",
+      "request": "thick mist reaching high into the scene",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.85,
+        "mist_height": 0.85,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/022_mist_thick_high_mist/thick_high_mist.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "still_fog",
+      "request": "dense fog with completely still air",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 1.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.0,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "dense fog with still air"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/023_mist_still_fog/still_fog.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "fast_drifting_mist",
+      "request": "mist drifting and morphing strongly in the wind",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 1.0,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [
+        "expected mist_amount in 0.25..1, got 0.0"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/024_mist_fast_drifting_mist/fast_drifting_mist.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "remove_mist",
+      "request": "remove all mist and fog, keep everything else exactly the same",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.8,
+        "mist_height": 0.75,
+        "mist_motion": 0.8,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.75,
+        "mist_motion": 0.8,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/025_mist_remove_mist/remove_mist.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "raise_mist_only",
+      "request": "make the existing mist reach much higher, keep its amount and movement exactly the same and change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.55,
+        "mist_height": 0.18,
+        "mist_motion": 0.42,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.55,
+        "mist_height": 0.85,
+        "mist_motion": 0.42,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/026_mist_raise_mist_only/raise_mist_only.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "lower_mist_only",
+      "request": "pull the existing mist down close to the ground, keep its density and movement exactly the same",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.65,
+        "mist_height": 0.8,
+        "mist_motion": 0.35,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.65,
+        "mist_height": 0.1,
+        "mist_motion": 0.35,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/027_mist_lower_mist_only/lower_mist_only.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "mist",
+      "name": "less_and_slower",
+      "request": "make the mist thinner and slower, keep everything else unchanged",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.85,
+        "mist_height": 0.35,
+        "mist_motion": 0.8,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.4,
+        "mist_height": 0.35,
+        "mist_motion": 0.2,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/028_mist_less_and_slower/less_and_slower.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "light_drizzle",
+      "request": "light drizzle, no lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/029_weather_light_drizzle/light_drizzle.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "heavy_rain_no_lightning",
+      "request": "heavy rain but absolutely no lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 0.0,
+        "mood": "heavy rain"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/030_weather_heavy_rain_no_lightning/heavy_rain_no_lightning.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "violent_thunderstorm",
+      "request": "a violent thunderstorm with heavy rain and frequent lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 1.0,
+        "mood": "violent thunderstorm"
+      },
+      "errors": [
+        "expected sky_haze in 0.25..1, got 0.2"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/031_weather_violent_thunderstorm/violent_thunderstorm.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "dry_lightning",
+      "request": "dry lightning in clear air, no rain",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 1.0,
+        "mood": "dry lightning"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/032_weather_dry_lightning/dry_lightning.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "stop_rain_keep_lightning",
+      "request": "stop the rain completely but keep the lightning exactly as it is and change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.9,
+        "lightning_amount": 0.7,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.7,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/033_weather_stop_rain_keep_lightning/stop_rain_keep_lightning.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "stop_lightning_keep_rain",
+      "request": "stop all lightning but keep the rain exactly as it is and change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.75,
+        "lightning_amount": 0.8,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.75,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/034_weather_stop_lightning_keep_rain/stop_lightning_keep_rain.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "weather",
+      "name": "storm_clearing",
+      "request": "the storm is clearing, make the rain and lightning much weaker but do not change the time of day",
+      "current": {
+        "sky_elevation": -4,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.95,
+        "lightning_amount": 0.9,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -4,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.4,
+        "lightning_amount": 0.4,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/035_weather_storm_clearing/storm_clearing.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "warm_rainy_sunset",
+      "request": "warm rainy sunset, no lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 10.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.75,
+        "sky_haze": 0.4,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.7,
+        "lightning_amount": 0.0,
+        "mood": "warm rainy sunset"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/036_composition_warm_rainy_sunset/warm_rainy_sunset.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "foggy_moonlit_night",
+      "request": "a foggy moonlit night with slow-moving mist",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 22.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.6,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "foggy moonlit night"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/037_composition_foggy_moonlit_night/foggy_moonlit_night.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "clear_cold_dawn",
+      "request": "cold clear dawn with no mist or rain",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.7,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "cold clear dawn"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/038_composition_clear_cold_dawn/clear_cold_dawn.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "eerie_dry_evening",
+      "request": "a subtly eerie dry evening, no mist, no rain, no lightning, keep it readable",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 12.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.7,
+        "light_warmth": -0.15,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "subtly eerie dry evening"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/039_composition_eerie_dry_evening/eerie_dry_evening.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "bright_hazy_midday",
+      "request": "bright hazy midday",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 85.0,
+        "light_elevation": 85.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.9,
+        "light_warmth": 0.0,
+        "sky_haze": 0.8,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "bright hazy midday"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/040_composition_bright_hazy_midday/bright_hazy_midday.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "warm_sunrise_ground_fog",
+      "request": "warm sunrise through thick ground fog with very little movement",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 10.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.75,
+        "light_warmth": 0.85,
+        "sky_haze": 0.3,
+        "mist_amount": 0.7,
+        "mist_height": 0.25,
+        "mist_motion": 0.1,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "warm sunrise through thick ground fog"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/041_composition_warm_sunrise_ground_fog/warm_sunrise_ground_fog.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "composition",
+      "name": "night_thunderstorm",
+      "request": "a dark but readable night thunderstorm with heavy rain and lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 1.0,
+        "mood": "dark readable night thunderstorm"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/042_composition_night_thunderstorm/night_thunderstorm.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "add_mist_preserve_lighting",
+      "request": "add thick active mist but keep all lighting exactly as it is",
+      "current": {
+        "sky_elevation": 7,
+        "light_elevation": 10,
+        "light_azimuth": 225,
+        "light_level": 0.82,
+        "light_warmth": 0.78,
+        "sky_haze": 0.62,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 10.0,
+        "light_azimuth": 225.0,
+        "light_level": 0.82,
+        "light_warmth": 0.78,
+        "sky_haze": 0.62,
+        "mist_amount": 0.85,
+        "mist_height": 0.35,
+        "mist_motion": 0.75,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/043_preservation_add_mist_preserve_lighting/add_mist_preserve_lighting.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "warmth_only",
+      "request": "only make the light warmer, change absolutely nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.25,
+        "sky_haze": 0.2,
+        "mist_amount": 0.45,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.3,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.75,
+        "sky_haze": 0.2,
+        "mist_amount": 0.45,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.3,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/044_preservation_warmth_only/warmth_only.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "azimuth_only",
+      "request": "only change where the light comes from, rotate it to about 250 degrees",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 40,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.4,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 250.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.4,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/045_preservation_azimuth_only/azimuth_only.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "stop_storm_preserve_scene",
+      "request": "stop the rain and lightning but keep the mist and all lighting exactly the same",
+      "current": {
+        "sky_elevation": -6,
+        "light_elevation": 18,
+        "light_azimuth": 228,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.7,
+        "mist_amount": 0.7,
+        "mist_height": 0.6,
+        "mist_motion": 0.5,
+        "rain_amount": 0.9,
+        "lightning_amount": 0.8,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6,
+        "light_elevation": 18,
+        "light_azimuth": 228,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.7,
+        "mist_amount": 0.7,
+        "mist_height": 0.6,
+        "mist_motion": 0.5,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/046_preservation_stop_storm_preserve_scene/stop_storm_preserve_scene.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "clear_mist_only",
+      "request": "remove the mist only, keep the rain, lightning and lighting exactly unchanged",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.55,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.8,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.65,
+        "lightning_amount": 0.5,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.55,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.65,
+        "lightning_amount": 0.5,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/047_preservation_clear_mist_only/clear_mist_only.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "heavier_rain_same_lightning",
+      "request": "make the rain heavier but keep the lightning exactly the same and change nothing else",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.25,
+        "lightning_amount": 0.62,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 0.62,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/048_preservation_heavier_rain_same_lightning/heavier_rain_same_lightning.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "make_night_keep_weather",
+      "request": "make it night but keep all mist, rain and lightning exactly as they are",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.5,
+        "mist_height": 0.4,
+        "mist_motion": 0.6,
+        "rain_amount": 0.45,
+        "lightning_amount": 0.2,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.5,
+        "mist_height": 0.4,
+        "mist_motion": 0.6,
+        "rain_amount": 0.45,
+        "lightning_amount": 0.2,
+        "mood": "night"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/049_preservation_make_night_keep_weather/make_night_keep_weather.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "leave_exactly",
+      "request": "leave the atmosphere exactly as it is, change nothing",
+      "current": {
+        "sky_elevation": 8,
+        "light_elevation": 12,
+        "light_azimuth": 210,
+        "light_level": 0.72,
+        "light_warmth": 0.6,
+        "sky_haze": 0.45,
+        "mist_amount": 0.4,
+        "mist_height": 0.25,
+        "mist_motion": 0.3,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.1,
+        "mood": "warm rainy dusk"
+      },
+      "result": {
+        "sky_elevation": 8,
+        "light_elevation": 12,
+        "light_azimuth": 210,
+        "light_level": 0.72,
+        "light_warmth": 0.6,
+        "sky_haze": 0.45,
+        "mist_amount": 0.4,
+        "mist_height": 0.25,
+        "mist_motion": 0.3,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.1,
+        "mood": "warm rainy dusk"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/050_preservation_leave_exactly/leave_exactly.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "non_atmosphere_mountain",
+      "request": "make the mountain taller",
+      "current": {
+        "sky_elevation": 8,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.4,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 8.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.4,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/051_preservation_non_atmosphere_mountain/non_atmosphere_mountain.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "preservation",
+      "name": "non_atmosphere_object_colour",
+      "request": "turn the car red",
+      "current": {
+        "sky_elevation": -6,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.5,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.4,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.5,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.4,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/052_preservation_non_atmosphere_object_colour/non_atmosphere_object_colour.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "spooky_no_mist",
+      "request": "make it spooky at night but absolutely no mist, rain or lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "spooky night"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/053_conflict_spooky_no_mist/spooky_no_mist.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "stormy_no_precipitation",
+      "request": "stormy dark clouds, but no rain and no lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "stormy dark clouds"
+      },
+      "errors": [
+        "expected sky_haze in 0.35..1, got 0.2"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/054_conflict_stormy_no_precipitation/stormy_no_precipitation.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "cold_sunset",
+      "request": "sunset, but make the light distinctly cold rather than warm",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": -0.7,
+        "sky_haze": 0.6,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "cold sunset"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/055_conflict_cold_sunset/cold_sunset.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "warm_night",
+      "request": "nighttime, but with distinctly warm key lighting",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 1.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "nighttime with warm key lighting"
+      },
+      "errors": [
+        "expected sky_elevation in -12..-0.1, got 45.0"
+      ],
+      "status": "fail",
+      "screenshot": {
+        "file": "strict/056_conflict_warm_night/warm_night.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "dark_midday",
+      "request": "midday, but dim and eerie while still readable",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 85.0,
+        "light_elevation": 85.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.5,
+        "light_warmth": 0.0,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "dim eerie midday"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/057_conflict_dark_midday/dark_midday.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "storm_keep_lighting",
+      "request": "make it a heavy thunderstorm but keep every lighting value exactly unchanged",
+      "current": {
+        "sky_elevation": 8,
+        "light_elevation": 12,
+        "light_azimuth": 220,
+        "light_level": 0.8,
+        "light_warmth": 0.7,
+        "sky_haze": 0.55,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 8,
+        "light_elevation": 12,
+        "light_azimuth": 220,
+        "light_level": 0.8,
+        "light_warmth": 0.7,
+        "sky_haze": 0.55,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 1.0,
+        "mood": "heavy thunderstorm"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/058_conflict_storm_keep_lighting/storm_keep_lighting.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "sunset_keep_sky",
+      "request": "make it feel like sunset but keep the current sky elevation exactly unchanged",
+      "current": {
+        "sky_elevation": 45,
+        "light_elevation": 45,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.85,
+        "sky_haze": 0.7,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "warm sunset"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/059_conflict_sunset_keep_sky/sunset_keep_sky.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "conflict",
+      "name": "neutral_midday_reset",
+      "request": "remove the weather effects and return to a clear neutral midday atmosphere",
+      "current": {
+        "sky_elevation": -6,
+        "light_elevation": 18,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.4,
+        "sky_haze": 0.8,
+        "mist_amount": 0.8,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.9,
+        "lightning_amount": 0.8,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 85.0,
+        "light_elevation": 75.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.0,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "clear neutral midday"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/060_conflict_neutral_midday_reset/neutral_midday_reset.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "twilight",
+      "request": "twilight with clear air",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 12.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "twilight with clear air"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/061_vocabulary_twilight/twilight.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "pea_soup_fog",
+      "request": "pea-soup fog, almost no movement",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 1.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.0,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/062_vocabulary_pea_soup_fog/pea_soup_fog.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "drizzle_word",
+      "request": "a gentle drizzle",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.2,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/063_vocabulary_drizzle_word/drizzle_word.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "downpour_word",
+      "request": "a heavy downpour",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 1.0,
+        "lightning_amount": 0.0,
+        "mood": "heavy downpour"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/064_vocabulary_downpour_word/downpour_word.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "distant_lightning",
+      "request": "occasional lightning flickering in the distance, no rain",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.15,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/065_vocabulary_distant_lightning/distant_lightning.png",
+        "frame": "flash"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "crisp_winter_morning",
+      "request": "a crisp clear cold winter morning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 65.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.75,
+        "light_warmth": -0.3,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "crisp clear cold winter morning"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/066_vocabulary_crisp_winter_morning/crisp_winter_morning.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "foggy_af",
+      "request": "make it foggy af but keep the lighting the same",
+      "current": {
+        "sky_elevation": 7,
+        "light_elevation": 10,
+        "light_azimuth": 45.0,
+        "light_level": 0.8,
+        "light_warmth": 0.7,
+        "sky_haze": 0.4,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 10.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.8,
+        "light_warmth": 0.7,
+        "sky_haze": 0.4,
+        "mist_amount": 1.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/067_vocabulary_foggy_af/foggy_af.png",
+        "frame": "later"
+      }
+    },
+    {
+      "category": "vocabulary",
+      "name": "sunset_vibes_no_storm",
+      "request": "sunset vibes, warm and hazy, but no rain or lightning",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 7.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.85,
+        "light_warmth": 0.75,
+        "sky_haze": 0.65,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "warm hazy sunset"
+      },
+      "errors": [],
+      "status": "pass",
+      "screenshot": {
+        "file": "strict/068_vocabulary_sunset_vibes_no_storm/sunset_vibes_no_storm.png",
+        "frame": "normal"
+      }
+    }
+  ],
+  "review": [
+    {
+      "name": "cinematic",
+      "request": "make it more cinematic",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "cinematic"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/001_cinematic/cinematic.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "ominous",
+      "request": "make the atmosphere ominous",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "ominous"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/002_ominous/ominous.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "dreamlike",
+      "request": "make it dreamlike and quiet",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "dreamlike and quiet"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/003_dreamlike/dreamlike.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "romantic",
+      "request": "make the evening romantic",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 12.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.72,
+        "light_warmth": 0.5,
+        "sky_haze": 0.3,
+        "mist_amount": 0.1,
+        "mist_height": 0.25,
+        "mist_motion": 0.15,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "evening romantic"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/004_romantic/romantic.png",
+        "frame": "later"
+      }
+    },
+    {
+      "name": "murky",
+      "request": "make the air murky",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 1.0,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "murky air"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/005_murky/murky.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "alien_green",
+      "request": "an eerie green alien night",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -6.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.42,
+        "light_warmth": -0.35,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "eerie green alien night"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/006_alien_green/alien_green.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "geographic",
+      "request": "a cold clear evening in the mountains around Quetta",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": -2.0,
+        "light_elevation": 15.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": -0.7,
+        "sky_haze": 0.1,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "cold clear evening"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/007_geographic/geographic.png",
+        "frame": "normal"
+      }
+    },
+    {
+      "name": "minimal_change",
+      "request": "just make it a tiny bit moodier",
+      "current": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "neutral"
+      },
+      "result": {
+        "sky_elevation": 45.0,
+        "light_elevation": 45.0,
+        "light_azimuth": 45.0,
+        "light_level": 0.65,
+        "light_warmth": 0.0,
+        "sky_haze": 0.2,
+        "mist_amount": 0.0,
+        "mist_height": 0.35,
+        "mist_motion": 0.25,
+        "rain_amount": 0.0,
+        "lightning_amount": 0.0,
+        "mood": "slightly moodier"
+      },
+      "schema_errors": [],
+      "screenshot": {
+        "file": "review/008_minimal_change/minimal_change.png",
+        "frame": "normal"
+      }
+    }
+  ],
+  "sequences": [
+    {
+      "name": "sunset_to_misty_night",
+      "steps": [
+        {
+          "step": 1,
+          "name": "sunset_to_misty_night_step_01_make_it_a_warm_sunset",
+          "request": "make it a warm sunset",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "warm sunset"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/01_sunset_to_misty_night/step_01_make_it_a_warm_sunset/sunset_to_misty_night_step_01_make_it_a_warm_sunset.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "step": 2,
+          "name": "sunset_to_misty_night_step_02_add_thick_mist_but_keep_the_lighting_exactly",
+          "request": "add thick mist but keep the lighting exactly as it is",
+          "previous": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "warm sunset"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/01_sunset_to_misty_night/step_02_add_thick_mist_but_keep_the_lighting_exactly/sunset_to_misty_night_step_02_add_thick_mist_but_keep_the_lighting_exactly.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 3,
+          "name": "sunset_to_misty_night_step_03_make_the_mist_almost_completely_still_change_nothing",
+          "request": "make the mist almost completely still, change nothing else",
+          "previous": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.0,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/01_sunset_to_misty_night/step_03_make_the_mist_almost_completely_still_change_nothing/sunset_to_misty_night_step_03_make_the_mist_almost_completely_still_change_nothing.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 4,
+          "name": "sunset_to_misty_night_step_04_turn_it_into_night_but_keep_the_mist",
+          "request": "turn it into night but keep the mist exactly as it is",
+          "previous": {
+            "sky_elevation": 7.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.0,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.0,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/01_sunset_to_misty_night/step_04_turn_it_into_night_but_keep_the_mist/sunset_to_misty_night_step_04_turn_it_into_night_but_keep_the_mist.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 5,
+          "name": "sunset_to_misty_night_step_05_remove_the_mist_only",
+          "request": "remove the mist only",
+          "previous": {
+            "sky_elevation": -6.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.75,
+            "mist_height": 0.35,
+            "mist_motion": 0.0,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "night"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 15.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.6,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.0,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/01_sunset_to_misty_night/step_05_remove_the_mist_only/sunset_to_misty_night_step_05_remove_the_mist_only.png",
+            "frame": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "storm_control",
+      "steps": [
+        {
+          "step": 1,
+          "name": "storm_control_step_01_heavy_thunderstorm_with_frequent_lightning",
+          "request": "heavy thunderstorm with frequent lightning",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 1.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/02_storm_control/step_01_heavy_thunderstorm_with_frequent_lightning/storm_control_step_01_heavy_thunderstorm_with_frequent_lightning.png",
+            "frame": "flash"
+          }
+        },
+        {
+          "step": 2,
+          "name": "storm_control_step_02_stop_the_lightning_but_keep_the_rain_and",
+          "request": "stop the lightning but keep the rain and lighting exactly the same",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 1.0,
+            "mood": "heavy thunderstorm"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/02_storm_control/step_02_stop_the_lightning_but_keep_the_rain_and/storm_control_step_02_stop_the_lightning_but_keep_the_rain_and.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 3,
+          "name": "storm_control_step_03_reduce_the_rain_to_a_light_drizzle_and",
+          "request": "reduce the rain to a light drizzle and change nothing else",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.2,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/02_storm_control/step_03_reduce_the_rain_to_a_light_drizzle_and/storm_control_step_03_reduce_the_rain_to_a_light_drizzle_and.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 4,
+          "name": "storm_control_step_04_stop_the_rain_too_change_nothing_else",
+          "request": "stop the rain too, change nothing else",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.2,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/02_storm_control/step_04_stop_the_rain_too_change_nothing_else/storm_control_step_04_stop_the_rain_too_change_nothing_else.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "step": 5,
+          "name": "storm_control_step_05_now_make_it_clear_neutral_midday",
+          "request": "now make it clear neutral midday",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "heavy thunderstorm"
+          },
+          "result": {
+            "sky_elevation": 85.0,
+            "light_elevation": 85.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.9,
+            "light_warmth": 0.1,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear neutral midday"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/02_storm_control/step_05_now_make_it_clear_neutral_midday/storm_control_step_05_now_make_it_clear_neutral_midday.png",
+            "frame": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "night_refinement",
+      "steps": [
+        {
+          "step": 1,
+          "name": "night_refinement_step_01_clear_moonlit_night",
+          "request": "clear moonlit night",
+          "previous": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": -0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/03_night_refinement/step_01_clear_moonlit_night/night_refinement_step_01_clear_moonlit_night.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "step": 2,
+          "name": "night_refinement_step_02_make_only_the_key_light_warmer_keep_the",
+          "request": "make only the key light warmer, keep the time of day exactly the same",
+          "previous": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": -0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/03_night_refinement/step_02_make_only_the_key_light_warmer_keep_the/night_refinement_step_02_make_only_the_key_light_warmer_keep_the.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "step": 3,
+          "name": "night_refinement_step_03_add_moderate_rain_but_no_lightning_keep_the",
+          "request": "add moderate rain but no lightning, keep the lighting exactly the same",
+          "previous": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.5,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/03_night_refinement/step_03_add_moderate_rain_but_no_lightning_keep_the/night_refinement_step_03_add_moderate_rain_but_no_lightning_keep_the.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 4,
+          "name": "night_refinement_step_04_make_it_eerie_but_do_not_make_it",
+          "request": "make it eerie but do not make it darker and do not change the weather",
+          "previous": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.5,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.5,
+            "lightning_amount": 0.0,
+            "mood": "eerie"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/03_night_refinement/step_04_make_it_eerie_but_do_not_make_it/night_refinement_step_04_make_it_eerie_but_do_not_make_it.png",
+            "frame": "later"
+          }
+        },
+        {
+          "step": 5,
+          "name": "night_refinement_step_05_remove_the_rain_only_and_keep_everything_else",
+          "request": "remove the rain only and keep everything else",
+          "previous": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.5,
+            "lightning_amount": 0.0,
+            "mood": "eerie"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": 0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "eerie"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "sequences/03_night_refinement/step_05_remove_the_rain_only_and_keep_everything_else/night_refinement_step_05_remove_the_rain_only_and_keep_everything_else.png",
+            "frame": "normal"
+          }
+        }
+      ]
+    }
+  ],
+  "repeatability": [
+    {
+      "name": "repeat_sunset",
+      "request": "warm hazy sunset",
+      "runs": [
+        {
+          "run": 1,
+          "name": "repeat_sunset_run_01",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.7,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "warm hazy sunset"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/01_repeat_sunset/run_01/repeat_sunset_run_01.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "run": 2,
+          "name": "repeat_sunset_run_02",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.7,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "warm hazy sunset"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/01_repeat_sunset/run_02/repeat_sunset_run_02.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "run": 3,
+          "name": "repeat_sunset_run_03",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.85,
+            "light_warmth": 0.85,
+            "sky_haze": 0.7,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "warm hazy sunset"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/01_repeat_sunset/run_03/repeat_sunset_run_03.png",
+            "frame": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "repeat_night",
+      "request": "clear moonlit night",
+      "runs": [
+        {
+          "run": 1,
+          "name": "repeat_night_run_01",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": -0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/02_repeat_night/run_01/repeat_night_run_01.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "run": 2,
+          "name": "repeat_night_run_02",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": -0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/02_repeat_night/run_02/repeat_night_run_02.png",
+            "frame": "normal"
+          }
+        },
+        {
+          "run": 3,
+          "name": "repeat_night_run_03",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": -6.0,
+            "light_elevation": 22.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.42,
+            "light_warmth": -0.35,
+            "sky_haze": 0.1,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "clear moonlit night"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/02_repeat_night/run_03/repeat_night_run_03.png",
+            "frame": "normal"
+          }
+        }
+      ]
+    },
+    {
+      "name": "repeat_mist",
+      "request": "thick ground-hugging mist with little movement",
+      "runs": [
+        {
+          "run": 1,
+          "name": "repeat_mist_run_01",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.8,
+            "mist_height": 0.15,
+            "mist_motion": 0.1,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "thick ground-hugging mist"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/03_repeat_mist/run_01/repeat_mist_run_01.png",
+            "frame": "later"
+          }
+        },
+        {
+          "run": 2,
+          "name": "repeat_mist_run_02",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.8,
+            "mist_height": 0.15,
+            "mist_motion": 0.1,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "thick ground-hugging mist"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/03_repeat_mist/run_02/repeat_mist_run_02.png",
+            "frame": "later"
+          }
+        },
+        {
+          "run": 3,
+          "name": "repeat_mist_run_03",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.8,
+            "mist_height": 0.15,
+            "mist_motion": 0.1,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "thick ground-hugging mist"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/03_repeat_mist/run_03/repeat_mist_run_03.png",
+            "frame": "later"
+          }
+        }
+      ]
+    },
+    {
+      "name": "repeat_storm",
+      "request": "heavy thunderstorm with frequent lightning",
+      "runs": [
+        {
+          "run": 1,
+          "name": "repeat_storm_run_01",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 1.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/04_repeat_storm/run_01/repeat_storm_run_01.png",
+            "frame": "flash"
+          }
+        },
+        {
+          "run": 2,
+          "name": "repeat_storm_run_02",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 1.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/04_repeat_storm/run_02/repeat_storm_run_02.png",
+            "frame": "flash"
+          }
+        },
+        {
+          "run": 3,
+          "name": "repeat_storm_run_03",
+          "current": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 45.0,
+            "light_elevation": 45.0,
+            "light_azimuth": 45.0,
+            "light_level": 0.65,
+            "light_warmth": 0.0,
+            "sky_haze": 0.2,
+            "mist_amount": 0.0,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 1.0,
+            "lightning_amount": 1.0,
+            "mood": "heavy thunderstorm"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/04_repeat_storm/run_03/repeat_storm_run_03.png",
+            "frame": "flash"
+          }
+        }
+      ]
+    },
+    {
+      "name": "repeat_preserve",
+      "request": "make the mist thicker but keep all lighting exactly the same",
+      "runs": [
+        {
+          "run": 1,
+          "name": "repeat_preserve_run_01",
+          "current": {
+            "sky_elevation": 7,
+            "light_elevation": 10,
+            "light_azimuth": 225,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.2,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 225.0,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.95,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/05_repeat_preserve/run_01/repeat_preserve_run_01.png",
+            "frame": "later"
+          }
+        },
+        {
+          "run": 2,
+          "name": "repeat_preserve_run_02",
+          "current": {
+            "sky_elevation": 7,
+            "light_elevation": 10,
+            "light_azimuth": 225,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.2,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 225.0,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.95,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/05_repeat_preserve/run_02/repeat_preserve_run_02.png",
+            "frame": "later"
+          }
+        },
+        {
+          "run": 3,
+          "name": "repeat_preserve_run_03",
+          "current": {
+            "sky_elevation": 7,
+            "light_elevation": 10,
+            "light_azimuth": 225,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.2,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "result": {
+            "sky_elevation": 7.0,
+            "light_elevation": 10.0,
+            "light_azimuth": 225.0,
+            "light_level": 0.85,
+            "light_warmth": 0.8,
+            "sky_haze": 0.7,
+            "mist_amount": 0.95,
+            "mist_height": 0.35,
+            "mist_motion": 0.25,
+            "rain_amount": 0.0,
+            "lightning_amount": 0.0,
+            "mood": "neutral"
+          },
+          "errors": [],
+          "status": "pass",
+          "screenshot": {
+            "file": "repeatability/05_repeat_preserve/run_03/repeat_preserve_run_03.png",
+            "frame": "later"
+          }
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "strict_passed": 62,
+    "strict_total": 68,
+    "strict_rate": 0.9117647058823529,
+    "categories": {
+      "time": {
+        "passed": 11,
+        "total": 12
+      },
+      "lighting": {
+        "passed": 8,
+        "total": 8
+      },
+      "mist": {
+        "passed": 6,
+        "total": 8
+      },
+      "weather": {
+        "passed": 6,
+        "total": 7
+      },
+      "composition": {
+        "passed": 7,
+        "total": 7
+      },
+      "preservation": {
+        "passed": 10,
+        "total": 10
+      },
+      "conflict": {
+        "passed": 6,
+        "total": 8
+      },
+      "vocabulary": {
+        "passed": 8,
+        "total": 8
+      }
+    },
+    "preservation_passed": 10,
+    "preservation_total": 10,
+    "preservation_rate": 1.0,
+    "sequence_passed": 15,
+    "sequence_total": 15,
+    "sequence_rate": 1.0,
+    "repeatability_passed": 15,
+    "repeatability_total": 15,
+    "repeatability_rate": 1.0,
+    "schema_failures": 0,
+    "screenshots_saved": 106,
+    "screenshot_failures": 0,
+    "expected_screenshots": 106,
+    "gate_pass": true
+  }
+}

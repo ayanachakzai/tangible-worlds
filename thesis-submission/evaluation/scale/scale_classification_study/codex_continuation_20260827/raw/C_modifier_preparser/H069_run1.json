@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H069",
+  "case_index": 69,
+  "group": "modifier",
+  "meaning": "full-size replica of a delivery truck",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nvehicle_scale",
+  "parsed_class": "vehicle_scale",
+  "scale_basis": "an ordinary full-size a delivery truck",
+  "preparser_rule": "full_scale_representation",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.63,
+  "error": ""
+}

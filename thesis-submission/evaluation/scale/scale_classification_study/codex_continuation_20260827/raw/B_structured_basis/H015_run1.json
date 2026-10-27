@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H015",
+  "case_index": 15,
+  "group": "ordinary_room",
+  "meaning": "sauna cabin",
+  "acceptable": [
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"sauna cabin\",\"semantic_scale_class\":\"room_scale\"}",
+  "parsed_class": "room_scale",
+  "scale_basis": "sauna cabin",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.706,
+  "error": ""
+}

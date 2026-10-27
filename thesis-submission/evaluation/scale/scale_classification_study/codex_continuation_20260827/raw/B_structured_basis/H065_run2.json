@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H065",
+  "case_index": 65,
+  "group": "modifier",
+  "meaning": "robot the size of a suitcase",
+  "acceptable": [
+    "handheld",
+    "body_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "{\"scale_basis\":\"suitcase\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "suitcase",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.428,
+  "error": ""
+}

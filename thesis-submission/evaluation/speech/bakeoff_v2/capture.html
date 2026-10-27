@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tangible Worlds ASR bake-off recorder</title>
+    <style>
+        :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+        body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #101216; color: #f1f3f5; }
+        main { width: min(760px, calc(100vw - 40px)); }
+        .muted { color: #9ca4ae; }
+        .panel { margin-top: 18px; padding: 24px; border: 1px solid #303640; border-radius: 14px; background: #181c22; }
+        #instruction { margin: 16px 0; min-height: 80px; font-size: 24px; line-height: 1.35; }
+        #state { padding: 11px 13px; border-radius: 9px; background: #222832; }
+        #state.recording { color: #ffd5d5; background: #472326; }
+        button { margin: 12px 8px 0 0; padding: 10px 14px; border: 1px solid #4a5360; border-radius: 8px; background: #29313b; color: inherit; font: inherit; cursor: pointer; }
+        button:disabled { opacity: 0.4; cursor: default; }
+        #progress { font-variant-numeric: tabular-nums; }
+        kbd { padding: 2px 6px; border: 1px solid #4a5360; border-radius: 5px; background: #242a33; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>ASR bake-off recorder</h1>
+    <p class="muted">Development corpus only. No transcription is shown during recording.</p>
+
+    <div class="panel">
+        <div id="progress">Loading corpus...</div>
+        <div id="category" class="muted"></div>
+        <div id="instruction"></div>
+        <div id="state">Enable the microphone to begin.</div>
+
+        <button id="enable">Enable microphone</button>
+        <button id="keep" disabled>Keep recording</button>
+        <button id="redo" disabled>Redo technical capture</button>
+    </div>
+
+    <p class="muted">
+        Hold and release DualSense touchpad button 17 exactly as in production.
+        <kbd>Space</kbd> is a fallback. Redo only if you said the wrong words,
+        ignored the instruction, or the capture failed. Do not redo because of accent or delivery.
+    </p>
+</main>
+
+<script>
+const SAMPLE_RATE = 16000;
+const TALK_BUTTON = 17;
+
+let audioContext = null;
+let audioNode = null;
+let microphoneLabel = '';
+let recording = false;
+let chunks = [];
+let pending = null;
+let items = [];
+let index = 0;
+let gamepadPressed = false;
+
+const progress = document.getElementById('progress');
+const category = document.getElementById('category');
+const instruction = document.getElementById('instruction');
+const state = document.getElementById('state');
+const enable = document.getElementById('enable');
+const keep = document.getElementById('keep');
+const redo = document.getElementById('redo');
+
+function seededShuffle(values) {
+    let seed = 260902;
+    const result = [...values];
+    for (let i = result.length - 1; i > 0; i--) {
+        seed ^= seed << 13;
+        seed ^= seed >>> 17;
+        seed ^= seed << 5;
+        const j = (seed >>> 0) % (i + 1);
+        [result[i], result[j]] = [result[j], result[i]];
+    }
+    return result;
+}
+
+function showItem() {
+    if (index >= items.length) {
+        progress.textContent = `Complete: ${items.length} of ${items.length}`;
+        category.textContent = '';
+        instruction.textContent = 'Development corpus complete.';
+        state.textContent = 'Stop the recorder server. The WAV files and log are saved.';
+        enable.disabled = true;
+        return;
+    }
+    const item = items[index];
+    progress.textContent = `Clip ${index + 1} of ${items.length} | ${item.id}`;
+    category.textContent = item.category.replaceAll('_', ' ');
+    instruction.textContent = item.instruction;
+    state.textContent = 'Hold the touchpad to record.';
+    state.className = '';
+}
+
+function joinChunks() {
+    const length = chunks.reduce((total, chunk) => total + chunk.length, 0);
+    const samples = new Float32Array(length);
+    let offset = 0;
+    for (const chunk of chunks) {
+        samples.set(chunk, offset);
+        offset += chunk.length;
+    }
+    return samples;
+}
+
+function writeText(view, offset, text) {
+    for (let i = 0; i < text.length; i++) view.setUint8(offset + i, text.charCodeAt(i));
+}
+
+function makeWav(samples) {
+    const buffer = new ArrayBuffer(44 + samples.length * 2);
+    const view = new DataView(buffer);
+    writeText(view, 0, 'RIFF');
+    view.setUint32(4, 36 + samples.length * 2, true);
+    writeText(view, 8, 'WAVE');
+    writeText(view, 12, 'fmt ');
+    view.setUint32(16, 16, true);
+    view.setUint16(20, 1, true);
+    view.setUint16(22, 1, true);
+    view.setUint32(24, SAMPLE_RATE, true);
+    view.setUint32(28, SAMPLE_RATE * 2, true);
+    view.setUint16(32, 2, true);
+    view.setUint16(34, 16, true);
+    writeText(view, 36, 'data');
+    view.setUint32(40, samples.length * 2, true);
+    for (let i = 0; i < samples.length; i++) {
+        const sample = Math.max(-1, Math.min(1, samples[i]));
+        view.setInt16(44 + i * 2, sample < 0 ? sample * 32768 : sample * 32767, true);
+    }
+    return buffer;
+}
+
+async function setup() {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    microphoneLabel = stream.getAudioTracks()[0]?.label || 'unknown';
+    audioContext = new AudioContext({ sampleRate: SAMPLE_RATE });
+    if (audioContext.sampleRate !== SAMPLE_RATE) {
+        throw new Error(`AudioContext is ${audioContext.sampleRate} Hz, expected ${SAMPLE_RATE} Hz`);
+    }
+    await audioContext.audioWorklet.addModule('/voice_capture_worklet.js');
+    const source = audioContext.createMediaStreamSource(stream);
+    audioNode = new AudioWorkletNode(audioContext, 'voice-capture', { numberOfOutputs: 0 });
+    source.connect(audioNode);
+    audioNode.port.onmessage = event => {
+        if (recording) chunks.push(event.data);
+    };
+    await audioContext.resume();
+    enable.disabled = true;
+    showItem();
+}
+
+function startRecording() {
+    if (!audioContext || recording || pending || index >= items.length) return;
+    chunks = [];
+    recording = true;
+    state.textContent = 'Recording... release the trigger when finished.';
+    state.className = 'recording';
+}
+
+function stopRecording() {
+    if (!recording) return;
+    recording = false;
+    const samples = joinChunks();
+    if (!samples.length) {
+        state.textContent = 'Nothing was captured. Try again.';
+        state.className = '';
+        return;
+    }
+    let peak = 0;
+    for (const sample of samples) peak = Math.max(peak, Math.abs(sample));
+    const duration = samples.length / SAMPLE_RATE;
+    pending = { wav: makeWav(samples), peak, duration };
+    state.textContent = `Captured ${duration.toFixed(2)} seconds, peak ${peak.toFixed(4)}. Keep unless the capture was technically wrong.`;
+    state.className = '';
+    keep.disabled = false;
+    redo.disabled = false;
+}
+
+async function keepRecording() {
+    if (!pending) return;
+    keep.disabled = true;
+    redo.disabled = true;
+    const item = items[index];
+    state.textContent = 'Saving...';
+    const response = await fetch(`/save?id=${encodeURIComponent(item.id)}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'audio/wav',
+            'X-Clip-Peak': pending.peak.toFixed(6),
+            'X-Clip-Duration': pending.duration.toFixed(6),
+            'X-Microphone': microphoneLabel,
+        },
+        body: pending.wav,
+    });
+    const result = await response.json();
+    if (!response.ok || !result.ok) {
+        pending = null;
+        state.textContent = result.error || 'Save failed. Record this clip again.';
+        return;
+    }
+    pending = null;
+    index += 1;
+    showItem();
+}
+
+function redoRecording() {
+    pending = null;
+    keep.disabled = true;
+    redo.disabled = true;
+    state.textContent = 'Hold the touchpad to record again.';
+}
+
+function pollGamepad() {
+    const pads = navigator.getGamepads ? navigator.getGamepads() : [];
+    const pad = Array.from(pads).find(Boolean);
+    const pressed = Boolean(pad?.buttons?.[TALK_BUTTON]?.pressed);
+    if (pressed && !gamepadPressed) startRecording();
+    if (!pressed && gamepadPressed) stopRecording();
+    gamepadPressed = pressed;
+    requestAnimationFrame(pollGamepad);
+}
+
+enable.addEventListener('click', () => setup().catch(error => {
+    state.textContent = error.message;
+}));
+keep.addEventListener('click', () => keepRecording().catch(error => {
+    state.textContent = error.message;
+}));
+redo.addEventListener('click', redoRecording);
+
+window.addEventListener('keydown', event => {
+    if (event.code === 'Space' && !event.repeat) {
+        event.preventDefault();
+        startRecording();
+    }
+});
+window.addEventListener('keyup', event => {
+    if (event.code === 'Space') {
+        event.preventDefault();
+        stopRecording();
+    }
+});
+
+fetch('/corpus').then(response => response.json()).then(data => {
+    const recorded = new Set(data.recorded);
+    items = seededShuffle(data.items).filter(item => !recorded.has(item.id));
+    progress.textContent = `${recorded.size} already recorded, ${items.length} remaining`;
+    if (audioContext) showItem();
+});
+requestAnimationFrame(pollGamepad);
+</script>
+</body>
+</html>

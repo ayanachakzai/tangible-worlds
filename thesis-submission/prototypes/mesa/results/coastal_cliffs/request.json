@@ -1,0 +1,7 @@
+{
+  "original_description": "steep coastal cliffs above the ocean",
+  "mesa_prompt": "A Sentinel-2 image of steep coastal cliffs above the ocean",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

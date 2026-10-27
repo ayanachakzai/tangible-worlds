@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P006",
+  "category": "supported_article",
+  "phrase": "a miniature dragon",
+  "expected_intent": "very_small",
+  "expected_generation_meaning": "a dragon",
+  "participant_phrase": "a miniature dragon",
+  "generation_meaning": "a dragon",
+  "explicit_scale_intent": "very_small",
+  "target_size": 0.35,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "miniature",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

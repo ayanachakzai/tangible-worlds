@@ -1,0 +1,9 @@
+{
+  "participant_phrase": "huge mushroom",
+  "candidate": "B_strip_scale_adjective",
+  "generation_input": "mushroom",
+  "shaped_prompt": "one low-poly mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "raw_output": "\n\none low-poly mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+  "latency_s": 4.085,
+  "scale_token_present_in_input": false
+}

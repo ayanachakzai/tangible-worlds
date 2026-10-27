@@ -1,0 +1,140 @@
+{
+  "assignment_before": {
+    "meaning": "castle, scale tiny",
+    "generation_meaning": "castle",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_marked",
+    "explicit_detected": true,
+    "status": "ready",
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "mesh_url": "/generated_meshes/castle.glb?v=1"
+  },
+  "movement_updates": [
+    {
+      "step": 1,
+      "x": 0.1,
+      "z": -0.2
+    },
+    {
+      "step": 2,
+      "x": 0.13,
+      "z": -0.18
+    },
+    {
+      "step": 3,
+      "x": 0.16,
+      "z": -0.16
+    },
+    {
+      "step": 4,
+      "x": 0.19,
+      "z": -0.14
+    },
+    {
+      "step": 5,
+      "x": 0.22,
+      "z": -0.12
+    },
+    {
+      "step": 6,
+      "x": 0.25,
+      "z": -0.1
+    },
+    {
+      "step": 7,
+      "x": 0.28,
+      "z": -0.08
+    },
+    {
+      "step": 8,
+      "x": 0.31,
+      "z": -0.06
+    },
+    {
+      "step": 9,
+      "x": 0.34,
+      "z": -0.04
+    },
+    {
+      "step": 10,
+      "x": 0.37,
+      "z": -0.02
+    },
+    {
+      "step": 11,
+      "x": 0.4,
+      "z": 0.0
+    },
+    {
+      "step": 12,
+      "x": 0.43,
+      "z": 0.02
+    },
+    {
+      "step": 13,
+      "x": 0.46,
+      "z": 0.04
+    },
+    {
+      "step": 14,
+      "x": 0.49,
+      "z": 0.06
+    },
+    {
+      "step": 15,
+      "x": 0.52,
+      "z": 0.08
+    },
+    {
+      "step": 16,
+      "x": 0.55,
+      "z": 0.1
+    },
+    {
+      "step": 17,
+      "x": 0.58,
+      "z": 0.12
+    },
+    {
+      "step": 18,
+      "x": 0.61,
+      "z": 0.14
+    },
+    {
+      "step": 19,
+      "x": 0.64,
+      "z": 0.16
+    },
+    {
+      "step": 20,
+      "x": 0.67,
+      "z": 0.18
+    }
+  ],
+  "assignment_after": {
+    "meaning": "castle, scale tiny",
+    "generation_meaning": "castle",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_marked",
+    "explicit_detected": true,
+    "status": "ready",
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "mesh_url": "/generated_meshes/castle.glb?v=1"
+  },
+  "generation_calls": 1,
+  "target_persisted": true,
+  "meaning_persisted": true,
+  "generation_meaning_persisted": true,
+  "movement_did_not_regenerate": true,
+  "pass": true
+}

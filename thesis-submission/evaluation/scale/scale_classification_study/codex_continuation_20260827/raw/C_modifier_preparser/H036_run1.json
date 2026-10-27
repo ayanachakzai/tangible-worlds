@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H036",
+  "case_index": 36,
+  "group": "ordinary_colossal",
+  "meaning": "solar system",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\ncolossal_scale",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "solar system",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.613,
+  "error": ""
+}

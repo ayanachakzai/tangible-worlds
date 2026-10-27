@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H051",
+  "case_index": 51,
+  "group": "creative",
+  "meaning": "endless staircase",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"staircase\",\"semantic_scale_class\":\"ambiguous\"}",
+  "parsed_class": "ambiguous",
+  "scale_basis": "staircase",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.635,
+  "error": ""
+}

@@ -1,0 +1,8 @@
+calls: 12
+valid enum: 12/12 (100.0%)
+consistent cases: 12/12 (100.0%)
+expected-match cases: 10/12 (83.3%)
+
+questionable cases:
+- car | expected=['vehicle_scale'] | outputs=['handheld'] | consistent=True
+- castle | expected=['infrastructure_scale'] | outputs=['building_scale'] | consistent=True

@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f55e2]:
+  - heading "E_balanced | Codex derived balanced candidate" [level=1] [ref=f55e3]
+  - paragraph [ref=f55e4]: "sizes: 0.32 | 0.62 | 1.00 | 1.42 | 1.95 | 2.50 | 3.10"
+  - paragraph [ref=f55e5]: "adjacency: mixed adjacency | production: production camera"
+  - paragraph [ref=f55e6]: Loading 0/7 meshes
+  - paragraph [ref=f55e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

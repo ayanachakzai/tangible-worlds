@@ -1,0 +1,2 @@
+protected_manifest_entries=5
+protected_hashes_match=pass

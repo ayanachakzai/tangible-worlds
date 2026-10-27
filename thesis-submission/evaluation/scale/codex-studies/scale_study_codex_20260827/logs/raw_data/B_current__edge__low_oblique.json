@@ -1,0 +1,364 @@
+{
+  "study": "Tangible Worlds semantic relative-scale study",
+  "rendered_at": "2026-08-26T23:28:45.431Z",
+  "table_size": 10,
+  "ladder": {
+    "id": "B_current",
+    "name": "current manual candidate",
+    "hypothesis": "Manual non-uniform spacing should make all seven ranks legible.",
+    "values": [
+      0.3,
+      0.6,
+      1,
+      1.4,
+      2,
+      2.7,
+      3.4
+    ],
+    "adjacent_ratios": [
+      2,
+      1.666667,
+      1.4,
+      1.428571,
+      1.35,
+      1.259259
+    ]
+  },
+  "composition": {
+    "id": "edge",
+    "name": "edge stress",
+    "purpose": "boundary failure under movement"
+  },
+  "camera": {
+    "id": "low_oblique",
+    "name": "lower oblique",
+    "fov": 50,
+    "position": [
+      8,
+      7,
+      8
+    ],
+    "target": [
+      0,
+      0,
+      0
+    ]
+  },
+  "viewport": {
+    "width": 1440,
+    "height": 1000
+  },
+  "original_assets": [
+    {
+      "asset": "coffee mug",
+      "class": "handheld",
+      "original_dimensions": {
+        "x": 1.000401,
+        "y": 0.943271,
+        "z": 0.831838
+      },
+      "original_longest_dimension": 1.0004009902477264
+    },
+    {
+      "asset": "wooden chair",
+      "class": "body_scale",
+      "original_dimensions": {
+        "x": 0.722579,
+        "y": 1.004301,
+        "z": 0.759071
+      },
+      "original_longest_dimension": 1.0043007135391235
+    },
+    {
+      "asset": "tent",
+      "class": "room_scale",
+      "original_dimensions": {
+        "x": 1.024207,
+        "y": 0.555463,
+        "z": 1.053034
+      },
+      "original_longest_dimension": 1.0530344247817993
+    },
+    {
+      "asset": "car",
+      "class": "vehicle_scale",
+      "original_dimensions": {
+        "x": 1.016645,
+        "y": 0.510339,
+        "z": 0.980647
+      },
+      "original_longest_dimension": 1.01664537191391
+    },
+    {
+      "asset": "house",
+      "class": "building_scale",
+      "original_dimensions": {
+        "x": 0.998107,
+        "y": 1.010881,
+        "z": 1.034441
+      },
+      "original_longest_dimension": 1.0344406366348267
+    },
+    {
+      "asset": "castle",
+      "class": "infrastructure_scale",
+      "original_dimensions": {
+        "x": 0.978471,
+        "y": 0.861607,
+        "z": 0.885985
+      },
+      "original_longest_dimension": 0.9784712195396423
+    },
+    {
+      "asset": "mountain",
+      "class": "landform_scale",
+      "original_dimensions": {
+        "x": 1.012844,
+        "y": 0.974422,
+        "z": 0.581085
+      },
+      "original_longest_dimension": 1.012844443321228
+    }
+  ],
+  "instances": [
+    {
+      "instance": 0,
+      "asset_index": 6,
+      "asset": "mountain",
+      "class": "landform_scale",
+      "requested_target_size": 3.4,
+      "position": {
+        "x": 4.15,
+        "z": 0
+      },
+      "dimensions": {
+        "x": 3.4,
+        "y": 3.271019,
+        "z": 1.950634
+      },
+      "footprint": {
+        "x": 3.4,
+        "z": 1.950634,
+        "area": 6.632155,
+        "table_percent": 6.632155
+      },
+      "bounds": {
+        "min_x": 2.442172,
+        "max_x": 5.842172,
+        "min_y": 0,
+        "max_y": 3.271019,
+        "min_z": -1.002493,
+        "max_z": 0.948141
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 820.552336,
+        "y": 275.290222,
+        "width": 497.818287,
+        "height": 518.478365,
+        "viewport_area_percent": 17.924167
+      }
+    },
+    {
+      "instance": 1,
+      "asset_index": 5,
+      "asset": "castle",
+      "class": "infrastructure_scale",
+      "requested_target_size": 2.7,
+      "position": {
+        "x": 1.15,
+        "z": -2.25
+      },
+      "dimensions": {
+        "x": 2.7,
+        "y": 2.377523,
+        "z": 2.444792
+      },
+      "footprint": {
+        "x": 2.7,
+        "z": 2.444792,
+        "area": 6.600939,
+        "table_percent": 6.600939
+      },
+      "bounds": {
+        "min_x": -0.309237,
+        "max_x": 2.390763,
+        "min_y": 0,
+        "max_y": 2.377523,
+        "min_z": -3.553941,
+        "max_z": -1.109148
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 762.84023,
+        "y": 242.001614,
+        "width": 310.597351,
+        "height": 298.790817,
+        "viewport_area_percent": 6.444697
+      }
+    },
+    {
+      "instance": 2,
+      "asset_index": 4,
+      "asset": "house",
+      "class": "building_scale",
+      "requested_target_size": 2,
+      "position": {
+        "x": 1.05,
+        "z": 2.1
+      },
+      "dimensions": {
+        "x": 1.929752,
+        "y": 1.954449,
+        "z": 2
+      },
+      "footprint": {
+        "x": 1.929752,
+        "z": 2,
+        "area": 3.859505,
+        "table_percent": 3.859505
+      },
+      "bounds": {
+        "min_x": 0.047662,
+        "max_x": 1.977415,
+        "min_y": 0,
+        "max_y": 1.954449,
+        "min_z": 1.116035,
+        "max_z": 3.116035
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 495.731187,
+        "y": 386.152652,
+        "width": 286.972137,
+        "height": 312.250391,
+        "viewport_area_percent": 6.22272
+      }
+    },
+    {
+      "instance": 3,
+      "asset_index": 3,
+      "asset": "car",
+      "class": "vehicle_scale",
+      "requested_target_size": 1.4,
+      "position": {
+        "x": -1.2,
+        "z": 0
+      },
+      "dimensions": {
+        "x": 1.4,
+        "y": 0.702777,
+        "z": 1.350428
+      },
+      "footprint": {
+        "x": 1.4,
+        "z": 1.350428,
+        "area": 1.890599,
+        "table_percent": 1.890599
+      },
+      "bounds": {
+        "min_x": -1.842546,
+        "max_x": -0.442546,
+        "min_y": 0,
+        "max_y": 0.702777,
+        "min_z": -0.654964,
+        "max_z": 0.695464
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 578.756962,
+        "y": 386.594462,
+        "width": 153.090269,
+        "height": 121.077044,
+        "viewport_area_percent": 1.287203
+      }
+    },
+    {
+      "instance": 4,
+      "asset_index": 1,
+      "asset": "wooden chair",
+      "class": "body_scale",
+      "requested_target_size": 0.6,
+      "position": {
+        "x": -3.15,
+        "z": -1.65
+      },
+      "dimensions": {
+        "x": 0.431691,
+        "y": 0.6,
+        "z": 0.453492
+      },
+      "footprint": {
+        "x": 0.431691,
+        "z": 0.453492,
+        "area": 0.195769,
+        "table_percent": 0.195769
+      },
+      "bounds": {
+        "min_x": -3.373231,
+        "max_x": -2.94154,
+        "min_y": 0,
+        "max_y": 0.6,
+        "min_z": -1.878908,
+        "max_z": -1.425416
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 626.965228,
+        "y": 336.354671,
+        "width": 43.309545,
+        "height": 54.286132,
+        "viewport_area_percent": 0.163271
+      }
+    },
+    {
+      "instance": 5,
+      "asset_index": 0,
+      "asset": "coffee mug",
+      "class": "handheld",
+      "requested_target_size": 0.3,
+      "position": {
+        "x": -3.25,
+        "z": 1.65
+      },
+      "dimensions": {
+        "x": 0.3,
+        "y": 0.282868,
+        "z": 0.249452
+      },
+      "footprint": {
+        "x": 0.3,
+        "z": 0.249452,
+        "area": 0.074835,
+        "table_percent": 0.074835
+      },
+      "bounds": {
+        "min_x": -3.402956,
+        "max_x": -3.102956,
+        "min_y": 0,
+        "max_y": 0.282868,
+        "min_z": 1.531295,
+        "max_z": 1.780746
+      },
+      "grounded": true,
+      "projected_rectangle": {
+        "x": 441.864218,
+        "y": 429.65463,
+        "width": 31.548025,
+        "height": 32.934332,
+        "viewport_area_percent": 0.072154
+      }
+    }
+  ],
+  "composition_metrics": {
+    "summed_axis_aligned_footprint_area": 19.253802,
+    "summed_footprint_table_percent": 19.253802,
+    "overlaps": [],
+    "overlap_count": 0,
+    "out_of_bounds_instances": [
+      0
+    ],
+    "out_of_bounds_count": 1,
+    "all_grounded": true
+  }
+}

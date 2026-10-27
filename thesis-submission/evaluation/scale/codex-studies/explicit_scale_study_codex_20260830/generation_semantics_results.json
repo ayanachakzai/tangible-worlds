@@ -1,0 +1,94 @@
+{
+  "records": [
+    {
+      "participant_phrase": "tiny toy car",
+      "candidate": "A_keep_adjective",
+      "generation_input": "tiny toy car",
+      "shaped_prompt": "one low-poly tiny toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly tiny toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 10.755,
+      "scale_token_present_in_input": true
+    },
+    {
+      "participant_phrase": "tiny toy car",
+      "candidate": "B_strip_scale_adjective",
+      "generation_input": "toy car",
+      "shaped_prompt": "one low-poly toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly toy car, front three-quarter hero view, centered silhouette, entire car visible from front bumper to rear bumper, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.677,
+      "scale_token_present_in_input": false
+    },
+    {
+      "participant_phrase": "miniature castle",
+      "candidate": "A_keep_adjective",
+      "generation_input": "miniature castle",
+      "shaped_prompt": "one low-poly miniature castle, front three-quarter hero view, centered silhouette, entire structure visible from base to tallest tower, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly miniature castle, front three-quarter hero view, centered silhouette, entire structure visible from base to tallest tower, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.525,
+      "scale_token_present_in_input": true
+    },
+    {
+      "participant_phrase": "miniature castle",
+      "candidate": "B_strip_scale_adjective",
+      "generation_input": "castle",
+      "shaped_prompt": "one low-poly castle, front three-quarter hero view, centered silhouette, entire structure visible from base to top towers, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly castle, front three-quarter hero view, centered silhouette, entire structure visible from base to top towers, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.345,
+      "scale_token_present_in_input": false
+    },
+    {
+      "participant_phrase": "huge mushroom",
+      "candidate": "A_keep_adjective",
+      "generation_input": "huge mushroom",
+      "shaped_prompt": "one low-poly huge mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly huge mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.067,
+      "scale_token_present_in_input": true
+    },
+    {
+      "participant_phrase": "huge mushroom",
+      "candidate": "B_strip_scale_adjective",
+      "generation_input": "mushroom",
+      "shaped_prompt": "one low-poly mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly mushroom, front three-quarter hero view, centered silhouette, fully visible, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.085,
+      "scale_token_present_in_input": false
+    },
+    {
+      "participant_phrase": "small house",
+      "candidate": "A_keep_adjective",
+      "generation_input": "small house",
+      "shaped_prompt": "one low-poly small house, front three-quarter hero view, centered silhouette, entire house visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly small house, front three-quarter hero view, centered silhouette, entire house visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.391,
+      "scale_token_present_in_input": true
+    },
+    {
+      "participant_phrase": "small house",
+      "candidate": "B_strip_scale_adjective",
+      "generation_input": "house",
+      "shaped_prompt": "one low-poly house, front three-quarter hero view, centered silhouette, entire structure visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly house, front three-quarter hero view, centered silhouette, entire structure visible from roof to foundation, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.307,
+      "scale_token_present_in_input": false
+    },
+    {
+      "participant_phrase": "large bridge",
+      "candidate": "A_keep_adjective",
+      "generation_input": "large bridge",
+      "shaped_prompt": "one low-poly large bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly large bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.483,
+      "scale_token_present_in_input": true
+    },
+    {
+      "participant_phrase": "large bridge",
+      "candidate": "B_strip_scale_adjective",
+      "generation_input": "bridge",
+      "shaped_prompt": "one low-poly bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "raw_output": "\n\none low-poly bridge, front three-quarter hero view, centered silhouette, entire bridge visible from front support to rear support, occupying roughly two-thirds of the frame with generous empty margin, seamless solid mid-gray studio background, soft lighting, one subtle contact shadow, blender render, sharp flat faces, no scene, no ground",
+      "latency_s": 4.382,
+      "scale_token_present_in_input": false
+    }
+  ]
+}

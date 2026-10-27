@@ -1,0 +1,151 @@
+{
+  "evidence_type": "synthetic Pocket TTS Alba audio transcribed by the live local Moonshine service",
+  "limitations": "Not equivalent to Ayan's speech, microphone, room, pacing, or repeated live interaction.",
+  "phrase_count": 12,
+  "results": [
+    {
+      "candidate": "A",
+      "value": "tiny",
+      "reference": "object two is a car size tiny",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.338,
+      "roundtrip_stt_s": 1.127,
+      "moonshine_stt_s": 1.11,
+      "heard": "Object 2 is a car-sized tiny.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "A",
+      "value": "small",
+      "reference": "object two is a car size small",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.334,
+      "roundtrip_stt_s": 0.194,
+      "moonshine_stt_s": 0.192,
+      "heard": "Object 2 is a car size small.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "A",
+      "value": "big",
+      "reference": "object two is a car size big",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.267,
+      "roundtrip_stt_s": 0.213,
+      "moonshine_stt_s": 0.211,
+      "heard": "Object 2 is a car size big.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "A",
+      "value": "huge",
+      "reference": "object two is a car size huge",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.287,
+      "roundtrip_stt_s": 0.179,
+      "moonshine_stt_s": 0.178,
+      "heard": "Object two is a car size huge.",
+      "exact_casefold": true
+    },
+    {
+      "candidate": "B",
+      "value": "tiny",
+      "reference": "object two is a car size is tiny",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.309,
+      "roundtrip_stt_s": 0.192,
+      "moonshine_stt_s": 0.191,
+      "heard": "Object 2 is a car size is tiny.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "B",
+      "value": "small",
+      "reference": "object two is a car size is small",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.389,
+      "roundtrip_stt_s": 0.215,
+      "moonshine_stt_s": 0.212,
+      "heard": "Object 2 is a car size is small",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "B",
+      "value": "big",
+      "reference": "object two is a car size is big",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.406,
+      "roundtrip_stt_s": 0.182,
+      "moonshine_stt_s": 0.181,
+      "heard": "Object 2 is a car size is big",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "B",
+      "value": "huge",
+      "reference": "object two is a car size is huge",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.464,
+      "roundtrip_stt_s": 0.262,
+      "moonshine_stt_s": 0.26,
+      "heard": "Object 2 is a car size is huge.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "C",
+      "value": "tiny",
+      "reference": "object two is a car scale tiny",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.308,
+      "roundtrip_stt_s": 0.173,
+      "moonshine_stt_s": 0.172,
+      "heard": "Object 2 is a car scale tiny.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "C",
+      "value": "small",
+      "reference": "object two is a car scale small",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.377,
+      "roundtrip_stt_s": 0.186,
+      "moonshine_stt_s": 0.184,
+      "heard": "Object 2 is a car scale small.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "C",
+      "value": "big",
+      "reference": "object two is a car scale big",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.361,
+      "roundtrip_stt_s": 0.192,
+      "moonshine_stt_s": 0.191,
+      "heard": "Object 2 is a car scale big.",
+      "exact_casefold": false
+    },
+    {
+      "candidate": "C",
+      "value": "huge",
+      "reference": "object two is a car scale huge",
+      "synthetic_voice": "Pocket TTS Alba",
+      "status": "ok",
+      "tts_s": 0.435,
+      "roundtrip_stt_s": 0.201,
+      "moonshine_stt_s": 0.199,
+      "heard": "Object 2 is a car scale huge.",
+      "exact_casefold": false
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P002",
+  "category": "supported_article",
+  "phrase": "a tiny castle",
+  "expected_intent": "very_small",
+  "expected_generation_meaning": "a castle",
+  "participant_phrase": "a tiny castle",
+  "generation_meaning": "a castle",
+  "explicit_scale_intent": "very_small",
+  "target_size": 0.35,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "tiny",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

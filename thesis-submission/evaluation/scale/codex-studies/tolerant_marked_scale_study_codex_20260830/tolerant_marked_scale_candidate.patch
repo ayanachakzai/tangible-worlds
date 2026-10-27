@@ -1,0 +1,46 @@
+--- a/phase3-tabletop/rendering/serve.py
++++ b/phase3-tabletop/rendering/serve.py
+@@ -253,9 +253,12 @@
+ _assignments_lock = threading.Lock()
+ 
+ # Participant-authored visual scale uses one reserved terminal suffix:
+-#   <meaning>, scale <tiny|miniature|small|big|large|huge>
++#   <meaning> [,] scale <tiny|miniature|small|big|large|huge>
+ # Parse it once when both typed and voice routes meet at /api/assign. The
+ # renderer receives a cached numeric target; qwen never selects scale.
++# Project decision, 30 Aug 2026: a fresh 120-case holdout qualified comma or
++# whitespace before terminal "scale" after live typed/Moonshine comma loss.
++# Terminal "scaled" was rejected because it misread ordinary VFX descriptions.
+ # ref: https://docs.python.org/3/library/re.html
+ MARKED_SCALE_TARGETS = {
+     "tiny": ("very_small", 0.35),
+@@ -266,12 +269,14 @@
+     "huge": ("very_large", 3.00),
+ }
+ MARKED_SCALE_RE = re.compile(
+-    r"^(?P<generation>.+?)\s*,\s*scale\s+"
++    r"^(?P<generation>.+?)(?:\s*,\s*|\s+)scale\s+"
+     r"(?P<modifier>tiny|miniature|small|big|large|huge)\s*[.!?]*\s*$",
+     re.IGNORECASE,
+ )
+ MARKED_SCALE_FRAGMENT_RE = re.compile(
+-    r",\s*(?:scale|make\s+it)\s+\S+",
++    r",\s*(?:scale|scaled|make\s+it)\s+\S+"
++    r"|(?:^|\s)(?:scale|scaled|make\s+it)\s+"
++    r"(?:tiny|miniature|small|big|large|huge)(?=$|[\s,.!?])",
+     re.IGNORECASE,
+ )
+ 
+@@ -290,7 +295,11 @@
+         return neutral
+ 
+     generation_meaning = match.group("generation").strip()
+-    if not generation_meaning or MARKED_SCALE_FRAGMENT_RE.search(generation_meaning):
++    if (
++        not generation_meaning
++        or generation_meaning.endswith((";", ":"))
++        or MARKED_SCALE_FRAGMENT_RE.search(generation_meaning)
++    ):
+         return neutral
+ 
+     intent, target = MARKED_SCALE_TARGETS[match.group("modifier").lower()]

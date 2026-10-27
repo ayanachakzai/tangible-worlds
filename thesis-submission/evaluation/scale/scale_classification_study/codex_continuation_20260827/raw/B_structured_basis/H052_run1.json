@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H052",
+  "case_index": 52,
+  "group": "creative",
+  "meaning": "orbital ring around an alien world",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"alien world orbit\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "alien world orbit",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.713,
+  "error": ""
+}

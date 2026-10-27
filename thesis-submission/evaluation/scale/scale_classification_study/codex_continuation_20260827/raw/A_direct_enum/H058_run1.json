@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H058",
+  "case_index": 58,
+  "group": "modifier",
+  "meaning": "mountain-sized robot",
+  "acceptable": [
+    "landform_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "\n\ncolossal_scale",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "mountain-sized robot",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.571,
+  "error": ""
+}

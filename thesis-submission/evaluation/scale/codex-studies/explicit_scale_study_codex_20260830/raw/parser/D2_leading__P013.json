@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P013",
+  "category": "supported",
+  "phrase": "big car",
+  "expected_intent": "large",
+  "expected_generation_meaning": "car",
+  "participant_phrase": "big car",
+  "generation_meaning": "car",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "big",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

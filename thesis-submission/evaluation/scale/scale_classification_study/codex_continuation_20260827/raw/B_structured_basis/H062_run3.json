@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H062",
+  "case_index": 62,
+  "group": "modifier",
+  "meaning": "tree as tall as an office tower",
+  "acceptable": [
+    "building_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "{\"scale_basis\":\"office tower height\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "office tower height",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.489,
+  "error": ""
+}

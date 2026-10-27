@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N004",
+  "category": "neutral_other_adjective",
+  "phrase": "red car",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "red car",
+  "participant_phrase": "red car",
+  "generation_meaning": "red car",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

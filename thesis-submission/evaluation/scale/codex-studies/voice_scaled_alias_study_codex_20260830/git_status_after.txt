@@ -1,0 +1,65 @@
+## main...origin/main
+ M .DS_Store
+ D phase2-generation-hunyuan3d-windows/4.1.0
+ D phase2-generation-hunyuan3d-windows/outputs/dense-forest.png
+ D phase2-generation-hunyuan3d-windows/outputs/dense-forest_hunyuan3d.glb
+ D phase2-generation-hunyuan3d-windows/outputs/jeep-in-forest.png
+ D phase2-generation-hunyuan3d-windows/outputs/jeep-in-forest_hunyuan3d.glb
+ D phase2-generation-hunyuan3d-windows/outputs/jeep.png
+ D phase2-generation-hunyuan3d-windows/outputs/jeep_hunyuan3d.glb
+ D phase2-generation-hunyuan3d-windows/outputs/mountain.png
+ D phase2-generation-hunyuan3d-windows/outputs/mountain_hunyuan3d.glb
+ D phase2-generation-hunyuan3d-windows/outputs/requirements-filtered.txt
+ D phase2-generation-hunyuan3d-windows/outputs/test_shape_only.py
+ D phase2-generation-hunyuan3d-windows/setup_hunyuan3d.py
+ M phase3-tabletop/conversation/conversation_log.json
+ M phase3-tabletop/conversation/scene_modifiers.json
+ M phase3-tabletop/rendering/assignments.json
+ M phase3-tabletop/rendering/index.html
+ M phase3-tabletop/rendering/relations.json
+ M phase3-tabletop/rendering/serve.py
+ D phase3-tabletop/tracking/table_roi.json
+ D phase3-tabletop/tracking/track_tabletop.backup.py
+ D phase3-tabletop/tracking/track_tabletop.broken16aug.py
+?? ARCHIVE/
+?? BACKUPS/
+?? LOGS.docx
+?? "References /"
+?? combine_prompt_results_1786585076.json
+?? combine_prompt_results_1786585292.json
+?? combine_prompt_results_1786585462.json
+?? phase2-generation-spar3d/
+?? phase3-tabletop/conversation/atmosphere_schema_deep_results.json
+?? phase3-tabletop/conversation/atmosphere_schema_test_results.json
+?? phase3-tabletop/conversation/atmosphere_schema_test_results_v2.json
+?? phase3-tabletop/conversation/converse_backup.py
+?? phase3-tabletop/conversation/deep-research-report.md
+?? phase3-tabletop/conversation/object_move_log.jsonl
+?? "phase3-tabletop/deep-research-report (1).md"
+?? phase3-tabletop/deep-research-report.md
+?? phase3-tabletop/diagnostics/
+?? phase3-tabletop/phase6b_tts_proxy_test.wav
+?? phase3-tabletop/rendering/explicit_scale_phrase_test.html
+?? phase3-tabletop/rendering/explicit_scale_study_codex_20260830/
+?? "phase3-tabletop/rendering/index copy.html"
+?? phase3-tabletop/rendering/index_backup_26826.html
+?? phase3-tabletop/rendering/marked_scale_study_codex_20260830/
+?? phase3-tabletop/rendering/scale_classification_study/
+?? phase3-tabletop/rendering/scale_study_codex_20260827/
+?? phase3-tabletop/rendering/scale_test.html.orig
+?? phase3-tabletop/rendering/scale_test_before_sliders.html
+?? phase3-tabletop/rendering/scale_test_orbit_relative.patch
+?? phase3-tabletop/rendering/tolerant_marked_scale_study_codex_20260830/
+?? phase3-tabletop/rendering/voice_scaled_alias_study_codex_20260830/
+?? phase3-tabletop/rendering/voice_stable_scale_study_codex_20260830/
+?? phase3-tabletop/tracking/track_tabletop_STUDENT_SIMPLE_20260820.py
+?? phase3-tabletop/tracking/tracker_debug/
+?? phase3-tabletop/tracking/tracking_archive/
+?? phase6-voice/audio/
+?? phase6-voice/audio_phrasing/
+?? phase6-voice/bakeoff_results.json
+?? phase6-voice/phrasing_results.json
+?? phase6-voice/recording_log.json
+?? phase6-voice/references.json
+?? phase6-voice/trim_results.json
+?? test_combine_prompt.py

@@ -1,0 +1,21 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H048",
+  "case_index": 48,
+  "group": "creative",
+  "meaning": "doorway into another dimension",
+  "acceptable": [
+    "body_scale",
+    "room_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nambiguous",
+  "parsed_class": "ambiguous",
+  "scale_basis": "doorway into another dimension",
+  "preparser_rule": "ordinary_unmodified",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.537,
+  "error": ""
+}

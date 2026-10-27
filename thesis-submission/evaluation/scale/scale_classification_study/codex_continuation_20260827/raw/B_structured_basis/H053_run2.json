@@ -1,0 +1,21 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H053",
+  "case_index": 53,
+  "group": "modifier",
+  "meaning": "thimble-sized lighthouse",
+  "acceptable": [
+    "micro",
+    "handheld"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "{\"scale_basis\":\"lighthouse\",\"semantic_scale_class\":\"handheld\"}",
+  "parsed_class": "handheld",
+  "scale_basis": "lighthouse",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.441,
+  "error": ""
+}

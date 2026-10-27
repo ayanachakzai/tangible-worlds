@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H040",
+  "case_index": 40,
+  "group": "ambiguous",
+  "meaning": "a dream",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"dream\",\"semantic_scale_class\":\"ambiguous\"}",
+  "parsed_class": "ambiguous",
+  "scale_basis": "dream",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.536,
+  "error": ""
+}

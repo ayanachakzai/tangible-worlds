@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H059",
+  "case_index": 59,
+  "group": "modifier",
+  "meaning": "planet-sized snow globe",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\ncolossal_scale",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "planet",
+  "preparser_rule": "reference_sized",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.604,
+  "error": ""
+}

@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "N009",
+  "category": "neutral_proper_name",
+  "phrase": "Big Ben",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "Big Ben",
+  "participant_phrase": "Big Ben",
+  "generation_meaning": "Ben",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "big",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H009",
+  "case_index": 9,
+  "group": "ordinary_body",
+  "meaning": "alpaca",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbody_scale",
+  "parsed_class": "body_scale",
+  "scale_basis": "alpaca",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.527,
+  "error": ""
+}

@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H019",
+  "case_index": 19,
+  "group": "ordinary_vehicle",
+  "meaning": "small submarine",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "\n\nvehicle_scale",
+  "parsed_class": "vehicle_scale",
+  "scale_basis": "small submarine",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.028,
+  "error": ""
+}

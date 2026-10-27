@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H025",
+  "case_index": 25,
+  "group": "ordinary_infrastructure",
+  "meaning": "container port",
+  "acceptable": [
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"container port\",\"semantic_scale_class\":\"infrastructure_scale\"}",
+  "parsed_class": "infrastructure_scale",
+  "scale_basis": "container port",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.651,
+  "error": ""
+}

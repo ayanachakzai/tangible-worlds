@@ -1,0 +1,7 @@
+{
+  "original_description": "a broad glacial valley surrounded by high mountains",
+  "mesa_prompt": "A Sentinel-2 image of glacial valley and high mountains in a cold alpine region",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

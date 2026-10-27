@@ -1,0 +1,21 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H064",
+  "case_index": 64,
+  "group": "modifier",
+  "meaning": "sculpture as large as an airport terminal",
+  "acceptable": [
+    "building_scale",
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nroom_scale",
+  "parsed_class": "room_scale",
+  "scale_basis": "an airport terminal",
+  "preparser_rule": "comparison_as",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.575,
+  "error": ""
+}

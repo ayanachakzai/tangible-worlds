@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H056",
+  "case_index": 56,
+  "group": "modifier",
+  "meaning": "hotel-sized birdcage",
+  "acceptable": [
+    "building_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbuilding_scale",
+  "parsed_class": "building_scale",
+  "scale_basis": "hotel",
+  "preparser_rule": "reference_sized",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.581,
+  "error": ""
+}

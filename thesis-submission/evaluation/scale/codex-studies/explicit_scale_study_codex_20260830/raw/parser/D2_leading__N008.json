@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N008",
+  "category": "neutral_later_word",
+  "phrase": "the castle has a small door",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "the castle has a small door",
+  "participant_phrase": "the castle has a small door",
+  "generation_meaning": "the castle has a small door",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

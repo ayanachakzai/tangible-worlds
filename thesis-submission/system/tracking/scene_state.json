@@ -1,0 +1,21 @@
+{
+  "timestamp": 1789227242.8189042,
+  "objects": [
+    {
+      "id": 1,
+      "label": "object 1",
+      "x": 0.4,
+      "y": 0.5,
+      "area_cm2": 50,
+      "height_mm": 40
+    },
+    {
+      "id": 2,
+      "label": "object 2",
+      "x": 0.45,
+      "y": 0.52,
+      "area_cm2": 60,
+      "height_mm": 35
+    }
+  ]
+}

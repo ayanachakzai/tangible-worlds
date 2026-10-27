@@ -1,0 +1,92 @@
+{
+  "name": "fresh_holdout_v1",
+  "frozen_before_inference": "2026-08-27",
+  "development_set_excluded": "full_battery_v1 and all earlier diagnostics",
+  "note": "Acceptable labels were preregistered. Two labels are used only for defensible adjacent-bin boundaries.",
+  "cases": [
+    {"id":"H001","group":"ordinary_micro","meaning":"sesame seed","acceptable":["micro"],"repeat":true},
+    {"id":"H002","group":"ordinary_micro","meaning":"mosquito","acceptable":["micro"],"repeat":false},
+    {"id":"H003","group":"ordinary_micro","meaning":"speck of gravel","acceptable":["micro"],"repeat":false},
+    {"id":"H004","group":"ordinary_micro","meaning":"eyelash","acceptable":["micro"],"repeat":false},
+
+    {"id":"H005","group":"ordinary_handheld","meaning":"thermos flask","acceptable":["handheld"],"repeat":false},
+    {"id":"H006","group":"ordinary_handheld","meaning":"violin","acceptable":["handheld"],"repeat":false},
+    {"id":"H007","group":"ordinary_handheld","meaning":"cordless hand drill","acceptable":["handheld"],"repeat":false},
+    {"id":"H008","group":"ordinary_handheld","meaning":"rolled sleeping bag","acceptable":["handheld"],"repeat":false},
+
+    {"id":"H009","group":"ordinary_body","meaning":"alpaca","acceptable":["body_scale"],"repeat":false},
+    {"id":"H010","group":"ordinary_body","meaning":"wardrobe","acceptable":["body_scale"],"repeat":false},
+    {"id":"H011","group":"ordinary_body","meaning":"wheelbarrow","acceptable":["body_scale"],"repeat":false},
+    {"id":"H012","group":"ordinary_body","meaning":"arcade cabinet","acceptable":["body_scale"],"repeat":false},
+
+    {"id":"H013","group":"ordinary_room","meaning":"portable toilet cubicle","acceptable":["room_scale"],"repeat":false},
+    {"id":"H014","group":"ordinary_room","meaning":"ticket booth","acceptable":["room_scale"],"repeat":false},
+    {"id":"H015","group":"ordinary_room","meaning":"sauna cabin","acceptable":["room_scale"],"repeat":false},
+    {"id":"H016","group":"ordinary_room","meaning":"walk-in freezer","acceptable":["room_scale"],"repeat":false},
+
+    {"id":"H017","group":"ordinary_vehicle","meaning":"ambulance","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H018","group":"ordinary_vehicle","meaning":"commuter tram","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H019","group":"ordinary_vehicle","meaning":"small submarine","acceptable":["vehicle_scale"],"repeat":true},
+    {"id":"H020","group":"ordinary_vehicle","meaning":"river barge","acceptable":["vehicle_scale"],"repeat":false},
+
+    {"id":"H021","group":"ordinary_building","meaning":"public library building","acceptable":["building_scale"],"repeat":false},
+    {"id":"H022","group":"ordinary_building","meaning":"apartment tower","acceptable":["building_scale"],"repeat":false},
+    {"id":"H023","group":"ordinary_building","meaning":"dairy barn","acceptable":["building_scale"],"repeat":false},
+    {"id":"H024","group":"ordinary_building","meaning":"Buddhist temple","acceptable":["building_scale"],"repeat":false},
+
+    {"id":"H025","group":"ordinary_infrastructure","meaning":"container port","acceptable":["infrastructure_scale"],"repeat":false},
+    {"id":"H026","group":"ordinary_infrastructure","meaning":"thermal power station","acceptable":["infrastructure_scale"],"repeat":false},
+    {"id":"H027","group":"ordinary_infrastructure","meaning":"motorway interchange","acceptable":["infrastructure_scale"],"repeat":false},
+    {"id":"H028","group":"ordinary_infrastructure","meaning":"coastal flood barrier","acceptable":["infrastructure_scale"],"repeat":false},
+
+    {"id":"H029","group":"ordinary_landform","meaning":"river delta","acceptable":["landform_scale"],"repeat":false},
+    {"id":"H030","group":"ordinary_landform","meaning":"mesa","acceptable":["landform_scale"],"repeat":false},
+    {"id":"H031","group":"ordinary_landform","meaning":"coral reef","acceptable":["landform_scale"],"repeat":false},
+    {"id":"H032","group":"ordinary_landform","meaning":"valley","acceptable":["landform_scale"],"repeat":false},
+
+    {"id":"H033","group":"ordinary_colossal","meaning":"metropolis","acceptable":["colossal_scale"],"repeat":false},
+    {"id":"H034","group":"ordinary_colossal","meaning":"country","acceptable":["colossal_scale"],"repeat":false},
+    {"id":"H035","group":"ordinary_colossal","meaning":"gas giant","acceptable":["colossal_scale"],"repeat":false},
+    {"id":"H036","group":"ordinary_colossal","meaning":"solar system","acceptable":["colossal_scale"],"repeat":false},
+
+    {"id":"H037","group":"ambiguous","meaning":"justice","acceptable":["ambiguous"],"repeat":true},
+    {"id":"H038","group":"ambiguous","meaning":"traffic","acceptable":["ambiguous"],"repeat":false},
+    {"id":"H039","group":"ambiguous","meaning":"earthquake","acceptable":["ambiguous"],"repeat":false},
+    {"id":"H040","group":"ambiguous","meaning":"a dream","acceptable":["ambiguous"],"repeat":false},
+
+    {"id":"H041","group":"boundary","meaning":"grandfather clock","acceptable":["handheld","body_scale"],"repeat":false},
+    {"id":"H042","group":"boundary","meaning":"industrial oven","acceptable":["body_scale","room_scale"],"repeat":false},
+    {"id":"H043","group":"boundary","meaning":"mobile home","acceptable":["room_scale","vehicle_scale"],"repeat":false},
+    {"id":"H044","group":"boundary","meaning":"garden pavilion","acceptable":["room_scale","building_scale"],"repeat":true},
+    {"id":"H045","group":"boundary","meaning":"broadcast tower","acceptable":["building_scale","infrastructure_scale"],"repeat":false},
+    {"id":"H046","group":"boundary","meaning":"large iceberg","acceptable":["landform_scale","colossal_scale"],"repeat":false},
+
+    {"id":"H047","group":"creative","meaning":"floating steampunk airship","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H048","group":"creative","meaning":"doorway into another dimension","acceptable":["body_scale","room_scale"],"repeat":false},
+    {"id":"H049","group":"creative","meaning":"city-consuming shadow monster","acceptable":["colossal_scale"],"repeat":false},
+    {"id":"H050","group":"creative","meaning":"levitating crystal whale","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H051","group":"creative","meaning":"endless staircase","acceptable":["ambiguous"],"repeat":false},
+    {"id":"H052","group":"creative","meaning":"orbital ring around an alien world","acceptable":["colossal_scale"],"repeat":false},
+
+    {"id":"H053","group":"modifier","meaning":"thimble-sized lighthouse","acceptable":["micro","handheld"],"repeat":true},
+    {"id":"H054","group":"modifier","meaning":"bicycle-sized elephant","acceptable":["body_scale"],"repeat":false},
+    {"id":"H055","group":"modifier","meaning":"van-sized tortoise","acceptable":["vehicle_scale"],"repeat":true},
+    {"id":"H056","group":"modifier","meaning":"hotel-sized birdcage","acceptable":["building_scale"],"repeat":false},
+    {"id":"H057","group":"modifier","meaning":"suspension-bridge-sized serpent","acceptable":["infrastructure_scale"],"repeat":false},
+    {"id":"H058","group":"modifier","meaning":"mountain-sized robot","acceptable":["landform_scale"],"repeat":true},
+    {"id":"H059","group":"modifier","meaning":"planet-sized snow globe","acceptable":["colossal_scale"],"repeat":false},
+    {"id":"H060","group":"modifier","meaning":"spider as wide as a dinner plate","acceptable":["handheld"],"repeat":false},
+    {"id":"H061","group":"modifier","meaning":"rabbit as tall as a doorway","acceptable":["body_scale"],"repeat":false},
+    {"id":"H062","group":"modifier","meaning":"tree as tall as an office tower","acceptable":["building_scale"],"repeat":true},
+    {"id":"H063","group":"modifier","meaning":"whale as long as a passenger train","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H064","group":"modifier","meaning":"sculpture as large as an airport terminal","acceptable":["building_scale","infrastructure_scale"],"repeat":false},
+    {"id":"H065","group":"modifier","meaning":"robot the size of a suitcase","acceptable":["handheld","body_scale"],"repeat":true},
+    {"id":"H066","group":"modifier","meaning":"fortress the size of a garden shed","acceptable":["room_scale"],"repeat":false},
+    {"id":"H067","group":"modifier","meaning":"seed the size of a sofa","acceptable":["body_scale"],"repeat":false},
+    {"id":"H068","group":"modifier","meaning":"cloud the size of a country","acceptable":["colossal_scale"],"repeat":true},
+    {"id":"H069","group":"modifier","meaning":"full-size replica of a delivery truck","acceptable":["vehicle_scale"],"repeat":false},
+    {"id":"H070","group":"modifier","meaning":"life-size model of a giraffe","acceptable":["body_scale"],"repeat":true},
+    {"id":"H071","group":"modifier","meaning":"palm-sized model of a volcano","acceptable":["handheld"],"repeat":true},
+    {"id":"H072","group":"modifier","meaning":"miniature model of a space station","acceptable":["handheld"],"repeat":false}
+  ]
+}

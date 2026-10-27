@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H054",
+  "case_index": 54,
+  "group": "modifier",
+  "meaning": "bicycle-sized elephant",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nbody_scale",
+  "parsed_class": "body_scale",
+  "scale_basis": "bicycle-sized elephant",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.393,
+  "error": ""
+}

@@ -1,0 +1,37 @@
+case_index,group,meaning,expected,run,raw_output,parsed_class,valid_enum,expected_match,latency_s,error
+1,anchors,coffee mug,handheld,1,"
+
+handheld",handheld,True,True,29.188,
+2,anchors,wooden chair,body_scale,1,"
+
+body_scale",body_scale,True,True,0.975,
+3,anchors,small tent,room_scale,1,"
+
+room_scale",room_scale,True,True,0.715,
+4,anchors,car,vehicle_scale,1,"
+
+handheld",handheld,True,False,0.694,
+5,anchors,house,building_scale,1,"
+
+building_scale",building_scale,True,True,0.697,
+6,anchors,castle,infrastructure_scale,1,"
+
+building_scale",building_scale,True,False,0.722,
+7,anchors,mountain,landform_scale,1,"
+
+landform_scale",landform_scale,True,True,0.87,
+8,micro,ant,micro,1,"
+
+micro",micro,True,True,0.64,
+9,micro,grain of rice,micro,1,"
+
+micro",micro,True,True,0.75,
+10,micro,shirt button,micro,1,"
+
+micro",micro,True,True,0.674,
+11,micro,paperclip,micro|handheld,1,"
+
+handheld",handheld,True,True,0.717,
+12,micro,coin,micro|handheld,1,"
+
+handheld",handheld,True,True,0.684,

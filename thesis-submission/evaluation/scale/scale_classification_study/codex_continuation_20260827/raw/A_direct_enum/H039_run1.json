@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H039",
+  "case_index": 39,
+  "group": "ambiguous",
+  "meaning": "earthquake",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nambiguous",
+  "parsed_class": "ambiguous",
+  "scale_basis": "earthquake",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.311,
+  "error": ""
+}

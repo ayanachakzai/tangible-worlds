@@ -1,0 +1,47 @@
+{
+  "runtime": "Playwright CLI Chromium against local Python static server",
+  "page": "renderer_qualification.html",
+  "three_version": "0.170.0",
+  "targets": [0.35, 0.65, 1.0, 1.8, 3.0],
+  "assets": [
+    {
+      "asset": "castle",
+      "source": "../scale_test_assets/a-castle.glb",
+      "asset_loads": 1,
+      "scale_applications": 5,
+      "movement_regenerations": 0,
+      "measured_max_dimensions": [0.35, 0.65, 1.0, 1.8, 3.0],
+      "all_grounded_min_y_zero": true,
+      "movement_scale_unchanged": true,
+      "all_inside_ten_unit_plane": true,
+      "screenshot": "output/playwright/castle.png"
+    },
+    {
+      "asset": "car",
+      "source": "../scale_test_assets/a-car.glb",
+      "asset_loads": 1,
+      "scale_applications": 5,
+      "movement_regenerations": 0,
+      "measured_max_dimensions": [0.35, 0.65, 1.0, 1.8, 3.0],
+      "all_grounded_min_y_zero": true,
+      "movement_scale_unchanged": true,
+      "all_inside_ten_unit_plane": true,
+      "screenshot": "output/playwright/car.png"
+    },
+    {
+      "asset": "umbrella",
+      "source": "../test_pipeline/umbrella.glb",
+      "asset_loads": 1,
+      "scale_applications": 5,
+      "movement_regenerations": 0,
+      "measured_max_dimensions": [0.35, 0.65, 1.0, 1.8, 3.0],
+      "all_grounded_min_y_zero": true,
+      "movement_scale_unchanged": true,
+      "all_inside_ten_unit_plane": true,
+      "screenshot": "output/playwright/umbrella.png"
+    }
+  ],
+  "browser_reload_reproduced_castle_mechanics": true,
+  "console_note": "Only favicon.ico returned 404; no evaluator or asset error occurred.",
+  "visual_observation": "All five steps are visibly ordered for castle, car, and umbrella. Shape and aspect ratio alter footprint and apparent mass, but not the longest-dimension target."
+}

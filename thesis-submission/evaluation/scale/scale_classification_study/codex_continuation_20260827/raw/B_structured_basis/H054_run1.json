@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H054",
+  "case_index": 54,
+  "group": "modifier",
+  "meaning": "bicycle-sized elephant",
+  "acceptable": [
+    "body_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"bicycle\",\"semantic_scale_class\":\"body_scale\"}",
+  "parsed_class": "body_scale",
+  "scale_basis": "bicycle",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.634,
+  "error": ""
+}

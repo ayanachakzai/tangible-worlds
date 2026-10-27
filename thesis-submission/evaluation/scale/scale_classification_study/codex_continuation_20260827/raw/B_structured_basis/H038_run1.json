@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H038",
+  "case_index": 38,
+  "group": "ambiguous",
+  "meaning": "traffic",
+  "acceptable": [
+    "ambiguous"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"road network\",\"semantic_scale_class\":\"room_scale\"}",
+  "parsed_class": "room_scale",
+  "scale_basis": "road network",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.614,
+  "error": ""
+}

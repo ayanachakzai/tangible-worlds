@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P005",
+  "category": "supported",
+  "phrase": "miniature tram",
+  "expected_intent": "very_small",
+  "expected_generation_meaning": "tram",
+  "participant_phrase": "miniature tram",
+  "generation_meaning": "tram",
+  "explicit_scale_intent": "very_small",
+  "target_size": 0.35,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "miniature",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

@@ -1,0 +1,15 @@
+{
+  "proposed_assignment_cases": {
+    "pass_count": 110,
+    "total": 110,
+    "all_pass": true,
+    "failed_ids": []
+  },
+  "strict_comma_backward_compatible": true,
+  "no_comma_tolerant": true,
+  "scaled_alias_rejected": true,
+  "voice_index_byte_identical": true,
+  "only_server_parser_region_changed": true,
+  "qwen_scale_calls_added": 0,
+  "all_pass": true
+}

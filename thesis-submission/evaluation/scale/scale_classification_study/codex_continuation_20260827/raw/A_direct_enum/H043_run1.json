@@ -1,0 +1,21 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H043",
+  "case_index": 43,
+  "group": "boundary",
+  "meaning": "mobile home",
+  "acceptable": [
+    "room_scale",
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "mobile home",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.435,
+  "error": ""
+}

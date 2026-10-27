@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N012",
+  "category": "neutral_lexicalized",
+  "phrase": "small talk",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "small talk",
+  "participant_phrase": "small talk",
+  "generation_meaning": "talk",
+  "explicit_scale_intent": "small",
+  "target_size": 0.65,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "small",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

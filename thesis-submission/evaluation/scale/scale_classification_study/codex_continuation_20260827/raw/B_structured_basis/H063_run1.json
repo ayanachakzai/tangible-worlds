@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H063",
+  "case_index": 63,
+  "group": "modifier",
+  "meaning": "whale as long as a passenger train",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"passenger train length\",\"semantic_scale_class\":\"room_scale\"}",
+  "parsed_class": "room_scale",
+  "scale_basis": "passenger train length",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.705,
+  "error": ""
+}

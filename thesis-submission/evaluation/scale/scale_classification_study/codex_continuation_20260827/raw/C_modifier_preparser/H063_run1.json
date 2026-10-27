@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H063",
+  "case_index": 63,
+  "group": "modifier",
+  "meaning": "whale as long as a passenger train",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nroom_scale",
+  "parsed_class": "room_scale",
+  "scale_basis": "a passenger train",
+  "preparser_rule": "comparison_as",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.563,
+  "error": ""
+}

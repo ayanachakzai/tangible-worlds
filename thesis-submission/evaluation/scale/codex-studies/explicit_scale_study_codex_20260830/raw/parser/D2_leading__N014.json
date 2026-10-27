@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N014",
+  "category": "neutral_lexicalized",
+  "phrase": "miniature painting",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "miniature painting",
+  "participant_phrase": "miniature painting",
+  "generation_meaning": "painting",
+  "explicit_scale_intent": "very_small",
+  "target_size": 0.35,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "miniature",
+  "detected": true,
+  "intent_match": false,
+  "generation_match": false
+}

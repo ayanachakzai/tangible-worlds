@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f3e2]:
+  - heading "A_baseline | common-size baseline" [level=1] [ref=f3e3]
+  - paragraph [ref=f3e4]: "sizes: 0.90 | 0.90 | 0.90 | 0.90 | 0.90 | 0.90 | 0.90"
+  - paragraph [ref=f3e5]: "reference: one-per-class reference | low_oblique: lower oblique"
+  - paragraph [ref=f3e6]: Loading 0/7 meshes
+  - paragraph [ref=f3e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

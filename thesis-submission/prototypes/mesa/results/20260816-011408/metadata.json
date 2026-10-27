@@ -1,0 +1,6 @@
+{
+  "prompt": "A Sentinel-2 image of salt flat and vast flat terrain in a desert biome",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

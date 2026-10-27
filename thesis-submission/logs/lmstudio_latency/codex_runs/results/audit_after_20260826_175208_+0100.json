@@ -1,0 +1,196 @@
+{
+  "label": "after",
+  "timestamp": "2026-08-26T17:52:08.952+01:00",
+  "repository": "~/Documents/UAL/tangible-worlds",
+  "write_boundary": "~/Documents/UAL/tangible-worlds/phase3-tabletop/diagnostics/lmstudio_latency/codex_runs",
+  "known_handoff_hashes": {
+    "phase3-tabletop/rendering/serve.py": "5c00e629ff7723456ee9b946b78de6ba4f83ddfd15eb7e6eecf8e06db4bbbc55",
+    "phase3-tabletop/mapping/scene_description.json": "c8b6287b9ac307c4cb8f397d81d6d9cd10e3b699e9eebdc77cdfb3a5aad3f26c",
+    "phase3-tabletop/conversation/scene_modifiers.json": "7208e6516cb5aa6c30108d3a3942d4a98479e50deb3140caf3160a8f6fe18bff",
+    "production_equivalent_streaming_payload": "a74201574636fd0d567ed72e06e3a93c8a00d223fa253dc0cb7f35f976068438"
+  },
+  "commands": {
+    "git_status_short_branch": {
+      "command": [
+        "git",
+        "status",
+        "--short",
+        "--branch"
+      ],
+      "returncode": 0,
+      "stdout": "## main...origin/main\n M .DS_Store\n M design-diary/DESIGN_DIARY.md\n D phase2-generation-hunyuan3d-windows/4.1.0\n D phase2-generation-hunyuan3d-windows/outputs/dense-forest.png\n D phase2-generation-hunyuan3d-windows/outputs/dense-forest_hunyuan3d.glb\n D phase2-generation-hunyuan3d-windows/outputs/jeep-in-forest.png\n D phase2-generation-hunyuan3d-windows/outputs/jeep-in-forest_hunyuan3d.glb\n D phase2-generation-hunyuan3d-windows/outputs/jeep.png\n D phase2-generation-hunyuan3d-windows/outputs/jeep_hunyuan3d.glb\n D phase2-generation-hunyuan3d-windows/outputs/mountain.png\n D phase2-generation-hunyuan3d-windows/outputs/mountain_hunyuan3d.glb\n D phase2-generation-hunyuan3d-windows/outputs/requirements-filtered.txt\n D phase2-generation-hunyuan3d-windows/outputs/test_shape_only.py\n D phase2-generation-hunyuan3d-windows/setup_hunyuan3d.py\n M phase3-tabletop/PROJECT_AUDIT.md\n M phase3-tabletop/RUNBOOK.md\n M phase3-tabletop/conversation/conversation_log.json\n M phase3-tabletop/conversation/converse.py\n M phase3-tabletop/conversation/scene_modifiers.json\n M phase3-tabletop/rendering/assignments.json\n M phase3-tabletop/rendering/index.html\n M phase3-tabletop/rendering/relations.json\n M phase3-tabletop/rendering/serve.py\n D phase3-tabletop/tracking/table_roi.json\n D phase3-tabletop/tracking/track_tabletop.backup.py\n D phase3-tabletop/tracking/track_tabletop.broken16aug.py\n M phase3-tabletop/tracking/track_tabletop.py\n?? ARCHIVE/\n?? BACKUPS/\n?? LOGS.docx\n?? \"References /\"\n?? combine_prompt_results_1786585076.json\n?? combine_prompt_results_1786585292.json\n?? combine_prompt_results_1786585462.json\n?? phase2-generation-spar3d/\n?? phase3-tabletop/conversation/atmosphere_schema_deep_results.json\n?? phase3-tabletop/conversation/atmosphere_schema_test_results.json\n?? phase3-tabletop/conversation/atmosphere_schema_test_results_v2.json\n?? phase3-tabletop/conversation/converse_backup.py\n?? phase3-tabletop/conversation/deep-research-report.md\n?? \"phase3-tabletop/deep-research-report (1).md\"\n?? phase3-tabletop/deep-research-report.md\n?? phase3-tabletop/diagnostics/\n?? phase3-tabletop/phase6b_tts_proxy_test.wav\n?? phase3-tabletop/rendering/voice_capture_worklet.js\n?? phase3-tabletop/tracking/track_tabletop_STUDENT_SIMPLE_20260820.py\n?? phase3-tabletop/tracking/tracker_debug/\n?? phase3-tabletop/tracking/tracking_archive/\n?? phase6-voice/\n?? test_combine_prompt.py\n",
+      "stderr": ""
+    },
+    "git_rev_parse_head": {
+      "command": [
+        "git",
+        "rev-parse",
+        "HEAD"
+      ],
+      "returncode": 0,
+      "stdout": "c66f2d03cf2501e7b80eed3df7fdeb4c95c15db8\n",
+      "stderr": ""
+    },
+    "lms_ps_json": {
+      "command": [
+        "lms",
+        "ps",
+        "--json"
+      ],
+      "returncode": 0,
+      "stdout": "[{\"type\":\"llm\",\"modelKey\":\"qwen/qwen3-8b\",\"format\":\"safetensors\",\"displayName\":\"Qwen3 8B\",\"publisher\":\"qwen\",\"path\":\"qwen/qwen3-8b\",\"sizeBytes\":4623961222,\"indexedModelIdentifier\":\"qwen/qwen3-8b\",\"deviceIdentifier\":null,\"paramsString\":\"8B\",\"architecture\":\"qwen3\",\"quantization\":{\"name\":\"4bit\",\"bits\":4},\"variants\":[\"qwen/qwen3-8b@4bit\"],\"selectedVariant\":\"qwen/qwen3-8b@4bit\",\"identifier\":\"qwen/qwen3-8b\",\"ttlMs\":null,\"lastUsedTime\":1787761931201,\"vision\":false,\"trainedForToolUse\":true,\"maxContextLength\":40960,\"contextLength\":8192,\"status\":\"idle\",\"queued\":0,\"parallel\":1}]\n",
+      "stderr": ""
+    },
+    "sysctl_iogpu_wired_limit_mb": {
+      "command": [
+        "sysctl",
+        "iogpu.wired_limit_mb"
+      ],
+      "returncode": 0,
+      "stdout": "iogpu.wired_limit_mb: 0\n",
+      "stderr": ""
+    }
+  },
+  "files": [
+    {
+      "path": "phase3-tabletop/rendering/serve.py",
+      "exists": true,
+      "sha256": "5c00e629ff7723456ee9b946b78de6ba4f83ddfd15eb7e6eecf8e06db4bbbc55",
+      "size_bytes": 66267,
+      "mtime_ns": 1787687791711278259
+    },
+    {
+      "path": "phase3-tabletop/rendering/index.html",
+      "exists": true,
+      "sha256": "e399e61904fe0c1c48cf82428eea065a37c153af16ebaf6b8a1fb8f1ca0de843",
+      "size_bytes": 77360,
+      "mtime_ns": 1787687782049756190
+    },
+    {
+      "path": "phase3-tabletop/rendering/voice_capture_worklet.js",
+      "exists": true,
+      "sha256": "b334ecd24db7fc4a046a8e35a0bc87dcefb3c2be65945542768f4db967945fbb",
+      "size_bytes": 632,
+      "mtime_ns": 1787600189721622050
+    },
+    {
+      "path": "phase3-tabletop/mapping/compute_scene.py",
+      "exists": true,
+      "sha256": "a260c346e7dd66e0b98c201d7ba09f4494c2af073e05c8ccfbc0475ace12a695",
+      "size_bytes": 8466,
+      "mtime_ns": 1786925931492641251
+    },
+    {
+      "path": "phase3-tabletop/mapping/scene_description.json",
+      "exists": true,
+      "sha256": "c8b6287b9ac307c4cb8f397d81d6d9cd10e3b699e9eebdc77cdfb3a5aad3f26c",
+      "size_bytes": 187,
+      "mtime_ns": 1787698121361571184
+    },
+    {
+      "path": "phase3-tabletop/tracking/track_tabletop.py",
+      "exists": true,
+      "sha256": "9dd353ea83ca51c1e392676530294ad0d967953305e189269bd18f49babda05b",
+      "size_bytes": 123860,
+      "mtime_ns": 1787173678723507837
+    },
+    {
+      "path": "phase3-tabletop/tracking/scene_state.json",
+      "exists": true,
+      "sha256": "67195eb8a79b3c4020f5d4d143105bb6800b38125428967e2f0ab05078bfeff9",
+      "size_bytes": 53,
+      "mtime_ns": 1787698121335622171
+    },
+    {
+      "path": "phase3-tabletop/conversation/converse.py",
+      "exists": true,
+      "sha256": "d5746bb21fd121142bfb97bd0eb7b7ac7445c70ebe278ad585edcd148ad4c334",
+      "size_bytes": 15948,
+      "mtime_ns": 1787353740441017304
+    },
+    {
+      "path": "phase3-tabletop/conversation/scene_modifiers.json",
+      "exists": true,
+      "sha256": "7208e6516cb5aa6c30108d3a3942d4a98479e50deb3140caf3160a8f6fe18bff",
+      "size_bytes": 281,
+      "mtime_ns": 1787698194899286327
+    },
+    {
+      "path": "phase3-tabletop/conversation/conversation_log.json",
+      "exists": true,
+      "sha256": "d12bd5f4dee3f68b29601f4c808fd8b78b5410b25106dd573441eff1caca3bba",
+      "size_bytes": 38662,
+      "mtime_ns": 1787698194907693218
+    },
+    {
+      "path": "phase3-tabletop/rendering/assignments.json",
+      "exists": true,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size_bytes": 2,
+      "mtime_ns": 1787698121335026708
+    },
+    {
+      "path": "phase3-tabletop/rendering/relations.json",
+      "exists": true,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size_bytes": 2,
+      "mtime_ns": 1787698121335285044
+    },
+    {
+      "path": "phase3-tabletop/rendering/mesh_rotations.json",
+      "exists": true,
+      "sha256": "28ddb3f25d1a491e2413910cbf6fbe3f1ffa8508a82be14260ed33e7aebd0307",
+      "size_bytes": 127,
+      "mtime_ns": 1786925931521559679
+    },
+    {
+      "path": "phase3-tabletop/tracking/calibration_trigger.json",
+      "exists": true,
+      "sha256": "62546446893683075cb3a3486163606a8162286ba9385c93f752b1b5b07f3e18",
+      "size_bytes": 34,
+      "mtime_ns": 1786581891809150637
+    },
+    {
+      "path": "phase3-tabletop/tracking/calibration_state.json",
+      "exists": true,
+      "sha256": "94b59479fd7fe7edcf61b8cdbc12e8224a010ec85cda17cabc7e5daf800b5eda",
+      "size_bytes": 88,
+      "mtime_ns": 1786928234699827754
+    },
+    {
+      "path": "phase6-voice/transcribe_server.py",
+      "exists": true,
+      "sha256": "464e2dcc35b46942d366a9c71391d17c16bee82e451e0722564f44b5a8f1a4a1",
+      "size_bytes": 3252,
+      "mtime_ns": 1787596494885345975
+    },
+    {
+      "path": "phase2-generation-sdxlturbo/generate_image.py",
+      "exists": true,
+      "sha256": "f2a3ab3b18918bd27e4e15d90887d002191907d5d2cdbfe571b0621801b3869e",
+      "size_bytes": 3170,
+      "mtime_ns": 1786925931490023027
+    },
+    {
+      "path": "phase3-tabletop/PROJECT_AUDIT.md",
+      "exists": true,
+      "sha256": "1c722b78f8835c1728b8e65fa52b5ca04d6d87fa7671990ecf05f3550a2e4adf",
+      "size_bytes": 154723,
+      "mtime_ns": 1787697002171277508
+    },
+    {
+      "path": "phase3-tabletop/RUNBOOK.md",
+      "exists": true,
+      "sha256": "87e4d7d6ecfac545d8d33d3f4039bf391626debaf811d987651601faabc534b4",
+      "size_bytes": 67021,
+      "mtime_ns": 1787697153788000144
+    },
+    {
+      "path": "design-diary/DESIGN_DIARY.md",
+      "exists": true,
+      "sha256": "27d8f924de8f714b1057a4917e1189000d9bc1927023ad992d2b5d81ba8a4f07",
+      "size_bytes": 405077,
+      "mtime_ns": 1787696728299548636
+    }
+  ]
+}

@@ -1,0 +1,3104 @@
+{
+  "tiny.en|hotwords=False": {
+    "load_s": 6.23,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box, she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the firewall, and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 0.66
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the wind's floor, window sill, outside a delivery when reversed slowly into an arrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.335
+      },
+      "a03": {
+        "heard": "It began to rain first on the few drops against the glass and heavily enough that buildings opposite lost their edges. She thought about calling her brother decided again straight and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.316
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and white floorboards that clicked in the door. She wrote a short test of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 0.344
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.152
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 0.156
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 0.153
+      },
+      "b04": {
+        "heard": "Make it cooler.",
+        "reference": "make it cooler",
+        "stt_s": 0.152
+      },
+      "b05": {
+        "heard": "Make it misty.",
+        "reference": "make it misty",
+        "stt_s": 0.16
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.158
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 0.164
+      },
+      "b08": {
+        "heard": "Make it dusk.",
+        "reference": "make it dusk",
+        "stt_s": 0.15
+      },
+      "b09": {
+        "heard": "Make it dawn.",
+        "reference": "make it dawn",
+        "stt_s": 0.155
+      },
+      "b10": {
+        "heard": "Make it over-cost.",
+        "reference": "make it overcast",
+        "stt_s": 0.168
+      },
+      "b11": {
+        "heard": "Make it stalled me.",
+        "reference": "make it stormy",
+        "stt_s": 0.162
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.15
+      },
+      "b13": {
+        "heard": "Add rain",
+        "reference": "add rain",
+        "stt_s": 0.15
+      },
+      "b14": {
+        "heard": "golden art",
+        "reference": "golden hour",
+        "stt_s": 0.147
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.156
+      },
+      "b16": {
+        "heard": "Makers spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.182
+      },
+      "b17": {
+        "heard": "light it from the left.",
+        "reference": "light it from the left",
+        "stt_s": 0.172
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.157
+      },
+      "b19": {
+        "heard": "drop this and below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.168
+      },
+      "b20": {
+        "heard": "Make it midday and clear.",
+        "reference": "make it midday and clear",
+        "stt_s": 0.17
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.16
+      },
+      "b22": {
+        "heard": "Can we try golden art, but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.187
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.171
+      },
+      "b24": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.158
+      },
+      "b25": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.161
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.145
+      }
+    }
+  },
+  "tiny.en|hotwords=True": {
+    "load_s": 0.23,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stack against far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 0.373
+      },
+      "a02": {
+        "heard": "someone had left a half finished cup of tea on the wind's bow window sill outside a delivery when reversed slowly into an arrow gap between two park cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.323
+      },
+      "a03": {
+        "heard": "It began to rain first on the a few drops against a glass in heavily enough that buildings opposite lost their edges She thought about calling her brother decided again straight and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.344
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and white floorboards that clicked in the door. She wrote a short test of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 0.409
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.152
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 0.157
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.152
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.158
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 0.165
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.164
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 0.156
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.152
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.161
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.158
+      },
+      "b11": {
+        "heard": "make it stalled me",
+        "reference": "make it stormy",
+        "stt_s": 0.165
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.15
+      },
+      "b13": {
+        "heard": "ad rain",
+        "reference": "add rain",
+        "stt_s": 0.146
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.147
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.15
+      },
+      "b16": {
+        "heard": "maker spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.155
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.165
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.163
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.174
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.169
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.159
+      },
+      "b22": {
+        "heard": "can we try golden hour but cold air",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.186
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.177
+      },
+      "b24": {
+        "heard": "rain rain",
+        "reference": "",
+        "stt_s": 2.531
+      },
+      "b25": {
+        "heard": "you",
+        "reference": "",
+        "stt_s": 0.882
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 0.153
+      }
+    }
+  },
+  "base.en|hotwords=False": {
+    "load_s": 0.43,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 0.694
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill outside the delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.588
+      },
+      "a03": {
+        "heard": "It began to rain first on the a few drops against the glass in heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.576
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs, with high ceilings and white floorboards that creaked near the door. She wrote a short test of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 0.603
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 0.28
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 0.293
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 0.285
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.287
+      },
+      "b05": {
+        "heard": "Make it misty.",
+        "reference": "make it misty",
+        "stt_s": 0.3
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.297
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 0.299
+      },
+      "b08": {
+        "heard": "Make a dusk.",
+        "reference": "make it dusk",
+        "stt_s": 0.291
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.287
+      },
+      "b10": {
+        "heard": "Make it overcast.",
+        "reference": "make it overcast",
+        "stt_s": 0.294
+      },
+      "b11": {
+        "heard": "Make it stall me",
+        "reference": "make it stormy",
+        "stt_s": 0.285
+      },
+      "b12": {
+        "heard": "Add lighting.",
+        "reference": "add lightning",
+        "stt_s": 0.276
+      },
+      "b13": {
+        "heard": "Adrain",
+        "reference": "add rain",
+        "stt_s": 0.281
+      },
+      "b14": {
+        "heard": "Gold and I",
+        "reference": "golden hour",
+        "stt_s": 0.281
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.285
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.293
+      },
+      "b17": {
+        "heard": "Light it from the left.",
+        "reference": "light it from the left",
+        "stt_s": 0.312
+      },
+      "b18": {
+        "heard": "raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.288
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.31
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.302
+      },
+      "b21": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 0.296
+      },
+      "b22": {
+        "heard": "Can we try golden or but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.316
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.32
+      },
+      "b24": {
+        "heard": "You",
+        "reference": "",
+        "stt_s": 0.294
+      },
+      "b25": {
+        "heard": ". . . . .",
+        "reference": "",
+        "stt_s": 0.365
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.286
+      }
+    }
+  },
+  "base.en|hotwords=True": {
+    "load_s": 0.27,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 0.643
+      },
+      "a02": {
+        "heard": "someone had left a half-finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.626
+      },
+      "a03": {
+        "heard": "it began to rain first on the a few drops against a glass in heavily enough that buildings opposite lost their edges she thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.576
+      },
+      "a04": {
+        "heard": "the building was older than she had expected from the photographs with high ceilings and white floorboards that creeped near the door she wrote a short test of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 0.597
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.356
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 0.321
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.315
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.31
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 0.321
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.316
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 0.344
+      },
+      "b08": {
+        "heard": "make a dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.329
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.335
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.328
+      },
+      "b11": {
+        "heard": "make it stormy",
+        "reference": "make it stormy",
+        "stt_s": 0.31
+      },
+      "b12": {
+        "heard": "add lightning",
+        "reference": "add lightning",
+        "stt_s": 0.294
+      },
+      "b13": {
+        "heard": "air drain",
+        "reference": "add rain",
+        "stt_s": 0.304
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.306
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.285
+      },
+      "b16": {
+        "heard": "maker spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.355
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.361
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.417
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.349
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.352
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.388
+      },
+      "b22": {
+        "heard": "can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.465
+      },
+      "b23": {
+        "heard": "i want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.44
+      },
+      "b24": {
+        "heard": "night",
+        "reference": "",
+        "stt_s": 1.232
+      },
+      "b25": {
+        "heard": "night",
+        "reference": "",
+        "stt_s": 2.227
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 0.343
+      }
+    }
+  },
+  "distil-small.en|hotwords=False": {
+    "load_s": 20.59,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box, she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.271
+      },
+      "a02": {
+        "heard": "Someone had left a half finished cup of tea on the window sill. Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.082
+      },
+      "a03": {
+        "heard": "It began to rain first on a few drops against a glass then heavily enough that building's opposite lost their edges. She thought about calling her brother decided against it and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 1.136
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and white floor boards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.108
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.793
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 0.816
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.814
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.812
+      },
+      "b05": {
+        "heard": "Make it Misty.",
+        "reference": "make it misty",
+        "stt_s": 0.83
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.846
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 0.831
+      },
+      "b08": {
+        "heard": "Make a desk.",
+        "reference": "make it dusk",
+        "stt_s": 0.841
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.829
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.83
+      },
+      "b11": {
+        "heard": "Make it stall me.",
+        "reference": "make it stormy",
+        "stt_s": 0.846
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.837
+      },
+      "b13": {
+        "heard": "Airdrain",
+        "reference": "add rain",
+        "stt_s": 0.836
+      },
+      "b14": {
+        "heard": "Goldenar",
+        "reference": "golden hour",
+        "stt_s": 0.826
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.82
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.841
+      },
+      "b17": {
+        "heard": "Light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.858
+      },
+      "b18": {
+        "heard": "Raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.857
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.861
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.861
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.851
+      },
+      "b22": {
+        "heard": "Can we try? Golden hour but colder.",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.895
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.891
+      },
+      "b24": {
+        "heard": "you",
+        "reference": "",
+        "stt_s": 1.847
+      },
+      "b25": {
+        "heard": "So,",
+        "reference": "",
+        "stt_s": 2.346
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.825
+      }
+    }
+  },
+  "distil-small.en|hotwords=True": {
+    "load_s": 0.51,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box, she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the fire wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.354
+      },
+      "a02": {
+        "heard": "Someone had left a half finished cup of tea on the window sill. Outside a delivery van reversed slowly into a narrow gap between two-part cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.186
+      },
+      "a03": {
+        "heard": "It began to rain first on a few drops against a glass and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.976
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and white floor boards that creeped near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.206
+      },
+      "b01": {
+        "heard": "make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 0.858
+      },
+      "b02": {
+        "heard": "make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 0.869
+      },
+      "b03": {
+        "heard": "make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 0.877
+      },
+      "b04": {
+        "heard": "make it cooler.",
+        "reference": "make it cooler",
+        "stt_s": 0.909
+      },
+      "b05": {
+        "heard": "Make it Misty.",
+        "reference": "make it misty",
+        "stt_s": 0.903
+      },
+      "b06": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 0.912
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 0.875
+      },
+      "b08": {
+        "heard": "Make it dusk.",
+        "reference": "make it dusk",
+        "stt_s": 0.862
+      },
+      "b09": {
+        "heard": "Make it dawn.",
+        "reference": "make it dawn",
+        "stt_s": 0.865
+      },
+      "b10": {
+        "heard": "make it overcast.",
+        "reference": "make it overcast",
+        "stt_s": 0.878
+      },
+      "b11": {
+        "heard": "Make it stall me.",
+        "reference": "make it stormy",
+        "stt_s": 0.877
+      },
+      "b12": {
+        "heard": "Add lighting.",
+        "reference": "add lightning",
+        "stt_s": 0.881
+      },
+      "b13": {
+        "heard": "Adrene",
+        "reference": "add rain",
+        "stt_s": 0.858
+      },
+      "b14": {
+        "heard": "golden hour.",
+        "reference": "golden hour",
+        "stt_s": 0.861
+      },
+      "b15": {
+        "heard": "moonlight.",
+        "reference": "moonlight",
+        "stt_s": 0.853
+      },
+      "b16": {
+        "heard": "Make it spooky.",
+        "reference": "make it spooky",
+        "stt_s": 0.876
+      },
+      "b17": {
+        "heard": "Light it from the left.",
+        "reference": "light it from the left",
+        "stt_s": 0.892
+      },
+      "b18": {
+        "heard": "Raised the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.873
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.892
+      },
+      "b20": {
+        "heard": "Make it midday and clear.",
+        "reference": "make it midday and clear",
+        "stt_s": 0.892
+      },
+      "b21": {
+        "heard": "make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 0.909
+      },
+      "b22": {
+        "heard": "Can we try? Mm, golden hour, but colder.",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.933
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.928
+      },
+      "b24": {
+        "heard": ". . . . . . . . . . . . . .",
+        "reference": "",
+        "stt_s": 1.281
+      },
+      "b25": {
+        "heard": "It was.",
+        "reference": "",
+        "stt_s": 1.952
+      },
+      "b26": {
+        "heard": "Make it.",
+        "reference": "",
+        "stt_s": 0.856
+      }
+    }
+  },
+  "small.en|hotwords=False": {
+    "load_s": 29.39,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.825
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.547
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass and heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 1.556
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs. With high ceilings and wide floorboards that creaked near the door, she wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.669
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 0.924
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 0.925
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 0.919
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.927
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 0.952
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.984
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 1.013
+      },
+      "b08": {
+        "heard": "Make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.975
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.961
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.975
+      },
+      "b11": {
+        "heard": "Make it stall me",
+        "reference": "make it stormy",
+        "stt_s": 0.939
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.92
+      },
+      "b13": {
+        "heard": "Airdrain",
+        "reference": "add rain",
+        "stt_s": 0.967
+      },
+      "b14": {
+        "heard": "Golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.934
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.958
+      },
+      "b16": {
+        "heard": "Make it spooky.",
+        "reference": "make it spooky",
+        "stt_s": 0.967
+      },
+      "b17": {
+        "heard": "Light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.993
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.962
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 1.058
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 1.003
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.0
+      },
+      "b22": {
+        "heard": "can we try mmm golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 1.058
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 1.06
+      },
+      "b24": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.948
+      },
+      "b25": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 1.033
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.943
+      }
+    }
+  },
+  "small.en|hotwords=True": {
+    "load_s": 0.63,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.93
+      },
+      "a02": {
+        "heard": "someone had left a half-finished cup of tea on the window sill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.607
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass and heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 1.621
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs With high ceilings and white floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.724
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 1.004
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 1.052
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 1.007
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.98
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 1.011
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.022
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 1.032
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.991
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.977
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 1.048
+      },
+      "b11": {
+        "heard": "make it stormy",
+        "reference": "make it stormy",
+        "stt_s": 1.0
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.971
+      },
+      "b13": {
+        "heard": "air drain",
+        "reference": "add rain",
+        "stt_s": 0.983
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.989
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.968
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.994
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 1.016
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.987
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 1.042
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 1.047
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.009
+      },
+      "b22": {
+        "heard": "can we try mmm golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 1.097
+      },
+      "b23": {
+        "heard": "i want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 1.082
+      },
+      "b24": {
+        "heard": "day",
+        "reference": "",
+        "stt_s": 4.284
+      },
+      "b25": {
+        "heard": "foggy day",
+        "reference": "",
+        "stt_s": 2.551
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 0.956
+      }
+    }
+  },
+  "small|hotwords=False": {
+    "load_s": 29.42,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the firewall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 2.081
+      },
+      "a02": {
+        "heard": "someone had left a half finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.686
+      },
+      "a03": {
+        "heard": "It began to rain first on the few drops against the glass, and heavily enough that buildings opposite lost their edges. She thought about calling her brother, decided against it and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 1.644
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.922
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 0.959
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 0.994
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.992
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.98
+      },
+      "b05": {
+        "heard": "Make it misty.",
+        "reference": "make it misty",
+        "stt_s": 0.994
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.02
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 1.03
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.992
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 0.974
+      },
+      "b10": {
+        "heard": "Make it overcast.",
+        "reference": "make it overcast",
+        "stt_s": 1.006
+      },
+      "b11": {
+        "heard": "Make it stop me",
+        "reference": "make it stormy",
+        "stt_s": 1.023
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.968
+      },
+      "b13": {
+        "heard": "Add Rain.",
+        "reference": "add rain",
+        "stt_s": 0.971
+      },
+      "b14": {
+        "heard": "Golden hour.",
+        "reference": "golden hour",
+        "stt_s": 0.974
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.958
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 1.114
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 1.014
+      },
+      "b18": {
+        "heard": "Raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.994
+      },
+      "b19": {
+        "heard": "Drop the Sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 1.048
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 1.042
+      },
+      "b21": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 1.021
+      },
+      "b22": {
+        "heard": "Can we try golden ore but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 1.059
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 1.048
+      },
+      "b24": {
+        "heard": "You",
+        "reference": "",
+        "stt_s": 1.01
+      },
+      "b25": {
+        "heard": "You",
+        "reference": "",
+        "stt_s": 1.013
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 1.008
+      }
+    }
+  },
+  "small|hotwords=True": {
+    "load_s": 0.65,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the firewall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.984
+      },
+      "a02": {
+        "heard": "someone had left a half finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 1.678
+      },
+      "a03": {
+        "heard": "It began to rain first on the a few drops against the glass heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 1.701
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.847
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 1.003
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 1.021
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 1.027
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 1.002
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 1.012
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.009
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 1.019
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 1.007
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 1.001
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 1.012
+      },
+      "b11": {
+        "heard": "make it stop me",
+        "reference": "make it stormy",
+        "stt_s": 1.015
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.977
+      },
+      "b13": {
+        "heard": "add rain",
+        "reference": "add rain",
+        "stt_s": 0.977
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.982
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.98
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.998
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 1.033
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 0.991
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 1.051
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 1.079
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 1.011
+      },
+      "b22": {
+        "heard": "can we try golden hour but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 1.089
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 1.063
+      },
+      "b24": {
+        "heard": "stormy lightning rain",
+        "reference": "",
+        "stt_s": 2.588
+      },
+      "b25": {
+        "heard": "foggy hazy dusk",
+        "reference": "",
+        "stt_s": 3.95
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.992
+      }
+    }
+  },
+  "medium.en|hotwords=False": {
+    "load_s": 88.51,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 5.202
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 4.386
+      },
+      "a03": {
+        "heard": "It began to rain first on the a few drops against the glass and heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.227
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.526
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 2.841
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 2.892
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 2.828
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 2.874
+      },
+      "b05": {
+        "heard": "Make it misty",
+        "reference": "make it misty",
+        "stt_s": 2.88
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 2.846
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 2.901
+      },
+      "b08": {
+        "heard": "Make it dusk.",
+        "reference": "make it dusk",
+        "stt_s": 2.857
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 2.968
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 2.912
+      },
+      "b11": {
+        "heard": "Make it stop me",
+        "reference": "make it stormy",
+        "stt_s": 2.873
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 2.795
+      },
+      "b13": {
+        "heard": "Add rain",
+        "reference": "add rain",
+        "stt_s": 2.852
+      },
+      "b14": {
+        "heard": "Golden hour.",
+        "reference": "golden hour",
+        "stt_s": 2.851
+      },
+      "b15": {
+        "heard": "Moonlight.",
+        "reference": "moonlight",
+        "stt_s": 2.805
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 3.005
+      },
+      "b17": {
+        "heard": "Light it from the left.",
+        "reference": "light it from the left",
+        "stt_s": 3.003
+      },
+      "b18": {
+        "heard": "Raise the Sun",
+        "reference": "raise the sun",
+        "stt_s": 2.85
+      },
+      "b19": {
+        "heard": "Drop the Sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 2.988
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 2.979
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 2.913
+      },
+      "b22": {
+        "heard": "can we try mmm golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 3.041
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 3.063
+      },
+      "b24": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 2.894
+      },
+      "b25": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 2.865
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 2.812
+      }
+    }
+  },
+  "medium.en|hotwords=True": {
+    "load_s": 1.85,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 5.118
+      },
+      "a02": {
+        "heard": "someone had left a half finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 4.408
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.345
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.646
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 2.913
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 2.989
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 2.967
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 3.049
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 2.955
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 2.947
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 2.942
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 2.948
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 2.925
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 2.94
+      },
+      "b11": {
+        "heard": "make it stormy",
+        "reference": "make it stormy",
+        "stt_s": 2.962
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 2.893
+      },
+      "b13": {
+        "heard": "air drain",
+        "reference": "add rain",
+        "stt_s": 2.954
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 2.855
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 2.859
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 2.944
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 3.071
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 2.92
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 3.051
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 3.061
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 2.976
+      },
+      "b22": {
+        "heard": "can we try mmm golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 3.145
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 3.128
+      },
+      "b24": {
+        "heard": "thunderstorm",
+        "reference": "",
+        "stt_s": 12.744
+      },
+      "b25": {
+        "heard": "sunny day",
+        "reference": "",
+        "stt_s": 7.023
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 2.876
+      }
+    }
+  },
+  "medium|hotwords=False": {
+    "load_s": 89.79,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There was three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 4.98
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill, outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 4.355
+      },
+      "a03": {
+        "heard": "It began to rain first on the a few drops against the glass and heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.476
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs With high ceilings and white floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.595
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 2.914
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 2.936
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 2.918
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 2.904
+      },
+      "b05": {
+        "heard": "Make it misty.",
+        "reference": "make it misty",
+        "stt_s": 2.959
+      },
+      "b06": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 2.967
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 3.008
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 2.989
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 2.928
+      },
+      "b10": {
+        "heard": "Make it overcast.",
+        "reference": "make it overcast",
+        "stt_s": 3.071
+      },
+      "b11": {
+        "heard": "Make it stormy.",
+        "reference": "make it stormy",
+        "stt_s": 3.046
+      },
+      "b12": {
+        "heard": "Add lighting.",
+        "reference": "add lightning",
+        "stt_s": 2.886
+      },
+      "b13": {
+        "heard": "add rain",
+        "reference": "add rain",
+        "stt_s": 2.913
+      },
+      "b14": {
+        "heard": "Golden hour.",
+        "reference": "golden hour",
+        "stt_s": 2.897
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 2.886
+      },
+      "b16": {
+        "heard": "make it spooky.",
+        "reference": "make it spooky",
+        "stt_s": 2.961
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 3.019
+      },
+      "b18": {
+        "heard": "Raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 2.945
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 3.116
+      },
+      "b20": {
+        "heard": "Make it midday and clear.",
+        "reference": "make it midday and clear",
+        "stt_s": 3.078
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 3.113
+      },
+      "b22": {
+        "heard": "Can we try golden hour but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 3.094
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 3.083
+      },
+      "b24": {
+        "heard": "Thanks for watching!",
+        "reference": "",
+        "stt_s": 2.887
+      },
+      "b25": {
+        "heard": "Thanks for watching!",
+        "reference": "",
+        "stt_s": 12.025
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 2.862
+      }
+    }
+  },
+  "medium|hotwords=True": {
+    "load_s": 1.79,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 4.999
+      },
+      "a02": {
+        "heard": "someone had left a half-finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 4.584
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass and heavily enough that buildings opposite lost their edges She thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.53
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs With high ceilings and white floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.766
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 2.922
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 2.986
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 2.903
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 2.951
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 3.051
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 2.945
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 2.942
+      },
+      "b08": {
+        "heard": "naked dusk",
+        "reference": "make it dusk",
+        "stt_s": 2.97
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 2.901
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 2.941
+      },
+      "b11": {
+        "heard": "make it stormy",
+        "reference": "make it stormy",
+        "stt_s": 2.946
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 2.857
+      },
+      "b13": {
+        "heard": "air drain",
+        "reference": "add rain",
+        "stt_s": 2.912
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 2.857
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 2.897
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 2.928
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 2.982
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 2.986
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 3.034
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 3.07
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 3.003
+      },
+      "b22": {
+        "heard": "can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 3.191
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 3.136
+      },
+      "b24": {
+        "heard": "stormy foggy hazy dusk",
+        "reference": "",
+        "stt_s": 3.126
+      },
+      "b25": {
+        "heard": "stormy foggy hazy dusk",
+        "reference": "",
+        "stt_s": 3.149
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 2.988
+      }
+    }
+  },
+  "large-v3-turbo|hotwords=False": {
+    "load_s": 96.01,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 5.552
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 5.018
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass, then heavily enough that buildings opposite lost their edges. She thought about calling her brother, decided against it and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.872
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.993
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 4.531
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 4.555
+      },
+      "b03": {
+        "heard": "Make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 4.539
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 4.493
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 4.545
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 4.599
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 4.64
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 4.587
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 4.554
+      },
+      "b10": {
+        "heard": "Make it overcast.",
+        "reference": "make it overcast",
+        "stt_s": 4.604
+      },
+      "b11": {
+        "heard": "Make it stall me",
+        "reference": "make it stormy",
+        "stt_s": 4.716
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 4.71
+      },
+      "b13": {
+        "heard": "Add rain",
+        "reference": "add rain",
+        "stt_s": 4.566
+      },
+      "b14": {
+        "heard": "Golden R",
+        "reference": "golden hour",
+        "stt_s": 4.519
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 4.581
+      },
+      "b16": {
+        "heard": "Make it spooky.",
+        "reference": "make it spooky",
+        "stt_s": 4.556
+      },
+      "b17": {
+        "heard": "Light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 4.521
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 4.492
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 4.582
+      },
+      "b20": {
+        "heard": "Make it midday and clear.",
+        "reference": "make it midday and clear",
+        "stt_s": 4.624
+      },
+      "b21": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 4.598
+      },
+      "b22": {
+        "heard": "Can we try golden hour but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 4.608
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 4.597
+      },
+      "b24": {
+        "heard": "Thank you.",
+        "reference": "",
+        "stt_s": 4.535
+      },
+      "b25": {
+        "heard": "We'll be right back.",
+        "reference": "",
+        "stt_s": 4.703
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 4.587
+      }
+    }
+  },
+  "large-v3-turbo|hotwords=True": {
+    "load_s": 2.09,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 5.165
+      },
+      "a02": {
+        "heard": "someone had left a half-finished cup of tea on the windowsill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 4.981
+      },
+      "a03": {
+        "heard": "it began to rain first only a few drops against the glass then heavily enough that buildings opposite lost their edges she thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 4.954
+      },
+      "a04": {
+        "heard": "the building was older than she had expected from the photographs with high ceilings and white floorboards that creaked near the door she wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 4.977
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 4.473
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 4.554
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 4.496
+      },
+      "b04": {
+        "heard": "make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 4.479
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 4.547
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 4.524
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 4.536
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 4.492
+      },
+      "b09": {
+        "heard": "make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 4.506
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 4.494
+      },
+      "b11": {
+        "heard": "make it stall me",
+        "reference": "make it stormy",
+        "stt_s": 4.565
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 4.537
+      },
+      "b13": {
+        "heard": "add rain",
+        "reference": "add rain",
+        "stt_s": 4.465
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 4.463
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 4.438
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 4.567
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 4.528
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 4.523
+      },
+      "b19": {
+        "heard": "drop sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 4.565
+      },
+      "b20": {
+        "heard": "make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 4.604
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 4.513
+      },
+      "b22": {
+        "heard": "can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 4.59
+      },
+      "b23": {
+        "heard": "i want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 4.578
+      },
+      "b24": {
+        "heard": "wind wind wind wind wind wind wind",
+        "reference": "",
+        "stt_s": 11.254
+      },
+      "b25": {
+        "heard": "windmills",
+        "reference": "",
+        "stt_s": 9.273
+      },
+      "b26": {
+        "heard": "make it",
+        "reference": "",
+        "stt_s": 4.513
+      }
+    }
+  },
+  "large-v3|hotwords=False": {
+    "load_s": 182.04,
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall and a table with one leg shorter than the others.",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 9.46
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the window sill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 8.857
+      },
+      "a03": {
+        "heard": "It began to rain first only a few drops against the glass, then heavily enough that buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 8.315
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs with high ceilings and white floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 8.847
+      },
+      "b01": {
+        "heard": "Make it brighter.",
+        "reference": "make it brighter",
+        "stt_s": 5.84
+      },
+      "b02": {
+        "heard": "Make it dimmer.",
+        "reference": "make it dimmer",
+        "stt_s": 6.383
+      },
+      "b03": {
+        "heard": "Make it warmer.",
+        "reference": "make it warmer",
+        "stt_s": 6.679
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 6.304
+      },
+      "b05": {
+        "heard": "Make it misty.",
+        "reference": "make it misty",
+        "stt_s": 6.056
+      },
+      "b06": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 6.01
+      },
+      "b07": {
+        "heard": "Make it hazy.",
+        "reference": "make it hazy",
+        "stt_s": 5.886
+      },
+      "b08": {
+        "heard": "Make it dusk.",
+        "reference": "make it dusk",
+        "stt_s": 7.17
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 6.162
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 5.759
+      },
+      "b11": {
+        "heard": "Make it stop me",
+        "reference": "make it stormy",
+        "stt_s": 5.767
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 5.796
+      },
+      "b13": {
+        "heard": "Add rain",
+        "reference": "add rain",
+        "stt_s": 5.883
+      },
+      "b14": {
+        "heard": "Golden hour.",
+        "reference": "golden hour",
+        "stt_s": 5.6
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 5.655
+      },
+      "b16": {
+        "heard": "make it spooky.",
+        "reference": "make it spooky",
+        "stt_s": 5.625
+      },
+      "b17": {
+        "heard": "Light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 5.831
+      },
+      "b18": {
+        "heard": "Raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 5.663
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 5.829
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 5.887
+      },
+      "b21": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 5.871
+      },
+      "b22": {
+        "heard": "Can we try golden hour but colder?",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 5.907
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 6.223
+      },
+      "b24": {
+        "heard": "Thank you for watching.",
+        "reference": "",
+        "stt_s": 5.867
+      },
+      "b25": {
+        "heard": "Let's do it again.",
+        "reference": "",
+        "stt_s": 5.863
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 5.649
+      }
+    }
+  },
+  "large-v3|hotwords=True": {
+    "load_s": 3.25,
+    "clips": {
+      "a01": {
+        "heard": "the room was quite apart from the sound of traffic on the street below she put down the box she had been carrying and looked around for somewhere to sit there was three chairs stacked against the far wall and a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 9.356
+      },
+      "a02": {
+        "heard": "someone had left a half finished cup of tea on the window sill outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 8.164
+      },
+      "a03": {
+        "heard": "it began to rain first only a few drops against the glass then heavily enough that buildings opposite lost their edges she thought about calling her brother decided against it and started unpacking instead",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 8.406
+      },
+      "a04": {
+        "heard": "The building was older than she had expected from the photographs With high ceilings and white floorboards that creeped in the door She wrote a short list of things to buy in the morning and went to bed early",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 9.192
+      },
+      "b01": {
+        "heard": "make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 6.181
+      },
+      "b02": {
+        "heard": "make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 5.915
+      },
+      "b03": {
+        "heard": "make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 5.826
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 5.854
+      },
+      "b05": {
+        "heard": "make it misty",
+        "reference": "make it misty",
+        "stt_s": 5.905
+      },
+      "b06": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 5.97
+      },
+      "b07": {
+        "heard": "make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 5.948
+      },
+      "b08": {
+        "heard": "make it dusk",
+        "reference": "make it dusk",
+        "stt_s": 5.837
+      },
+      "b09": {
+        "heard": "Make it dawn",
+        "reference": "make it dawn",
+        "stt_s": 5.74
+      },
+      "b10": {
+        "heard": "make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 5.85
+      },
+      "b11": {
+        "heard": "make it stormy",
+        "reference": "make it stormy",
+        "stt_s": 5.891
+      },
+      "b12": {
+        "heard": "add lighting",
+        "reference": "add lightning",
+        "stt_s": 6.016
+      },
+      "b13": {
+        "heard": "air drain",
+        "reference": "add rain",
+        "stt_s": 5.698
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 5.683
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 5.787
+      },
+      "b16": {
+        "heard": "make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 5.921
+      },
+      "b17": {
+        "heard": "lighted from the left",
+        "reference": "light it from the left",
+        "stt_s": 6.007
+      },
+      "b18": {
+        "heard": "raise the sun",
+        "reference": "raise the sun",
+        "stt_s": 6.003
+      },
+      "b19": {
+        "heard": "drop the sun below the horizon",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 6.081
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 6.08
+      },
+      "b21": {
+        "heard": "make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 5.875
+      },
+      "b22": {
+        "heard": "can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 6.364
+      },
+      "b23": {
+        "heard": "I want the light coming from behind",
+        "reference": "I want the light coming from behind",
+        "stt_s": 6.229
+      },
+      "b24": {
+        "heard": "stormy lightning rain",
+        "reference": "",
+        "stt_s": 40.132
+      },
+      "b25": {
+        "heard": "fog, snow, and fresh rain clear blue sky",
+        "reference": "",
+        "stt_s": 79.877
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 6.072
+      }
+    }
+  },
+  "moonshine-en|hotwords=False": {
+    "load_s": 17.26,
+    "arch": "5",
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit There were three chairs stacked against Far wall And a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.127
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.863
+      },
+      "a03": {
+        "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.819
+      },
+      "a04": {
+        "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 1.181
+      },
+      "b01": {
+        "heard": "Make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.118
+      },
+      "b02": {
+        "heard": "Make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 0.108
+      },
+      "b03": {
+        "heard": "Make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.122
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.121
+      },
+      "b05": {
+        "heard": "Make it misty",
+        "reference": "make it misty",
+        "stt_s": 0.121
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.109
+      },
+      "b07": {
+        "heard": "Make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 0.118
+      },
+      "b08": {
+        "heard": "Make a dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.11
+      },
+      "b09": {
+        "heard": "Make it dawn.",
+        "reference": "make it dawn",
+        "stt_s": 0.098
+      },
+      "b10": {
+        "heard": "Make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.113
+      },
+      "b11": {
+        "heard": "Make it stall me.",
+        "reference": "make it stormy",
+        "stt_s": 0.133
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.212
+      },
+      "b13": {
+        "heard": "Add rain.",
+        "reference": "add rain",
+        "stt_s": 0.112
+      },
+      "b14": {
+        "heard": "Golden Hour",
+        "reference": "golden hour",
+        "stt_s": 0.099
+      },
+      "b15": {
+        "heard": "Moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.074
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.099
+      },
+      "b17": {
+        "heard": "Light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.129
+      },
+      "b18": {
+        "heard": "Raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.147
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.14
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.16
+      },
+      "b21": {
+        "heard": "Make it Foggy.",
+        "reference": "make it foggy",
+        "stt_s": 0.133
+      },
+      "b22": {
+        "heard": "Can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.252
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.211
+      },
+      "b24": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.017
+      },
+      "b25": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.023
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.074
+      }
+    }
+  },
+  "moonshine-en|hotwords=True": {
+    "load_s": 0.26,
+    "arch": "5",
+    "clips": {
+      "a01": {
+        "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit There were three chairs stacked against Far wall And a table with one leg shorter than the others",
+        "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+        "stt_s": 1.135
+      },
+      "a02": {
+        "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+        "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+        "stt_s": 0.823
+      },
+      "a03": {
+        "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+        "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+        "stt_s": 0.781
+      },
+      "a04": {
+        "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+        "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+        "stt_s": 0.879
+      },
+      "b01": {
+        "heard": "Make it brighter",
+        "reference": "make it brighter",
+        "stt_s": 0.099
+      },
+      "b02": {
+        "heard": "Make it dimmer",
+        "reference": "make it dimmer",
+        "stt_s": 0.099
+      },
+      "b03": {
+        "heard": "Make it warmer",
+        "reference": "make it warmer",
+        "stt_s": 0.095
+      },
+      "b04": {
+        "heard": "Make it cooler",
+        "reference": "make it cooler",
+        "stt_s": 0.101
+      },
+      "b05": {
+        "heard": "Make it misty",
+        "reference": "make it misty",
+        "stt_s": 0.11
+      },
+      "b06": {
+        "heard": "Make it foggy",
+        "reference": "make it foggy",
+        "stt_s": 0.097
+      },
+      "b07": {
+        "heard": "Make it hazy",
+        "reference": "make it hazy",
+        "stt_s": 0.097
+      },
+      "b08": {
+        "heard": "Make a dusk",
+        "reference": "make it dusk",
+        "stt_s": 0.093
+      },
+      "b09": {
+        "heard": "Make it dawn.",
+        "reference": "make it dawn",
+        "stt_s": 0.089
+      },
+      "b10": {
+        "heard": "Make it overcast",
+        "reference": "make it overcast",
+        "stt_s": 0.101
+      },
+      "b11": {
+        "heard": "Make it stall me.",
+        "reference": "make it stormy",
+        "stt_s": 0.116
+      },
+      "b12": {
+        "heard": "Add lighting",
+        "reference": "add lightning",
+        "stt_s": 0.082
+      },
+      "b13": {
+        "heard": "Add rain.",
+        "reference": "add rain",
+        "stt_s": 0.076
+      },
+      "b14": {
+        "heard": "golden hour",
+        "reference": "golden hour",
+        "stt_s": 0.065
+      },
+      "b15": {
+        "heard": "moonlight",
+        "reference": "moonlight",
+        "stt_s": 0.063
+      },
+      "b16": {
+        "heard": "Make it spooky",
+        "reference": "make it spooky",
+        "stt_s": 0.092
+      },
+      "b17": {
+        "heard": "light it from the left",
+        "reference": "light it from the left",
+        "stt_s": 0.11
+      },
+      "b18": {
+        "heard": "Raise the sun.",
+        "reference": "raise the sun",
+        "stt_s": 0.107
+      },
+      "b19": {
+        "heard": "Drop the sun below the horizon.",
+        "reference": "drop the sun below the horizon",
+        "stt_s": 0.131
+      },
+      "b20": {
+        "heard": "Make it midday and clear",
+        "reference": "make it midday and clear",
+        "stt_s": 0.135
+      },
+      "b21": {
+        "heard": "Make it foggy.",
+        "reference": "make it foggy",
+        "stt_s": 0.151
+      },
+      "b22": {
+        "heard": "Can we try golden hour but colder",
+        "reference": "can we try golden hour but colder",
+        "stt_s": 0.241
+      },
+      "b23": {
+        "heard": "I want the light coming from behind.",
+        "reference": "I want the light coming from behind",
+        "stt_s": 0.203
+      },
+      "b24": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.016
+      },
+      "b25": {
+        "heard": "",
+        "reference": "",
+        "stt_s": 0.022
+      },
+      "b26": {
+        "heard": "Make it",
+        "reference": "",
+        "stt_s": 0.066
+      }
+    }
+  }
+}

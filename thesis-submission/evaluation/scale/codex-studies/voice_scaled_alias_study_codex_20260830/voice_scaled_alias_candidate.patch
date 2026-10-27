@@ -1,0 +1,48 @@
+diff --git a/phase3-tabletop/rendering/index.html b/phase3-tabletop/rendering/index.html
+--- a/phase3-tabletop/rendering/index.html
++++ b/phase3-tabletop/rendering/index.html
+@@ -1657,8 +1657,33 @@ function parseVoiceAssignment(text) {
+     const meaning = match[2].replace(/[.!?]+$/, '').trim();
+     if (!objectKey || !meaning) return null;
+     return { object_key: objectKey, meaning };
+ }
+ 
++// Moonshine repeatedly transcribed spoken terminal "scale tiny" as "scaled
++// tiny". Reserve that exact ending only after voice assignment has matched.
++// Project decision: 30 Aug 2026. Literal voice meanings ending in this alias
++// must be rephrased; typed input never calls this normalizer.
++// ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp
++// ref: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match
++const VOICE_SCALED_SIZE_ALIAS_RE = /^(?<generation>.+?)\s+scaled\s+(?<modifier>tiny|miniature|small|big|large|huge)\s*[.!?]*\s*$/i;
++const EARLIER_SCALE_CONTROL_RE = /(?:^|\s)(?:scale|scaled)\s+(?:tiny|miniature|small|big|large|huge)(?=$|[\s,.!?])/i;
++
++function normalizeVoiceScaleAlias(meaning) {
++    const match = (meaning || '').match(VOICE_SCALED_SIZE_ALIAS_RE);
++    if (!match) return meaning;
++
++    const generation = match.groups.generation.trim();
++    if (
++        !generation
++        || generation.endsWith(';')
++        || generation.endsWith(':')
++        || EARLIER_SCALE_CONTROL_RE.test(generation)
++    ) {
++        return meaning;
++    }
++    return `${generation} scale ${match.groups.modifier}`;
++}
++
+ async function sendVoiceAssignment(assignment) {
+     converseStatus.textContent = `assigning object ${assignment.object_key}...`;
+     try {
+@@ -1692,6 +1718,9 @@ async function sendVoiceAssignment(assignment) {
+ async function routeAcceptedVoiceCommand(command, voiceLog) {
+     const assignment = parseVoiceAssignment(command);
+-    if (assignment) return sendVoiceAssignment(assignment);
++    if (assignment) {
++        const meaning = normalizeVoiceScaleAlias(assignment.meaning);
++        return sendVoiceAssignment({ ...assignment, meaning });
++    }
+     return sendConverseCommand(command, voiceLog);
+ }
+ 

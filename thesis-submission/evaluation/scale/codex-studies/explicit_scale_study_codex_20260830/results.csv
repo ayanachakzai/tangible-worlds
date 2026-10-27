@@ -1,0 +1,125 @@
+evidence_type,design,case_id,input,expected,actual,outcome,pass,details
+parser,D1_anywhere,P001,tiny castle,very_small,very_small,TP,True,castle
+parser,D1_anywhere,P002,a tiny castle,very_small,very_small,TP,True,a castle
+parser,D1_anywhere,P003,TINY CAR!,very_small,very_small,TP,True,CAR
+parser,D1_anywhere,P004,  tiny   red observatory  ,very_small,very_small,TP,True,red observatory
+parser,D1_anywhere,P005,miniature tram,very_small,very_small,TP,True,tram
+parser,D1_anywhere,P006,a miniature dragon,very_small,very_small,TP,True,a dragon
+parser,D1_anywhere,P007,Miniature lighthouse.,very_small,very_small,TP,True,lighthouse
+parser,D1_anywhere,P008,miniature toy car,very_small,very_small,TP,True,toy car
+parser,D1_anywhere,P009,small cabin,small,small,TP,True,cabin
+parser,D1_anywhere,P010,a small red castle,small,small,TP,True,a red castle
+parser,D1_anywhere,P011,SMALL boat?,small,small,TP,True,boat
+parser,D1_anywhere,P012,small mushroom,small,small,TP,True,mushroom
+parser,D1_anywhere,P013,big car,large,large,TP,True,car
+parser,D1_anywhere,P014,a big blue chair,large,large,TP,True,a blue chair
+parser,D1_anywhere,P015,BIG dragon!,large,large,TP,True,dragon
+parser,D1_anywhere,P016,big mushroom,large,large,TP,True,mushroom
+parser,D1_anywhere,P017,large house,large,large,TP,True,house
+parser,D1_anywhere,P018,a large stone bridge,large,large,TP,True,a stone bridge
+parser,D1_anywhere,P019,LARGE airship.,large,large,TP,True,airship
+parser,D1_anywhere,P020,large coral arch,large,large,TP,True,coral arch
+parser,D1_anywhere,P021,huge mountain,very_large,very_large,TP,True,mountain
+parser,D1_anywhere,P022,a huge chair,very_large,very_large,TP,True,a chair
+parser,D1_anywhere,P023,HUGE castle!,very_large,very_large,TP,True,castle
+parser,D1_anywhere,P024,huge glass whale,very_large,very_large,TP,True,glass whale
+parser,D1_anywhere,P025,teeny castle,very_small,neutral,FN,False,teeny castle
+parser,D1_anywhere,P026,puny robot,very_small,neutral,FN,False,puny robot
+parser,D1_anywhere,P027,little boat,small,neutral,FN,False,little boat
+parser,D1_anywhere,P028,modest-sized house,small,neutral,FN,False,modest-sized house
+parser,D1_anywhere,P029,enormous bridge,very_large,neutral,FN,False,enormous bridge
+parser,D1_anywhere,P030,colossal chair,very_large,neutral,FN,False,colossal chair
+parser,D1_anywhere,P031,castle is huge,very_large,very_large,TP,True,castle is
+parser,D1_anywhere,P032,"castle, tiny",very_small,very_small,TP,True,"castle,"
+parser,D1_anywhere,P033,bridge but small,small,small,TP,True,bridge but
+parser,D1_anywhere,P034,somewhat larger car,large,neutral,FN,False,somewhat larger car
+parser,D1_anywhere,P035,a little bigger chair,large,neutral,FN,False,a little bigger chair
+parser,D1_anywhere,P036,smaller mountain,small,neutral,FN,False,smaller mountain
+parser,D1_anywhere,N001,castle,neutral,neutral,TN,True,castle
+parser,D1_anywhere,N002,a castle,neutral,neutral,TN,True,a castle
+parser,D1_anywhere,N003,the bridge,neutral,neutral,TN,True,the bridge
+parser,D1_anywhere,N004,red car,neutral,neutral,TN,True,red car
+parser,D1_anywhere,N005,small-scale model,neutral,small,FP,False,-scale model
+parser,D1_anywhere,N006,large-scale sculpture,neutral,large,FP,False,-scale sculpture
+parser,D1_anywhere,N007,tiny flag on a castle,neutral,very_small,FP,False,flag on a castle
+parser,D1_anywhere,N008,the castle has a small door,neutral,small,FP,False,the castle has a door
+parser,D1_anywhere,N009,Big Ben,neutral,large,FP,False,Ben
+parser,D1_anywhere,N010,big ben,neutral,large,FP,False,ben
+parser,D1_anywhere,N011,large language model,neutral,large,FP,False,language model
+parser,D1_anywhere,N012,small talk,neutral,small,FP,False,talk
+parser,D1_anywhere,N013,huge fan of castles,neutral,very_large,FP,False,fan of castles
+parser,D1_anywhere,N014,miniature painting,neutral,very_small,FP,False,painting
+parser,D1_anywhere,N015,a model with a tiny window,neutral,very_small,FP,False,a model with a window
+parser,D1_anywhere,N016,a big wheel inside a clock,neutral,large,FP,False,a wheel inside a clock
+parser,D1_anywhere,N017,the large door of a house,neutral,large,FP,False,the door of a house
+parser,D1_anywhere,N018,a house with huge windows,neutral,very_large,FP,False,a house with windows
+parser,D1_anywhere,N019,a SMALL detail on the tower,neutral,small,FP,False,a detail on the tower
+parser,D1_anywhere,N020,bigger than yesterday,neutral,neutral,TN,True,bigger than yesterday
+parser,D1_anywhere,N021,Smallville,neutral,neutral,TN,True,Smallville
+parser,D1_anywhere,N022,hugely detailed castle,neutral,neutral,TN,True,hugely detailed castle
+parser,D1_anywhere,N023,largesse statue,neutral,neutral,TN,True,largesse statue
+parser,D1_anywhere,N024,tinytown diorama,neutral,neutral,TN,True,tinytown diorama
+parser,D2_leading,P001,tiny castle,very_small,very_small,TP,True,castle
+parser,D2_leading,P002,a tiny castle,very_small,very_small,TP,True,a castle
+parser,D2_leading,P003,TINY CAR!,very_small,very_small,TP,True,CAR
+parser,D2_leading,P004,  tiny   red observatory  ,very_small,very_small,TP,True,red observatory
+parser,D2_leading,P005,miniature tram,very_small,very_small,TP,True,tram
+parser,D2_leading,P006,a miniature dragon,very_small,very_small,TP,True,a dragon
+parser,D2_leading,P007,Miniature lighthouse.,very_small,very_small,TP,True,lighthouse
+parser,D2_leading,P008,miniature toy car,very_small,very_small,TP,True,toy car
+parser,D2_leading,P009,small cabin,small,small,TP,True,cabin
+parser,D2_leading,P010,a small red castle,small,small,TP,True,a red castle
+parser,D2_leading,P011,SMALL boat?,small,small,TP,True,boat
+parser,D2_leading,P012,small mushroom,small,small,TP,True,mushroom
+parser,D2_leading,P013,big car,large,large,TP,True,car
+parser,D2_leading,P014,a big blue chair,large,large,TP,True,a blue chair
+parser,D2_leading,P015,BIG dragon!,large,large,TP,True,dragon
+parser,D2_leading,P016,big mushroom,large,large,TP,True,mushroom
+parser,D2_leading,P017,large house,large,large,TP,True,house
+parser,D2_leading,P018,a large stone bridge,large,large,TP,True,a stone bridge
+parser,D2_leading,P019,LARGE airship.,large,large,TP,True,airship
+parser,D2_leading,P020,large coral arch,large,large,TP,True,coral arch
+parser,D2_leading,P021,huge mountain,very_large,very_large,TP,True,mountain
+parser,D2_leading,P022,a huge chair,very_large,very_large,TP,True,a chair
+parser,D2_leading,P023,HUGE castle!,very_large,very_large,TP,True,castle
+parser,D2_leading,P024,huge glass whale,very_large,very_large,TP,True,glass whale
+parser,D2_leading,P025,teeny castle,very_small,neutral,FN,False,teeny castle
+parser,D2_leading,P026,puny robot,very_small,neutral,FN,False,puny robot
+parser,D2_leading,P027,little boat,small,neutral,FN,False,little boat
+parser,D2_leading,P028,modest-sized house,small,neutral,FN,False,modest-sized house
+parser,D2_leading,P029,enormous bridge,very_large,neutral,FN,False,enormous bridge
+parser,D2_leading,P030,colossal chair,very_large,neutral,FN,False,colossal chair
+parser,D2_leading,P031,castle is huge,very_large,neutral,FN,False,castle is huge
+parser,D2_leading,P032,"castle, tiny",very_small,neutral,FN,False,"castle, tiny"
+parser,D2_leading,P033,bridge but small,small,neutral,FN,False,bridge but small
+parser,D2_leading,P034,somewhat larger car,large,neutral,FN,False,somewhat larger car
+parser,D2_leading,P035,a little bigger chair,large,neutral,FN,False,a little bigger chair
+parser,D2_leading,P036,smaller mountain,small,neutral,FN,False,smaller mountain
+parser,D2_leading,N001,castle,neutral,neutral,TN,True,castle
+parser,D2_leading,N002,a castle,neutral,neutral,TN,True,a castle
+parser,D2_leading,N003,the bridge,neutral,neutral,TN,True,the bridge
+parser,D2_leading,N004,red car,neutral,neutral,TN,True,red car
+parser,D2_leading,N005,small-scale model,neutral,neutral,TN,True,small-scale model
+parser,D2_leading,N006,large-scale sculpture,neutral,neutral,TN,True,large-scale sculpture
+parser,D2_leading,N007,tiny flag on a castle,neutral,very_small,FP,False,flag on a castle
+parser,D2_leading,N008,the castle has a small door,neutral,neutral,TN,True,the castle has a small door
+parser,D2_leading,N009,Big Ben,neutral,large,FP,False,Ben
+parser,D2_leading,N010,big ben,neutral,large,FP,False,ben
+parser,D2_leading,N011,large language model,neutral,large,FP,False,language model
+parser,D2_leading,N012,small talk,neutral,small,FP,False,talk
+parser,D2_leading,N013,huge fan of castles,neutral,very_large,FP,False,fan of castles
+parser,D2_leading,N014,miniature painting,neutral,very_small,FP,False,painting
+parser,D2_leading,N015,a model with a tiny window,neutral,neutral,TN,True,a model with a tiny window
+parser,D2_leading,N016,a big wheel inside a clock,neutral,large,FP,False,a wheel inside a clock
+parser,D2_leading,N017,the large door of a house,neutral,neutral,TN,True,the large door of a house
+parser,D2_leading,N018,a house with huge windows,neutral,neutral,TN,True,a house with huge windows
+parser,D2_leading,N019,a SMALL detail on the tower,neutral,small,FP,False,a detail on the tower
+parser,D2_leading,N020,bigger than yesterday,neutral,neutral,TN,True,bigger than yesterday
+parser,D2_leading,N021,Smallville,neutral,neutral,TN,True,Smallville
+parser,D2_leading,N022,hugely detailed castle,neutral,neutral,TN,True,hugely detailed castle
+parser,D2_leading,N023,largesse statue,neutral,neutral,TN,True,largesse statue
+parser,D2_leading,N024,tinytown diorama,neutral,neutral,TN,True,tinytown diorama
+renderer,five_target_normalization,castle,../scale_test_assets/a-castle.glb,0.35|0.65|1.00|1.80|3.00; grounded; movement independent,0.35|0.65|1.0|1.8|3.0,PASS,True,output/playwright/castle.png
+renderer,five_target_normalization,car,../scale_test_assets/a-car.glb,0.35|0.65|1.00|1.80|3.00; grounded; movement independent,0.35|0.65|1.0|1.8|3.0,PASS,True,output/playwright/car.png
+renderer,five_target_normalization,umbrella,../test_pipeline/umbrella.glb,0.35|0.65|1.00|1.80|3.00; grounded; movement independent,0.35|0.65|1.0|1.8|3.0,PASS,True,output/playwright/umbrella.png
+assignment,server_convergence_simulation,typed_voice_parity,typed object 2 + a tiny castle | voice object two is a tiny castle,identical cached contract,identical,PASS,True,atmosphere command did not route to assignment

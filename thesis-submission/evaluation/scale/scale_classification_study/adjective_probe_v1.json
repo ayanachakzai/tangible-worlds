@@ -1,0 +1,236 @@
+[
+  {
+    "noun": "castle",
+    "level": "tiny",
+    "meaning": "tiny castle",
+    "class": "infrastructure_scale",
+    "rank": 6,
+    "latency_s": 19.140447042009328,
+    "raw": "\n\ninfrastructure_scale"
+  },
+  {
+    "noun": "castle",
+    "level": "small",
+    "meaning": "small castle",
+    "class": "infrastructure_scale",
+    "rank": 6,
+    "latency_s": 0.8714970839791931,
+    "raw": "\n\ninfrastructure_scale"
+  },
+  {
+    "noun": "castle",
+    "level": "bare",
+    "meaning": "castle",
+    "class": "infrastructure_scale",
+    "rank": 6,
+    "latency_s": 0.790944957989268,
+    "raw": "\n\ninfrastructure_scale"
+  },
+  {
+    "noun": "castle",
+    "level": "big",
+    "meaning": "big castle",
+    "class": "infrastructure_scale",
+    "rank": 6,
+    "latency_s": 0.8047282909974456,
+    "raw": "\n\ninfrastructure_scale"
+  },
+  {
+    "noun": "castle",
+    "level": "huge",
+    "meaning": "huge castle",
+    "class": "infrastructure_scale",
+    "rank": 6,
+    "latency_s": 0.8046020420151763,
+    "raw": "\n\ninfrastructure_scale"
+  },
+  {
+    "noun": "car",
+    "level": "tiny",
+    "meaning": "tiny car",
+    "class": "handheld",
+    "rank": 1,
+    "latency_s": 0.7218928330112249,
+    "raw": "\n\nhandheld"
+  },
+  {
+    "noun": "car",
+    "level": "small",
+    "meaning": "small car",
+    "class": "vehicle_scale",
+    "rank": 4,
+    "latency_s": 0.701731999986805,
+    "raw": "\n\nvehicle_scale"
+  },
+  {
+    "noun": "car",
+    "level": "bare",
+    "meaning": "car",
+    "class": "vehicle_scale",
+    "rank": 4,
+    "latency_s": 0.7402048339718021,
+    "raw": "\n\nvehicle_scale"
+  },
+  {
+    "noun": "car",
+    "level": "big",
+    "meaning": "big car",
+    "class": "vehicle_scale",
+    "rank": 4,
+    "latency_s": 0.7137887090211734,
+    "raw": "\n\nvehicle_scale"
+  },
+  {
+    "noun": "car",
+    "level": "huge",
+    "meaning": "huge car",
+    "class": "vehicle_scale",
+    "rank": 4,
+    "latency_s": 0.7087340419529937,
+    "raw": "\n\nvehicle_scale"
+  },
+  {
+    "noun": "chair",
+    "level": "tiny",
+    "meaning": "tiny chair",
+    "class": "body_scale",
+    "rank": 2,
+    "latency_s": 0.7091817500186153,
+    "raw": "\n\nbody_scale"
+  },
+  {
+    "noun": "chair",
+    "level": "small",
+    "meaning": "small chair",
+    "class": "body_scale",
+    "rank": 2,
+    "latency_s": 0.7044541249633767,
+    "raw": "\n\nbody_scale"
+  },
+  {
+    "noun": "chair",
+    "level": "bare",
+    "meaning": "chair",
+    "class": "body_scale",
+    "rank": 2,
+    "latency_s": 0.7028667909908108,
+    "raw": "\n\nbody_scale"
+  },
+  {
+    "noun": "chair",
+    "level": "big",
+    "meaning": "big chair",
+    "class": "body_scale",
+    "rank": 2,
+    "latency_s": 0.7085789169650525,
+    "raw": "\n\nbody_scale"
+  },
+  {
+    "noun": "chair",
+    "level": "huge",
+    "meaning": "huge chair",
+    "class": "body_scale",
+    "rank": 2,
+    "latency_s": 0.6964934999705292,
+    "raw": "\n\nbody_scale"
+  },
+  {
+    "noun": "mountain",
+    "level": "tiny",
+    "meaning": "tiny mountain",
+    "class": "landform_scale",
+    "rank": 7,
+    "latency_s": 0.7475777500076219,
+    "raw": "\n\nlandform_scale"
+  },
+  {
+    "noun": "mountain",
+    "level": "small",
+    "meaning": "small mountain",
+    "class": "landform_scale",
+    "rank": 7,
+    "latency_s": 0.7529125829460099,
+    "raw": "\n\nlandform_scale"
+  },
+  {
+    "noun": "mountain",
+    "level": "bare",
+    "meaning": "mountain",
+    "class": "landform_scale",
+    "rank": 7,
+    "latency_s": 0.7657219580141827,
+    "raw": "\n\nlandform_scale"
+  },
+  {
+    "noun": "mountain",
+    "level": "big",
+    "meaning": "big mountain",
+    "class": "landform_scale",
+    "rank": 7,
+    "latency_s": 0.7607416249811649,
+    "raw": "\n\nlandform_scale"
+  },
+  {
+    "noun": "mountain",
+    "level": "huge",
+    "meaning": "huge mountain",
+    "class": "landform_scale",
+    "rank": 7,
+    "latency_s": 0.7509970829705708,
+    "raw": "\n\nlandform_scale"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "tiny toy car",
+    "class": "handheld",
+    "rank": 1,
+    "latency_s": 0.7212787920143455,
+    "raw": "\n\nhandheld"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "big toy car",
+    "class": "handheld",
+    "rank": 1,
+    "latency_s": 0.7175639169872738,
+    "raw": "\n\nhandheld"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "tiny castle model",
+    "class": "micro",
+    "rank": 0,
+    "latency_s": 0.6754701250465587,
+    "raw": "\n\nmicro"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "huge castle model",
+    "class": "building_scale",
+    "rank": 5,
+    "latency_s": 0.7209238749928772,
+    "raw": "\n\nbuilding_scale"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "tiny mushroom",
+    "class": "micro",
+    "rank": 0,
+    "latency_s": 0.6437815409735776,
+    "raw": "\n\nmicro"
+  },
+  {
+    "noun": null,
+    "level": "special",
+    "meaning": "huge mushroom",
+    "class": "colossal_scale",
+    "rank": 8,
+    "latency_s": 0.7418752079829574,
+    "raw": "\n\ncolossal_scale"
+  }
+]

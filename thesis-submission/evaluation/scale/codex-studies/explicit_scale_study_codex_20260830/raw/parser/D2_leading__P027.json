@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "P027",
+  "category": "unsupported_synonym",
+  "phrase": "little boat",
+  "expected_intent": "small",
+  "expected_generation_meaning": "boat",
+  "participant_phrase": "little boat",
+  "generation_meaning": "little boat",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": false,
+  "generation_match": false
+}

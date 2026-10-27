@@ -1,0 +1,20 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H057",
+  "case_index": 57,
+  "group": "modifier",
+  "meaning": "suspension-bridge-sized serpent",
+  "acceptable": [
+    "infrastructure_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nroom_scale",
+  "parsed_class": "room_scale",
+  "scale_basis": "suspension-bridge",
+  "preparser_rule": "reference_sized",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 0.564,
+  "error": ""
+}

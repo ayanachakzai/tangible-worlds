@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H050",
+  "case_index": 50,
+  "group": "creative",
+  "meaning": "levitating crystal whale",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "{\"scale_basis\":\"whale\",\"semantic_scale_class\":\"body_scale\"}",
+  "parsed_class": "body_scale",
+  "scale_basis": "whale",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.623,
+  "error": ""
+}

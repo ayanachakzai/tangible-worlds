@@ -1,0 +1,689 @@
+{
+  "metadata": {
+    "created_at": "2026-08-27T10:14:02.077307+01:00",
+    "model": "qwen/qwen3-8b",
+    "url": "http://127.0.0.1:1234/v1/chat/completions",
+    "temperature": 0.0,
+    "max_tokens": 20,
+    "runs_per_case": 5,
+    "requested_limit": 7,
+    "class_names": [
+      "micro",
+      "handheld",
+      "body_scale",
+      "room_scale",
+      "vehicle_scale",
+      "building_scale",
+      "infrastructure_scale",
+      "landform_scale",
+      "colossal_scale",
+      "ambiguous"
+    ],
+    "note": "Expected labels were pre-registered before inference and are evaluation anchors, not prompt examples."
+  },
+  "summary": {
+    "total_calls": 35,
+    "valid_enum_calls": 35,
+    "valid_enum_rate": 1.0,
+    "cases": 7,
+    "fully_consistent_cases": 7,
+    "case_consistency_rate": 1.0,
+    "expected_match_cases": 5,
+    "expected_match_rate": 0.7142857142857143,
+    "case_results": [
+      {
+        "case_index": 1,
+        "group": "anchors",
+        "meaning": "coffee mug",
+        "expected": [
+          "handheld"
+        ],
+        "outputs": [
+          "handheld",
+          "handheld",
+          "handheld",
+          "handheld",
+          "handheld"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": true
+      },
+      {
+        "case_index": 2,
+        "group": "anchors",
+        "meaning": "wooden chair",
+        "expected": [
+          "body_scale"
+        ],
+        "outputs": [
+          "body_scale",
+          "body_scale",
+          "body_scale",
+          "body_scale",
+          "body_scale"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": true
+      },
+      {
+        "case_index": 3,
+        "group": "anchors",
+        "meaning": "small tent",
+        "expected": [
+          "room_scale"
+        ],
+        "outputs": [
+          "room_scale",
+          "room_scale",
+          "room_scale",
+          "room_scale",
+          "room_scale"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": true
+      },
+      {
+        "case_index": 4,
+        "group": "anchors",
+        "meaning": "car",
+        "expected": [
+          "vehicle_scale"
+        ],
+        "outputs": [
+          "handheld",
+          "handheld",
+          "handheld",
+          "handheld",
+          "handheld"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": false
+      },
+      {
+        "case_index": 5,
+        "group": "anchors",
+        "meaning": "house",
+        "expected": [
+          "building_scale"
+        ],
+        "outputs": [
+          "building_scale",
+          "building_scale",
+          "building_scale",
+          "building_scale",
+          "building_scale"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": true
+      },
+      {
+        "case_index": 6,
+        "group": "anchors",
+        "meaning": "castle",
+        "expected": [
+          "infrastructure_scale"
+        ],
+        "outputs": [
+          "building_scale",
+          "building_scale",
+          "building_scale",
+          "building_scale",
+          "building_scale"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": false
+      },
+      {
+        "case_index": 7,
+        "group": "anchors",
+        "meaning": "mountain",
+        "expected": [
+          "landform_scale"
+        ],
+        "outputs": [
+          "landform_scale",
+          "landform_scale",
+          "landform_scale",
+          "landform_scale",
+          "landform_scale"
+        ],
+        "valid_every_run": true,
+        "agreement": true,
+        "expected_match_every_run": true
+      }
+    ]
+  },
+  "records": [
+    {
+      "case_index": 1,
+      "group": "anchors",
+      "meaning": "coffee mug",
+      "expected": [
+        "handheld"
+      ],
+      "run": 1,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 1.502,
+      "error": ""
+    },
+    {
+      "case_index": 1,
+      "group": "anchors",
+      "meaning": "coffee mug",
+      "expected": [
+        "handheld"
+      ],
+      "run": 2,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.562,
+      "error": ""
+    },
+    {
+      "case_index": 1,
+      "group": "anchors",
+      "meaning": "coffee mug",
+      "expected": [
+        "handheld"
+      ],
+      "run": 3,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.615,
+      "error": ""
+    },
+    {
+      "case_index": 1,
+      "group": "anchors",
+      "meaning": "coffee mug",
+      "expected": [
+        "handheld"
+      ],
+      "run": 4,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.596,
+      "error": ""
+    },
+    {
+      "case_index": 1,
+      "group": "anchors",
+      "meaning": "coffee mug",
+      "expected": [
+        "handheld"
+      ],
+      "run": 5,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.548,
+      "error": ""
+    },
+    {
+      "case_index": 2,
+      "group": "anchors",
+      "meaning": "wooden chair",
+      "expected": [
+        "body_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nbody_scale",
+      "parsed_class": "body_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.758,
+      "error": ""
+    },
+    {
+      "case_index": 2,
+      "group": "anchors",
+      "meaning": "wooden chair",
+      "expected": [
+        "body_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nbody_scale",
+      "parsed_class": "body_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.565,
+      "error": ""
+    },
+    {
+      "case_index": 2,
+      "group": "anchors",
+      "meaning": "wooden chair",
+      "expected": [
+        "body_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nbody_scale",
+      "parsed_class": "body_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.573,
+      "error": ""
+    },
+    {
+      "case_index": 2,
+      "group": "anchors",
+      "meaning": "wooden chair",
+      "expected": [
+        "body_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nbody_scale",
+      "parsed_class": "body_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.596,
+      "error": ""
+    },
+    {
+      "case_index": 2,
+      "group": "anchors",
+      "meaning": "wooden chair",
+      "expected": [
+        "body_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nbody_scale",
+      "parsed_class": "body_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.556,
+      "error": ""
+    },
+    {
+      "case_index": 3,
+      "group": "anchors",
+      "meaning": "small tent",
+      "expected": [
+        "room_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nroom_scale",
+      "parsed_class": "room_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.726,
+      "error": ""
+    },
+    {
+      "case_index": 3,
+      "group": "anchors",
+      "meaning": "small tent",
+      "expected": [
+        "room_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nroom_scale",
+      "parsed_class": "room_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.663,
+      "error": ""
+    },
+    {
+      "case_index": 3,
+      "group": "anchors",
+      "meaning": "small tent",
+      "expected": [
+        "room_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nroom_scale",
+      "parsed_class": "room_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.639,
+      "error": ""
+    },
+    {
+      "case_index": 3,
+      "group": "anchors",
+      "meaning": "small tent",
+      "expected": [
+        "room_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nroom_scale",
+      "parsed_class": "room_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.696,
+      "error": ""
+    },
+    {
+      "case_index": 3,
+      "group": "anchors",
+      "meaning": "small tent",
+      "expected": [
+        "room_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nroom_scale",
+      "parsed_class": "room_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.692,
+      "error": ""
+    },
+    {
+      "case_index": 4,
+      "group": "anchors",
+      "meaning": "car",
+      "expected": [
+        "vehicle_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.783,
+      "error": ""
+    },
+    {
+      "case_index": 4,
+      "group": "anchors",
+      "meaning": "car",
+      "expected": [
+        "vehicle_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.658,
+      "error": ""
+    },
+    {
+      "case_index": 4,
+      "group": "anchors",
+      "meaning": "car",
+      "expected": [
+        "vehicle_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.577,
+      "error": ""
+    },
+    {
+      "case_index": 4,
+      "group": "anchors",
+      "meaning": "car",
+      "expected": [
+        "vehicle_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.599,
+      "error": ""
+    },
+    {
+      "case_index": 4,
+      "group": "anchors",
+      "meaning": "car",
+      "expected": [
+        "vehicle_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nhandheld",
+      "parsed_class": "handheld",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.561,
+      "error": ""
+    },
+    {
+      "case_index": 5,
+      "group": "anchors",
+      "meaning": "house",
+      "expected": [
+        "building_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.677,
+      "error": ""
+    },
+    {
+      "case_index": 5,
+      "group": "anchors",
+      "meaning": "house",
+      "expected": [
+        "building_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.563,
+      "error": ""
+    },
+    {
+      "case_index": 5,
+      "group": "anchors",
+      "meaning": "house",
+      "expected": [
+        "building_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.565,
+      "error": ""
+    },
+    {
+      "case_index": 5,
+      "group": "anchors",
+      "meaning": "house",
+      "expected": [
+        "building_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.559,
+      "error": ""
+    },
+    {
+      "case_index": 5,
+      "group": "anchors",
+      "meaning": "house",
+      "expected": [
+        "building_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.566,
+      "error": ""
+    },
+    {
+      "case_index": 6,
+      "group": "anchors",
+      "meaning": "castle",
+      "expected": [
+        "infrastructure_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.68,
+      "error": ""
+    },
+    {
+      "case_index": 6,
+      "group": "anchors",
+      "meaning": "castle",
+      "expected": [
+        "infrastructure_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.576,
+      "error": ""
+    },
+    {
+      "case_index": 6,
+      "group": "anchors",
+      "meaning": "castle",
+      "expected": [
+        "infrastructure_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.594,
+      "error": ""
+    },
+    {
+      "case_index": 6,
+      "group": "anchors",
+      "meaning": "castle",
+      "expected": [
+        "infrastructure_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.652,
+      "error": ""
+    },
+    {
+      "case_index": 6,
+      "group": "anchors",
+      "meaning": "castle",
+      "expected": [
+        "infrastructure_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nbuilding_scale",
+      "parsed_class": "building_scale",
+      "valid_enum": true,
+      "expected_match": false,
+      "latency_s": 0.611,
+      "error": ""
+    },
+    {
+      "case_index": 7,
+      "group": "anchors",
+      "meaning": "mountain",
+      "expected": [
+        "landform_scale"
+      ],
+      "run": 1,
+      "raw_output": "\n\nlandform_scale",
+      "parsed_class": "landform_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.829,
+      "error": ""
+    },
+    {
+      "case_index": 7,
+      "group": "anchors",
+      "meaning": "mountain",
+      "expected": [
+        "landform_scale"
+      ],
+      "run": 2,
+      "raw_output": "\n\nlandform_scale",
+      "parsed_class": "landform_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.656,
+      "error": ""
+    },
+    {
+      "case_index": 7,
+      "group": "anchors",
+      "meaning": "mountain",
+      "expected": [
+        "landform_scale"
+      ],
+      "run": 3,
+      "raw_output": "\n\nlandform_scale",
+      "parsed_class": "landform_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.661,
+      "error": ""
+    },
+    {
+      "case_index": 7,
+      "group": "anchors",
+      "meaning": "mountain",
+      "expected": [
+        "landform_scale"
+      ],
+      "run": 4,
+      "raw_output": "\n\nlandform_scale",
+      "parsed_class": "landform_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.798,
+      "error": ""
+    },
+    {
+      "case_index": 7,
+      "group": "anchors",
+      "meaning": "mountain",
+      "expected": [
+        "landform_scale"
+      ],
+      "run": 5,
+      "raw_output": "\n\nlandform_scale",
+      "parsed_class": "landform_scale",
+      "valid_enum": true,
+      "expected_match": true,
+      "latency_s": 0.652,
+      "error": ""
+    }
+  ]
+}

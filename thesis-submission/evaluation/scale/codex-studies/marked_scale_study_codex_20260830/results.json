@@ -1,0 +1,452 @@
+{
+  "holdout_case_count": 90,
+  "candidate_results": {
+    "A": {
+      "TP": 20,
+      "FP": 0,
+      "FN": 0,
+      "TN": 70,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_record_accuracy": 1.0,
+      "exact_record_count": 90,
+      "case_count": 90,
+      "exact_positive_intent_accuracy": 1.0,
+      "safe_fallback_count": 20,
+      "safe_fallback_total": 20,
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "mismatch_ids": []
+    },
+    "B": {
+      "TP": 20,
+      "FP": 0,
+      "FN": 0,
+      "TN": 70,
+      "precision": 1.0,
+      "recall": 1.0,
+      "exact_record_accuracy": 1.0,
+      "exact_record_count": 90,
+      "case_count": 90,
+      "exact_positive_intent_accuracy": 1.0,
+      "safe_fallback_count": 20,
+      "safe_fallback_total": 20,
+      "false_positive_ids": [],
+      "false_negative_ids": [],
+      "mismatch_ids": []
+    }
+  },
+  "category_counts": {
+    "valid_grammar_a": 20,
+    "valid_grammar_b": 20,
+    "bare_assignment": 10,
+    "semantic_scale_phrase": 7,
+    "semantic_make_it_phrase": 3,
+    "malformed_marker": 8,
+    "multiple_markers": 3,
+    "conflicting_markers": 3,
+    "unsupported_synonym": 6,
+    "atmosphere_command": 10
+  },
+  "typed_voice_parity": [
+    {
+      "name": "A_tiny",
+      "grammar": "A",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "castle, scale tiny",
+        "generation_meaning": "castle",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a castle, scale tiny",
+        "generation_meaning": "a castle",
+        "explicit_scale_intent": "very_small",
+        "target_size": 0.35,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "semantic_contract_equal": true,
+      "subject_identity_equal_ignoring_supplied_article": true,
+      "original_phrase_difference_expected": true,
+      "pass": true
+    },
+    {
+      "name": "B_huge",
+      "grammar": "B",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "castle, make it huge",
+        "generation_meaning": "castle",
+        "explicit_scale_intent": "very_large",
+        "target_size": 3.0,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a castle, make it huge",
+        "generation_meaning": "a castle",
+        "explicit_scale_intent": "very_large",
+        "target_size": 3.0,
+        "scale_source": "participant_marked",
+        "explicit_detected": true
+      },
+      "semantic_contract_equal": true,
+      "subject_identity_equal_ignoring_supplied_article": true,
+      "original_phrase_difference_expected": true,
+      "pass": true
+    },
+    {
+      "name": "bare_neutral",
+      "grammar": "A",
+      "typed": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "castle",
+        "generation_meaning": "castle",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "voice": {
+        "route": "assignment",
+        "object_key": "2",
+        "meaning": "a castle",
+        "generation_meaning": "a castle",
+        "explicit_scale_intent": "neutral",
+        "target_size": 1.0,
+        "scale_source": "neutral_default",
+        "explicit_detected": false
+      },
+      "semantic_contract_equal": true,
+      "subject_identity_equal_ignoring_supplied_article": true,
+      "original_phrase_difference_expected": true,
+      "pass": true
+    }
+  ],
+  "generation_semantics": {
+    "checks": [
+      {
+        "grammar": "A",
+        "noun": "castle",
+        "original": "castle, scale tiny",
+        "actual": {
+          "meaning": "castle, scale tiny",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "A",
+        "noun": "toy car",
+        "original": "toy car, scale miniature",
+        "actual": {
+          "meaning": "toy car, scale miniature",
+          "generation_meaning": "toy car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "A",
+        "noun": "mushroom",
+        "original": "mushroom, scale small",
+        "actual": {
+          "meaning": "mushroom, scale small",
+          "generation_meaning": "mushroom",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "A",
+        "noun": "bridge",
+        "original": "bridge, scale large",
+        "actual": {
+          "meaning": "bridge, scale large",
+          "generation_meaning": "bridge",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "A",
+        "noun": "house",
+        "original": "house, scale huge",
+        "actual": {
+          "meaning": "house, scale huge",
+          "generation_meaning": "house",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "B",
+        "noun": "castle",
+        "original": "castle, make it tiny",
+        "actual": {
+          "meaning": "castle, make it tiny",
+          "generation_meaning": "castle",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "B",
+        "noun": "toy car",
+        "original": "toy car, make it miniature",
+        "actual": {
+          "meaning": "toy car, make it miniature",
+          "generation_meaning": "toy car",
+          "explicit_scale_intent": "very_small",
+          "target_size": 0.35,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "B",
+        "noun": "mushroom",
+        "original": "mushroom, make it small",
+        "actual": {
+          "meaning": "mushroom, make it small",
+          "generation_meaning": "mushroom",
+          "explicit_scale_intent": "small",
+          "target_size": 0.65,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "B",
+        "noun": "bridge",
+        "original": "bridge, make it large",
+        "actual": {
+          "meaning": "bridge, make it large",
+          "generation_meaning": "bridge",
+          "explicit_scale_intent": "large",
+          "target_size": 1.8,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      },
+      {
+        "grammar": "B",
+        "noun": "house",
+        "original": "house, make it huge",
+        "actual": {
+          "meaning": "house, make it huge",
+          "generation_meaning": "house",
+          "explicit_scale_intent": "very_large",
+          "target_size": 3.0,
+          "scale_source": "participant_marked",
+          "explicit_detected": true
+        },
+        "marker_removed": true,
+        "original_preserved": true,
+        "pass": true
+      }
+    ],
+    "pass_count": 10,
+    "total": 10,
+    "all_pass": true
+  },
+  "persistence_movement": {
+    "assignment_before": {
+      "meaning": "castle, scale tiny",
+      "generation_meaning": "castle",
+      "explicit_scale_intent": "very_small",
+      "target_size": 0.35,
+      "scale_source": "participant_marked",
+      "explicit_detected": true,
+      "status": "ready",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "mesh_url": "/generated_meshes/castle.glb?v=1"
+    },
+    "movement_updates": [
+      {
+        "step": 1,
+        "x": 0.1,
+        "z": -0.2
+      },
+      {
+        "step": 2,
+        "x": 0.13,
+        "z": -0.18
+      },
+      {
+        "step": 3,
+        "x": 0.16,
+        "z": -0.16
+      },
+      {
+        "step": 4,
+        "x": 0.19,
+        "z": -0.14
+      },
+      {
+        "step": 5,
+        "x": 0.22,
+        "z": -0.12
+      },
+      {
+        "step": 6,
+        "x": 0.25,
+        "z": -0.1
+      },
+      {
+        "step": 7,
+        "x": 0.28,
+        "z": -0.08
+      },
+      {
+        "step": 8,
+        "x": 0.31,
+        "z": -0.06
+      },
+      {
+        "step": 9,
+        "x": 0.34,
+        "z": -0.04
+      },
+      {
+        "step": 10,
+        "x": 0.37,
+        "z": -0.02
+      },
+      {
+        "step": 11,
+        "x": 0.4,
+        "z": 0.0
+      },
+      {
+        "step": 12,
+        "x": 0.43,
+        "z": 0.02
+      },
+      {
+        "step": 13,
+        "x": 0.46,
+        "z": 0.04
+      },
+      {
+        "step": 14,
+        "x": 0.49,
+        "z": 0.06
+      },
+      {
+        "step": 15,
+        "x": 0.52,
+        "z": 0.08
+      },
+      {
+        "step": 16,
+        "x": 0.55,
+        "z": 0.1
+      },
+      {
+        "step": 17,
+        "x": 0.58,
+        "z": 0.12
+      },
+      {
+        "step": 18,
+        "x": 0.61,
+        "z": 0.14
+      },
+      {
+        "step": 19,
+        "x": 0.64,
+        "z": 0.16
+      },
+      {
+        "step": 20,
+        "x": 0.67,
+        "z": 0.18
+      }
+    ],
+    "assignment_after": {
+      "meaning": "castle, scale tiny",
+      "generation_meaning": "castle",
+      "explicit_scale_intent": "very_small",
+      "target_size": 0.35,
+      "scale_source": "participant_marked",
+      "explicit_detected": true,
+      "status": "ready",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "mesh_url": "/generated_meshes/castle.glb?v=1"
+    },
+    "generation_calls": 1,
+    "target_persisted": true,
+    "meaning_persisted": true,
+    "generation_meaning_persisted": true,
+    "movement_did_not_regenerate": true,
+    "pass": true
+  },
+  "atmosphere_route": {
+    "case_count": 10,
+    "all_outside_assignment": true
+  },
+  "qualification": {
+    "A": true,
+    "B": true
+  }
+}

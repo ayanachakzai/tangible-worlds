@@ -1,0 +1,6 @@
+git_apply_check=pass
+isolated_apply=pass
+python_compile=pass
+node_check_unchanged_index=pass
+git_diff_check=pass
+isolated_matches_proposed=pass

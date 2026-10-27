@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "P035",
+  "category": "unsupported_comparative",
+  "phrase": "a little bigger chair",
+  "expected_intent": "large",
+  "expected_generation_meaning": "a chair",
+  "participant_phrase": "a little bigger chair",
+  "generation_meaning": "a little bigger chair",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": false,
+  "generation_match": false
+}

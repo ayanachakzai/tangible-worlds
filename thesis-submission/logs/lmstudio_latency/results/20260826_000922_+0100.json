@@ -1,0 +1,42 @@
+{
+  "timestamp": "2026-08-26T00:09:22.224+01:00",
+  "command": "make it stormy",
+  "production_file": "~/Documents/UAL/tangible-worlds/phase3-tabletop/rendering/serve.py",
+  "production_file_sha256": "5c00e629ff7723456ee9b946b78de6ba4f83ddfd15eb7e6eecf8e06db4bbbc55",
+  "scene_file": "~/Documents/UAL/tangible-worlds/phase3-tabletop/mapping/scene_description.json",
+  "scene_file_sha256": "c8b6287b9ac307c4cb8f397d81d6d9cd10e3b699e9eebdc77cdfb3a5aad3f26c",
+  "modifiers_file": "~/Documents/UAL/tangible-worlds/phase3-tabletop/conversation/scene_modifiers.json",
+  "modifiers_file_sha256": "7208e6516cb5aa6c30108d3a3942d4a98479e50deb3140caf3160a8f6fe18bff",
+  "endpoint": "http://127.0.0.1:1234/v1/chat/completions",
+  "model": "qwen/qwen3-8b",
+  "payload_sha256": "a74201574636fd0d567ed72e06e3a93c8a00d223fa253dc0cb7f35f976068438",
+  "payload": {
+    "model": "qwen/qwen3-8b",
+    "messages": [
+      {
+        "role": "system",
+        "content": "You translate natural-language atmosphere requests into semantic controls for a 3D tabletop scene.\n\nReturn ONLY one valid JSON object with exactly these keys:\n{\n  \"sky_elevation\": 45.0,\n  \"light_elevation\": 45.0,\n  \"light_azimuth\": 45.0,\n  \"light_level\": 0.65,\n  \"light_warmth\": 0.0,\n  \"sky_haze\": 0.2,\n  \"mist_amount\": 0.0,\n  \"mist_height\": 0.35,\n  \"mist_motion\": 0.25,\n  \"rain_amount\": 0.0,\n  \"lightning_amount\": 0.0,\n  \"mood\": \"neutral\"\n}\n\nfield meanings and allowed ranges:\n- sky_elevation: -12..90 degrees. below 0 means the procedural sun is below the horizon.\n- light_elevation: 0..90 degrees. low means long raking shadows, high means short overhead shadows.\n- light_azimuth: 0..360 degrees around the tabletop.\n- light_level: 0..1 overall semantic strength of the key light.\n- light_warmth: -1..1. -1 cool, 0 neutral, 1 warm.\n- sky_haze: 0..1. 0 clear, 1 strongly hazy.\n- mist_amount: 0..1. 0 none, 1 dense visible mist.\n- mist_height: 0..1. 0 ground-hugging, 1 reaching higher into the scene.\n- mist_motion: 0..1. 0 still, 1 strongly drifting and morphing.\n- rain_amount: 0..1. 0 dry, 1 heavy rain.\n- lightning_amount: 0..1. 0 none, 1 frequent strong lightning flashes.\n- mood: short descriptive text for display/logging only. it never selects a preset.\n\ninterpretation rules:\n- treat the current values as the existing scene state, not as values that should be protected by default.\n- first infer every field whose meaning is directly stated OR clearly implied by the user's request. change those fields.\n- preserve only fields that are genuinely unrelated to the request, or fields the user explicitly asks to keep unchanged.\n- time-of-day language always implies sky_elevation and usually light_elevation. do not leave those values unchanged when the user says night, dawn, sunrise, morning, midday, afternoon, evening, dusk, sunset or golden hour.\n- descriptive words map compositionally to the relevant dials. examples: warm -> light_warmth, hazy -> sky_haze, misty/foggy -> mist controls, rainy -> rain_amount, lightning/thunderstorm -> lightning_amount plus rain when rain is stated or strongly implied.\n- compose controls from the whole phrase. never choose a hidden renderer theme or preset.\n\nphysical calibration anchors:\n- deep or moonlit night: sky_elevation around -6. a separate moon/key light can remain around 15..30 degrees.\n- dawn / sunrise / sunset / dusk: sky_elevation usually around 4..10 and key-light elevation around 6..15.\n- evening / just after sunset: sky_elevation around -2..12 depending on wording.\n- clear midday: sky_elevation and light_elevation usually around 70..85.\n- golden/warm sunset light is strongly warm. explicitly hazy air should raise sky_haze.\n- clear/dry air should lower sky_haze and set mist_amount to 0 when mist/fog is explicitly absent.\n- ground-hugging mist means low mist_height. still air means low mist_motion.\n- spooky/eerie does not select a preset. only combine the physical cues that the wording supports, and keep light_level readable unless near-darkness is explicitly requested.\n\nrules:\n- all numeric values must stay inside their stated ranges.\n- mood is descriptive only. never use it as a shortcut for setting the other fields.\n- if the user explicitly says to keep something unchanged, preserve the related fields exactly.\n- if the user asks to remove an effect, set that effect amount to 0.\n- mist, rain and lightning are independent controls and can be combined with any time of day.\n- return every key every time, even if most values are unchanged.\n- no explanation, markdown or backticks.\n\ncalibration examples. these are examples of continuous semantic mapping, not renderer presets:\n\nexample 1 current values:\n{\"sky_elevation\":45.0,\"light_elevation\":45.0,\"light_azimuth\":45.0,\"light_level\":0.65,\"light_warmth\":0.0,\"sky_haze\":0.2,\"mist_amount\":0.0,\"mist_height\":0.35,\"mist_motion\":0.25,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"neutral\"}\nexample 1 request: make it a warm hazy sunset\nexample 1 answer:\n{\"sky_elevation\":7.0,\"light_elevation\":10.0,\"light_azimuth\":45.0,\"light_level\":0.85,\"light_warmth\":0.85,\"sky_haze\":0.7,\"mist_amount\":0.0,\"mist_height\":0.35,\"mist_motion\":0.25,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"warm hazy sunset\"}\n\nexample 2 current values:\n{\"sky_elevation\":45.0,\"light_elevation\":45.0,\"light_azimuth\":45.0,\"light_level\":0.65,\"light_warmth\":0.0,\"sky_haze\":0.2,\"mist_amount\":0.0,\"mist_height\":0.35,\"mist_motion\":0.25,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"neutral\"}\nexample 2 request: a clear dry moonlit night, no mist, no rain and no lightning\nexample 2 answer:\n{\"sky_elevation\":-6.0,\"light_elevation\":22.0,\"light_azimuth\":45.0,\"light_level\":0.42,\"light_warmth\":-0.35,\"sky_haze\":0.1,\"mist_amount\":0.0,\"mist_height\":0.35,\"mist_motion\":0.25,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"clear moonlit night\"}\n\nexample 3 current values:\n{\"sky_elevation\":7.0,\"light_elevation\":10.0,\"light_azimuth\":225.0,\"light_level\":0.88,\"light_warmth\":0.82,\"sky_haze\":0.72,\"mist_amount\":0.15,\"mist_height\":0.35,\"mist_motion\":0.15,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"neutral\"}\nexample 3 request: make the mist much thicker and more active, but keep the lighting exactly as it is\nexample 3 answer:\n{\"sky_elevation\":7.0,\"light_elevation\":10.0,\"light_azimuth\":225.0,\"light_level\":0.88,\"light_warmth\":0.82,\"sky_haze\":0.72,\"mist_amount\":0.82,\"mist_height\":0.35,\"mist_motion\":0.72,\"rain_amount\":0.0,\"lightning_amount\":0.0,\"mood\":\"neutral\"}\n"
+      },
+      {
+        "role": "user",
+        "content": "Current scene objects: No objects on the table.\nCurrent modifiers: {\"sky_elevation\": 7.0, \"light_elevation\": 15.0, \"light_azimuth\": 45.0, \"light_level\": 0.85, \"light_warmth\": 0.75, \"sky_haze\": 0.6, \"mist_amount\": 0.0, \"mist_height\": 0.35, \"mist_motion\": 0.25, \"rain_amount\": 0.0, \"lightning_amount\": 0.0, \"mood\": \"sunset\"}\nUser request: make it stormy\nReturn the modifier JSON: /no_think"
+      }
+    ],
+    "temperature": 0.3,
+    "stream": true,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "diagnostic_difference": "production payload with stream changed false -> true only",
+  "http_status": 200,
+  "response_headers_s": 0.042098666017409414,
+  "first_data_s": 21.87443708302453,
+  "ttft_s": 22.18354083300801,
+  "content_window_s": 6.771294292004313,
+  "post_first_to_end_s": 6.776792916993145,
+  "total_s": 28.960333750001155,
+  "content_chunks": 110,
+  "finish_reason": "stop",
+  "content": "\n\n{\"sky_elevation\": 7.0, \"light_elevation\": 15.0, \"light_azimuth\": 45.0, \"light_level\": 0.85, \"light_warmth\": 0.75, \"sky_haze\": 0.6, \"mist_amount\": 0.0, \"mist_height\": 0.35, \"mist_motion\": 0.25, \"rain_amount\": 1.0, \"lightning_amount\": 0.7, \"mood\": \"stormy\"}"
+}

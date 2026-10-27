@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H055",
+  "case_index": 55,
+  "group": "modifier",
+  "meaning": "van-sized tortoise",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "{\"scale_basis\":\"van\",\"semantic_scale_class\":\"vehicle_scale\"}",
+  "parsed_class": "vehicle_scale",
+  "scale_basis": "van",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.373,
+  "error": ""
+}

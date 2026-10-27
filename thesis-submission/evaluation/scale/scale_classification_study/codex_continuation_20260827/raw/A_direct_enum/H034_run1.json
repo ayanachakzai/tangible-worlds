@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H034",
+  "case_index": 34,
+  "group": "ordinary_colossal",
+  "meaning": "country",
+  "acceptable": [
+    "colossal_scale"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nambiguous",
+  "parsed_class": "ambiguous",
+  "scale_basis": "country",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.254,
+  "error": ""
+}

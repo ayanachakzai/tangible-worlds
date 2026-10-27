@@ -1,0 +1,6 @@
+{
+  "prompt": "A Sentinel-2 image of desert and rolling sand dunes in the Sahara",
+  "seed": 42,
+  "steps": 50,
+  "guidance_scale": 7.5
+}

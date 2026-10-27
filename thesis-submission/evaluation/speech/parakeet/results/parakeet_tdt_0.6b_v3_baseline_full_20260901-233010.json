@@ -1,0 +1,844 @@
+{
+  "model": "nvidia/parakeet-tdt-0.6b-v3",
+  "runtime": "NVIDIA NeMo-Speech.cpp",
+  "settings": {
+    "language": "en",
+    "automatic_punctuation": false,
+    "prompt": null,
+    "speech_contexts": null
+  },
+  "scope": "full",
+  "created_at": "2026-09-01T22:30:10.127598+00:00",
+  "server_readiness": {
+    "capabilities": [
+      "asr"
+    ],
+    "device": "auto",
+    "ready": true
+  },
+  "summary": {
+    "requested": 102,
+    "completed": 102,
+    "errors": 0,
+    "median_latency_s": 0.043257000000000004,
+    "p95_latency_s": 0.055694
+  },
+  "results": [
+    {
+      "recording_id": "assign_truck_huge_t1",
+      "category": "assignment_core",
+      "reference": "Object one is a truck scale huge",
+      "expected_route": "assign",
+      "transcript": "object one is a truck scale huge",
+      "latency_s": 0.058162
+    },
+    {
+      "recording_id": "assign_truck_huge_t2",
+      "category": "assignment_core",
+      "reference": "Object one is a truck scale huge",
+      "expected_route": "assign",
+      "transcript": "object one is a truck scale huge",
+      "latency_s": 0.045477
+    },
+    {
+      "recording_id": "assign_truck_huge_t3",
+      "category": "assignment_core",
+      "reference": "Object one is a truck scale huge",
+      "expected_route": "assign",
+      "transcript": "object one is a truck scale huge",
+      "latency_s": 0.046006
+    },
+    {
+      "recording_id": "assign_car_tiny_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a car scale tiny",
+      "expected_route": "assign",
+      "transcript": "object two is a car scale tiny",
+      "latency_s": 0.044368
+    },
+    {
+      "recording_id": "assign_car_tiny_t2",
+      "category": "assignment_core",
+      "reference": "Object two is a car scale tiny",
+      "expected_route": "assign",
+      "transcript": "object two is a car scale tiny",
+      "latency_s": 0.04162
+    },
+    {
+      "recording_id": "assign_car_tiny_t3",
+      "category": "assignment_core",
+      "reference": "Object two is a car scale tiny",
+      "expected_route": "assign",
+      "transcript": "object two is a car scale tiny",
+      "latency_s": 0.04579
+    },
+    {
+      "recording_id": "assign_petrol_station_large_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a petrol station scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a petrol station scale large",
+      "latency_s": 0.051105
+    },
+    {
+      "recording_id": "assign_petrol_station_large_t2",
+      "category": "assignment_core",
+      "reference": "Object three is a petrol station scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a petrol station scale large",
+      "latency_s": 0.046353
+    },
+    {
+      "recording_id": "assign_petrol_station_large_t3",
+      "category": "assignment_core",
+      "reference": "Object three is a petrol station scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a petrol station scale large",
+      "latency_s": 0.045444
+    },
+    {
+      "recording_id": "assign_lighthouse_small_t1",
+      "category": "assignment_core",
+      "reference": "Object one is a lighthouse scale small",
+      "expected_route": "assign",
+      "transcript": "object one is a lighthouse scale small",
+      "latency_s": 0.044583
+    },
+    {
+      "recording_id": "assign_lighthouse_small_t2",
+      "category": "assignment_core",
+      "reference": "Object one is a lighthouse scale small",
+      "expected_route": "assign",
+      "transcript": "object one is a lighthouse scale small",
+      "latency_s": 0.045942
+    },
+    {
+      "recording_id": "assign_lighthouse_small_t3",
+      "category": "assignment_core",
+      "reference": "Object one is a lighthouse scale small",
+      "expected_route": "assign",
+      "transcript": "object one is a lighthouse scale small",
+      "latency_s": 0.048294
+    },
+    {
+      "recording_id": "assign_suspension_bridge_huge_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "object two is a suspension bridge scale huge",
+      "latency_s": 0.051183
+    },
+    {
+      "recording_id": "assign_suspension_bridge_huge_t2",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "object two is a suspension bridge scale huge",
+      "latency_s": 0.050735
+    },
+    {
+      "recording_id": "assign_suspension_bridge_huge_t3",
+      "category": "assignment_core",
+      "reference": "Object two is a suspension bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "object two is a suspension bridge scale huge",
+      "latency_s": 0.049403
+    },
+    {
+      "recording_id": "assign_coffee_mug_miniature_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "expected_route": "assign",
+      "transcript": "object three is a coffee mug scale miniature",
+      "latency_s": 0.047881
+    },
+    {
+      "recording_id": "assign_coffee_mug_miniature_t2",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "expected_route": "assign",
+      "transcript": "object three is a coffee mug scale miniature",
+      "latency_s": 0.052582
+    },
+    {
+      "recording_id": "assign_coffee_mug_miniature_t3",
+      "category": "assignment_core",
+      "reference": "Object three is a coffee mug scale miniature",
+      "expected_route": "assign",
+      "transcript": "object three is a coffee mug scale miniature",
+      "latency_s": 0.072331
+    },
+    {
+      "recording_id": "assign_railway_station_unmarked_t1",
+      "category": "assignment_core",
+      "reference": "Object one is a railway station",
+      "expected_route": "assign",
+      "transcript": "object one is a railway station",
+      "latency_s": 0.047044
+    },
+    {
+      "recording_id": "assign_railway_station_unmarked_t2",
+      "category": "assignment_core",
+      "reference": "Object one is a railway station",
+      "expected_route": "assign",
+      "transcript": "object one is a railway station",
+      "latency_s": 0.040798
+    },
+    {
+      "recording_id": "assign_railway_station_unmarked_t3",
+      "category": "assignment_core",
+      "reference": "Object one is a railway station",
+      "expected_route": "assign",
+      "transcript": "object one is a railway station",
+      "latency_s": 0.043104
+    },
+    {
+      "recording_id": "assign_market_stall_big_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a market stall scale big",
+      "expected_route": "assign",
+      "transcript": "object two is a market stall scale bag",
+      "latency_s": 0.05028
+    },
+    {
+      "recording_id": "assign_market_stall_big_t2",
+      "category": "assignment_core",
+      "reference": "Object two is a market stall scale big",
+      "expected_route": "assign",
+      "transcript": "object two is a market stall scale big",
+      "latency_s": 0.04842
+    },
+    {
+      "recording_id": "assign_market_stall_big_t3",
+      "category": "assignment_core",
+      "reference": "Object two is a market stall scale big",
+      "expected_route": "assign",
+      "transcript": "object two is a market's tall scale big",
+      "latency_s": 0.052858
+    },
+    {
+      "recording_id": "assign_wind_turbine_large_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a wind turbine scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a wind turbine scale large",
+      "latency_s": 0.047564
+    },
+    {
+      "recording_id": "assign_wind_turbine_large_t2",
+      "category": "assignment_core",
+      "reference": "Object three is a wind turbine scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a wind turbine scale large",
+      "latency_s": 0.052546
+    },
+    {
+      "recording_id": "assign_wind_turbine_large_t3",
+      "category": "assignment_core",
+      "reference": "Object three is a wind turbine scale large",
+      "expected_route": "assign",
+      "transcript": "object three is a wind turbine scale large",
+      "latency_s": 0.04849
+    },
+    {
+      "recording_id": "assign_ambulance_small_t1",
+      "category": "assignment_core",
+      "reference": "Object one is an ambulance scale small",
+      "expected_route": "assign",
+      "transcript": "object one is an ambulance scale small",
+      "latency_s": 0.049858
+    },
+    {
+      "recording_id": "assign_ambulance_small_t2",
+      "category": "assignment_core",
+      "reference": "Object one is an ambulance scale small",
+      "expected_route": "assign",
+      "transcript": "object one is an ambulance scale small",
+      "latency_s": 0.048607
+    },
+    {
+      "recording_id": "assign_ambulance_small_t3",
+      "category": "assignment_core",
+      "reference": "Object one is an ambulance scale small",
+      "expected_route": "assign",
+      "transcript": "object one is an ambulance scale small",
+      "latency_s": 0.049337
+    },
+    {
+      "recording_id": "assign_stone_cottage_unmarked_t1",
+      "category": "assignment_core",
+      "reference": "Object two is a stone cottage",
+      "expected_route": "assign",
+      "transcript": "object two is a stone cottage",
+      "latency_s": 0.041761
+    },
+    {
+      "recording_id": "assign_stone_cottage_unmarked_t2",
+      "category": "assignment_core",
+      "reference": "Object two is a stone cottage",
+      "expected_route": "assign",
+      "transcript": "object two is a stone cottage",
+      "latency_s": 0.042766
+    },
+    {
+      "recording_id": "assign_stone_cottage_unmarked_t3",
+      "category": "assignment_core",
+      "reference": "Object two is a stone cottage",
+      "expected_route": "assign",
+      "transcript": "object two is a stone cottage",
+      "latency_s": 0.045505
+    },
+    {
+      "recording_id": "assign_water_tower_huge_t1",
+      "category": "assignment_core",
+      "reference": "Object three is a water tower scale huge",
+      "expected_route": "assign",
+      "transcript": "object three is a water tower scale huge",
+      "latency_s": 0.049605
+    },
+    {
+      "recording_id": "assign_water_tower_huge_t2",
+      "category": "assignment_core",
+      "reference": "Object three is a water tower scale huge",
+      "expected_route": "assign",
+      "transcript": "object three is a water tower scale huge",
+      "latency_s": 0.048201
+    },
+    {
+      "recording_id": "assign_water_tower_huge_t3",
+      "category": "assignment_core",
+      "reference": "Object three is a water tower scale huge",
+      "expected_route": "assign",
+      "transcript": "object three is a water tower scale huge",
+      "latency_s": 0.047545
+    },
+    {
+      "recording_id": "robust_um_fire_station",
+      "category": "assignment_robustness",
+      "reference": "Um, object one is a fire station scale large",
+      "expected_route": "assign",
+      "transcript": "um object one is a fire station scale large",
+      "latency_s": 0.051665
+    },
+    {
+      "recording_id": "robust_mm_petrol_station",
+      "category": "assignment_robustness",
+      "reference": "Mm, object two is a petrol station scale small",
+      "expected_route": "assign",
+      "transcript": "mm object two is a petrol station scale small",
+      "latency_s": 0.052146
+    },
+    {
+      "recording_id": "robust_hmm_bus_shelter",
+      "category": "assignment_robustness",
+      "reference": "Hmm, object three is a bus shelter scale tiny",
+      "expected_route": "assign",
+      "transcript": "mm object three is a bus shelter scale tiny",
+      "latency_s": 0.055694
+    },
+    {
+      "recording_id": "robust_okay_radio_tower",
+      "category": "assignment_robustness",
+      "reference": "Okay, object one is a radio tower scale huge",
+      "expected_route": "assign",
+      "transcript": "okay object one is a radio tower scale huge",
+      "latency_s": 0.05196
+    },
+    {
+      "recording_id": "robust_so_wooden_bench",
+      "category": "assignment_robustness",
+      "reference": "So, object two is a wooden bench",
+      "expected_route": "assign",
+      "transcript": "so object two is a wooden bench",
+      "latency_s": 0.045125
+    },
+    {
+      "recording_id": "robust_and_bicycle_rack",
+      "category": "assignment_robustness",
+      "reference": "And object three is a bicycle rack scale small",
+      "expected_route": "assign",
+      "transcript": "and object three is a bicycle rack scale small",
+      "latency_s": 0.054217
+    },
+    {
+      "recording_id": "robust_pause_after_object",
+      "category": "assignment_robustness",
+      "reference": "Object one is a clock tower scale large",
+      "expected_route": "assign",
+      "transcript": "object one is a clock tower scale large",
+      "latency_s": 0.058892
+    },
+    {
+      "recording_id": "robust_pause_before_meaning",
+      "category": "assignment_robustness",
+      "reference": "Object two is a telephone box scale small",
+      "expected_route": "assign",
+      "transcript": "object two is a telephone box scale small",
+      "latency_s": 0.059441
+    },
+    {
+      "recording_id": "robust_pause_before_scale",
+      "category": "assignment_robustness",
+      "reference": "Object three is a stone bridge scale huge",
+      "expected_route": "assign",
+      "transcript": "object three is a stone bridge scale huge",
+      "latency_s": 0.060292
+    },
+    {
+      "recording_id": "robust_fast_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object one is a delivery van scale small",
+      "expected_route": "assign",
+      "transcript": "object one is a delivery van scale small",
+      "latency_s": 0.048159
+    },
+    {
+      "recording_id": "robust_quiet_delivery",
+      "category": "assignment_robustness",
+      "reference": "Object two is a garden shed scale tiny",
+      "expected_route": "assign",
+      "transcript": "object two is a garden shed scale tiny",
+      "latency_s": 0.048686
+    },
+    {
+      "recording_id": "robust_object_number",
+      "category": "assignment_robustness",
+      "reference": "Object number three is a traffic signal scale large",
+      "expected_route": "assign",
+      "transcript": "object number three is a traffic signal scale large",
+      "latency_s": 0.050853
+    },
+    {
+      "recording_id": "confirm_yes_t1",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "expected_route": "confirm_yes",
+      "transcript": "yes",
+      "latency_s": 0.033883
+    },
+    {
+      "recording_id": "confirm_yes_t2",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "expected_route": "confirm_yes",
+      "transcript": "yes",
+      "latency_s": 0.033265
+    },
+    {
+      "recording_id": "confirm_yes_t3",
+      "category": "confirmation_clear",
+      "reference": "yes",
+      "expected_route": "confirm_yes",
+      "transcript": "yes",
+      "latency_s": 0.032971
+    },
+    {
+      "recording_id": "confirm_yeah_t1",
+      "category": "confirmation_clear",
+      "reference": "yeah",
+      "expected_route": "confirm_yes",
+      "transcript": "yeah",
+      "latency_s": 0.033491
+    },
+    {
+      "recording_id": "confirm_yeah_t2",
+      "category": "confirmation_clear",
+      "reference": "yeah",
+      "expected_route": "confirm_yes",
+      "transcript": "yeah",
+      "latency_s": 0.032839
+    },
+    {
+      "recording_id": "confirm_yep",
+      "category": "confirmation_clear",
+      "reference": "yep",
+      "expected_route": "confirm_yes",
+      "transcript": "yep",
+      "latency_s": 0.032625
+    },
+    {
+      "recording_id": "confirm_correct_t1",
+      "category": "confirmation_clear",
+      "reference": "correct",
+      "expected_route": "confirm_yes",
+      "transcript": "correct",
+      "latency_s": 0.033917
+    },
+    {
+      "recording_id": "confirm_correct_t2",
+      "category": "confirmation_clear",
+      "reference": "correct",
+      "expected_route": "confirm_yes",
+      "transcript": "correct",
+      "latency_s": 0.034631
+    },
+    {
+      "recording_id": "confirm_right_t1",
+      "category": "confirmation_clear",
+      "reference": "right",
+      "expected_route": "confirm_yes",
+      "transcript": "right",
+      "latency_s": 0.032858
+    },
+    {
+      "recording_id": "confirm_right_t2",
+      "category": "confirmation_clear",
+      "reference": "right",
+      "expected_route": "confirm_yes",
+      "transcript": "right",
+      "latency_s": 0.034734
+    },
+    {
+      "recording_id": "confirm_no_t1",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "expected_route": "confirm_no",
+      "transcript": "no",
+      "latency_s": 0.031943
+    },
+    {
+      "recording_id": "confirm_no_t2",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "expected_route": "confirm_no",
+      "transcript": "no",
+      "latency_s": 0.03465
+    },
+    {
+      "recording_id": "confirm_no_t3",
+      "category": "confirmation_clear",
+      "reference": "no",
+      "expected_route": "confirm_no",
+      "transcript": "no",
+      "latency_s": 0.032809
+    },
+    {
+      "recording_id": "confirm_nope_t1",
+      "category": "confirmation_clear",
+      "reference": "nope",
+      "expected_route": "confirm_no",
+      "transcript": "nope",
+      "latency_s": 0.034619
+    },
+    {
+      "recording_id": "confirm_nope_t2",
+      "category": "confirmation_clear",
+      "reference": "nope",
+      "expected_route": "confirm_no",
+      "transcript": "nope",
+      "latency_s": 0.032768
+    },
+    {
+      "recording_id": "confirm_nah",
+      "category": "confirmation_clear",
+      "reference": "nah",
+      "expected_route": "confirm_no",
+      "transcript": "na",
+      "latency_s": 0.032675
+    },
+    {
+      "recording_id": "confirm_incorrect_t1",
+      "category": "confirmation_clear",
+      "reference": "incorrect",
+      "expected_route": "confirm_no",
+      "transcript": "incorrect",
+      "latency_s": 0.034302
+    },
+    {
+      "recording_id": "confirm_incorrect_t2",
+      "category": "confirmation_clear",
+      "reference": "incorrect",
+      "expected_route": "confirm_no",
+      "transcript": "incorrect",
+      "latency_s": 0.036784
+    },
+    {
+      "recording_id": "confirm_wrong_t1",
+      "category": "confirmation_clear",
+      "reference": "wrong",
+      "expected_route": "confirm_no",
+      "transcript": "yeah i think",
+      "latency_s": 0.040052
+    },
+    {
+      "recording_id": "confirm_wrong_t2",
+      "category": "confirmation_clear",
+      "reference": "wrong",
+      "expected_route": "confirm_no",
+      "transcript": "wrong",
+      "latency_s": 0.034701
+    },
+    {
+      "recording_id": "confirm_ambiguous_yes_no",
+      "category": "confirmation_ambiguous",
+      "reference": "yes no",
+      "expected_route": "confirm_unclear",
+      "transcript": "yes no",
+      "latency_s": 0.035561
+    },
+    {
+      "recording_id": "confirm_ambiguous_no_yes",
+      "category": "confirmation_ambiguous",
+      "reference": "no yes",
+      "expected_route": "confirm_unclear",
+      "transcript": "no yes",
+      "latency_s": 0.03454
+    },
+    {
+      "recording_id": "confirm_ambiguous_not_sure",
+      "category": "confirmation_ambiguous",
+      "reference": "not sure",
+      "expected_route": "confirm_unclear",
+      "transcript": "not sure",
+      "latency_s": 0.034272
+    },
+    {
+      "recording_id": "confirm_ambiguous_maybe",
+      "category": "confirmation_ambiguous",
+      "reference": "maybe",
+      "expected_route": "confirm_unclear",
+      "transcript": "maybe",
+      "latency_s": 0.035087
+    },
+    {
+      "recording_id": "confirm_ambiguous_yes_wrong",
+      "category": "confirmation_ambiguous",
+      "reference": "yes wrong",
+      "expected_route": "confirm_unclear",
+      "transcript": "yes wrong",
+      "latency_s": 0.038879
+    },
+    {
+      "recording_id": "confirm_ambiguous_no_correct",
+      "category": "confirmation_ambiguous",
+      "reference": "no correct",
+      "expected_route": "confirm_unclear",
+      "transcript": "no correct",
+      "latency_s": 0.037057
+    },
+    {
+      "recording_id": "atmosphere_brighter",
+      "category": "atmosphere",
+      "reference": "make it brighter",
+      "expected_route": "converse",
+      "transcript": "make it brighter",
+      "latency_s": 0.036717
+    },
+    {
+      "recording_id": "atmosphere_dimmer",
+      "category": "atmosphere",
+      "reference": "make it dimmer",
+      "expected_route": "converse",
+      "transcript": "make it dimmer",
+      "latency_s": 0.036608
+    },
+    {
+      "recording_id": "atmosphere_warmer",
+      "category": "atmosphere",
+      "reference": "make it warmer",
+      "expected_route": "converse",
+      "transcript": "make it warmer",
+      "latency_s": 0.036585
+    },
+    {
+      "recording_id": "atmosphere_cooler",
+      "category": "atmosphere",
+      "reference": "make it cooler",
+      "expected_route": "converse",
+      "transcript": "\u041d\u0438\u043a\u0435\u0442 \u043a\u0443\u043b\u0435\u0440",
+      "latency_s": 0.036433
+    },
+    {
+      "recording_id": "atmosphere_misty",
+      "category": "atmosphere",
+      "reference": "make it misty",
+      "expected_route": "converse",
+      "transcript": "make it misty",
+      "latency_s": 0.036742
+    },
+    {
+      "recording_id": "atmosphere_foggy",
+      "category": "atmosphere",
+      "reference": "make it foggy",
+      "expected_route": "converse",
+      "transcript": "make it foggy",
+      "latency_s": 0.035662
+    },
+    {
+      "recording_id": "atmosphere_hazy",
+      "category": "atmosphere",
+      "reference": "make it hazy",
+      "expected_route": "converse",
+      "transcript": "make it hazy",
+      "latency_s": 0.036482
+    },
+    {
+      "recording_id": "atmosphere_dusk",
+      "category": "atmosphere",
+      "reference": "make it dusk",
+      "expected_route": "converse",
+      "transcript": "make it dusk",
+      "latency_s": 0.035925
+    },
+    {
+      "recording_id": "atmosphere_dawn",
+      "category": "atmosphere",
+      "reference": "make it dawn",
+      "expected_route": "converse",
+      "transcript": "make it dawn",
+      "latency_s": 0.034998
+    },
+    {
+      "recording_id": "atmosphere_overcast",
+      "category": "atmosphere",
+      "reference": "make it overcast",
+      "expected_route": "converse",
+      "transcript": "make it overcast",
+      "latency_s": 0.039179
+    },
+    {
+      "recording_id": "atmosphere_stormy_one",
+      "category": "atmosphere",
+      "reference": "make it stormy",
+      "expected_route": "converse",
+      "transcript": "make it stormy",
+      "latency_s": 0.035191
+    },
+    {
+      "recording_id": "atmosphere_stormy_two",
+      "category": "atmosphere",
+      "reference": "make it stormy",
+      "expected_route": "converse",
+      "transcript": "make it stormy",
+      "latency_s": 0.038241
+    },
+    {
+      "recording_id": "atmosphere_lightning_one",
+      "category": "atmosphere",
+      "reference": "add lightning",
+      "expected_route": "converse",
+      "transcript": "add lightning",
+      "latency_s": 0.036422
+    },
+    {
+      "recording_id": "atmosphere_lightning_two",
+      "category": "atmosphere",
+      "reference": "add lightning",
+      "expected_route": "converse",
+      "transcript": "add lightning",
+      "latency_s": 0.036584
+    },
+    {
+      "recording_id": "atmosphere_golden_hour",
+      "category": "atmosphere",
+      "reference": "can we try golden hour but colder",
+      "expected_route": "converse",
+      "transcript": "can we try golden hour but colder",
+      "latency_s": 0.048109
+    },
+    {
+      "recording_id": "atmosphere_light_direction",
+      "category": "atmosphere",
+      "reference": "I want the light coming from behind",
+      "expected_route": "converse",
+      "transcript": "i want the light coming from behind",
+      "latency_s": 0.04341
+    },
+    {
+      "recording_id": "adversarial_silence_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.041884
+    },
+    {
+      "recording_id": "adversarial_silence_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "oh",
+      "latency_s": 0.045359
+    },
+    {
+      "recording_id": "adversarial_silence_t3",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.046587
+    },
+    {
+      "recording_id": "adversarial_prop_noise_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.051528
+    },
+    {
+      "recording_id": "adversarial_prop_noise_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.048941
+    },
+    {
+      "recording_id": "adversarial_prop_noise_t3",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "",
+      "latency_s": 0.047369
+    },
+    {
+      "recording_id": "adversarial_aborted_press_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "make it",
+      "latency_s": 0.045647
+    },
+    {
+      "recording_id": "adversarial_aborted_press_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "make it",
+      "latency_s": 0.033714
+    },
+    {
+      "recording_id": "adversarial_aborted_press_t3",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "make it",
+      "latency_s": 0.032823
+    },
+    {
+      "recording_id": "adversarial_cough_noise_t1",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "uh",
+      "latency_s": 0.039233
+    },
+    {
+      "recording_id": "adversarial_cough_noise_t2",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "oh",
+      "latency_s": 0.036023
+    },
+    {
+      "recording_id": "adversarial_cough_noise_t3",
+      "category": "adversarial",
+      "reference": "",
+      "expected_route": "empty",
+      "transcript": "mm-hmm",
+      "latency_s": 0.040456
+    }
+  ]
+}

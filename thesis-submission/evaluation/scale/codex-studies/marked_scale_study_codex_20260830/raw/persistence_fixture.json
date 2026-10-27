@@ -1,0 +1,17 @@
+{
+  "2": {
+    "meaning": "castle, scale tiny",
+    "generation_meaning": "castle",
+    "explicit_scale_intent": "very_small",
+    "target_size": 0.35,
+    "scale_source": "participant_marked",
+    "explicit_detected": true,
+    "status": "ready",
+    "rotation": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    "mesh_url": "/generated_meshes/castle.glb?v=1"
+  }
+}

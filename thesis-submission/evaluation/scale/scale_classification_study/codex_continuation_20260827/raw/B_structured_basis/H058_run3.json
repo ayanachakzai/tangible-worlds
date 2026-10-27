@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H058",
+  "case_index": 58,
+  "group": "modifier",
+  "meaning": "mountain-sized robot",
+  "acceptable": [
+    "landform_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 3,
+  "raw_output": "{\"scale_basis\":\"mountain\",\"semantic_scale_class\":\"colossal_scale\"}",
+  "parsed_class": "colossal_scale",
+  "scale_basis": "mountain",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": false,
+  "latency_s": 1.47,
+  "error": ""
+}

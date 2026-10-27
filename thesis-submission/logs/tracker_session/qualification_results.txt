@@ -1,0 +1,1121 @@
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260820_205516
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1787255716.512
+duration_s: 1050.1
+calibration_noise_mm: 0.910
+calibration_threshold_mm: 6.000
+roi: [4, 19, 172, 236]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3]
+learning_started: True
+learning_locked: True
+learning_samples: {1: 113, 2: 113, 3: 113}
+final_memory_ids: [1, 2, 3]
+final_active_ids: [1, 2, 3]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 16
+manipulation_latches: 16
+interaction_restores: 1
+stationary_false_latches: 1
+release_missing: 4
+merges_started: 2
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 2
+roster_recovery_events: 4
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 4
+release_ambiguous: 1
+split_unclear: 1
+
+MERGE / SPLIT TIMELINE
++  811.1s MERGE [1, 3] area=184.6 why=residual roster area error=0.06
++  833.8s SPLIT [1, 3]
++  842.4s MERGE [1, 3] area=183.2 why=residual roster area error=0.01
++  845.7s SPLIT [1, 3]
+
+RESTORE TIMELINE
++  421.1s RESTORE id=1 area_ratio=0.838
+
+POST-LOCK ANOMALIES
+release_ambiguous: 1
+split_unclear: 1
+unmatched_after_roster_lock: 4
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+PASS  learning_locked
+PASS  learning_min_samples_met
+PASS  zero_post_lock_id_births
+PASS  roster_memory_intact_at_shutdown
+PASS  all_roster_ids_resolved_at_shutdown
+ATTENTION  zero_release_ambiguity
+ATTENTION  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_204254
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788291774.241
+duration_s: 81.0
+calibration_noise_mm: 1.094
+calibration_threshold_mm: 6.000
+roi: [36, 39, 148, 216]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2]
+final_active_ids: [1, 2]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_204657
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788292017.709
+duration_s: 43.7
+calibration_noise_mm: 1.112
+calibration_threshold_mm: 6.000
+roi: [33, 40, 150, 215]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_205727
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788292647.746
+duration_s: 6.7
+calibration_noise_mm: 0.982
+calibration_threshold_mm: 6.000
+roi: [32, 39, 133, 169]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: []
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: []
+final_active_ids: []
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_205738
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788292658.798
+duration_s: 28.4
+calibration_noise_mm: 1.149
+calibration_threshold_mm: 6.000
+roi: [33, 39, 156, 217]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2]
+final_active_ids: [1, 2]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_210956
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788293396.741
+duration_s: 38.6
+calibration_noise_mm: 1.270
+calibration_threshold_mm: 6.350
+roi: [36, 38, 154, 218]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_211145
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788293505.181
+duration_s: 17.2
+calibration_noise_mm: 1.321
+calibration_threshold_mm: 6.604
+roi: [21, 38, 166, 214]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: []
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: []
+final_active_ids: []
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_211313
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788293593.919
+duration_s: 33.2
+calibration_noise_mm: 1.238
+calibration_threshold_mm: 6.190
+roi: [12, 36, 175, 217]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_211642
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788293802.214
+duration_s: 31.1
+calibration_noise_mm: 1.304
+calibration_threshold_mm: 6.522
+roi: [16, 36, 174, 217]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_211901
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788293941.067
+duration_s: 80.4
+calibration_noise_mm: 1.243
+calibration_threshold_mm: 6.214
+roi: [26, 35, 160, 217]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_212136
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788294096.684
+duration_s: 29.1
+calibration_noise_mm: 1.096
+calibration_threshold_mm: 6.000
+roi: [23, 33, 160, 217]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3]
+final_active_ids: [1, 2, 3]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_213640
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788295000.596
+duration_s: 65.8
+calibration_noise_mm: 1.452
+calibration_threshold_mm: 7.261
+roi: [31, 33, 156, 220]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4, 5]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4, 5]
+final_active_ids: [1, 2, 4, 5]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_213750
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788295070.733
+duration_s: 48.3
+calibration_noise_mm: 1.352
+calibration_threshold_mm: 6.760
+roi: [28, 34, 160, 219]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: True
+learning_locked: True
+learning_samples: {1: 99, 2: 99, 3: 99, 4: 99}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 4
+manipulation_latches: 4
+interaction_restores: 1
+stationary_false_latches: 0
+release_missing: 1
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 3
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
++   37.3s RESTORE id=3 area_ratio=0.958
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+PASS  learning_locked
+PASS  learning_min_samples_met
+PASS  zero_post_lock_id_births
+PASS  roster_memory_intact_at_shutdown
+PASS  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260901_214135
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788295295.635
+duration_s: 70.7
+calibration_noise_mm: 1.468
+calibration_threshold_mm: 7.338
+roi: [32, 35, 156, 219]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1]
+learning_started: True
+learning_locked: True
+learning_samples: {1: 109}
+final_memory_ids: [1]
+final_active_ids: []
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 3
+manipulation_latches: 3
+interaction_restores: 1
+stationary_false_latches: 0
+release_missing: 2
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 1
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
++   63.9s RESTORE id=1 area_ratio=0.846
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+PASS  learning_locked
+PASS  learning_min_samples_met
+PASS  zero_post_lock_id_births
+PASS  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260902_020429
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788311069.917
+duration_s: 30.7
+calibration_noise_mm: 1.147
+calibration_threshold_mm: 6.000
+roi: [43, 34, 141, 210]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1]
+learning_started: False
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1]
+final_active_ids: [1]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260902_021022
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788311422.370
+duration_s: 238.6
+calibration_noise_mm: 1.123
+calibration_threshold_mm: 6.000
+roi: [48, 44, 132, 205]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: True
+learning_locked: True
+learning_samples: {1: 77, 2: 77, 3: 77, 4: 77}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 10
+manipulation_latches: 10
+interaction_restores: 0
+stationary_false_latches: 10
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+PASS  learning_locked
+PASS  learning_min_samples_met
+PASS  zero_post_lock_id_births
+PASS  roster_memory_intact_at_shutdown
+PASS  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260902_021426
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788311666.867
+duration_s: 23.3
+calibration_noise_mm: 1.155
+calibration_threshold_mm: 6.000
+roi: [37, 37, 148, 215]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: True
+learning_locked: False
+learning_samples: {}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 0
+manipulation_latches: 0
+interaction_restores: 0
+stationary_false_latches: 0
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 0
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
+none
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+ATTENTION  learning_locked
+ATTENTION  learning_min_samples_met
+ATTENTION  zero_post_lock_id_births
+ATTENTION  roster_memory_intact_at_shutdown
+ATTENTION  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+
+========================================================================
+TANGIBLE WORLDS TRACKER QUALIFICATION REPORT
+========================================================================
+run_folder: tracker_debug/run_20260902_021508
+source: track_tabletop_STUDY_20260820.py
+started_unix: 1788311708.891
+duration_s: 287.4
+calibration_noise_mm: 1.130
+calibration_threshold_mm: 6.000
+roi: [33, 41, 156, 209]
+
+ROSTER / LEARNING
+semantic_ids_created_before_lock: [1, 2, 3, 4]
+learning_started: True
+learning_locked: True
+learning_samples: {1: 72, 2: 72, 3: 72, 4: 72}
+final_memory_ids: [1, 2, 3, 4]
+final_active_ids: [1, 2, 3, 4]
+post_lock_new_ids: []
+
+POST-LOCK INTERACTION COUNTS
+body_release_episodes: 21
+manipulation_latches: 22
+interaction_restores: 1
+stationary_false_latches: 17
+release_missing: 0
+merges_started: 0
+merge_group_growths: 0
+merge_group_shrinks: 0
+partial_splits: 0
+full_splits: 0
+roster_recovery_events: 0
+multi_object_touch_episodes: 1
+unmatched_after_roster_lock: 0
+release_ambiguous: 0
+split_unclear: 0
+
+MERGE / SPLIT TIMELINE
+none
+
+RESTORE TIMELINE
++  168.2s RESTORE id=3 area_ratio=1.018
+
+POST-LOCK ANOMALIES
+none
+
+AUTOMATIC CHECKS
+PASS  calibration_noise_le_2.5mm
+PASS  learning_locked
+PASS  learning_min_samples_met
+PASS  zero_post_lock_id_births
+PASS  roster_memory_intact_at_shutdown
+PASS  all_roster_ids_resolved_at_shutdown
+PASS  zero_release_ambiguity
+PASS  zero_split_unclear
+PASS  not_stopped_while_merged
+
+MANUAL OBSERVATION REQUIRED
+Report any visible silent ID swap, missed physical merge, or wrong split.
+The automatic report cannot infer physical ground truth by itself.
+========================================================================
+

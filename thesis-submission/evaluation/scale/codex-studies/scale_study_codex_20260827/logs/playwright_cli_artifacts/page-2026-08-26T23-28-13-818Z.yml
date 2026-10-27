@@ -1,0 +1,6 @@
+- region "Screenshot evidence details" [ref=f7e2]:
+  - heading "A_baseline | common-size baseline" [level=1] [ref=f7e3]
+  - paragraph [ref=f7e4]: "sizes: 0.90 | 0.90 | 0.90 | 0.90 | 0.90 | 0.90 | 0.90"
+  - paragraph [ref=f7e5]: "adjacency: mixed adjacency | production: production camera"
+  - paragraph [ref=f7e6]: Loading 0/7 meshes
+  - paragraph [ref=f7e7]: handheld=coffee mug | body_scale=wooden chair | room_scale=tent | vehicle_scale=car | building_scale=house | infrastructure_scale=castle | landform_scale=mountain

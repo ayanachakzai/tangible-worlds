@@ -1,0 +1,38 @@
+[
+  {
+    "index": 1,
+    "bbox": [
+      0,
+      204,
+      1,
+      27
+    ],
+    "accepted": false,
+    "reason": "roi_edge",
+    "area": null,
+    "height": null,
+    "max_height": null,
+    "x": -0.025,
+    "y": 0.9289340101522843,
+    "tx": null,
+    "ty": null
+  },
+  {
+    "index": 1,
+    "bbox": [
+      0,
+      204,
+      22,
+      27
+    ],
+    "accepted": false,
+    "reason": "body_exclusion",
+    "area": 64.103277400136,
+    "height": 52.7155029296875,
+    "max_height": 55.513145446777344,
+    "x": 0.02433252427184466,
+    "y": 0.9413779508156326,
+    "tx": -29.688403010368347,
+    "ty": -37.332507967948914
+  }
+]

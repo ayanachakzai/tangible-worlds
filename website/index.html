@@ -1,0 +1,848 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tangible Worlds</title>
+  <meta name="description" content="An interactive visual documentary of Tangible Worlds: physical arrangement as spatial prompting for generative 3D environments. MSc thesis, UAL Creative Computing Institute, 2026." />
+  <meta name="theme-color" content="#0c0c0b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230c0c0b'/%3E%3Crect x='7' y='7' width='18' height='18' fill='none' stroke='%23e2d046' stroke-width='2.5'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&family=League+Gothic&family=Reddit+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/media/img/hero-poster.jpg" media="(min-aspect-ratio: 1/1)" />
+  <link rel="preload" as="image" href="/media/img/hero-poster-mobile.jpg" media="(max-aspect-ratio: 1/1)" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <a class="skip" href="#sensing">Skip the opening film</a>
+
+  <!-- ─────────────── Sidebar ─────────────── -->
+  <nav class="rail" aria-label="Chapters">
+    <a class="rail__mark" href="#top" aria-label="Tangible Worlds, back to the opening"><span></span></a>
+    <ol class="rail__list">
+      <li><a href="#top" data-chapter="top"><b>00</b><i>Prototype</i></a></li>
+      <li><a href="#sensing" data-chapter="sensing"><b>01</b><i>Physical sensing</i></a></li>
+      <li><a href="#hands" data-chapter="hands"><b>02</b><i>Hands and movement</i></a></li>
+      <li><a href="#mapping" data-chapter="mapping"><b>03</b><i>Spatial mapping</i></a></li>
+      <li><a href="#language" data-chapter="language"><b>04</b><i>Language and meaning</i></a></li>
+      <li><a href="#generation" data-chapter="generation"><b>05</b><i>Generating objects</i></a></li>
+      <li><a href="#environment" data-chapter="environment"><b>06</b><i>The environment</i></a></li>
+      <li><a href="#applications" data-chapter="applications"><b>07</b><i>Applications</i></a></li>
+      <li><a href="#research" data-chapter="research"><b>08</b><i>Research</i></a></li>
+    </ol>
+    <div class="rail__progress" aria-hidden="true"><span></span></div>
+  </nav>
+  <button class="index-toggle" type="button" aria-expanded="false" aria-controls="index-sheet">
+    <span class="index-toggle__num">00</span><span class="index-toggle__label">Index</span>
+  </button>
+  <div class="index-sheet" id="index-sheet" hidden></div>
+
+  <main>
+    <!-- ─────────────── 00 Hero ─────────────── -->
+    <section class="hero" id="top" data-chapter="top" aria-label="Opening: the working prototype">
+      <div class="hero__frame">
+        <video class="hero__video" muted playsinline loop preload="auto" poster="/media/img/hero-poster.jpg"
+               aria-describedby="hero-caption"
+               data-src-wide="/media/video/hero-split.mp4" data-src-tall="/media/video/hero-split-mobile.mp4"
+               data-poster-wide="/media/img/hero-poster.jpg" data-poster-tall="/media/img/hero-poster-mobile.jpg"></video>
+        <div class="hero__shade" aria-hidden="true"></div>
+        <div class="hero__tags" aria-hidden="true">
+          <span class="tag tag--phys">Tabletop · tracker RGB view</span>
+          <span class="tag tag--dig">Generated scene · production renderer</span>
+        </div>
+      </div>
+      <div class="hero__copy">
+        <p class="hero__kicker">MSc Applied Machine Learning for Creatives · Creative Computing Institute, UAL · 2026</p>
+        <h1 class="hero__title"><span>Tangible</span> <span>Worlds</span></h1>
+        <p class="hero__sub">Physical arrangement as spatial prompting for generative&nbsp;3D environments</p>
+      </div>
+      <div class="hero__controls">
+        <button class="btn-ghost js-hero-play" type="button" aria-pressed="true">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path class="i-pause" d="M4 3h3v10H4zM9 3h3v10H9z"/><path class="i-play" d="M4 2.5v11l9-5.5z"/></svg>
+          <span>Pause film</span>
+        </button>
+        <button class="btn-ghost js-open-film" type="button">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 3.5h13v9h-13z" fill="none" stroke="currentColor"/><path d="M6.5 6v4l3.5-2z"/></svg>
+          <span>Watch the full demonstration <em>3:52</em></span>
+        </button>
+      </div>
+      <p class="hero__caption" id="hero-caption"><span class="long">Screen recording of the working system, Part&nbsp;2.2. A hand moves a wallet on the table; the generated house follows. Left and right are cropped from one recording and placed side by side; nothing else is altered.</span><span class="short">Part&nbsp;2.2 recording. Top and bottom are cropped from one screen capture; nothing else is altered.</span></p>
+      <div class="hero__thesis" aria-hidden="true">
+        <p><span>Hands set</span> <span>spatial structure.</span></p>
+        <p><span>Words set</span> <span>semantics.</span></p>
+      </div>
+    </section>
+
+    <section class="thesis-line" aria-label="Premise">
+      <div class="thesis-line__body">
+        <p>Ordinary objects on a table become persistent handles. An iPhone tracks where they are. Language decides what they are. A generative pipeline gives each meaning a 3D form, and moving the object moves its counterpart without generating it again.</p>
+        <p class="muted">The following chapters follow one object through that path, using the project's own recordings, tracker output, logs and generated meshes. Where the page reconstructs something in the browser, it says so.</p>
+      </div>
+    </section>
+
+    <!-- ─────────────── 01 Sensing ─────────────── -->
+    <section class="chapter sensing" id="sensing" data-chapter="sensing" aria-labelledby="h-sensing">
+      <header class="chapter__head">
+        <p class="chapter__num">01</p>
+        <h2 id="h-sensing">Physical sensing</h2>
+        <p class="chapter__lede">The table is observed in depth, not recognised in pictures. An object is anything that stands above a fitted plane.</p>
+      </header>
+
+      <div class="sense">
+        <div class="sense__stage" aria-hidden="true">
+          <div class="sense__view">
+            <img class="sv sv--overhead" src="/media/img/s01-overhead-rgb.webp" alt="" loading="lazy" />
+            <img class="sv sv--depth" src="/media/img/s01-depth-probe.webp" alt="" loading="lazy" />
+            <div class="sv sv--grid">
+              <img class="pix pix--rgb" src="/media/img/trk-a-rgb.webp" alt="" loading="lazy" />
+              <div class="plane"><span></span></div>
+              <img class="pix pix--mask" src="/media/img/trk-a-mask.webp" alt="" loading="lazy" />
+              <svg class="boxes" viewBox="0 0 192 256" preserveAspectRatio="none"></svg>
+              <div class="cells"></div>
+            </div>
+          </div>
+          <div class="sense__readout">
+            <div class="ro" data-ro="0"><b>Record3D stream</b><span>RGB 1440 × 1920</span><span>LiDAR depth 192 × 256</span></div>
+            <div class="ro" data-ro="1"><b>depth_probe.py</b><span>noise 1.7 mm</span><span>distance above plane, false colour</span></div>
+            <div class="ro" data-ro="2"><b>Calibration</b><span>frame <em class="js-cal-frame">0</em> / 30</span><span>noise <em class="js-cal-noise">–</em> mm · gate ≤ 2.5</span><span>threshold 6.0 mm</span><span>frame shown: the same table after props were placed</span></div>
+            <div class="ro" data-ro="3"><b>Segmentation</b><span>height &gt; 6 mm, ≤ 150 mm</span><span>footprint ≥ 3 cm²</span><span>5 × 5 open, then close</span></div>
+            <div class="ro" data-ro="4"><b>scene_state.json</b><span>id · "object" · x · y</span><span>area_cm2 · height_mm</span></div>
+          </div>
+        </div>
+
+        <ol class="sense__steps">
+          <li class="step" data-step="0">
+            <p class="step__k">Observe</p>
+            <h3>An iPhone looks straight down at the table.</h3>
+            <p>Record3D streams colour and LiDAR depth from the phone to a MacBook. The colour image is only for the person operating the tracker. Detection runs on the depth grid, which stays at 192 × 256 even when the colour preview is high resolution.</p>
+            <p class="src">Overhead RGB, 12 Aug 2026 · portfolio 02-LID-003</p>
+          </li>
+          <li class="step" data-step="1">
+            <p class="step__k">Measure</p>
+            <h3>Depth separates things from the surface they sit on.</h3>
+            <p>An early diagnostic shows every region standing above the fitted table plane, with its height in millimetres. Real props appear alongside false regions from the wall, the table edge and sensor noise, which is why the final tracker adds a region of interest and height and footprint limits.</p>
+            <p class="src">depth_probe.py, read-only diagnostic · portfolio 02-LID-005 · dissertation Fig. 5.2</p>
+          </li>
+          <li class="step" data-step="2">
+            <p class="step__k">Calibrate</p>
+            <h3>Thirty empty frames define the table.</h3>
+            <p>With nothing on the table, the tracker fits one plane and measures the residual noise. The foreground threshold is derived from that noise and clipped to 6–20&nbsp;mm. If the noise exceeds 2.5&nbsp;mm the calibration is refused and the operator must select the table again.</p>
+            <p class="src">Values from the frozen study tracker; final acceptance run noise 0.679&nbsp;mm, threshold 6.0&nbsp;mm</p>
+          </li>
+          <li class="step" data-step="3">
+            <p class="step__k">Segment</p>
+            <h3>What rises above the plane becomes a region.</h3>
+            <p>Pixels more than the threshold above the plane are cleaned with a 5&nbsp;×&nbsp;5 morphological open and close, then grouped into connected components. Regions taller than 150&nbsp;mm or smaller than 3&nbsp;cm² are discarded. This is the tracker's own mask, shown at its native resolution.</p>
+            <p class="src">Frozen tracker debug output, 192 × 256 · portfolio 02-DEB-061/062</p>
+          </li>
+          <li class="step" data-step="4">
+            <p class="step__k">Identify</p>
+            <h3>Each region receives a number, not a name.</h3>
+            <p>The tracker publishes geometry and a persistent id. Its label field is always the generic word <code>"object"</code>. The first prototype used YOLO to name objects; the detector chose the vocabulary, so it was removed. The frozen tracker imports no recognition model.</p>
+            <pre class="code" aria-label="Tracker output schema">{ "id": &lt;int&gt;, "label": "object",
+  "x": &lt;0–1&gt;, "y": &lt;0–1&gt;, "depth_m": &lt;float&gt;,
+  "area_cm2": &lt;float&gt;, "height_mm": &lt;float&gt;,
+  "table_x_cm": &lt;float&gt;, "table_y_cm": &lt;float&gt; }</pre>
+            <p class="src">Boxes are the connected components of the mask above, numbered by size for display · schema from the frozen tracker's <code>write_scene()</code></p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ─────────────── 02 Hands ─────────────── -->
+    <section class="chapter hands chapter-02" id="hands" data-chapter="hands" aria-labelledby="h-hands">
+      <header class="chapter__head">
+        <p class="chapter__num">02</p>
+        <h2 id="h-hands">Hands and movement</h2>
+        <p class="chapter__lede">A hand is the largest thing on the table while it works. The tracker has to ignore it without forgetting what it was holding.</p>
+      </header>
+
+      <div class="c02-compare">
+      <div class="strip" role="group" aria-label="Three tracker frames from one session">
+        <figure class="frame" data-frame="h1">
+          <div class="frame__img">
+            <img src="/media/img/trk-h1-rgb.webp" alt="Tracker colour frame: a hand reaches past a silver tin." loading="lazy" />
+            <img class="frame__mask" src="/media/img/trk-h1-mask.webp" alt="Tracker mask for the same frame: only the tin is kept." loading="lazy" />
+          </div>
+          <figcaption><b>01</b><span>Hand beside the tin. The mask keeps the tin only.</span></figcaption>
+        </figure>
+        <figure class="frame" data-frame="h2">
+          <div class="frame__img">
+            <img src="/media/img/trk-h2-rgb.webp" alt="Tracker colour frame: a red box has been placed, the hand withdraws." loading="lazy" />
+            <img class="frame__mask" src="/media/img/trk-h2-mask.webp" alt="Mask: tin and red box are kept, the hand is not." loading="lazy" />
+          </div>
+          <figcaption><b>02</b><span>Red box placed. The hand is not a prop.</span></figcaption>
+        </figure>
+        <figure class="frame" data-frame="h3">
+          <div class="frame__img">
+            <img src="/media/img/trk-h3-rgb.webp" alt="Tracker colour frame: three props, no hand." loading="lazy" />
+            <img class="frame__mask" src="/media/img/trk-h3-mask.webp" alt="Mask: three separate props." loading="lazy" />
+          </div>
+          <figcaption><b>03</b><span>Wallet added. Three regions, three IDs.</span></figcaption>
+        </figure>
+      </div>
+      <div class="strip__control">
+        <div class="strip__row">
+          <label for="reveal">Colour</label>
+          <input id="reveal" type="range" min="0" max="100" step="1" value="50" aria-label="Reveal the depth mask over the colour frames" aria-valuetext="50% depth mask" aria-describedby="reveal-note" />
+          <label for="reveal">Depth mask</label>
+        </div>
+        <p id="reveal-note" class="src">Frozen tracker debug frames at native 192 × 256, saved automatically when a new candidate appeared · portfolio 02-DEB-021 to 026</p>
+      </div>
+      </div>
+
+      <div class="latch">
+        <div class="latch__diagram" aria-hidden="true">
+          <svg viewBox="0 0 640 220" class="latch__svg">
+            <defs>
+              <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="6" fill="currentColor" opacity=".35"/></pattern>
+            </defs>
+            <rect class="lt-table" x="20" y="20" width="600" height="180" rx="2"/>
+            <g class="lt-prop"><rect x="-26" y="-20" width="52" height="40" rx="3"/><text y="5">#3</text></g>
+            <g class="lt-ghost"><rect x="-26" y="-20" width="52" height="40" rx="3"/></g>
+            <path class="lt-hand" d="M620,128 C560,120 520,112 470,118 C455,120 446,132 452,140 C470,146 520,150 620,160 Z"/>
+            <circle class="lt-radius" r="44"/>
+          </svg>
+        </div>
+        <ol class="latch__states" aria-label="Tracker states during handling">
+          <li data-s="0"><b>Tracking</b><span>id 3 follows its region</span></li>
+          <li data-s="1"><b>Body present</b><span>a region touching the frame edge is treated as body, not prop</span></li>
+          <li data-s="2"><b>Latched</b><span>within 3 cm of the hand, id 3 holds its last clean measurement</span></li>
+          <li data-s="3"><b>Released</b><span>five consecutive clear frames</span></li>
+          <li data-s="4"><b>Committed</b><span>new position published; one move, not a trajectory</span></li>
+        </ol>
+        <div class="latch__text">
+          <p>Handling is treated as information rather than noise. While a hand is near a known prop, the prop is not re-measured or re-learned; it waits. When the hand leaves, the new position is committed as a single move. The movement log therefore records before and after, not the path between.</p>
+          <p class="muted">Lifting an object off the table and setting it down elsewhere is recorded as a disappearance followed by an appearance.</p>
+          <p class="src">Diagram is a schematic of the frozen tracker's state logic, not recorded data.</p>
+        </div>
+      </div>
+
+      <div class="merge">
+        <div class="merge__viz" aria-hidden="true">
+          <div class="mg mg--a"><span>83.3</span></div>
+          <div class="mg mg--b"><span>101.0</span></div>
+          <div class="mg mg--sum"><span>184.6</span></div>
+          <div class="mg-band"></div>
+        </div>
+        <div class="merge__text">
+          <h3>Two props pushed together look like one.</h3>
+          <p>Rather than inventing a new identity, the tracker checks whether the merged footprint is consistent with the sum of two known ones, and keeps both ids alive through the merge. In the recorded session, props of 83.3 and 101.0&nbsp;cm² produced merged readings of 184.6 and 183.2&nbsp;cm² against a combined 184.3. The implementation accepts a 15% tolerance.</p>
+        </div>
+      </div>
+
+      <dl class="tally" aria-label="Frozen tracker hardware session">
+        <div><dt>Session</dt><dd data-count="1039">1,039</dd><span>seconds</span></div>
+        <div><dt>Frames</dt><dd data-count="26503">26,503</dd><span>processed</span></div>
+        <div><dt>Hand episodes</dt><dd data-count="16">16</dd><span>occurred</span></div>
+        <div><dt>Merges</dt><dd data-count="2">2</dd><span>occurred</span></div>
+        <div><dt>New identities</dt><dd data-count="0">0</dd><span>after lock</span></div>
+      </dl>
+      <p class="caveat"><b>Limits.</b> Shallow, low-profile props can fragment or disappear around the 6&nbsp;mm threshold; this was documented, not solved. The session above introduced no unfamiliar prop, so it does not test refusal. After one merge the classifier could not confirm the separated objects (scores 0.76 and 0.77 against a 0.55 threshold) and recovery fell back to position.</p>
+    </section>
+
+    <!-- ─────────────── 03 Mapping ─────────────── -->
+    <section class="chapter mapping chapter-03" id="mapping" data-chapter="mapping" aria-labelledby="h-mapping">
+      <!-- A · the idea -->
+      <header class="c03-head">
+        <p class="c03-head__num">03</p>
+        <h2 id="h-mapping">Spatial mapping</h2>
+        <p class="c03-head__lede">Each object on the table controls the position of something in the generated world. Move a physical object, and its digital counterpart moves with it.</p>
+      </header>
+
+      <!-- B · the paired interaction -->
+      <div class="c03-try">
+        <p class="c03-try__cta js-map-cta" id="map-cta">Move the wallet. Watch the house.</p>
+        <p class="c03-try__how" id="map-hint"><span class="how-fine">Drag an object, or select it and use the keyboard.</span><span class="how-touch">Drag an object, or tap it and then tap where it should go.</span></p>
+      </div>
+
+      <div class="mapping-experience">
+        <div class="mx-view mx-view--table" role="group" aria-labelledby="mx-l-table">
+          <div class="mx-bar">
+            <p class="mx-label" id="mx-l-table">On the table</p>
+            <button class="map__reset js-map-reset" type="button">Reset positions</button>
+          </div>
+          <svg class="map__svg" viewBox="0 0 1000 1000" role="application" aria-label="Tabletop with four physical objects. Arrow keys move the selected object." aria-describedby="map-cta map-hint">
+            <rect class="map__bg" x="0" y="0" width="1000" height="1000"/>
+            <g class="map__gridlines"></g>
+            <g class="map__rings"></g>
+            <g class="map__lines"></g>
+            <g class="map__props"></g>
+            <g class="map__labels"></g>
+          </svg>
+        </div>
+
+        <div class="mx-view mx-view--world" role="group" aria-labelledby="mx-l-world">
+          <div class="mx-bar"><p class="mx-label" id="mx-l-world">In the generated world</p></div>
+          <div class="scene3d">
+            <canvas class="scene3d__canvas js-scene3d-canvas" role="img" aria-label="Generated world: the four cached models placed where their physical objects are on the table."></canvas>
+            <div class="scene3d__labels" aria-hidden="true"></div>
+            <p class="scene3d__status js-scene3d-status">Loading the four recorded models…</p>
+          </div>
+          <p class="mx-note">Cached models from the recorded session. Nothing is generated live.</p>
+        </div>
+      </div>
+
+      <!-- C · the consequence -->
+      <div class="c03-says">
+        <p class="c03-says__rel js-map-sentence">The house is far from the windmill.</p>
+        <p class="c03-says__why js-map-why">Drag the wallet towards the red box. The house will move towards the windmill.</p>
+        <div class="c03-compare" role="group" aria-labelledby="c03-compare-k">
+          <span class="c03-compare__k" id="c03-compare-k">Compare <span class="js-compare-subject">the house</span> with</span>
+          <span class="c03-compare__opts js-compare-opts"></span>
+        </div>
+        <p class="visually-hidden js-map-status" aria-live="polite"></p>
+      </div>
+
+      <!-- D · the calculations, on demand -->
+      <details class="c03-calc">
+        <summary>How does the system calculate this?</summary>
+        <div class="c03-calc__body">
+          <div class="c03-calc__text">
+          <p class="c03-calc__intro">The prop photographs and starting positions come from the recorded session. The tracker reports each object's position on the table as normalised x and y, from 0 to 1 across each edge; they are not centimetres. The rules below are ported unchanged from the project's <code>compute_scene.py</code> and run in your browser.</p>
+          <dl class="c03-vals">
+            <div><dt>selected object</dt><dd><span class="js-mr-id"></span> · <span class="js-mr-prop"></span> → <span class="js-mr-meaning"></span></dd></div>
+            <div><dt>x</dt><dd class="js-mr-x"></dd></div>
+            <div><dt>y</dt><dd class="js-mr-y"></dd></div>
+            <div><dt>compared with</dt><dd><span class="js-mr-ref"></span> · <span class="js-mr-refname"></span></dd></div>
+            <div><dt>distance</dt><dd><span class="js-mr-dist"></span> <span class="c03-unit">normalised table units</span></dd></div>
+            <div><dt>proximity</dt><dd class="js-mr-prox"></dd></div>
+            <div><dt>direction</dt><dd><span class="js-mr-dir"></span> <span class="c03-unit js-mr-dirnote"></span></dd></div>
+            <div><dt>world position</dt><dd><span class="js-mr-world"></span> <span class="c03-unit">x = (n − 0.5) × 10 on the renderer's 10 × 10 table</span></dd></div>
+          </dl>
+          <ul class="c03-rules">
+            <li><b>Distance</b> is the straight-line (Euclidean) distance between two objects' x, y positions.</li>
+            <li><b>Near</b> below 0.15 · <b>medium</b> 0.15 to 0.40 inclusive · <b>far</b> above 0.40.</li>
+            <li><b>Direction</b> ignores differences smaller than 0.05 on either axis.</li>
+            <li><b>Clusters</b> join objects by single linkage on near pairs.</li>
+          </ul>
+          <div class="c03-trigger">
+            <p class="c03-trigger__k">Relation trigger</p>
+            <p class="c03-trigger__msg js-relate-msg">No pair is near. Bring two objects within 0.15 of each other.</p>
+          </div>
+          <details class="mr-json">
+            <summary>Full computed scene description</summary>
+            <pre class="json js-map-json" aria-label="Computed scene description"></pre>
+          </details>
+          </div>
+
+          <!-- the selected object's cached model, on its own: a stored result, not a live world -->
+          <aside class="c03-specimen" aria-labelledby="c03-specimen-h">
+            <div class="c03-specimen__stage">
+              <canvas class="c03-specimen__canvas" role="img" aria-label="The cached 3D model of a house, turning slowly."></canvas>
+              <p class="c03-specimen__status" aria-hidden="true">Loading the cached model…</p>
+            </div>
+            <p class="c03-specimen__k">Cached model</p>
+            <h4 class="c03-specimen__h" id="c03-specimen-h"><span class="js-spec-meaning">a house</span></h4>
+            <p class="c03-specimen__note">The model stored for the <span class="js-spec-prop">wallet</span>'s meaning during the recorded session, shown exactly as it was generated and at a common display size. Nothing new is being generated here.</p>
+            <p class="c03-specimen__how"><span class="how-fine">Drag sideways to turn it.</span><span class="how-touch">Swipe sideways to turn it.</span></p>
+          </aside>
+        </div>
+      </details>
+
+      <!-- E · other documented relationships -->
+      <div class="relate">
+        <h3 class="relate__h">Other relationships explored in the research</h3>
+        <p class="relate__intro">When two objects were near, the production system could ask its language model for one small object to connect their meanings. These two pairs were recorded during development. The tabletop above does not generate connectors. <a href="#environment">The mountain, tent and cairn case is reconstructed in chapter 06.</a></p>
+        <div class="relate__evidence">
+          <figure>
+            <img src="/media/img/inter-horse-stable.webp" alt="Horse and stable with a generated hitching post intersecting the stable." loading="lazy" />
+            <figcaption><b>horse + stable → hitching post.</b> The asset is recognisable, but too large for the gap and poorly oriented. Recorded 14 Aug.</figcaption>
+          </figure>
+          <figure>
+            <img src="/media/img/inter-mountain-tent.webp" alt="Mountain and tent with a small stone cairn between them." loading="lazy" />
+            <figcaption><b>mountain + tent → stone cairn.</b> Bounded and placeable, but the cairn was supplied as the prompt's example, so it shows representability, not independent inference. Recorded 15 Aug.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── 04 Language ─────────────── -->
+    <section class="chapter language chapter-04" id="language" data-chapter="language" aria-labelledby="h-language">
+      <header class="c04-head">
+        <p class="c04-head__num">04</p>
+        <h2 id="h-language">Language and meaning</h2>
+        <p class="c04-head__lede">A wallet can become a house. A red box can become a windmill. The objects themselves do not change. Their meaning comes from the words assigned to them.</p>
+      </header>
+
+      <!-- the transformation: the object stays, the meaning travels -->
+      <div class="tx js-tx" data-done="true">
+        <figure class="tx-object">
+          <img class="tx-object__img js-tx-prop" src="/media/img/prop-3.webp" alt="The wallet on the tabletop, as the tracker camera saw it." width="138" height="136" />
+          <figcaption class="tx-object__cap"><b class="js-tx-objname">The wallet</b>, tracked as object <span class="js-tx-objid">3</span>. It never changes.</figcaption>
+        </figure>
+
+        <figure class="tx-result">
+          <div class="tx-result__frame js-tx-frame">
+            <img class="tx-result__pending js-tx-pending" src="/media/img/src-a-house.webp" alt="" width="512" height="512" aria-hidden="true" />
+            <div class="tx-result__reveal js-tx-reveal">
+              <img class="tx-result__img js-tx-result" src="/media/img/src-a-house.webp" alt="The image generated for the meaning a house." width="512" height="512" />
+            </div>
+            <div class="tx-model js-tx-model" hidden>
+              <canvas class="c03-specimen__canvas" role="img" aria-label="The cached 3D model of a house."></canvas>
+              <p class="c03-specimen__status tx-model__status" aria-hidden="true">Loading the cached model…</p>
+            </div>
+            <span class="tx-tag js-tx-tag">a house</span>
+          </div>
+          <figcaption class="tx-result__cap"><span class="js-tx-resultcap">Generated for the meaning, not for the wallet.</span> <button type="button" class="c04-btn2 js-tx-model-toggle" aria-pressed="false"><svg class="c04-ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5 14 5v6l-6 3.5L2 11V5z M2 5l6 3.5L14 5 M8 8.5v6" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg><span class="js-tx-model-label">Inspect 3D model</span></button></figcaption>
+        </figure>
+
+        <p class="tx-heard"><span class="tx-k">Participant, speaking</span></p>
+        <p class="tx-utter js-tx-utter" aria-label="object three is a house scale large">object three is <mark class="tx-mean">a house</mark> scale large</p>
+
+        <div class="tx-talk" aria-live="polite">
+          <p class="tx-line tx-line--sys js-tx-readback"><span class="tx-k">System</span> <q class="js-tx-q">Did you say: object three is a house scale large?</q></p>
+          <p class="tx-line tx-line--yes js-tx-yes"><span class="tx-k">Participant</span> <b class="tx-yes">yes</b> <span class="tx-got"><span class="tx-k">System</span> <q>Got it.</q></span></p>
+        </div>
+
+        <div class="tx-ctl">
+          <button type="button" class="c04-btn1 js-tx-replay"><svg class="c04-ico" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2.5v11l9-5.5z" fill="currentColor"/></svg><span class="js-tx-replay-label">Replay assignment</span></button>
+          <button type="button" class="c04-btn2 tx-skip js-tx-skip" aria-hidden="true" tabindex="-1">Skip to result</button>
+          <p class="tx-stage js-tx-stage" aria-live="polite"><span class="tx-stage__dot" aria-hidden="true"></span><span class="js-tx-stage-t">Generated result available</span><span class="tx-stage__bar" aria-hidden="true"><span class="js-tx-progress"></span></span></p>
+        </div>
+
+        <div class="tx-cmds">
+          <p class="tx-cmds__k" id="tx-cmds-k">Choose a recorded assignment</p>
+          <div class="tx-cmds__list" role="radiogroup" aria-labelledby="tx-cmds-k">
+            <button type="button" role="radio" aria-checked="true" data-cmd="3"><span class="c04-mark" aria-hidden="true"></span>03 · Wallet → House</button>
+            <button type="button" role="radio" aria-checked="false" data-cmd="1"><span class="c04-mark" aria-hidden="true"></span>01 · Red box → Windmill</button>
+            <button type="button" role="radio" aria-checked="false" data-cmd="2"><span class="c04-mark" aria-hidden="true"></span>02 · Round object → Fire truck</button>
+            <button type="button" role="radio" aria-checked="false" data-cmd="4"><span class="c04-mark" aria-hidden="true"></span>04 · Small wallet → Horse</button>
+          </div>
+        </div>
+      </div>
+      <p class="c04-note">A shortened replay of a recorded session. In the session the system waited for the participant to answer; nothing is recognised or generated on this page.</p>
+
+      <!-- how the system handled it: the object-assignment branch as a directed flow -->
+      <!-- how a word becomes a world: one stage presented at a time -->
+      <section class="flow-experience js-flow" aria-labelledby="flow-h">
+        <h3 class="fx-h" id="flow-h">How a word becomes a world</h3>
+        <p class="fx-lede">Follow a recorded instruction from a physical object to its generated counterpart. <span class="fx-example">Recorded example: <b class="js-flow-example">Wallet → House</b></span></p>
+
+        <div class="fx-bar">
+          <ol class="fx-steps" aria-label="Five stages of the recorded route">
+            <li class="fx-step" data-stage="1"><button type="button" class="fx-step__hit" aria-current="step"><span class="fx-step__num">01</span><span class="fx-step__t">Physical object</span></button></li>
+            <li class="fx-step" data-stage="2"><button type="button" class="fx-step__hit" aria-current="false"><span class="fx-step__num">02</span><span class="fx-step__t">Spoken instruction</span></button></li>
+            <li class="fx-step" data-stage="3"><button type="button" class="fx-step__hit" aria-current="false"><span class="fx-step__num">03</span><span class="fx-step__t">Confirmation</span></button></li>
+            <li class="fx-step" data-stage="4"><button type="button" class="fx-step__hit" aria-current="false"><span class="fx-step__num">04</span><span class="fx-step__t">Meaning assigned</span></button></li>
+            <li class="fx-step" data-stage="5"><button type="button" class="fx-step__hit" aria-current="false"><span class="fx-step__num">05</span><span class="fx-step__t">Generated world</span></button></li>
+          </ol>
+          <div class="fx-ctl">
+            <button type="button" class="c04-btn2 js-flow-prev" aria-label="Previous step"><span aria-hidden="true">←</span><span>Previous<span class="fx-w"> step</span></span></button>
+            <button type="button" class="c04-btn1 js-flow-next" aria-label="Next step"><span>Next<span class="fx-w"> step</span></span><span aria-hidden="true">→</span></button>
+            <button type="button" class="fx-restart js-flow-restart">Restart</button>
+          </div>
+        </div>
+
+        <div class="fx-stage js-flow-stage" aria-live="polite"></div>
+
+        <details class="fx-evidence">
+          <summary>Technical evidence and implementation</summary>
+          <div class="fx-evidence__body js-flow-evidence"></div>
+        </details>
+      </section>
+
+      <!-- scale: the same cached model at each said size -->
+      <div class="c04-scale">
+        <div class="c04-scale__text">
+          <h3 class="c04-h3">Scale is only ever said explicitly.</h3>
+          <p class="c04-p"><code class="js-sc-m">scale large</code> sets a display target for the cached model's longest side. It is relative, not a measurement, and the physical object's own size plays no part.</p>
+          <div class="c04-scale__row c04-seg" role="radiogroup" aria-label="Scale marker">
+            <button type="button" role="radio" aria-checked="false" data-t="0.35" data-m="scale tiny">Tiny <span>0.35</span></button>
+            <button type="button" role="radio" aria-checked="false" data-t="0.65" data-m="scale small">Small <span>0.65</span></button>
+            <button type="button" role="radio" aria-checked="false" data-t="1" data-m="">None <span>1.00</span></button>
+            <button type="button" role="radio" aria-checked="true" data-t="1.8" data-m="scale large">Large <span>1.80</span></button>
+            <button type="button" role="radio" aria-checked="false" data-t="3" data-m="scale huge">Huge <span>3.00</span></button>
+          </div>
+          <p class="c04-scale__t js-sc-t" aria-hidden="true">1.80×</p>
+          <p class="c04-note">The same cached model at every size, in one fixed frame, so the sizes compare directly. Dashed box: the bounding box the renderer scales, at no marker. Drag the model to turn it. <q>Miniature</q> works like tiny, <q>big</q> like large. The lean is in the generated mesh itself.</p>
+        </div>
+        <figure class="c04-scale__viz">
+          <div class="c04-scale__stage">
+            <canvas class="c04-scale__canvas js-sc-canvas" tabindex="0" role="img" aria-label="The cached house model drawn at display target 1.80, beside a dashed outline of its unmarked size."></canvas>
+            <p class="c04-scale__status js-sc-status">Loading the cached house model…</p>
+            <p class="c04-scale__hint" aria-hidden="true"><svg class="c04-ico" viewBox="0 0 16 16"><path d="M5 4 1.5 8 5 12 M11 4l3.5 4L11 12 M2 8h12" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>Drag to turn</p>
+          </div>
+        </figure>
+      </div>
+
+      <!-- why confirmation matters: one logged assignment, five transcripts -->
+      <div class="c04-retries" id="why-confirmation">
+        <div class="c04-retries__text">
+          <h3 class="c04-h3">Why it asks first.</h3>
+          <p class="c04-p">Speech is misheard. In one logged test assignment the same sentence took five tries; every transcript was read back, and only the last was accepted.</p>
+        </div>
+        <ol class="c04-retries__list js-retries" aria-label="Five recorded transcripts, in order">
+          <li><span class="rt-n">1</span><span class="rt-t">Object 2 is a car scaled <del>angle</del></span></li>
+          <li><span class="rt-n">2</span><span class="rt-t"><del>Project</del> 2 is a <del>card</del> scaled <del>timing</del></span></li>
+          <li><span class="rt-n">3</span><span class="rt-t"><del>Yeah</del> Object 2 is a <del>card</del> scaled <del>timing</del></span></li>
+          <li><span class="rt-n">4</span><span class="rt-t"><del>Objective</del> is <del>called</del> scaled tiny</span></li>
+          <li class="is-ok"><span class="rt-n">5</span><span class="rt-t">Object 2 is a car scaled tiny</span><span class="rt-s">answer <q>Yeah Yes.</q> → stored as <q>a car scale tiny</q></span></li>
+        </ol>
+        <p class="c04-note">Struck words differ from the accepted transcript. <q>Scaled tiny</q> is a known mis-hearing of <q>scale tiny</q>, so a narrow voice-only rule accepts it.</p>
+      </div>
+    </section>
+
+    <!-- ─────────────── 05 Generation ─────────────── -->
+    <section class="chapter generation" id="generation" data-chapter="generation" aria-labelledby="h-generation">
+      <header class="chapter__head">
+        <p class="chapter__num">05</p>
+        <h2 id="h-generation">Generating objects</h2>
+        <p class="chapter__lede">Text to image, image to mesh. The prop is never photographed for reconstruction; a bottle cap assigned as a lighthouse would still be a bottle cap.</p>
+      </header>
+
+      <div class="gen">
+        <div class="gen__stage">
+          <canvas class="gen__canvas" aria-label="Three.js reconstruction of the generation stages for 'a windmill'"></canvas>
+          <div class="gen__meaning js-gen-meaning" aria-hidden="true">a windmill</div>
+          <ul class="gen__rules js-gen-rules" aria-hidden="true">
+            <li>keep the subject unchanged</li>
+            <li>one fully visible, centred subject</li>
+            <li>three-quarter view, clear margin</li>
+            <li>plain studio background</li>
+            <li>one photograph, not a sheet</li>
+          </ul>
+          <ol class="gen__steps">
+            <li data-g="0"><p class="step__k">Meaning</p><h3>The stripped meaning is the cache key.</h3><p><code>a windmill scale huge</code> becomes <code>a windmill</code>; scale is kept separately. If <code>a-windmill.glb</code> already exists, nothing is generated.</p></li>
+            <li data-g="1"><p class="step__k">Prompt shaping · Qwen3-8B</p><h3>A local model frames the meaning, without adding to it.</h3><p>One fixed prompt suffix failed across ordinary meanings: <q>tree</q> produced four cropped trees. Qwen now writes a framing prompt per meaning under these constraints. A cliff may get a background; it may not become a cliff wall.</p></li>
+            <li data-g="2"><p class="step__k">Stage 1 · SDXL Turbo</p><h3>An image of the meaning is invented.</h3><p>512 × 512, four inference steps on a rented RTX 4090, about 0.6&nbsp;s once the model is resident. This is the actual cached source image.</p></li>
+            <li data-g="3"><p class="step__k">Stage 2 · SPAR3D</p><h3>The image is reconstructed as geometry.</h3><p>SPAR3D returns a textured GLB. Warm, the laptop-to-pod round trip took about two seconds; eight of nine source-to-mesh intervals in the following battery were two seconds.</p></li>
+            <li data-g="4"><p class="step__k">Renderer · Three.js</p><h3>The mesh is normalised and set down.</h3><p>The longest bounding-box side is scaled to the target size and the mesh is rested on the table. From here on, moving the prop only moves the mesh.</p></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="bench" id="bench">
+        <div class="bench__head">
+          <h3>Production meshes</h3>
+          <p>Every model here is a real GLB from the project's meaning cache, shown beside the image it was reconstructed from. Drag to orbit.</p>
+        </div>
+        <div class="bench__body">
+          <div class="bench__view">
+            <canvas class="bench__canvas" aria-label="Interactive 3D viewer"></canvas>
+            <div class="bench__src"><img class="js-bench-src" src="/media/img/src-a-lighthouse.webp" alt="" /><span>SDXL Turbo source</span></div>
+            <p class="bench__name js-bench-name" aria-live="polite">a lighthouse</p>
+            <p class="bench__status js-bench-status"></p>
+          </div>
+          <div class="bench__pick">
+            <p class="bench__group">Bounded objects</p>
+            <div class="bench__grid js-bench-good" role="listbox" aria-label="Choose a generated model"></div>
+            <p class="bench__group">Weaker results</p>
+            <p class="bench__note">Surfaces, ground and scene-scale meanings have no single bounded subject. The pipeline still returns a mesh, but it is a slab, a fragment or a warped sheet.</p>
+            <div class="bench__grid js-bench-weak" role="listbox" aria-label="Choose a weaker generated model"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fail">
+        <div class="fail__head">
+          <h3>Where failures enter</h3>
+          <p>In a thirteen-meaning battery, seven returned clean or nearly clean assets and six failed. Because the pipeline has two stages, the first visible defect can be located.</p>
+        </div>
+        <div class="fail__cols">
+          <div>
+            <p class="fail__k">Already wrong in the Stage 1 image</p>
+            <div class="fail__row">
+              <figure><img src="/media/img/bat-backpack.webp" alt="Generated image of several backpacks" loading="lazy" /><figcaption>backpack</figcaption></figure>
+              <figure><img src="/media/img/bat-traffic-cone.webp" alt="Generated image of three traffic cones" loading="lazy" /><figcaption>traffic cone</figcaption></figure>
+              <figure><img src="/media/img/bat-vintage-motorcycle.webp" alt="Generated image of three motorcycles" loading="lazy" /><figcaption>vintage motorcycle</figcaption></figure>
+            </div>
+            <p class="src">Multiple instances reach SPAR3D and survive into the mesh.</p>
+          </div>
+          <div>
+            <p class="fail__k">Clean image, failed geometry</p>
+            <div class="fail__row">
+              <figure><img src="/media/img/bat-wine-glass.webp" alt="Generated image of one wine glass" loading="lazy" /><figcaption>wine glass</figcaption></figure>
+              <figure><img src="/media/img/bat-umbrella.webp" alt="Generated image of one umbrella" loading="lazy" /><figcaption>umbrella</figcaption></figure>
+              <figure><img src="/media/img/bat-acoustic-guitar.webp" alt="Generated image of one acoustic guitar" loading="lazy" /><figcaption>acoustic guitar</figcaption></figure>
+            </div>
+            <p class="src">Recognisable sources whose meshes became thin, incomplete or deformed. The cause was not isolated.</p>
+          </div>
+          <div>
+            <p class="fail__k">Same source, two reconstructors</p>
+            <div class="fail__row fail__row--two">
+              <figure><img src="/media/img/tree-sf3d.webp" alt="SF3D tree reconstruction collapsed to a thin shard" loading="lazy" /><figcaption>SF3D</figcaption></figure>
+              <figure><img src="/media/img/tree-spar3d.webp" alt="SPAR3D tree reconstruction with trunk and canopy" loading="lazy" /><figcaption>SPAR3D</figcaption></figure>
+            </div>
+            <p class="src">One matched source; enough for the engineering decision, not a model ranking.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─────────────── 06 Environment ─────────────── -->
+    <section class="chapter environment chapter-06" id="environment" data-chapter="environment" aria-labelledby="h-environment">
+      <header class="c06-head">
+        <p class="c06-head__num">06</p>
+        <h2 id="h-environment">The generated environment</h2>
+        <p class="c06-head__lede">Objects keep their meaning as they move. Words change the atmosphere around them.</p>
+      </header>
+
+      <div class="c06-try js-env-try">
+        <p class="c06-try__cta">Try changing the world.</p>
+        <p class="c06-try__how">Choose a recorded atmosphere command below, or drag an object to move it.</p>
+      </div>
+
+      <div class="environment-experience">
+        <div class="c06-stage">
+          <div class="env__viewport">
+            <canvas class="env__canvas" aria-label="Generated scene: a windmill, a fire truck, a house and a horse on the table. Drag an object to move it." aria-describedby="env-how"></canvas>
+            <p class="env__loading js-env-loading">Loading four meshes…</p>
+          </div>
+          <div class="c06-move">
+            <p class="c06-move__how" id="env-how"><span class="how-fine">Drag an object to rearrange the scene. Drag the table to turn the view.</span><span class="how-touch">Tap an object, then tap where it should go. Swipe sideways to turn the view.</span><span class="how-keys">Press 1–4 to select an object, then use the arrow keys to move it.</span></p>
+            <p class="c06-move__said js-env-moved" role="status" aria-live="polite"></p>
+          </div>
+          <p class="c06-caption">Browser reconstruction of the recorded system: the project’s cached meshes under recorded atmosphere values. No model runs in the browser.</p>
+        </div>
+
+        <div class="c06-controls">
+          <h3 class="c06-k" id="env-cmds-h">Change the atmosphere</h3>
+          <p class="c06-sub">Select a recorded instruction to see how the original system changed the scene.</p>
+          <div class="c06-cmds js-env-cmds" role="radiogroup" aria-labelledby="env-cmds-h"></div>
+          <div class="c06-applied js-env-applied" role="status" aria-live="polite"></div>
+          <details class="c06-why js-env-why" hidden>
+            <summary>About this recording</summary>
+            <p class="js-env-why-text"></p>
+          </details>
+          <div class="c06-tools">
+            <details class="c06-fine">
+              <summary>Fine-tune the atmosphere</summary>
+              <p class="c06-fine__p">Adjust the environmental parameters directly. These controls affect the browser reconstruction; the recorded values are not changed.</p>
+              <div class="c06-fields js-env-fields"></div>
+            </details>
+            <button type="button" class="c06-reset js-env-reset">Reset atmosphere</button>
+          </div>
+        </div>
+      </div>
+
+      <section class="c06-rel" aria-labelledby="h-env-rel">
+        <h3 class="c06-rel__h" id="h-env-rel">What happens when objects come together?</h3>
+        <p class="c06-rel__how">Move the tent closer to the mountain.</p>
+        <div class="environment-experience environment-experience--rel">
+          <div class="c06-stage">
+            <div class="env__viewport env__viewport--rel">
+              <canvas class="env__canvas js-rel-canvas" aria-label="A mountain and a tent on the table. Drag the tent towards the mountain." aria-describedby="rel-how"></canvas>
+              <p class="env__loading js-rel-loading">Loading mountain and tent…</p>
+            </div>
+            <p class="c06-move__how c06-rel__keys" id="rel-how"><span class="how-fine">Drag the tent. Press 1 or 2 to select, then use the arrow keys.</span><span class="how-touch">Tap the tent, then tap near the mountain.</span></p>
+          </div>
+          <div class="c06-rel__out" role="status" aria-live="polite">
+            <p class="c06-rel__state js-rel-state">Bring the tent near the mountain.</p>
+            <p class="c06-rel__dist js-rel-dist"></p>
+            <p class="c06-rel__note js-rel-note">A reconstruction of the documented example, recorded 15 Aug. Near means a centre distance below <span class="c06-num">0.15</span> on the normalised table. The cairn was the prompt’s own example, so this shows a relation the system could represent, not one it inferred independently.</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="env-evidence">
+        <div class="env-evidence__text">
+          <h3>The same mapping, recorded.</h3>
+          <p>The reconstruction ports the production renderer’s deterministic mapping: procedural sky, one shadow-casting key light, six drifting mist layers, line rain and a two-pulse lightning flash. Given the same twelve fields it produces the same scene. In qualification, five commands rendered three times each differed in 461 of 5,120,000 pixels, all inside a caption band.</p>
+          <p>Language is the unreliable part. Six of 68 cases failed both qualification runs, usually by changing one requested field and leaving another at its default. In the log above, <q>make it night</q> issued straight after a thunderstorm kept its rain and lightning; issued on its own, it did not.</p>
+        </div>
+        <figure class="env-evidence__film">
+          <video src="/media/video/atmosphere-voice.mp4" muted playsinline loop preload="none" controls poster="/media/img/atmosphere-voice-poster.jpg"></video>
+          <figcaption>Spoken atmosphere commands in the production system, Part 3.3 recording.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ─────────────── 07 Applications ─────────────── -->
+    <section class="chapter applications chapter-07" id="applications" data-chapter="applications" aria-labelledby="h-applications">
+      <header class="c07-head">
+        <p class="c07-head__num">07</p>
+        <h2 id="h-applications">Applications</h2>
+        <p class="c07-head__line">Seven ways to imagine what tangible worlds could become.</p>
+        <p class="c07-head__note">Proposed applications. Not evaluated in a participant study.</p>
+        <nav class="c07-index" aria-label="The seven applications"><ol><li><a href="#app-1"><span>01</span>Moodboarding</a></li><li><a href="#app-2"><span>02</span>Previsualisation</a></li><li><a href="#app-3"><span>03</span>Storytelling</a></li><li><a href="#app-4"><span>04</span>Planning</a></li><li><a href="#app-5"><span>05</span>Heritage</a></li><li><a href="#app-6"><span>06</span>Memory</a></li><li><a href="#app-7"><span>07</span>Worldbuilding</a></li></ol></nav>
+      </header>
+
+      <div class="c07-essay">
+        <article class="c07-app c07-app--1" id="app-1" aria-labelledby="app-h1">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">01</p>
+            <h3 class="c07-t" id="app-h1">Film and VFX moodboarding</h3>
+            <p class="c07-line">Block a scene once on a desk, then see it at night, in mist or at golden hour.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics c07-pics--pair">
+            <span class="c07-crop"><img src="/media/img/proto-196.webp" alt="The generated windmill, house, fire truck and horse at night." width="1248" height="716" loading="lazy" /></span>
+            <span class="c07-crop"><img src="/media/img/proto-208.webp" alt="The same arrangement from the same camera, now in mist." width="1248" height="716" loading="lazy" /></span>
+          </div>
+          <p class="c07-src">Working prototype recording. One arrangement, one camera, two recorded atmospheres. Interface cropped.</p>
+          </div>
+        </article>
+        <article class="c07-app c07-app--2" id="app-2" aria-labelledby="app-h2">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">02</p>
+            <h3 class="c07-t" id="app-h2">Documentary previsualisation and reconstruction</h3>
+            <p class="c07-line">Lay out where people, vehicles and buildings stood, and revise the arrangement as testimony changes.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics"><span class="c07-crop"><img src="/media/img/s01-tracker-final.webp" alt="Overhead view of a concrete table: a red box, a silver tin and a wallet, each held as a numbered position." width="1009" height="1400" loading="lazy" /></span></div>
+          <p class="c07-src">Frozen study tracker, 20 Aug 2026. Three props read from above as numbered positions.</p>
+          </div>
+        </article>
+        <article class="c07-app c07-app--3" id="app-3" aria-labelledby="app-h3">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">03</p>
+            <h3 class="c07-t" id="app-h3">Spatial storytelling</h3>
+            <p class="c07-line">Tell a story by moving things: objects travel across the table, and the light turns.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics c07-pics--pair">
+            <span class="c07-crop"><img src="/media/img/proto-160.webp" alt="Night, in rain: the tracker window with four props beside the generated windmill, fire truck, house and horse." width="1248" height="716" loading="lazy" /></span>
+            <span class="c07-crop"><img src="/media/img/proto-222.webp" alt="Later in the same session: the same four objects in daylight after the command “stop the thunderstorm”." width="1248" height="716" loading="lazy" /></span>
+          </div>
+          <p class="c07-src">Working prototype recording. Two moments of one session: night in rain, then after “stop the thunderstorm”.</p>
+          </div>
+        </article>
+        <article class="c07-app c07-app--4" id="app-4" aria-labelledby="app-h4">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">04</p>
+            <h3 class="c07-t" id="app-h4">Architecture and environmental planning</h3>
+            <p class="c07-line">Early massing and site conversations around a table, in the tradition of Urp.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics"><span class="c07-crop"><img src="/media/img/terrain-procedural.webp" alt="A grey ground plane raised into a hill under two props and lowered under a wallet." width="1200" height="690" loading="lazy" /></span></div>
+          <p class="c07-src"><b>Separate experiment, not part of the production system.</b> Terrain fields anchored to props, 16 Aug 2026.</p>
+          </div>
+        </article>
+        <article class="c07-app c07-app--5" id="app-5" aria-labelledby="app-h5">
+          <p class="c07-n" aria-hidden="true">05</p>
+          <h3 class="c07-t" id="app-h5">Cultural heritage</h3>
+          <p class="c07-line c07-line--big">Placing remembered or recorded structures in relation to one another, for discussion.</p>
+          <p class="c07-src">No heritage material was involved. Generated forms would need clear provenance, never presented as historical evidence.</p>
+        </article>
+        <article class="c07-app c07-app--6" id="app-6" aria-labelledby="app-h6">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">06</p>
+            <h3 class="c07-t" id="app-h6">Memory and reminiscence</h3>
+            <p class="c07-line">Personal objects as handles for a remembered place, explored in conversation.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics c07-pics--assign">
+            <figure><img src="/media/img/prop-3.webp" alt="A brown leather wallet on a wooden table, seen by the tracker camera." width="138" height="136" loading="lazy" /><figcaption>a wallet</figcaption></figure>
+            <figure><img src="/media/img/src-a-house.webp" alt="The image generated for the meaning “a house”." width="512" height="512" loading="lazy" /><figcaption>assigned: “a house scale large”</figcaption></figure>
+          </div>
+          <p class="c07-src">Tracker camera crop and the cached image for its assigned meaning. No wellbeing effect is claimed.</p>
+          </div>
+        </article>
+        <article class="c07-app c07-app--7" id="app-7" aria-labelledby="app-h7">
+          <header class="c07-text">
+            <p class="c07-n" aria-hidden="true">07</p>
+            <h3 class="c07-t" id="app-h7">Game development and worldbuilding</h3>
+            <p class="c07-line">Rough out levels and encounters with physical tokens, reassigning what each one means.</p>
+          </header>
+          <div class="c07-fig">
+          <div class="c07-pics c07-pics--cast">
+            <figure><img src="/media/img/src-a-dragon.webp" alt="The cached image for “a dragon”." width="512" height="512" loading="lazy" /><figcaption>a dragon</figcaption></figure>
+            <figure><img src="/media/img/src-a-castle.webp" alt="The cached image for “a castle”." width="512" height="512" loading="lazy" /><figcaption>a castle</figcaption></figure>
+            <figure><img src="/media/img/src-a-cliff.webp" alt="The cached image for “a cliff”." width="512" height="512" loading="lazy" /><figcaption>a cliff</figcaption></figure>
+            <figure><img src="/media/img/src-a-lighthouse.webp" alt="The cached image for “a lighthouse”." width="512" height="512" loading="lazy" /><figcaption>a lighthouse</figcaption></figure>
+          </div>
+          <p class="c07-src">Generated images from the project’s meaning cache: one per meaning, reused whenever that meaning returns.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ─────────────── 08 Research ─────────────── -->
+    <section class="chapter research" id="research" data-chapter="research" aria-labelledby="h-research">
+      <header class="chapter__head">
+        <p class="chapter__num">08</p>
+        <h2 id="h-research" class="visually-hidden">Research, outcomes and limitations</h2>
+      </header>
+      <p class="rq__k">Research question</p>
+      <blockquote class="rq">How might tangible interfaces that translate physical arrangements into generative 3D environments support new forms of spatial authorship and creative exploration?</blockquote>
+
+      <section class="r-found" aria-labelledby="r-found-h">
+        <h3 class="r-k" id="r-found-h">What the prototype demonstrated</h3>
+        <ol class="r-shown">
+          <li><span class="r-shown__n">1</span>Neutral props keep tracked, numbered identities through hands and merges, and carry meanings assigned in words.</li>
+          <li><span class="r-shown__n">2</span>Moving a prop sets the arrangement; typed or spoken language sets what it means and the atmosphere.</li>
+          <li><span class="r-shown__n">3</span>Each meaning is generated once and cached, so moving a prop reuses its 3D model rather than regenerating it.</li>
+        </ol>
+
+        <div class="r-open">
+          <h3 class="r-k r-k--quiet">What was not established</h3>
+          <p class="r-open__main">No participant study was conducted. Nothing here shows that people find the mapping intuitive, feel greater ownership or explore more freely.</p>
+          <p class="r-open__limits"><span>Shallow props segment unreliably.</span> <span>The first generation of a meaning is kept, with no reroll.</span> <span>Terrain stayed a prototype.</span> <span>Object generation runs on rented GPU compute.</span></p>
+          <details class="r-more">
+            <summary>All documented outcomes and limitations</summary>
+            <div class="r-more__body">
+              <div>
+                <h4>Demonstrated</h4>
+                <ul>
+                  <li>Semantically neutral props tracked by LiDAR depth as persistent numbered handles, through hand occlusion and two-object merges.</li>
+                  <li>Meaning assigned in typed or spoken language, kept attached to the handle as it moves; meshes cached by meaning and never regenerated by movement.</li>
+                  <li>A two-stage generation path whose intermediate image locates where some failures begin.</li>
+                  <li>Explicit scale grammar, confirmed voice input, and a deterministic twelve-field atmosphere mapping.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Not established</h4>
+                <ul>
+                  <li>No participant study was conducted. A typed-versus-spoken study was designed and instrumented but not run.</li>
+                  <li>Nothing here shows that people find the mapping intuitive, feel greater ownership or explore more freely.</li>
+                  <li>Generated quality across arbitrary meanings, and interstitial relations across arbitrary pairs, were not systematically evaluated.</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Limitations</h4>
+                <ul>
+                  <li>Shallow props remain unreliably segmented by the 192 × 256 depth grid.</li>
+                  <li>Appearance is sticky: the first generation of a meaning is cached, with no reroll or history.</li>
+                  <li>Terrain remained a prototype; amplitude from measured height was unstable under handling.</li>
+                  <li>Object generation runs on rented GPU compute, so shaped prompts leave the laptop.</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <figure class="finding">
+        <blockquote>Delegation itself is compatible with authorship when its boundary is explicit.</blockquote>
+        <figcaption>The dissertation’s argument, drawn from building the system rather than from a participant study.</figcaption>
+      </figure>
+
+      <nav class="r-res" aria-label="The complete work">
+        <h3 class="r-k">The complete work</h3>
+        <div class="r-res__main">
+          <button class="r-res__big js-open-film" type="button"><span class="r-res__t">Watch the working prototype</span><span class="r-res__m">3:52 · plays here</span></button>
+          <a class="r-res__big" href="/media/doc/tangible-worlds-dissertation.pdf" target="_blank" rel="noopener"><span class="r-res__t">Read the dissertation</span><span class="r-res__m">PDF · 14.9 MB</span></a>
+        </div>
+        <ul class="r-res__more">
+          <li><a href="#environment"><b>Browser reconstruction</b> <span>Chapter 06</span></a></li>
+          <li><a href="https://youtu.be/r9R8zmedLDQ" target="_blank" rel="noopener"><b>Project presentation</b> <span>YouTube</span></a></li>
+          <li><a href="https://youtu.be/XNu7JBYMaUo" target="_blank" rel="noopener"><b>System demonstration</b> <span>YouTube</span></a></li>
+          <li><a href="https://git.arts.ac.uk/m-achakzai0320251/Tangible-Worlds-Thesis" target="_blank" rel="noopener"><b>Code repository</b> <span>git.arts.ac.uk</span></a></li>
+        </ul>
+      </nav>
+
+      <footer class="colophon">
+        <p class="colophon__title">Tangible Worlds</p>
+        <p class="colophon__by">Muhammad Ayan Achakzai. MSc Applied Machine Learning for Creatives, Creative Computing Institute, University of the Arts London. Supervised by Dr Terence Broad. September 2026.</p>
+        <p class="colophon__sys">iPhone LiDAR via Record3D · Qwen3-8B in LM Studio · SDXL Turbo · SPAR3D · Parakeet TDT 0.6B v3 via NeMo-Speech.cpp · Kyutai Pocket TTS · Three.js r170</p>
+        <p class="colophon__note">Footage, tracker frames, logs, images and meshes are copied from the project archive without alteration other than cropping and re-encoding (<a href="/media/provenance.json" target="_blank" rel="noopener">asset provenance</a>). Interactive scenes are browser reconstructions using recorded data; no model runs on this page.</p>
+      </footer>
+      <p class="coda"><span>Hands set spatial structure.</span> <span>Words set semantics.</span></p>
+    </section>
+  </main>
+
+  <dialog class="film" id="film" aria-label="Full working prototype demonstration">
+    <div class="film__inner">
+      <video class="film__video" controls playsinline preload="none" poster="/media/img/prototype-poster.jpg">
+        <source src="/media/video/working-prototype.mp4" type="video/mp4" />
+      </video>
+      <p class="film__cap">Tangible Worlds working prototype, full demonstration. No audio track. Re-encoded to 1280 px from the submitted recording.</p>
+      <button class="film__close" type="button" aria-label="Close video">Close</button>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+case_index,group,meaning,expected,run,raw_output,parsed_class,valid_enum,expected_match,latency_s,error
+1,anchors,coffee mug,handheld,1,"
+
+handheld",handheld,True,True,1.502,
+2,anchors,wooden chair,body_scale,1,"
+
+body_scale",body_scale,True,True,0.778,
+3,anchors,small tent,room_scale,1,"
+
+room_scale",room_scale,True,True,0.761,
+4,anchors,car,vehicle_scale,1,"
+
+vehicle_scale",vehicle_scale,True,True,0.739,
+5,anchors,house,building_scale,1,"
+
+building_scale",building_scale,True,True,0.739,
+6,anchors,castle,infrastructure_scale,1,"
+
+building_scale",building_scale,True,False,0.774,
+7,anchors,mountain,landform_scale,1,"
+
+landform_scale",landform_scale,True,True,0.854,

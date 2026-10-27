@@ -1,0 +1,17 @@
+{
+  "design": "D1_anywhere",
+  "case_id": "P018",
+  "category": "supported_article",
+  "phrase": "a large stone bridge",
+  "expected_intent": "large",
+  "expected_generation_meaning": "a stone bridge",
+  "participant_phrase": "a large stone bridge",
+  "generation_meaning": "a stone bridge",
+  "explicit_scale_intent": "large",
+  "target_size": 1.8,
+  "scale_source": "participant_explicit",
+  "matched_modifier": "large",
+  "detected": true,
+  "intent_match": true,
+  "generation_match": true
+}

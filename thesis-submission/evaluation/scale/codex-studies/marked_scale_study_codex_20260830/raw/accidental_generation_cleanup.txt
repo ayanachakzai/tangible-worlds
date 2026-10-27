@@ -1,0 +1,1 @@
+temporary_root_fixture_removed=pass

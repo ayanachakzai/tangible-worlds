@@ -1,0 +1,21 @@
+{
+  "candidate": "C_modifier_preparser",
+  "case_id": "H065",
+  "case_index": 65,
+  "group": "modifier",
+  "meaning": "robot the size of a suitcase",
+  "acceptable": [
+    "handheld",
+    "body_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 1,
+  "raw_output": "\n\nhandheld",
+  "parsed_class": "handheld",
+  "scale_basis": "a suitcase",
+  "preparser_rule": "comparison_size_of",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 0.57,
+  "error": ""
+}

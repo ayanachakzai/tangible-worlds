@@ -1,0 +1,11 @@
+{
+  "holdout_cases": 104,
+  "human_intent": {"TP": 24, "FP": 12, "FN": 0, "TN": 68, "precision": 0.6666666666666666, "recall": 1.0},
+  "reserved_voice_grammar": {"TP": 36, "FP": 0, "FN": 0, "TN": 68, "precision": 1.0, "recall": 1.0},
+  "exact_contract": {"passed": 104, "total": 104},
+  "patched_assignment_regression": {"passed": 94, "total": 94},
+  "atmosphere_routing": {"passed": 10, "total": 10},
+  "typed_protection": "PASS",
+  "cache_reuse": "PASS",
+  "generator_call_count": 0
+}

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tangible Worlds Codex scale study</title>
+<style>
+  * { box-sizing: border-box; }
+  html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+  body { background: #11161d; color: #edf3f7; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+  canvas { display: block; }
+  #evidence {
+    position: fixed;
+    z-index: 2;
+    top: 18px;
+    left: 18px;
+    width: 490px;
+    padding: 14px 16px;
+    background: rgba(7, 12, 18, 0.90);
+    border: 1px solid #71879a;
+    border-radius: 4px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34);
+  }
+  h1 { margin: 0 0 8px; font-size: 18px; line-height: 1.2; color: #ffffff; }
+  p { margin: 4px 0; font-size: 13px; line-height: 1.35; }
+  #values { color: #bcd8ea; }
+  #status { color: #9dd7a5; }
+  #legend { margin-top: 8px; color: #ccd5dc; font-size: 11px; line-height: 1.35; }
+  #study-data { display: none; }
+</style>
+</head>
+<body>
+<section id="evidence" aria-label="Screenshot evidence details">
+  <h1 id="title">Tangible Worlds scale study</h1>
+  <p id="values"></p>
+  <p id="details"></p>
+  <p id="status">Loading 0/7 meshes</p>
+  <p id="legend"></p>
+</section>
+<pre id="study-data"></pre>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+
+// This is project-specific evaluation code written from scratch. It is isolated
+// from tracking, assignment, generation, Qwen, and production runtime state.
+
+const TABLE_SIZE = 10;
+const VIEWPORT = { width: window.innerWidth, height: window.innerHeight };
+
+// These are project test values. No paper supplied these Three.js target sizes.
+const LADDERS = {
+  A_baseline: {
+    name: 'common-size baseline',
+    hypothesis: 'A common size should erase the intended semantic hierarchy.',
+    values: [0.90, 0.90, 0.90, 0.90, 0.90, 0.90, 0.90],
+  },
+  B_current: {
+    name: 'current manual candidate',
+    hypothesis: 'Manual non-uniform spacing should make all seven ranks legible.',
+    values: [0.30, 0.60, 1.00, 1.40, 2.00, 2.70, 3.40],
+  },
+  C_compact: {
+    name: 'less aggressive upper range',
+    hypothesis: 'Smaller upper classes may reduce crowding without collapsing the lower and middle classes.',
+    values: [0.35, 0.65, 1.00, 1.35, 1.80, 2.35, 3.00],
+  },
+  D_expanded: {
+    name: 'stronger middle and upper separation',
+    hypothesis: 'Extra separation may improve rank reading but risk dominance and edge failure.',
+    values: [0.25, 0.55, 1.00, 1.55, 2.20, 3.00, 3.80],
+  },
+  E_balanced: {
+    name: 'Codex derived balanced candidate',
+    hypothesis: 'Preserve the current lower and middle anchors while lowering the two largest classes to protect composition.',
+    values: [0.32, 0.62, 1.00, 1.42, 1.95, 2.50, 3.10],
+  },
+};
+
+const ASSETS = [
+  { key: 'handheld', label: 'coffee mug', file: '../scale_test_assets/coffee-mug.glb' },
+  { key: 'body_scale', label: 'wooden chair', file: '../scale_test_assets/wooden-chair.glb' },
+  { key: 'room_scale', label: 'tent', file: '../scale_test_assets/a-tent.glb' },
+  { key: 'vehicle_scale', label: 'car', file: '../scale_test_assets/a-car.glb' },
+  { key: 'building_scale', label: 'house', file: '../scale_test_assets/a-house.glb' },
+  { key: 'infrastructure_scale', label: 'castle', file: '../scale_test_assets/a-castle.glb' },
+  { key: 'landform_scale', label: 'mountain', file: '../scale_test_assets/a-mountain.glb' },
+];
+
+// Each composition is fixed project test geometry written for this study.
+const COMPOSITIONS = {
+  reference: {
+    name: 'one-per-class reference',
+    purpose: 'ordinal hierarchy',
+    items: [
+      [0, -3.35, -2.65], [1, 0.00, -2.65], [2, 3.25, -2.65],
+      [3, -3.35, 0.45], [4, 0.00, 0.45], [5, 3.25, 0.45],
+      [6, 0.00, 3.20],
+    ],
+  },
+  crowding: {
+    name: 'crowding stress',
+    purpose: 'large-class coexistence',
+    items: [
+      [6, -2.70, -2.55], [6, 2.70, -2.55],
+      [5, -2.65, 1.05], [4, 2.65, 1.05],
+      [3, 0.00, 0.15], [1, -1.25, 3.55], [0, 1.25, 3.55],
+    ],
+  },
+  adjacency: {
+    name: 'mixed adjacency',
+    purpose: 'relative reading at close range',
+    items: [
+      [0, -2.75, -2.20], [6, -1.55, -2.20],
+      [3, 1.65, -1.45], [4, 2.65, -1.45],
+      [1, -2.60, 2.05], [5, -0.80, 2.05], [2, 2.65, 2.15],
+    ],
+  },
+  edge: {
+    name: 'edge stress',
+    purpose: 'boundary failure under movement',
+    items: [
+      [6, 4.15, 0.00], [5, 1.15, -2.25], [4, 1.05, 2.10],
+      [3, -1.20, 0.00], [1, -3.15, -1.65], [0, -3.25, 1.65],
+    ],
+  },
+};
+
+const CAMERAS = {
+  production: { name: 'production camera', position: [0, 12, 5], target: [0, 0, 0] },
+  topdown: { name: 'near top-down', position: [0, 14, 0.01], target: [0, 0, 0] },
+  low_oblique: { name: 'lower oblique', position: [8, 7, 8], target: [0, 0, 0] },
+};
+
+const params = new URLSearchParams(window.location.search);
+const ladderId = LADDERS[params.get('ladder')] ? params.get('ladder') : 'B_current';
+const compositionId = COMPOSITIONS[params.get('composition')] ? params.get('composition') : 'reference';
+const cameraId = CAMERAS[params.get('camera')] ? params.get('camera') : 'production';
+const ladder = LADDERS[ladderId];
+const composition = COMPOSITIONS[compositionId];
+const cameraPreset = CAMERAS[cameraId];
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x11161d);
+
+// Production camera parameters are copied exactly for the named preset.
+// ref: https://github.com/mrdoob/three.js/blob/r170/docs/api/en/cameras/PerspectiveCamera.html
+const camera = new THREE.PerspectiveCamera(50, VIEWPORT.width / VIEWPORT.height, 0.1, 100);
+camera.position.fromArray(cameraPreset.position);
+camera.lookAt(new THREE.Vector3().fromArray(cameraPreset.target));
+camera.updateProjectionMatrix();
+camera.updateWorldMatrix(true, false);
+
+// ref: https://github.com/mrdoob/three.js/blob/r170/docs/api/en/renderers/WebGLRenderer.html
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(VIEWPORT.width, VIEWPORT.height);
+renderer.setPixelRatio(1);
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+document.body.appendChild(renderer.domElement);
+
+const table = new THREE.Mesh(
+  new THREE.PlaneGeometry(TABLE_SIZE, TABLE_SIZE),
+  new THREE.MeshStandardMaterial({ color: 0x697987, roughness: 0.82, metalness: 0.0 })
+);
+table.rotation.x = -Math.PI / 2;
+table.receiveShadow = true;
+scene.add(table);
+
+const grid = new THREE.GridHelper(TABLE_SIZE, 10, 0x9eb0bc, 0x4b5c68);
+grid.position.y = 0.012;
+scene.add(grid);
+
+const keyLight = new THREE.DirectionalLight(0xffffff, 2.3);
+keyLight.position.set(5, 11, 6);
+keyLight.castShadow = true;
+keyLight.shadow.mapSize.set(2048, 2048);
+keyLight.shadow.camera.left = -TABLE_SIZE;
+keyLight.shadow.camera.right = TABLE_SIZE;
+keyLight.shadow.camera.top = TABLE_SIZE;
+keyLight.shadow.camera.bottom = -TABLE_SIZE;
+scene.add(keyLight);
+scene.add(new THREE.HemisphereLight(0xddeeff, 0x28323c, 2.1));
+
+document.getElementById('title').textContent = `${ladderId} | ${ladder.name}`;
+document.getElementById('values').textContent = `sizes: ${ladder.values.map(value => value.toFixed(2)).join(' | ')}`;
+document.getElementById('details').textContent = `${compositionId}: ${composition.name} | ${cameraId}: ${cameraPreset.name}`;
+document.getElementById('legend').textContent = ASSETS.map(asset => `${asset.key}=${asset.label}`).join('  |  ');
+
+const loader = new GLTFLoader();
+const templates = [];
+const originalMetrics = [];
+const instances = [];
+
+function loadAsset(asset, index) {
+  return new Promise((resolve, reject) => {
+    loader.load(asset.file, (gltf) => {
+      const template = gltf.scene;
+      template.updateWorldMatrix(true, true);
+      const box = new THREE.Box3().setFromObject(template);
+      const size = new THREE.Vector3();
+      box.getSize(size);
+      templates[index] = template;
+      originalMetrics[index] = {
+        asset: asset.label,
+        class: asset.key,
+        original_dimensions: vectorRecord(size),
+        original_longest_dimension: Math.max(size.x, size.y, size.z),
+      };
+      document.getElementById('status').textContent = `Loading ${templates.filter(Boolean).length}/7 meshes`;
+      resolve();
+    }, undefined, reject);
+  });
+}
+
+function vectorRecord(vector) {
+  return { x: round(vector.x), y: round(vector.y), z: round(vector.z) };
+}
+
+function round(value) {
+  return Math.round(value * 1000000) / 1000000;
+}
+
+// This matches production's longest Box3 dimension principle, with an explicit
+// reset so repeated study construction is deterministic.
+// ref: https://github.com/mrdoob/three.js/blob/r170/docs/api/en/math/Box3.html
+// ref: https://github.com/mrdoob/three.js/blob/r170/docs/api/en/core/Object3D.html
+function normalizeAndGround(object, targetSize) {
+  object.scale.setScalar(1);
+  object.position.set(0, 0, 0);
+  object.updateWorldMatrix(true, true);
+  let box = new THREE.Box3().setFromObject(object);
+  const sourceSize = new THREE.Vector3();
+  box.getSize(sourceSize);
+  const longest = Math.max(sourceSize.x, sourceSize.y, sourceSize.z) || 1;
+  object.scale.setScalar(targetSize / longest);
+  object.updateWorldMatrix(true, true);
+  box = new THREE.Box3().setFromObject(object);
+  object.position.y -= box.min.y;
+  object.updateWorldMatrix(true, true);
+}
+
+function createInstance(item, instanceIndex) {
+  const [assetIndex, x, z] = item;
+  const asset = ASSETS[assetIndex];
+  const targetSize = ladder.values[assetIndex];
+  const group = new THREE.Group();
+  group.position.set(x, 0, z);
+  const object = templates[assetIndex].clone(true);
+  object.traverse(node => {
+    if (!node.isMesh) return;
+    node.castShadow = true;
+    node.receiveShadow = true;
+  });
+  normalizeAndGround(object, targetSize);
+  group.add(object);
+  scene.add(group);
+  group.updateWorldMatrix(true, true);
+  const box = new THREE.Box3().setFromObject(group);
+  const size = new THREE.Vector3();
+  box.getSize(size);
+  const record = {
+    instance: instanceIndex,
+    asset_index: assetIndex,
+    asset: asset.label,
+    class: asset.key,
+    requested_target_size: targetSize,
+    position: { x, z },
+    dimensions: vectorRecord(size),
+    footprint: {
+      x: round(size.x),
+      z: round(size.z),
+      area: round(size.x * size.z),
+      table_percent: round(size.x * size.z),
+    },
+    bounds: {
+      min_x: round(box.min.x), max_x: round(box.max.x),
+      min_y: round(box.min.y), max_y: round(box.max.y),
+      min_z: round(box.min.z), max_z: round(box.max.z),
+    },
+    grounded: Math.abs(box.min.y) < 0.00001,
+  };
+  instances.push({ group, box, record });
+}
+
+function boxesOverlapXZ(a, b) {
+  return a.min.x < b.max.x && a.max.x > b.min.x && a.min.z < b.max.z && a.max.z > b.min.z;
+}
+
+// This screen rectangle is an engineering descriptor, not a perceptual model.
+// ref: https://github.com/mrdoob/three.js/blob/r170/docs/api/en/math/Vector3.html
+function projectedRectangle(box) {
+  const corners = [];
+  for (const x of [box.min.x, box.max.x]) {
+    for (const y of [box.min.y, box.max.y]) {
+      for (const z of [box.min.z, box.max.z]) corners.push(new THREE.Vector3(x, y, z).project(camera));
+    }
+  }
+  const xs = corners.map(point => (point.x * 0.5 + 0.5) * VIEWPORT.width);
+  const ys = corners.map(point => (-point.y * 0.5 + 0.5) * VIEWPORT.height);
+  const minX = Math.min(...xs);
+  const maxX = Math.max(...xs);
+  const minY = Math.min(...ys);
+  const maxY = Math.max(...ys);
+  return {
+    x: round(minX), y: round(minY), width: round(maxX - minX), height: round(maxY - minY),
+    viewport_area_percent: round(((maxX - minX) * (maxY - minY) / (VIEWPORT.width * VIEWPORT.height)) * 100),
+  };
+}
+
+function finalizeResults() {
+  scene.updateMatrixWorld(true);
+  camera.updateWorldMatrix(true, false);
+  const overlaps = [];
+  for (let i = 0; i < instances.length; i++) {
+    instances[i].record.projected_rectangle = projectedRectangle(instances[i].box);
+    for (let j = i + 1; j < instances.length; j++) {
+      if (boxesOverlapXZ(instances[i].box, instances[j].box)) overlaps.push([i, j]);
+    }
+  }
+  const outOfBounds = instances
+    .filter(entry => entry.box.min.x < -5 || entry.box.max.x > 5 || entry.box.min.z < -5 || entry.box.max.z > 5)
+    .map(entry => entry.record.instance);
+  const ratios = ladder.values.slice(1).map((value, i) => round(value / ladder.values[i]));
+  const totalFootprint = instances.reduce((sum, entry) => sum + entry.record.footprint.area, 0);
+  const results = {
+    study: 'Tangible Worlds semantic relative-scale study',
+    rendered_at: new Date().toISOString(),
+    table_size: TABLE_SIZE,
+    ladder: { id: ladderId, name: ladder.name, hypothesis: ladder.hypothesis, values: ladder.values, adjacent_ratios: ratios },
+    composition: { id: compositionId, name: composition.name, purpose: composition.purpose },
+    camera: { id: cameraId, name: cameraPreset.name, fov: 50, position: cameraPreset.position, target: cameraPreset.target },
+    viewport: VIEWPORT,
+    original_assets: originalMetrics,
+    instances: instances.map(entry => entry.record),
+    composition_metrics: {
+      summed_axis_aligned_footprint_area: round(totalFootprint),
+      summed_footprint_table_percent: round(totalFootprint),
+      overlaps,
+      overlap_count: overlaps.length,
+      out_of_bounds_instances: outOfBounds,
+      out_of_bounds_count: outOfBounds.length,
+      all_grounded: instances.every(entry => entry.record.grounded),
+    },
+  };
+  window.__STUDY_DATA__ = results;
+  document.getElementById('study-data').textContent = JSON.stringify(results);
+  document.getElementById('status').textContent = `READY | ${instances.length} instances | overlaps ${overlaps.length} | out of bounds ${outOfBounds.length}`;
+  document.body.dataset.studyReady = 'true';
+  renderer.render(scene, camera);
+}
+
+Promise.all(ASSETS.map(loadAsset))
+  .then(() => {
+    composition.items.forEach(createInstance);
+    finalizeResults();
+  })
+  .catch(error => {
+    console.error(error);
+    document.getElementById('status').textContent = `FAILED | ${error.message}`;
+    document.body.dataset.studyReady = 'failed';
+  });
+
+window.addEventListener('resize', () => {
+  camera.aspect = window.innerWidth / window.innerHeight;
+  camera.updateProjectionMatrix();
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.render(scene, camera);
+});
+</script>
+</body>
+</html>

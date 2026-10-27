@@ -1,0 +1,17 @@
+{
+  "design": "D2_leading",
+  "case_id": "N003",
+  "category": "neutral_bare",
+  "phrase": "the bridge",
+  "expected_intent": "neutral",
+  "expected_generation_meaning": "the bridge",
+  "participant_phrase": "the bridge",
+  "generation_meaning": "the bridge",
+  "explicit_scale_intent": "neutral",
+  "target_size": 1.0,
+  "scale_source": "neutral_default",
+  "matched_modifier": null,
+  "detected": false,
+  "intent_match": true,
+  "generation_match": true
+}

@@ -1,0 +1,4 @@
+{"event": "appear", "x": 0.4, "y": 0.5, "timestamp": 1789227228.470342, "object_id": 1, "label": "object 1", "participant_id": null}
+{"event": "appear", "x": 0.45, "y": 0.52, "timestamp": 1789227228.470342, "object_id": 2, "label": "object 2", "participant_id": null}
+{"event": "appear", "x": 0.4, "y": 0.5, "timestamp": 1789227253.298781, "object_id": 1, "label": "object 1", "participant_id": null}
+{"event": "appear", "x": 0.45, "y": 0.52, "timestamp": 1789227253.298781, "object_id": 2, "label": "object 2", "participant_id": null}

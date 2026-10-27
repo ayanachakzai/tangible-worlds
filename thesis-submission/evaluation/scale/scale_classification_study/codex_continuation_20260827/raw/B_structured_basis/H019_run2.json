@@ -1,0 +1,20 @@
+{
+  "candidate": "B_structured_basis",
+  "case_id": "H019",
+  "case_index": 19,
+  "group": "ordinary_vehicle",
+  "meaning": "small submarine",
+  "acceptable": [
+    "vehicle_scale"
+  ],
+  "repeat_preregistered": true,
+  "run": 2,
+  "raw_output": "{\"scale_basis\":\"submarine\",\"semantic_scale_class\":\"vehicle_scale\"}",
+  "parsed_class": "vehicle_scale",
+  "scale_basis": "submarine",
+  "preparser_rule": "model_structured",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.409,
+  "error": ""
+}

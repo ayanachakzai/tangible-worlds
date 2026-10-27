@@ -1,0 +1,20 @@
+{
+  "candidate": "A_direct_enum",
+  "case_id": "H004",
+  "case_index": 4,
+  "group": "ordinary_micro",
+  "meaning": "eyelash",
+  "acceptable": [
+    "micro"
+  ],
+  "repeat_preregistered": false,
+  "run": 1,
+  "raw_output": "\n\nmicro",
+  "parsed_class": "micro",
+  "scale_basis": "eyelash",
+  "preparser_rule": "model_direct",
+  "valid_contract": true,
+  "acceptable_match": true,
+  "latency_s": 1.414,
+  "error": ""
+}

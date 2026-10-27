@@ -1,0 +1,1810 @@
+{
+  "baseline": {
+    "a01": {
+      "group": "corpus",
+      "heard": "The room was quite apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit There were three chairs stacked against Far wall And a table with one leg shorter than the others",
+      "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 1.162,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a02": {
+      "group": "corpus",
+      "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+      "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.861,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a03": {
+      "group": "corpus",
+      "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+      "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.866,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a04": {
+      "group": "corpus",
+      "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+      "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.909,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b01": {
+      "group": "corpus",
+      "heard": "Make it brighter",
+      "reference": "make it brighter",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.096,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b02": {
+      "group": "corpus",
+      "heard": "Make it dimmer",
+      "reference": "make it dimmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.098,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b03": {
+      "group": "corpus",
+      "heard": "Make it warmer",
+      "reference": "make it warmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.092,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b04": {
+      "group": "corpus",
+      "heard": "Make it cooler",
+      "reference": "make it cooler",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.088,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b05": {
+      "group": "corpus",
+      "heard": "Make it misty",
+      "reference": "make it misty",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.098,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b06": {
+      "group": "corpus",
+      "heard": "Make it foggy",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.195,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b07": {
+      "group": "corpus",
+      "heard": "Make it hazy",
+      "reference": "make it hazy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.126,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b08": {
+      "group": "corpus",
+      "heard": "Make a dusk",
+      "reference": "make it dusk",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.1,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b09": {
+      "group": "corpus",
+      "heard": "Make it dawn.",
+      "reference": "make it dawn",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.112,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b10": {
+      "group": "corpus",
+      "heard": "Make it overcast",
+      "reference": "make it overcast",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.116,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b11": {
+      "group": "corpus",
+      "heard": "Make it stall me.",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.113,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b12": {
+      "group": "corpus",
+      "heard": "Add lighting",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.085,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b13": {
+      "group": "corpus",
+      "heard": "Add rain.",
+      "reference": "add rain",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.077,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b14": {
+      "group": "corpus",
+      "heard": "golden hour",
+      "reference": "golden hour",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.071,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b15": {
+      "group": "corpus",
+      "heard": "moonlight",
+      "reference": "moonlight",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.149,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b16": {
+      "group": "corpus",
+      "heard": "Make it spooky",
+      "reference": "make it spooky",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.106,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b17": {
+      "group": "corpus",
+      "heard": "light it from the left",
+      "reference": "light it from the left",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.127,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b18": {
+      "group": "corpus",
+      "heard": "Raise the sun.",
+      "reference": "raise the sun",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.101,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b19": {
+      "group": "corpus",
+      "heard": "Drop the sun below the horizon.",
+      "reference": "drop the sun below the horizon",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.14,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b20": {
+      "group": "corpus",
+      "heard": "Make it midday and clear",
+      "reference": "make it midday and clear",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.14,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b21": {
+      "group": "corpus",
+      "heard": "Make it foggy.",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.143,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b22": {
+      "group": "corpus",
+      "heard": "Can we try golden hour but colder",
+      "reference": "can we try golden hour but colder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.23,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b23": {
+      "group": "corpus",
+      "heard": "I want the light coming from behind.",
+      "reference": "I want the light coming from behind",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.192,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b24": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.016,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b25": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.025,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b26": {
+      "group": "corpus",
+      "heard": "Make it",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.07,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.104,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.12,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add fork lightning",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.125,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "add_forked_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Add forked lightning",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.144,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning strikes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.13,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t2": {
+      "group": "phrasing",
+      "heard": "Add lightning stripes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.129,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "add_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.098,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Thank you Add lightning",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.124,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t1": {
+      "group": "phrasing",
+      "heard": "That's thunder.",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.104,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t2": {
+      "group": "phrasing",
+      "heard": "Add, and then",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "make_it_a_storm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.108,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_storm_t2": {
+      "group": "phrasing",
+      "heard": "you A storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.105,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "make_it_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Yeah Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.132,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Thank you. Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.168,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_stormy_t1": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.112,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_stormy_t2": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.15,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t1": {
+      "group": "phrasing",
+      "heard": "you Make it thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.178,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Naked thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.179,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "stormy_weather_t1": {
+      "group": "phrasing",
+      "heard": "Stormy weather,",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.107,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "stormy_weather_t2": {
+      "group": "phrasing",
+      "heard": "you stormy",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.093,
+      "leading_junk": true,
+      "critical_ok": false
+    }
+  },
+  "trim40": {
+    "a01": {
+      "group": "corpus",
+      "heard": "What? The sound of traffic on the street below She put down the box she had been carrying and looked around for somewhere to sit There were three chairs stacked against The far wall. And a table with one leg shorter than the others.",
+      "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+      "head_trimmed_s": 0.12,
+      "stt_s": 1.116,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "a02": {
+      "group": "corpus",
+      "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+      "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 1.014,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a03": {
+      "group": "corpus",
+      "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+      "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.891,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a04": {
+      "group": "corpus",
+      "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+      "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.909,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b01": {
+      "group": "corpus",
+      "heard": "Make it brighter",
+      "reference": "make it brighter",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.096,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b02": {
+      "group": "corpus",
+      "heard": "Make it dimmer",
+      "reference": "make it dimmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.152,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b03": {
+      "group": "corpus",
+      "heard": "Make it warmer",
+      "reference": "make it warmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.093,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b04": {
+      "group": "corpus",
+      "heard": "Make it cooler",
+      "reference": "make it cooler",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.094,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b05": {
+      "group": "corpus",
+      "heard": "Make it misty",
+      "reference": "make it misty",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.1,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b06": {
+      "group": "corpus",
+      "heard": "Make it foggy",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.095,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b07": {
+      "group": "corpus",
+      "heard": "Make it hazy",
+      "reference": "make it hazy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.112,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b08": {
+      "group": "corpus",
+      "heard": "Make a dusk",
+      "reference": "make it dusk",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.091,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b09": {
+      "group": "corpus",
+      "heard": "Make it dawn.",
+      "reference": "make it dawn",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.089,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b10": {
+      "group": "corpus",
+      "heard": "Make it overcast",
+      "reference": "make it overcast",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.098,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b11": {
+      "group": "corpus",
+      "heard": "Make it stall me.",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.115,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b12": {
+      "group": "corpus",
+      "heard": "Add lighting",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.081,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b13": {
+      "group": "corpus",
+      "heard": "Add rain.",
+      "reference": "add rain",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.076,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b14": {
+      "group": "corpus",
+      "heard": "golden hour",
+      "reference": "golden hour",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.074,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b15": {
+      "group": "corpus",
+      "heard": "moonlight",
+      "reference": "moonlight",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.083,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b16": {
+      "group": "corpus",
+      "heard": "Make it spooky",
+      "reference": "make it spooky",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.096,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b17": {
+      "group": "corpus",
+      "heard": "light it from the left",
+      "reference": "light it from the left",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.115,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b18": {
+      "group": "corpus",
+      "heard": "Raise the sun.",
+      "reference": "raise the sun",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.097,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b19": {
+      "group": "corpus",
+      "heard": "Drop the sun below the horizon.",
+      "reference": "drop the sun below the horizon",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.144,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b20": {
+      "group": "corpus",
+      "heard": "Make it midday and clear",
+      "reference": "make it midday and clear",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.152,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b21": {
+      "group": "corpus",
+      "heard": "Make it foggy.",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.134,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b22": {
+      "group": "corpus",
+      "heard": "Can we try golden hour but colder",
+      "reference": "can we try golden hour but colder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.223,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b23": {
+      "group": "corpus",
+      "heard": "I want the light coming from behind.",
+      "reference": "I want the light coming from behind",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.207,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b24": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.017,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b25": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.023,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b26": {
+      "group": "corpus",
+      "heard": "Make it",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.069,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.107,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.36,
+      "stt_s": 0.092,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add fork lightning",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.122,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "add_forked_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Add forked lightning",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.152,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning strikes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.129,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t2": {
+      "group": "phrasing",
+      "heard": "Add lightning stripes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.13,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "add_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.094,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Thank you Add lightning",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.123,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t1": {
+      "group": "phrasing",
+      "heard": "That thunder.",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.38,
+      "stt_s": 0.068,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t2": {
+      "group": "phrasing",
+      "heard": "Add, and then",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.11,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "make_it_a_storm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_storm_t2": {
+      "group": "phrasing",
+      "heard": "you A storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.1,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "make_it_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Yeah Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.129,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Thank you. Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.277,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_stormy_t1": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.32,
+      "stt_s": 0.09,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_stormy_t2": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.156,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t1": {
+      "group": "phrasing",
+      "heard": "you Make it thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.175,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Naked thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.34,
+      "stt_s": 0.15,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "stormy_weather_t1": {
+      "group": "phrasing",
+      "heard": "Stormy weather,",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.118,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "stormy_weather_t2": {
+      "group": "phrasing",
+      "heard": "you stormy",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.125,
+      "leading_junk": true,
+      "critical_ok": false
+    }
+  },
+  "trim30": {
+    "a01": {
+      "group": "corpus",
+      "heard": "What? The sound of traffic on the street below She put down the box she had been carrying and looked around for somewhere to sit There were three chairs stacked against The far wall. And a table with one leg shorter than the others.",
+      "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+      "head_trimmed_s": 0.12,
+      "stt_s": 1.086,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "a02": {
+      "group": "corpus",
+      "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+      "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.977,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a03": {
+      "group": "corpus",
+      "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+      "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.848,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a04": {
+      "group": "corpus",
+      "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+      "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.925,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b01": {
+      "group": "corpus",
+      "heard": "Make it brighter",
+      "reference": "make it brighter",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.108,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b02": {
+      "group": "corpus",
+      "heard": "Make it dimmer",
+      "reference": "make it dimmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.108,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b03": {
+      "group": "corpus",
+      "heard": "Make it warmer",
+      "reference": "make it warmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.094,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b04": {
+      "group": "corpus",
+      "heard": "Make it cooler",
+      "reference": "make it cooler",
+      "head_trimmed_s": 0.14,
+      "stt_s": 0.093,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b05": {
+      "group": "corpus",
+      "heard": "Make it misty",
+      "reference": "make it misty",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b06": {
+      "group": "corpus",
+      "heard": "Make it foggy",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.099,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b07": {
+      "group": "corpus",
+      "heard": "Make it hazy",
+      "reference": "make it hazy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.101,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b08": {
+      "group": "corpus",
+      "heard": "Make a dusk",
+      "reference": "make it dusk",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.092,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b09": {
+      "group": "corpus",
+      "heard": "Make it dawn.",
+      "reference": "make it dawn",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.09,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b10": {
+      "group": "corpus",
+      "heard": "Make it overcast",
+      "reference": "make it overcast",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.108,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b11": {
+      "group": "corpus",
+      "heard": "Make it stall me.",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.115,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b12": {
+      "group": "corpus",
+      "heard": "Add lighting",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.078,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b13": {
+      "group": "corpus",
+      "heard": "Add rain.",
+      "reference": "add rain",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.078,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b14": {
+      "group": "corpus",
+      "heard": "golden hour",
+      "reference": "golden hour",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.072,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b15": {
+      "group": "corpus",
+      "heard": "moonlight",
+      "reference": "moonlight",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.067,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b16": {
+      "group": "corpus",
+      "heard": "Make it spooky",
+      "reference": "make it spooky",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.1,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b17": {
+      "group": "corpus",
+      "heard": "light it from the left",
+      "reference": "light it from the left",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.117,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b18": {
+      "group": "corpus",
+      "heard": "Raise the sun.",
+      "reference": "raise the sun",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.109,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b19": {
+      "group": "corpus",
+      "heard": "Drop the sun below the horizon.",
+      "reference": "drop the sun below the horizon",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.141,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b20": {
+      "group": "corpus",
+      "heard": "Make it midday and clear",
+      "reference": "make it midday and clear",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.146,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b21": {
+      "group": "corpus",
+      "heard": "Make it foggy.",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.202,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b22": {
+      "group": "corpus",
+      "heard": "Can we try golden hour but colder",
+      "reference": "can we try golden hour but colder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.217,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b23": {
+      "group": "corpus",
+      "heard": "I want the light coming from behind.",
+      "reference": "I want the light coming from behind",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.19,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b24": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.017,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b25": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.023,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b26": {
+      "group": "corpus",
+      "heard": "Make it",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.068,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.62,
+      "stt_s": 0.095,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm.",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.46,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add forked lightning.",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.52,
+      "stt_s": 0.109,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Add forked lightning",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.64,
+      "stt_s": 0.115,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning strikes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.6,
+      "stt_s": 0.096,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t2": {
+      "group": "phrasing",
+      "heard": "Add lightning strikes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.46,
+      "stt_s": 0.102,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_t1": {
+      "group": "phrasing",
+      "heard": "had lightning.",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.54,
+      "stt_s": 0.089,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Had lightning.",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.92,
+      "stt_s": 0.082,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t1": {
+      "group": "phrasing",
+      "heard": "That thunder.",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.38,
+      "stt_s": 0.067,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t2": {
+      "group": "phrasing",
+      "heard": "Add thunderbolt",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.46,
+      "stt_s": 0.088,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "make_it_a_storm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.7,
+      "stt_s": 0.082,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_storm_t2": {
+      "group": "phrasing",
+      "heard": "you A storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.141,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "make_it_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a thunderstorm.",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.56,
+      "stt_s": 0.119,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Thank you. Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.185,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_stormy_t1": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.38,
+      "stt_s": 0.083,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_stormy_t2": {
+      "group": "phrasing",
+      "heard": "Thank you. Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 2.14,
+      "stt_s": 0.156,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t1": {
+      "group": "phrasing",
+      "heard": "you Make it thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.174,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Naked thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.36,
+      "stt_s": 0.139,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "stormy_weather_t1": {
+      "group": "phrasing",
+      "heard": "Stormy weather,",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "stormy_weather_t2": {
+      "group": "phrasing",
+      "heard": "stormy",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.6,
+      "stt_s": 0.054,
+      "leading_junk": false,
+      "critical_ok": false
+    }
+  },
+  "trim25": {
+    "a01": {
+      "group": "corpus",
+      "heard": "Good. The sound of it. Traffic on the street below. She put down the box she She had been carrying and looked around for somewhere to sit There were three chairs stacked against Far wall And a table with one leg shorter than the others",
+      "reference": "The room was quiet apart from the sound of traffic on the street below. She put down the box she had been carrying and looked around for somewhere to sit. There were three chairs stacked against the far wall, and a table with one leg shorter than the others.",
+      "head_trimmed_s": 0.14,
+      "stt_s": 1.008,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "a02": {
+      "group": "corpus",
+      "heard": "Someone had left a half-finished cup of tea on the windowsill window sill Outside a delivery van reversed slowly into a narrow gap between two parked cars and the driver leaned out to check the distance.",
+      "reference": "Someone had left a half finished cup of tea on the windowsill. Outside, a delivery van reversed slowly into a narrow gap between two parked cars, and the driver leaned out to check the distance.",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.948,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a03": {
+      "group": "corpus",
+      "heard": "It began to rain first on their few drops against the glass, then heavily Enough that buildings opposite lost their edges She thought about calling her brother, decided against it, and started unpacking instead.",
+      "reference": "It began to rain, first only a few drops against the glass, then heavily enough that the buildings opposite lost their edges. She thought about calling her brother, decided against it, and started unpacking instead.",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.866,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "a04": {
+      "group": "corpus",
+      "heard": "The building was older than she had expected. From the photographs. With high ceilings and wide floorboards that creaked near the door She wrote a short list of things to buy in the morning and went to bed early.",
+      "reference": "The building was older than she had expected from the photographs, with high ceilings and wide floorboards that creaked near the door. She wrote a short list of things to buy in the morning and went to bed early.",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.963,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b01": {
+      "group": "corpus",
+      "heard": "Make it brighter",
+      "reference": "make it brighter",
+      "head_trimmed_s": 0.18,
+      "stt_s": 0.099,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b02": {
+      "group": "corpus",
+      "heard": "Make it dimmer",
+      "reference": "make it dimmer",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.097,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b03": {
+      "group": "corpus",
+      "heard": "Make it warmer",
+      "reference": "make it warmer",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.097,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b04": {
+      "group": "corpus",
+      "heard": "Make it cooler",
+      "reference": "make it cooler",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.094,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b05": {
+      "group": "corpus",
+      "heard": "Make it misty",
+      "reference": "make it misty",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.106,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b06": {
+      "group": "corpus",
+      "heard": "Make it foggy",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.095,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b07": {
+      "group": "corpus",
+      "heard": "Make it hazy",
+      "reference": "make it hazy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.098,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b08": {
+      "group": "corpus",
+      "heard": "Make a dusk",
+      "reference": "make it dusk",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.092,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b09": {
+      "group": "corpus",
+      "heard": "Make it dawn.",
+      "reference": "make it dawn",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.094,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b10": {
+      "group": "corpus",
+      "heard": "Make it overcast",
+      "reference": "make it overcast",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.102,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b11": {
+      "group": "corpus",
+      "heard": "Make it stall me.",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.112,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b12": {
+      "group": "corpus",
+      "heard": "Add lighting",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.078,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "b13": {
+      "group": "corpus",
+      "heard": "Add rain.",
+      "reference": "add rain",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.078,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b14": {
+      "group": "corpus",
+      "heard": "golden hour",
+      "reference": "golden hour",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.074,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b15": {
+      "group": "corpus",
+      "heard": "moonlight",
+      "reference": "moonlight",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.067,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b16": {
+      "group": "corpus",
+      "heard": "Make it spooky",
+      "reference": "make it spooky",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.102,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b17": {
+      "group": "corpus",
+      "heard": "light it from the left",
+      "reference": "light it from the left",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.116,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b18": {
+      "group": "corpus",
+      "heard": "Raise the sun.",
+      "reference": "raise the sun",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.099,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b19": {
+      "group": "corpus",
+      "heard": "Drop the sun below the horizon.",
+      "reference": "drop the sun below the horizon",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.144,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b20": {
+      "group": "corpus",
+      "heard": "Make it midday and clear",
+      "reference": "make it midday and clear",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.139,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b21": {
+      "group": "corpus",
+      "heard": "Make it foggy.",
+      "reference": "make it foggy",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.135,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b22": {
+      "group": "corpus",
+      "heard": "Can we try golden hour but colder",
+      "reference": "can we try golden hour but colder",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.22,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b23": {
+      "group": "corpus",
+      "heard": "I want the light coming from behind.",
+      "reference": "I want the light coming from behind",
+      "head_trimmed_s": 0.16,
+      "stt_s": 0.184,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b24": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.017,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b25": {
+      "group": "corpus",
+      "heard": "",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.024,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "b26": {
+      "group": "corpus",
+      "heard": "Make it",
+      "reference": "",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.067,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm.",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.64,
+      "stt_s": 0.103,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Add a thunderstorm.",
+      "reference": "add a thunderstorm",
+      "head_trimmed_s": 0.48,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t1": {
+      "group": "phrasing",
+      "heard": "Add forked lightning.",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.52,
+      "stt_s": 0.118,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_forked_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Add forked lightning.",
+      "reference": "add forked lightning",
+      "head_trimmed_s": 0.64,
+      "stt_s": 0.129,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t1": {
+      "group": "phrasing",
+      "heard": "Add lightning strikes",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.6,
+      "stt_s": 0.095,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "add_lightning_strikes_t2": {
+      "group": "phrasing",
+      "heard": "Add lightning sprites",
+      "reference": "add lightning strikes",
+      "head_trimmed_s": 0.46,
+      "stt_s": 0.105,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "add_lightning_t1": {
+      "group": "phrasing",
+      "heard": "had lightning.",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.54,
+      "stt_s": 0.085,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Had lightning.",
+      "reference": "add lightning",
+      "head_trimmed_s": 0.94,
+      "stt_s": 0.089,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t1": {
+      "group": "phrasing",
+      "heard": "That thunder.",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.38,
+      "stt_s": 0.078,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "add_thunder_t2": {
+      "group": "phrasing",
+      "heard": "Add thunderbolt",
+      "reference": "add thunder",
+      "head_trimmed_s": 0.46,
+      "stt_s": 0.086,
+      "leading_junk": false,
+      "critical_ok": false
+    },
+    "make_it_a_storm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a storm.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.72,
+      "stt_s": 0.081,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_storm_t2": {
+      "group": "phrasing",
+      "heard": "you A stone.",
+      "reference": "make it a storm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.111,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "make_it_a_thunderstorm_t1": {
+      "group": "phrasing",
+      "heard": "Make it a thunderstorm.",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.56,
+      "stt_s": 0.113,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_a_thunderstorm_t2": {
+      "group": "phrasing",
+      "heard": "Thank you. Make it a thunderstorm",
+      "reference": "make it a thunderstorm",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.202,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_stormy_t1": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 0.38,
+      "stt_s": 0.083,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_stormy_t2": {
+      "group": "phrasing",
+      "heard": "Make it stormy",
+      "reference": "make it stormy",
+      "head_trimmed_s": 2.16,
+      "stt_s": 0.128,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t1": {
+      "group": "phrasing",
+      "heard": "you Make it thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.164,
+      "leading_junk": true,
+      "critical_ok": true
+    },
+    "make_it_thunder_and_lightning_t2": {
+      "group": "phrasing",
+      "heard": "Naked thunder with lightning",
+      "reference": "make it thunder and lightning",
+      "head_trimmed_s": 0.36,
+      "stt_s": 0.14,
+      "leading_junk": true,
+      "critical_ok": false
+    },
+    "stormy_weather_t1": {
+      "group": "phrasing",
+      "heard": "Stormy weather,",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.0,
+      "stt_s": 0.108,
+      "leading_junk": false,
+      "critical_ok": true
+    },
+    "stormy_weather_t2": {
+      "group": "phrasing",
+      "heard": "stormy",
+      "reference": "stormy weather",
+      "head_trimmed_s": 0.64,
+      "stt_s": 0.052,
+      "leading_junk": false,
+      "critical_ok": false
+    }
+  }
+}

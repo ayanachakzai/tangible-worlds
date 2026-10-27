@@ -1,0 +1,478 @@
+<!--
+    terrain_live.html
+    -----------------
+    phase 5c, live version. same terrain fields as terrain_fields.html,
+    but the objects come from the real table instead of being typed in.
+
+    terrain_fields.html stays as the offline test with fixed objects.
+    this file is the one that needs the tracker running.
+
+    needs all three processes up:
+        track_tabletop.py   (tracking/)
+        compute_scene.py    (mapping/)
+        serve.py            (rendering/)
+    then open through the server, not as a file:// path, or /api/scene
+    will not resolve.
+
+    every object starts switched off. assign a meaning per object from the
+    panel. meanings are remembered by object id for as long as the page is
+    open, so a landform survives the object being moved.
+
+    references:
+        Galin, Guerin, Peytavie, Cordonnier, Cani, Benes and Gain,
+        "A Review of Digital Terrain Modeling", Computer Graphics Forum
+        38(2), pp. 553-577. feature-based terrain, landforms placed at
+        chosen positions and combined.
+
+        ImprovedNoise, three.js addons, MIT licence, (c) 2010-2025
+        three.js authors. https://github.com/mrdoob/three.js
+        surface detail only, not landform shape.
+
+        three.js docs: https://threejs.org/docs/
+        OrbitControls: https://threejs.org/docs/#examples/en/controls/OrbitControls
+
+        smoothstep: standard graphics falloff, source not yet verified.
+        # ref: NEEDS SOURCE, flagged for the referencing pass.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tangible Worlds - Terrain Fields (live)</title>
+<style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #1a1a1a; overflow: hidden; font-family: monospace; color: #ddd; }
+    canvas { display: block; }
+
+    #panel {
+        position: absolute; top: 12px; left: 12px;
+        background: rgba(0,0,0,0.8); padding: 12px 14px;
+        border: 1px solid #333; font-size: 11px; width: 300px;
+        max-height: 92vh; overflow-y: auto;
+    }
+    #panel h2 { font-size: 12px; margin-bottom: 4px; color: #fff; }
+    .sub { color: #777; font-size: 10px; margin-bottom: 8px; line-height: 1.5; }
+    .sec { margin: 12px 0 6px; color: #7fb; border-top: 1px solid #333; padding-top: 8px; }
+    .row { display: flex; justify-content: space-between; align-items: center; margin: 5px 0; gap: 6px; }
+    label { color: #aaa; }
+    select { background: #222; color: #ddd; border: 1px solid #444; font-family: monospace; font-size: 11px; padding: 2px; }
+    input[type=range] { width: 100%; }
+    .val { color: #7fb; }
+    .up { color: #7fffbb; }
+    .down { color: #ff8080; }
+    .dim { color: #666; font-size: 10px; }
+    #status { position: absolute; bottom: 12px; left: 12px; background: rgba(0,0,0,0.8);
+              border: 1px solid #333; padding: 7px 10px; font-size: 11px; color: #7fb; }
+</style>
+</head>
+<body>
+
+<div id="panel">
+    <h2>terrain fields, live</h2>
+    <div class="sub">
+        <span class="up">green</span> pushes up, <span class="down">red</span> digs down,
+        grey is off.<br>
+        move the real object, the landform follows.
+    </div>
+
+    <div class="sec">objects on the table</div>
+    <div id="objrows"><span class="dim">waiting for tracker...</span></div>
+
+    <div class="sec">dials</div>
+    <div class="row"><label>height <span class="val" id="v-exag"></span></label></div>
+    <input type="range" id="exag" min="0" max="6" step="0.1">
+    <div class="row"><label>width <span class="val" id="v-spread"></span></label></div>
+    <input type="range" id="spread" min="1" max="6" step="0.1">
+    <div class="row"><label>roughness <span class="val" id="v-detail"></span></label></div>
+    <input type="range" id="detail" min="0" max="0.6" step="0.02">
+</div>
+
+<div id="status">connecting...</div>
+
+<!-- ref: same importmap as index.html, three 0.170.0 via jsdelivr. no new deps. -->
+<script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+    }
+}
+</script>
+
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { ImprovedNoise } from 'three/addons/math/ImprovedNoise.js';
+
+// ── constants ──────────────────────────────────────────
+
+// ref: 16 aug. matches index.html:156 so this page and the live scene
+// share one world scale. tracked table is roughly 1m across, so 10 world
+// units over 1m gives 1 unit = 10cm = 100mm.
+const TABLE_SIZE = 10;
+const MM_PER_UNIT = 100;
+const CM_PER_UNIT = 10;
+const GRID = 128;
+
+// ref: 16 aug. same 200ms as index.html:5. faster is pointless, the
+// tracker does not publish faster than that.
+const SCENE_POLL_MS = 200;
+
+// ref: 16 aug. id 9 in a real capture read 3.9 cm2, a fragment rather
+// than a placed object. anything under this makes a landform too small
+// to see and is ignored.
+const MIN_AREA_CM2 = 8;
+
+// ── meanings ───────────────────────────────────────────
+
+// ref: 16 aug. one shape per meaning, sign only. no pair table anywhere
+// in this file. a mountain and a valley carve each other because one
+// number is negative and the other positive, not because a rule says so.
+// mountain, hill and dune are deliberately identical: the word says
+// which way the ground goes, the object says how big. decision held on
+// 16 aug after a 53mm "hill" out-topped a 36mm "mountain", which is the
+// system behaving honestly rather than a bug.
+const MEANINGS = {
+    off:      { sign:  0 },
+    mountain: { sign:  1 },
+    hill:     { sign:  1 },
+    dune:     { sign:  1 },
+    valley:   { sign: -1 },
+    crater:   { sign: -1 },
+};
+
+// ── state ──────────────────────────────────────────────
+
+let liveObjects = [];        // latest from /api/scene
+const meanings = {};         // id -> meaning, kept while the page is open
+let lastIdSignature = '';    // so the panel only rebuilds when ids change
+
+const P = { spread: 3.0, exag: 2.0, detail: 0.12 };
+
+// ── field maths ────────────────────────────────────────
+
+// ref: NEEDS SOURCE. standard smooth falloff, cited properly in the
+// referencing pass rather than from memory.
+function smoothstep( t ) {
+    t = Math.min( 1, Math.max( 0, t ) );
+    return t * t * ( 3 - 2 * t );
+}
+
+// normalized tracker coords to world, same mapping as index.html:766-767
+function toWorld( nx, ny ) {
+    return { x: ( nx - 0.5 ) * TABLE_SIZE, z: ( ny - 0.5 ) * TABLE_SIZE };
+}
+
+// measured footprint to landform radius. area of a circle backwards,
+// r = sqrt(area/pi), so a wide object gets a wide landform.
+function radiusFromArea( area_cm2 ) {
+    const r_cm = Math.sqrt( area_cm2 / Math.PI );
+    return ( r_cm / CM_PER_UNIT ) * P.spread;
+}
+
+// measured height to amplitude.
+// ref: 16 aug. exag is the one invented number in the system. real
+// objects are 10-60mm, barely visible at true scale, so it is scaled up.
+// a tunable, not a measurement.
+function amplitudeFromHeight( height_mm ) {
+    return ( height_mm / MM_PER_UNIT ) * P.exag;
+}
+
+let fields = [];
+
+function rebuildFields() {
+    fields = [];
+    for ( const o of liveObjects ) {
+        const m = MEANINGS[ meanings[ o.id ] || 'off' ];
+        if ( ! m || m.sign === 0 ) continue;
+        const w = toWorld( o.x, o.y );
+        fields.push( {
+            x: w.x, z: w.z,
+            radius: radiusFromArea( o.area_cm2 ),
+            amplitude: amplitudeFromHeight( o.height_mm ) * m.sign,
+        } );
+    }
+}
+
+const perlin = new ImprovedNoise();
+
+// ask the ground how high it is anywhere, any time, no stored grid.
+// generated objects will need this so they sit on the surface instead of
+// floating at y=0.
+// ref: 16 aug. pure function on purpose. the old proof baked a 256x256
+// array and could only answer at grid points.
+function terrainHeightAt( x, z ) {
+    let h = 0;
+    let influence = 0;
+
+    for ( const f of fields ) {
+        const dx = x - f.x, dz = z - f.z;
+        const d = Math.sqrt( dx * dx + dz * dz );
+        if ( d >= f.radius ) continue;          // outside, costs nothing
+        const falloff = 1 - smoothstep( d / f.radius );
+        h += f.amplitude * falloff;
+        influence += falloff;
+    }
+
+    // detail only where a landform is, so flat ground stays properly flat.
+    // ref: 16 aug, answers the phase 5b falsification question directly.
+    if ( P.detail > 0 && influence > 0 ) {
+        const n = perlin.noise( x * 0.9, z * 0.9, 0 );
+        h += n * P.detail * Math.min( 1, influence );
+    }
+
+    return h;
+}
+
+// ── scene ──────────────────────────────────────────────
+
+// ref: camera, lights and shadows follow index.html:185-243. camera sits
+// lower so a rise reads in profile rather than top down.
+const scene = new THREE.Scene();
+scene.background = new THREE.Color( 0x1a1a1a );
+
+const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 100 );
+camera.position.set( 0, 6, 11 );
+camera.lookAt( 0, 0, 0 );
+
+const renderer = new THREE.WebGLRenderer( { antialias: true } );
+renderer.setSize( window.innerWidth, window.innerHeight );
+renderer.setPixelRatio( window.devicePixelRatio );
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild( renderer.domElement );
+
+const controls = new OrbitControls( camera, renderer.domElement );
+controls.enableDamping = true;
+
+scene.add( new THREE.AmbientLight( 0xffffff, 0.5 ) );
+
+const dirLight = new THREE.DirectionalLight( 0xffffff, 0.8 );
+dirLight.castShadow = true;
+dirLight.shadow.camera.left = -TABLE_SIZE;
+dirLight.shadow.camera.right = TABLE_SIZE;
+dirLight.shadow.camera.top = TABLE_SIZE;
+dirLight.shadow.camera.bottom = -TABLE_SIZE;
+dirLight.shadow.camera.near = 0.5;
+dirLight.shadow.camera.far = 50;
+dirLight.shadow.mapSize.width = 2048;
+dirLight.shadow.mapSize.height = 2048;
+dirLight.shadow.bias = -0.001;
+const el = THREE.MathUtils.degToRad( 55 ), az = THREE.MathUtils.degToRad( 45 );
+const ld = TABLE_SIZE * 3;
+dirLight.position.set( ld * Math.cos( el ) * Math.cos( az ), ld * Math.sin( el ), ld * Math.cos( el ) * Math.sin( az ) );
+scene.add( dirLight );
+
+// ── ground ─────────────────────────────────────────────
+
+const groundGeo = new THREE.PlaneGeometry( TABLE_SIZE, TABLE_SIZE, GRID - 1, GRID - 1 );
+groundGeo.rotateX( -Math.PI / 2 );
+
+const groundMat = new THREE.MeshStandardMaterial( { color: 0x9a8f7a, roughness: 0.95, metalness: 0.0 } );
+const ground = new THREE.Mesh( groundGeo, groundMat );
+ground.receiveShadow = true;
+ground.castShadow = true;
+scene.add( ground );
+
+// faint grid at y=0 as a sea level line, so a rise reads as a rise.
+const refGrid = new THREE.GridHelper( TABLE_SIZE, 10, 0x3a3a3a, 0x2a2a2a );
+refGrid.material.transparent = true;
+refGrid.material.opacity = 0.45;
+scene.add( refGrid );
+
+function rebuildGround() {
+    rebuildFields();
+    const pos = groundGeo.attributes.position;
+    for ( let i = 0; i < pos.count; i ++ ) {
+        pos.setY( i, terrainHeightAt( pos.getX( i ), pos.getZ( i ) ) );
+    }
+    pos.needsUpdate = true;
+    groundGeo.computeVertexNormals();
+    syncMarkers();
+}
+
+// ── posts ──────────────────────────────────────────────
+
+// one labelled post per tracked object. not draggable here, the hand
+// does that on the real table.
+// ref: 16 aug, labels added after three identical posts proved unreadable.
+function makeLabel( text ) {
+    const c = document.createElement( 'canvas' );
+    c.width = 256; c.height = 64;
+    const ctx = c.getContext( '2d' );
+    ctx.fillStyle = 'rgba(0,0,0,0.6)';
+    ctx.fillRect( 0, 0, 256, 64 );
+    ctx.font = '28px monospace';
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText( text, 128, 32 );
+    const tex = new THREE.CanvasTexture( c );
+    tex.colorSpace = THREE.SRGBColorSpace;
+    const sprite = new THREE.Sprite( new THREE.SpriteMaterial( { map: tex, depthTest: false } ) );
+    sprite.scale.set( 1.6, 0.4, 1 );
+    sprite.position.y = 0.6;
+    return sprite;
+}
+
+const markerGroup = new THREE.Group();
+scene.add( markerGroup );
+const markers = {};   // id -> mesh
+
+function syncMarkers() {
+    const seen = new Set();
+
+    for ( const o of liveObjects ) {
+        seen.add( o.id );
+        let mesh = markers[ o.id ];
+        if ( ! mesh ) {
+            mesh = new THREE.Mesh(
+                new THREE.CylinderGeometry( 0.07, 0.07, 0.6, 12 ),
+                new THREE.MeshStandardMaterial( { color: 0x666666 } )
+            );
+            mesh.add( makeLabel( `${o.id} ${o.label}` ) );
+            markerGroup.add( mesh );
+            markers[ o.id ] = mesh;
+        }
+        const w = toWorld( o.x, o.y );
+        mesh.position.set( w.x, terrainHeightAt( w.x, w.z ) + 0.3, w.z );
+        const sign = MEANINGS[ meanings[ o.id ] || 'off' ].sign;
+        mesh.material.color.set( sign > 0 ? 0x7fffbb : sign < 0 ? 0xff8080 : 0x666666 );
+    }
+
+    // object left the table, drop its post
+    for ( const id of Object.keys( markers ) ) {
+        if ( ! seen.has( Number( id ) ) ) {
+            markerGroup.remove( markers[ id ] );
+            markers[ id ].geometry.dispose();
+            markers[ id ].material.dispose();
+            delete markers[ id ];
+        }
+    }
+}
+
+// ── panel ──────────────────────────────────────────────
+
+// only rebuilt when the set of ids changes, otherwise an open dropdown
+// would be destroyed five times a second while being clicked.
+// ref: 16 aug.
+function refreshPanel() {
+    const sig = liveObjects.map( o => o.id ).join( ',' );
+    if ( sig === lastIdSignature ) return;
+    lastIdSignature = sig;
+
+    const rows = document.getElementById( 'objrows' );
+    rows.innerHTML = '';
+
+    if ( ! liveObjects.length ) {
+        rows.innerHTML = '<span class="dim">nothing on the table</span>';
+        return;
+    }
+
+    for ( const o of liveObjects ) {
+        const div = document.createElement( 'div' );
+        div.className = 'row';
+        const opts = Object.keys( MEANINGS ).map( k => `<option value="${k}">${k}</option>` ).join( '' );
+        div.innerHTML =
+            `<label>${o.id} ${o.label}<br><span class="dim">${o.area_cm2}cm2 ${o.height_mm}mm</span></label>` +
+            `<select>${opts}</select>`;
+        rows.appendChild( div );
+        const sel = div.querySelector( 'select' );
+        sel.value = meanings[ o.id ] || 'off';
+        sel.addEventListener( 'change', () => {
+            meanings[ o.id ] = sel.value;
+            rebuildGround();
+        } );
+    }
+}
+
+function slider( id, key ) {
+    const s = document.getElementById( id );
+    s.value = P[ key ];
+    const v = document.getElementById( 'v-' + id );
+    const show = () => { v.textContent = Number( P[ key ] ).toFixed( 2 ); };
+    show();
+    s.addEventListener( 'input', () => { P[ key ] = parseFloat( s.value ); show(); rebuildGround(); } );
+}
+slider( 'exag', 'exag' );
+slider( 'spread', 'spread' );
+slider( 'detail', 'detail' );
+
+// ── polling ────────────────────────────────────────────
+
+// ref: 16 aug. same pattern as index.html:1078,1412-1419. reads
+// /api/scene, which serve.py fills from compute_scene.py output. the
+// area_cm2 and height_mm fields pass straight through, confirmed by
+// running compute_scene.py on 16 aug.
+async function fetchScene() {
+    try {
+        const res = await fetch( '/api/scene' );
+        if ( ! res.ok ) return null;
+        return await res.json();
+    } catch ( e ) {
+        return null;
+    }
+}
+
+// only rebuild when something actually moved, otherwise the ground is
+// recomputed 5 times a second for no reason.
+// ref: 16 aug. 0.002 normalized is about 2mm on a 1m table, below tracker
+// noise, so this filters jitter rather than real movement.
+const MOVE_EPS = 0.002;
+
+function changed( next ) {
+    if ( next.length !== liveObjects.length ) return true;
+    for ( let i = 0; i < next.length; i ++ ) {
+        const a = next[ i ], b = liveObjects[ i ];
+        if ( a.id !== b.id ) return true;
+        if ( Math.abs( a.x - b.x ) > MOVE_EPS ) return true;
+        if ( Math.abs( a.y - b.y ) > MOVE_EPS ) return true;
+        if ( Math.abs( a.area_cm2 - b.area_cm2 ) > 2 ) return true;
+        if ( Math.abs( a.height_mm - b.height_mm ) > 2 ) return true;
+    }
+    return false;
+}
+
+const statusEl = document.getElementById( 'status' );
+
+setInterval( async () => {
+    const data = await fetchScene();
+    if ( ! data ) {
+        statusEl.textContent = 'no data. is serve.py running, and opened through the server not file://';
+        return;
+    }
+
+    const next = ( data.objects || [] ).filter( o =>
+        typeof o.area_cm2 === 'number' &&
+        typeof o.height_mm === 'number' &&
+        o.area_cm2 >= MIN_AREA_CM2
+    );
+
+    statusEl.textContent = `${next.length} objects, ${fields.length} landforms`;
+
+    if ( changed( next ) ) {
+        liveObjects = next;
+        refreshPanel();
+        rebuildGround();
+    }
+}, SCENE_POLL_MS );
+
+// ── go ─────────────────────────────────────────────────
+
+window.addEventListener( 'resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize( window.innerWidth, window.innerHeight );
+} );
+
+rebuildGround();
+
+function animate() {
+    requestAnimationFrame( animate );
+    controls.update();
+    renderer.render( scene, camera );
+}
+animate();
+</script>
+</body>
+</html>
