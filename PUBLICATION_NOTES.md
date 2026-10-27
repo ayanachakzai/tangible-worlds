@@ -86,5 +86,8 @@ In `website/`, `tools-assets.py` and `tools-encode.sh` locate the thesis reposit
 
 ## Known issues
 
-- `website/public/media/video/working-prototype.mp4` has decoding errors in about 16% of its frames (an encoding fault in this web copy; the original recording is intact). It is an open issue and has not been repaired. The full demonstration is on YouTube.
 - The code repository link on the dissertation cover points to a UAL-hosted repository that requires a university login.
+
+## Resolved issues
+
+- `website/public/media/video/working-prototype.mp4` previously had decoding errors in about 16% of its frames (an encoding fault in the web copy). It was repaired on 27 October 2026 in commit `98b7a65fdd208ccae428a0247496a8c3c2c6477e`, re-encoded from the intact original MOV recording and verified against it. The repaired video decodes all 6,967 frames with zero errors, keeps the original 232.23-second duration, and passed browser playback and seeking.
