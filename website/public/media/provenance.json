@@ -664,5 +664,11 @@
   "source": "TW Logo 6.png (supplied branding artwork, 1254 x 1254)",
   "class": "derived",
   "note": "Logo for the dark colophon: the artwork's flat background removed (flood-filled from the edges, so enclosed areas are kept), black and cream ink reversed for a dark ground, colours unchanged, trimmed and scaled to 440 px wide. Branding, not project evidence."
+ },
+ {
+  "file": "media/img/tw-mark-dark.webp",
+  "source": "FAVICON.png (supplied branding artwork, 1254 x 1254)",
+  "class": "derived",
+  "note": "Logo mark for the dark chapter rail: black and cream ink reversed for a dark ground as in tw-logo-dark.webp, colours unchanged, trimmed, centred on a square and scaled to 144 px. Branding, not project evidence."
  }
 ]
